@@ -10,10 +10,16 @@
     <unique-id>2fj1b49bm44m8</unique-id>
     <saved-with-version>23900</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors />
-    <used-effects />
+    <used-effects>
+        <effect author="Scirra" id="blurhorizontal">Blur Horizontal</effect>
+        <effect author="Scirra" id="blurvertical">Blur Vertical</effect>
+        <effect author="Scirra" id="screen">Screen</effect>
+        <effect author="Evan Wallace" id="vibrance">Vibrance</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -23,14 +29,15 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Menu Principal</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
         <prop name="Downscaling">Medium quality</prop>
         <prop name="Enable WebGL">On</prop>
-        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen in browser">Off</prop>
         <prop name="Fullscreen scaling">High quality</prop>
-        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">Yes</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
@@ -40,21 +47,221 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="fundo" sid="694129179666624">
+        <object-type name="fundo_menu" sid="423442279722922">
             <plugin id="TiledBg" />
-            <texture />
+            <effects>
+                <effect-type name="Vibrance">
+                    <effect id="vibrance" />
+                </effect-type>
+            </effects>
+            <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu.png" />
+        </object-type>
+        <object-type name="luz_rosa" sid="513042215732311">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Vibrance">
+                    <effect id="vibrance" />
+                </effect-type>
+                <effect-type name="Screen">
+                    <effect id="screen" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="162671024407677" speed="1">
+                    <frame duration="4" hotspotX="0.5" hotspotY="0.500873" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu_neon_rosa.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500873" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="efeitos" sid="923120625506645">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Vibrance">
+                    <effect id="vibrance" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="263819622621614" speed="1">
+                    <frame duration="4" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu_neon_verde.png">
+                        <collision-poly>
+                            <point x="0.267969" y="0.476389" />
+                            <point x="0.5" y="0.1375" />
+                            <point x="0.275781" y="0.5" />
+                            <point x="0.522656" y="0.151389" />
+                            <point x="0.5" y="0.151389" />
+                            <point x="0.267969" y="0.523611" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="0.1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.267969" y="0.476389" />
+                            <point x="0.5" y="0.1375" />
+                            <point x="0.275781" y="0.5" />
+                            <point x="0.522656" y="0.151389" />
+                            <point x="0.5" y="0.151389" />
+                            <point x="0.267969" y="0.523611" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="0.5" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.267969" y="0.476389" />
+                            <point x="0.5" y="0.1375" />
+                            <point x="0.275781" y="0.5" />
+                            <point x="0.522656" y="0.151389" />
+                            <point x="0.5" y="0.151389" />
+                            <point x="0.267969" y="0.523611" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="0.1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.267969" y="0.476389" />
+                            <point x="0.5" y="0.1375" />
+                            <point x="0.275781" y="0.5" />
+                            <point x="0.522656" y="0.151389" />
+                            <point x="0.5" y="0.151389" />
+                            <point x="0.267969" y="0.523611" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="0.1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.267969" y="0.476389" />
+                            <point x="0.5" y="0.1375" />
+                            <point x="0.275781" y="0.5" />
+                            <point x="0.522656" y="0.151389" />
+                            <point x="0.5" y="0.151389" />
+                            <point x="0.267969" y="0.523611" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="0.1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu_neon_verde_off.png">
+                        <collision-poly>
+                            <point x="0.267969" y="0.476389" />
+                            <point x="0.5" y="0.1375" />
+                            <point x="0.275781" y="0.5" />
+                            <point x="0.522656" y="0.151389" />
+                            <point x="0.5" y="0.151389" />
+                            <point x="0.267969" y="0.523611" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="canos" sid="433091950461938">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="BlurHorizontal">
+                    <effect id="blurhorizontal" />
+                </effect-type>
+                <effect-type name="BlurVertical">
+                    <effect id="blurvertical" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="528162594183850" speed="5">
+                    <frame duration="1" hotspotX="0.501859" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu_cano.png">
+                        <collision-poly>
+                            <point x="0.271375" y="0.101389" />
+                            <point x="0.498141" y="0" />
+                            <point x="0.881041" y="0.0444444" />
+                            <point x="0.825279" y="0.934722" />
+                            <point x="0.498141" y="0.973611" />
+                            <point x="0.219331" y="0.918056" />
+                            <point x="0.282528" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="luz_verde" sid="323873958901382">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Vibrance">
+                    <effect id="vibrance" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="301606861058706" speed="1">
+                    <frame duration="4" hotspotX="0.501266" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu_neon_on.png">
+                        <collision-poly>
+                            <point x="0.308861" y="0.338889" />
+                            <point x="0.498734" y="0.311111" />
+                            <point x="0.693671" y="0.336111" />
+                            <point x="0.536709" y="0.491667" />
+                            <point x="0.498734" y="0.494444" />
+                            <point x="0.465823" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="0.1" hotspotX="0.501266" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu_neon_off.png">
+                        <collision-poly>
+                            <point x="0.316456" y="0.347222" />
+                            <point x="0.498734" y="0.336111" />
+                            <point x="0.691139" y="0.338889" />
+                            <point x="0.536709" y="0.491667" />
+                            <point x="0.498734" y="0.491667" />
+                            <point x="0.465823" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="0.5" hotspotX="0.501266" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu_neon_on.png">
+                        <collision-poly>
+                            <point x="0.308861" y="0.338889" />
+                            <point x="0.498734" y="0.311111" />
+                            <point x="0.693671" y="0.336111" />
+                            <point x="0.536709" y="0.491667" />
+                            <point x="0.498734" y="0.494444" />
+                            <point x="0.465823" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="0.1" hotspotX="0.501266" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu_neon_off.png">
+                        <collision-poly>
+                            <point x="0.316456" y="0.347222" />
+                            <point x="0.498734" y="0.336111" />
+                            <point x="0.691139" y="0.338889" />
+                            <point x="0.536709" y="0.491667" />
+                            <point x="0.498734" y="0.491667" />
+                            <point x="0.465823" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="0.1" hotspotX="0.501266" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu_neon_on.png">
+                        <collision-poly>
+                            <point x="0.308861" y="0.338889" />
+                            <point x="0.498734" y="0.311111" />
+                            <point x="0.693671" y="0.336111" />
+                            <point x="0.536709" y="0.491667" />
+                            <point x="0.498734" y="0.494444" />
+                            <point x="0.465823" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="0.1" hotspotX="0.501266" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu_neon_off.png">
+                        <collision-poly>
+                            <point x="0.316456" y="0.347222" />
+                            <point x="0.498734" y="0.336111" />
+                            <point x="0.691139" y="0.338889" />
+                            <point x="0.536709" y="0.491667" />
+                            <point x="0.498734" y="0.491667" />
+                            <point x="0.465823" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="235940213759085">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="402148114518824" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.0588235" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu_luz02.png" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Menu.xml</layout>
-        <layout>Tela de Jogo.xml</layout>
+        <layout>Menu Principal.xml</layout>
         <layout>Tela de Casos.xml</layout>
+        <layout>Jogo.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Menu.xml</event-sheet>
-        <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Jogo.xml</event-sheet>
+        <event-sheet>Tela de Casos.xml</event-sheet>
     </event-folder>
     <global-instances />
     <sounds-folder />
