@@ -2,5 +2,17 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Tela de Casos</name>
-    <events />
+    <events>
+        <event-block sid="188116339448502">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="801272363977871" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="274737930931828" type="Text">
+                    <param id="0" name="Family name">&quot;breamcatcherregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
