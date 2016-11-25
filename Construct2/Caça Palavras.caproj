@@ -12,18 +12,19 @@
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
-        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
     </used-behaviors>
     <used-effects>
         <effect author="Scirra" id="blurhorizontal">Blur Horizontal</effect>
         <effect author="Scirra" id="blurvertical">Blur Vertical</effect>
+        <effect author="Scirra" id="multiply">Multiply</effect>
         <effect author="Scirra" id="screen">Screen</effect>
         <effect author="Evan Wallace" id="vibrance">Vibrance</effect>
     </used-effects>
@@ -156,7 +157,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="fundo_menu" sid="423442279722922">
+            <object-type name="fundoMenu" sid="423442279722922">
                 <plugin id="TiledBg" />
                 <effects>
                     <effect-type name="Vibrance">
@@ -178,7 +179,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="luz_rosa" sid="513042215732311">
+            <object-type name="luzRosa" sid="513042215732311">
                 <plugin id="Sprite" />
                 <effects>
                     <effect-type name="Vibrance">
@@ -196,7 +197,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="luz_verde" sid="323873958901382">
+            <object-type name="luzVerde" sid="323873958901382">
                 <plugin id="Sprite" />
                 <effects>
                     <effect-type name="Vibrance">
@@ -268,9 +269,76 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="vagalumes" sid="380104802503310">
-                <plugin id="Particles" />
-                <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\vagalume.png" />
+            <object-type name="vagalumes" sid="544877833067561">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="674857734475272">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="741427288666548" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\vagalume.png">
+                            <collision-poly>
+                                <point x="0.32" y="0.32" />
+                                <point x="0.5" y="0.24" />
+                                <point x="0.68" y="0.32" />
+                                <point x="0.76" y="0.5" />
+                                <point x="0.68" y="0.68" />
+                                <point x="0.5" y="0.76" />
+                                <point x="0.32" y="0.68" />
+                                <point x="0.24" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Tela Casos">
+            <object-type name="fundoCasos" sid="752527904705218">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\tela_casos.png" />
+            </object-type>
+            <object-type name="casoNumero" sid="934284011670522">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="casoStatus" sid="367590442442088">
+                <plugin id="Sprite" />
+                <effects>
+                    <effect-type name="Multiply">
+                        <effect id="multiply" />
+                    </effect-type>
+                    <effect-type name="Vibrance">
+                        <effect id="vibrance" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="258669829165833" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501018" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\caso_aberto.png">
+                            <collision-poly>
+                                <point x="0.561321" y="0.484725" />
+                                <point x="0.0754717" y="0.798371" />
+                                <point x="0.57783" y="0.498982" />
+                                <point x="0.481132" y="0.551935" />
+                                <point x="0.5" y="0.549898" />
+                                <point x="0.608491" y="0.474542" />
+                                <point x="0.448113" y="0.498982" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501018" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\caso_fechado.png">
+                            <collision-poly>
+                                <point x="0.504717" y="0.435845" />
+                                <point x="0.5" y="0.228106" />
+                                <point x="0.957547" y="0.0366599" />
+                                <point x="0.566038" y="0.498982" />
+                                <point x="0.483491" y="0.553971" />
+                                <point x="0.5" y="0.556008" />
+                                <point x="0.0424528" y="0.96334" />
+                                <point x="0.474057" y="0.498982" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
             </object-type>
         </object-folder>
         <object-type name="Mouse" sid="359155137460880">
@@ -281,9 +349,6 @@
         </object-type>
         <object-type name="Touch" sid="573787641399865">
             <plugin id="Touch" />
-        </object-type>
-        <object-type name="Text" sid="934284011670522">
-            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

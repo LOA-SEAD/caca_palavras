@@ -17,82 +17,60 @@
         <event-block sid="479937636673900">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="335576717207295" type="System">
-                    <param id="0" name="Interval (seconds)">random(0.6,1.2)</param>
+                    <param id="0" name="Interval (seconds)">random(0.6,2)</param>
                 </condition>
-                <condition id="-14" name="Pick by unique ID" sid="593113188880814" type="vagalumes">
+                <condition id="-14" name="Pick by unique ID" sid="317859794134178" type="vagalumes">
                     <param id="0" name="Unique ID">6</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="15" name="Set angle randomiser" sid="694632115698137" type="vagalumes">
-                    <param id="0" name="Angle randomiser">round(random(0,180))</param>
+                <action id="-8" name="Set angle" sid="554163463052779" type="vagalumes">
+                    <param id="0" name="Angle">round(random(angle(vagalumes.X, vagalumes.Y, 640,180)-135,angle(vagalumes.X, vagalumes.Y, 640,180)+135))</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="799739729131394">
             <conditions>
-                <condition id="-6" name="Every X seconds" sid="175116087821553" type="System">
-                    <param id="0" name="Interval (seconds)">random(0.6,1.2)</param>
+                <condition id="-6" name="Every X seconds" sid="676638691138882" type="System">
+                    <param id="0" name="Interval (seconds)">random(0.6,2)</param>
                 </condition>
-                <condition id="-14" name="Pick by unique ID" sid="511172140863924" type="vagalumes">
+                <condition id="-14" name="Pick by unique ID" sid="839234439165542" type="vagalumes">
                     <param id="0" name="Unique ID">8</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="15" name="Set angle randomiser" sid="586107772594963" type="vagalumes">
-                    <param id="0" name="Angle randomiser">round(random(0,180))</param>
+                <action id="-8" name="Set angle" sid="644735656326662" type="vagalumes">
+                    <param id="0" name="Angle">round(random(angle(vagalumes.X, vagalumes.Y, 640,180)-135,angle(vagalumes.X, vagalumes.Y, 640,180)+135))</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="372632111895000">
             <conditions>
-                <condition id="-6" name="Every X seconds" sid="310046143552476" type="System">
-                    <param id="0" name="Interval (seconds)">random(0.6,1.2)</param>
+                <condition id="-6" name="Every X seconds" sid="314676236531535" type="System">
+                    <param id="0" name="Interval (seconds)">random(0.6,2)</param>
                 </condition>
-                <condition id="-14" name="Pick by unique ID" sid="277893996606920" type="vagalumes">
+                <condition id="-14" name="Pick by unique ID" sid="807320615310770" type="vagalumes">
                     <param id="0" name="Unique ID">9</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="15" name="Set angle randomiser" sid="338132720156023" type="vagalumes">
-                    <param id="0" name="Angle randomiser">round(random(0,180))</param>
+                <action id="-8" name="Set angle" sid="263243113983888" type="vagalumes">
+                    <param id="0" name="Angle">round(random(angle(vagalumes.X, vagalumes.Y, 640,180)-135,angle(vagalumes.X, vagalumes.Y, 640,180)+135))</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="805277809766252">
             <conditions>
-                <condition id="-6" name="Every X seconds" sid="572416396332303" type="System">
-                    <param id="0" name="Interval (seconds)">random(0.6,1.2)</param>
+                <condition id="-6" name="Every X seconds" sid="324580825451083" type="System">
+                    <param id="0" name="Interval (seconds)">random(0.6,2)</param>
                 </condition>
-                <condition id="-14" name="Pick by unique ID" sid="582334735704073" type="vagalumes">
+                <condition id="-14" name="Pick by unique ID" sid="906994088333465" type="vagalumes">
                     <param id="0" name="Unique ID">16</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="15" name="Set angle randomiser" sid="946614068896410" type="vagalumes">
-                    <param id="0" name="Angle randomiser">round(random(0,180))</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="206521396466313">
-            <conditions>
-                <condition id="7" name="Cursor is over object" sid="285171705445947" type="Mouse">
-                    <param id="0" name="Object">btnTexto</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Set cursor style" sid="452730089572605" type="Mouse">
-                    <param id="0" name="Cursor style">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="319603000900573">
-            <conditions>
-                <condition id="-22" name="Else" sid="318323615203346" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Set cursor style" sid="587849979840936" type="Mouse">
-                    <param id="0" name="Cursor style">0</param>
+                <action id="-8" name="Set angle" sid="614197744902831" type="vagalumes">
+                    <param id="0" name="Angle">round(random(angle(vagalumes.X, vagalumes.Y, 640,180)-135,angle(vagalumes.X, vagalumes.Y, 640,180)+135))</param>
                 </action>
             </actions>
         </event-block>
@@ -138,6 +116,28 @@
                     <actions />
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="206521396466313">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="285171705445947" type="Mouse">
+                    <param id="0" name="Object">btnTexto</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="452730089572605" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="319603000900573">
+            <conditions>
+                <condition id="-22" name="Else" sid="318323615203346" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="587849979840936" type="Mouse">
+                    <param id="0" name="Cursor style">0</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

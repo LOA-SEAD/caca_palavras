@@ -8,7 +8,7 @@
                 <condition id="-2" name="On start of layout" sid="801272363977871" type="System" />
             </conditions>
             <actions>
-                <action id="5" name="Set web font" sid="274737930931828" type="Text">
+                <action id="5" name="Set web font" sid="274737930931828" type="casoNumero">
                     <param id="0" name="Family name">&quot;breamcatcherregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
                 </action>
