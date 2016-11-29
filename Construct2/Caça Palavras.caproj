@@ -16,6 +16,7 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Joe7" id="ljson" version="1.200000048">Load JSON</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -175,7 +176,7 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="402148114518824" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.0588235" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu_luz02.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.0117647" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu_luz02.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -340,6 +341,12 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type global="1" name="casos" sid="594091606210175">
+                <plugin id="ljson" />
+            </object-type>
+            <object-type name="casoTexto" sid="703813256685126">
+                <plugin id="Text" />
+            </object-type>
         </object-folder>
         <object-type name="Mouse" sid="359155137460880">
             <plugin id="Mouse" />
@@ -399,6 +406,9 @@
                 <file name="breamcatcher-webfont.woff2" />
                 <file name="stylesheet2.css" />
             </file-folder>
+        </file-folder>
+        <file-folder name="JSON">
+            <file name="casos.json" />
         </file-folder>
     </files-folder>
 </c2project>
