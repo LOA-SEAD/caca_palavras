@@ -348,6 +348,7 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
+        <object-folder name="Cena 1" />
         <object-type name="Mouse" sid="359155137460880">
             <plugin id="Mouse" />
         </object-type>
@@ -363,11 +364,13 @@
         <layout>Menu Principal.xml</layout>
         <layout>Tela de Casos.xml</layout>
         <layout>Jogo.xml</layout>
+        <layout>Cena 1.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Menu.xml</event-sheet>
         <event-sheet>Jogo.xml</event-sheet>
         <event-sheet>Tela de Casos.xml</event-sheet>
+        <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="12" />

@@ -52,7 +52,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Layer 1" sid="472450157167391">
+        <layer name="Casos" sid="472450157167391">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>

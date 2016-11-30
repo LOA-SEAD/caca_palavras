@@ -13,10 +13,6 @@
                 <action id="0" name="Set text" sid="728320880675408" type="casoNumero">
                     <param id="0" name="Text">&quot;Caso &quot; &amp; caso</param>
                 </action>
-                <action id="5" name="Set web font" sid="274737930931828" type="casoNumero">
-                    <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
-                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
-                </action>
                 <action id="5" name="Set web font" sid="381127159555238" type="casoNumero">
                     <param id="0" name="Family name">&quot;breamcatcher&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
@@ -38,12 +34,6 @@
                     <param id="0" name="Opacity">100</param>
                 </action>
             </actions>
-        </event-block>
-        <event-block sid="370847372420579">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="824168006577540" type="System" />
-            </conditions>
-            <actions />
         </event-block>
     </events>
 </c2eventsheet>
