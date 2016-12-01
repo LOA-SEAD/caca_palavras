@@ -176,7 +176,7 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="402148114518824" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.0117647" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu_luz02.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="-0.00117647" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu_luz02.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -298,6 +298,11 @@
         <object-folder name="Tela Casos">
             <object-type name="fundoCasos" sid="752527904705218">
                 <plugin id="TiledBg" />
+                <effects>
+                    <effect-type name="Vibrance">
+                        <effect id="vibrance" />
+                    </effect-type>
+                </effects>
                 <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\tela_casos.png" />
             </object-type>
             <object-type name="casoNumero" sid="934284011670522">
@@ -347,6 +352,51 @@
             <object-type name="casoTexto" sid="703813256685126">
                 <plugin id="Text" />
             </object-type>
+            <object-type name="botaoProx" sid="297336292602134">
+                <plugin id="Sprite" />
+                <effects>
+                    <effect-type name="Vibrance">
+                        <effect id="vibrance" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="960796085317254" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\caso_prox.png">
+                            <collision-poly>
+                                <point x="0.155172" y="0.176471" />
+                                <point x="0.681035" y="0.362745" />
+                                <point x="0.948276" y="0.5" />
+                                <point x="0.5" y="0.803922" />
+                                <point x="0.439655" y="0.5" />
+                                <point x="0.439655" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="botaoAnt" sid="902670974708144">
+                <plugin id="Sprite" />
+                <effects>
+                    <effect-type name="Vibrance">
+                        <effect id="vibrance" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="248091658208358" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\caso_ant.png">
+                            <collision-poly>
+                                <point x="0.362069" y="0.411765" />
+                                <point x="0.862069" y="0.156863" />
+                                <point x="0.543103" y="0.5" />
+                                <point x="0.560345" y="0.5" />
+                                <point x="0.5" y="0.794118" />
+                                <point x="0.293103" y="0.666667" />
+                                <point x="0.206897" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Cena 1" />
         <object-type name="Mouse" sid="359155137460880">
@@ -362,9 +412,9 @@
     <families />
     <layout-folder>
         <layout>Menu Principal.xml</layout>
+        <layout>Cena 1.xml</layout>
         <layout>Tela de Casos.xml</layout>
         <layout>Jogo.xml</layout>
-        <layout>Cena 1.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Menu.xml</event-sheet>
