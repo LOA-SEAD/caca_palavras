@@ -3,48 +3,108 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Tela de Casos</name>
     <events>
-        <variable constant="0" name="caso1" sid="721936607207995" static="0" type="number">0</variable>
-        <variable constant="0" name="caso2" sid="890794744014012" static="0" type="number">0</variable>
-        <variable constant="0" name="caso3" sid="211557855179896" static="0" type="number">0</variable>
-        <variable constant="0" name="caso4" sid="305884600006637" static="0" type="number">0</variable>
-        <variable constant="0" name="caso5" sid="854023010237929" static="0" type="number">0</variable>
+        <variable constant="0" name="ultimocaso" sid="933221909810570" static="0" type="number">5</variable>
         <variable constant="0" name="numcaso" sid="733151475499623" static="0" type="number">1</variable>
         <event-block sid="188116339448502">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="801272363977871" type="System" />
             </conditions>
             <actions>
-                <action id="0" name="Load JSON" sid="555394820287902" type="casos" />
-                <action id="5" name="Set web font" sid="381127159555238" type="casoNumero">
+                <action id="0" name="Load JSON" sid="555394820287902" type="casosJSON" />
+                <action id="5" name="Set web font" sid="381127159555238" type="casoNum">
                     <param id="0" name="Family name">&quot;breamcatcher&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
                 </action>
-                <action id="5" name="Set web font" sid="780560731804526" type="casoTexto">
+                <action id="5" name="Set web font" sid="780560731804526" type="casoTxt">
                     <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet.cs&quot;</param>
-                </action>
-                <action id="0" name="Set text" sid="728320880675408" type="casoNumero">
-                    <param id="0" name="Text">&quot;Caso &quot; &amp; numcaso</param>
-                </action>
-                <action id="0" name="Set text" sid="850868302600171" type="casoTexto">
-                    <param id="0" name="Text">replace(casos.GetData(&quot;Caso&quot; &amp; numcaso, 0), &quot;*&quot;, &quot;__________&quot;)</param>
                 </action>
                 <action id="-16" name="Set opacity" sid="714757852849707" type="casoStatus">
                     <param id="0" name="Opacity">0</param>
                 </action>
-                <action id="-16" name="Wait" sid="969773148429046" type="System">
-                    <param id="0" name="Seconds">1</param>
-                </action>
-                <action id="-16" name="Set opacity" sid="257557077928945" type="casoStatus">
-                    <param id="0" name="Opacity">100</param>
-                </action>
             </actions>
-        </event-block>
-        <event-block sid="689268520534780">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="566874412928000" type="System" />
-            </conditions>
-            <actions />
+            <sub-events>
+                <event-block sid="910302571569559">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="710454585833426" type="System">
+                            <param id="0" name="First value">casosJSON.GetData(&quot;Caso5&quot;,0)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="417994098179141" type="System">
+                            <param id="0" name="Variable">ultimocaso</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="927881882213315" type="System">
+                            <param id="0" name="Seconds">0.0001</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="149152810343106">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="948685446018080" type="System">
+                            <param id="0" name="First value">casosJSON.GetData(&quot;Caso4&quot;,0)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="481309023200805" type="System">
+                            <param id="0" name="Variable">ultimocaso</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="876975990933156" type="System">
+                            <param id="0" name="Seconds">0.0001</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="996933958494585">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="172171520663279" type="System">
+                            <param id="0" name="First value">casosJSON.GetData(&quot;Caso3&quot;,0)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="809004843681190" type="System">
+                            <param id="0" name="Variable">ultimocaso</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="160579095380537" type="System">
+                            <param id="0" name="Seconds">0.0001</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="794581290343639">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="211137764510795" type="System">
+                            <param id="0" name="First value">casosJSON.GetData(&quot;Caso2&quot;,0)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="858773032296113" type="System">
+                            <param id="0" name="Variable">ultimocaso</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="272289215118631">
+                    <conditions />
+                    <actions>
+                        <action id="-16" name="Wait" sid="969773148429046" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="257557077928945" type="casoStatus">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block any="1" sid="480985505511561">
             <conditions>
@@ -57,15 +117,121 @@
                     <param id="0" name="Object">botaoAnt</param>
                 </condition>
             </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="800558199071661">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="442477515465004" type="System">
+                            <param id="0" name="Variable">numcaso</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="153355611707476" type="System">
+                            <param id="0" name="Variable">numcaso</param>
+                            <param id="1" name="Value">ultimocaso</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="784503313404290">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="987077384979492" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="435190539896443" type="System">
+                            <param id="0" name="Variable">numcaso</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="420490260337602">
+                    <conditions />
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="262018359297547" type="casoStatus">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="296242805015961" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="829207030338330" type="casoStatus">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="358377129614255">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="708592224330548" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">botaoProx</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="231485598902353" type="Touch">
+                    <param id="0" name="Object">botaoProx</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="418884213684987">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="624360867441195" type="System">
+                            <param id="0" name="Variable">numcaso</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">ultimocaso</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="862753465546932" type="System">
+                            <param id="0" name="Variable">numcaso</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="819799678679808">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="251387832979965" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="244532771131517" type="System">
+                            <param id="0" name="Variable">numcaso</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="403775720802580">
+                    <conditions />
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="958929534097468" type="casoStatus">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="142057775258496" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="449912423179019" type="casoStatus">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="689268520534780">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="566874412928000" type="System" />
+            </conditions>
             <actions>
-                <action id="-16" name="Set opacity" sid="262018359297547" type="casoStatus">
-                    <param id="0" name="Opacity">0</param>
+                <action id="5" name="Set frame" sid="819350407845567" type="casoStatus">
+                    <param id="0" name="Frame number">caso.At(numcaso)</param>
                 </action>
-                <action id="-16" name="Wait" sid="296242805015961" type="System">
-                    <param id="0" name="Seconds">1</param>
+                <action id="0" name="Set text" sid="485022759523315" type="casoNum">
+                    <param id="0" name="Text">&quot;Caso &quot; &amp; numcaso</param>
                 </action>
-                <action id="-16" name="Set opacity" sid="829207030338330" type="casoStatus">
-                    <param id="0" name="Opacity">100</param>
+                <action id="0" name="Set text" sid="652015446453006" type="casoTxt">
+                    <param id="0" name="Text">replace(casosJSON.GetData(&quot;Caso&quot; &amp; numcaso, 0), &quot;*&quot;, &quot;__________&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="406507981937101" type="Text">
+                    <param id="0" name="Text">ultimocaso</param>
                 </action>
             </actions>
         </event-block>

@@ -75,7 +75,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="casoNumero" uid="15">
+                <instance type="casoNum" uid="15">
                     <properties>
                         <text>Caso ##</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -132,7 +132,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="casoTexto" uid="20">
+                <instance type="casoTxt" uid="20">
                     <properties>
                         <text>casoTexto</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -235,14 +235,49 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="Text" uid="24">
+                    <properties>
+                        <text>Text</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>448</x>
+                        <y>621</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
     </layers>
     <nonworld-instances>
-        <instance type="casos" uid="19">
+        <instance type="casosJSON" uid="19">
             <properties>
                 <json-file>casos.json</json-file>
+            </properties>
+        </instance>
+        <instance type="caso" uid="23">
+            <properties>
+                <width>5</width>
+                <height>1</height>
+                <depth>1</depth>
             </properties>
         </instance>
     </nonworld-instances>

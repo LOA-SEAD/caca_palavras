@@ -10,6 +10,7 @@
     <unique-id>2fj1b49bm44m8</unique-id>
     <saved-with-version>23900</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -305,7 +306,7 @@
                 </effects>
                 <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\tela_casos.png" />
             </object-type>
-            <object-type name="casoNumero" sid="934284011670522">
+            <object-type name="casoNum" sid="934284011670522">
                 <plugin id="Text" />
             </object-type>
             <object-type name="casoStatus" sid="367590442442088">
@@ -346,10 +347,10 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type global="1" name="casos" sid="594091606210175">
+            <object-type global="1" name="casosJSON" sid="594091606210175">
                 <plugin id="ljson" />
             </object-type>
-            <object-type name="casoTexto" sid="703813256685126">
+            <object-type name="casoTxt" sid="703813256685126">
                 <plugin id="Text" />
             </object-type>
             <object-type name="botaoProx" sid="297336292602134">
@@ -363,12 +364,9 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="960796085317254" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\caso_prox.png">
                             <collision-poly>
-                                <point x="0.155172" y="0.176471" />
-                                <point x="0.681035" y="0.362745" />
-                                <point x="0.948276" y="0.5" />
-                                <point x="0.5" y="0.803922" />
-                                <point x="0.439655" y="0.5" />
-                                <point x="0.439655" y="0.5" />
+                                <point x="0.0474134" y="0.139706" />
+                                <point x="0.99569" y="0.47549" />
+                                <point x="0.172414" y="1" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -385,17 +383,16 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="248091658208358" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\caso_ant.png">
                             <collision-poly>
-                                <point x="0.362069" y="0.411765" />
-                                <point x="0.862069" y="0.156863" />
-                                <point x="0.543103" y="0.5" />
-                                <point x="0.560345" y="0.5" />
-                                <point x="0.5" y="0.794118" />
-                                <point x="0.293103" y="0.666667" />
-                                <point x="0.206897" y="0.5" />
+                                <point x="0.87069" y="0.102941" />
+                                <point x="0.778017" y="0.980392" />
+                                <point x="0.127156" y="0.553922" />
                             </collision-poly>
                         </frame>
                     </animation>
                 </animation-folder>
+            </object-type>
+            <object-type global="1" name="caso" sid="489171068871624">
+                <plugin id="Arr" />
             </object-type>
         </object-folder>
         <object-folder name="Cena 1" />
@@ -407,6 +404,9 @@
         </object-type>
         <object-type name="Touch" sid="573787641399865">
             <plugin id="Touch" />
+        </object-type>
+        <object-type name="Text" sid="699357232273608">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
