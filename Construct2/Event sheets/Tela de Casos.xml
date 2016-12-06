@@ -108,7 +108,7 @@
         </event-block>
         <event-block any="1" sid="480985505511561">
             <conditions>
-                <condition id="6" name="On object clicked" sid="266045371273397" type="Mouse">
+                <condition disabled="1" id="6" name="On object clicked" sid="266045371273397" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">botaoAnt</param>
@@ -119,51 +119,63 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="800558199071661">
+                <event-block sid="511080949285696">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="442477515465004" type="System">
+                        <condition id="-14" name="Compare variable" sid="605233351624882" type="System">
                             <param id="0" name="Variable">numcaso</param>
-                            <param id="1" name="Comparison">0</param>
+                            <param id="1" name="Comparison">4</param>
                             <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="153355611707476" type="System">
-                            <param id="0" name="Variable">numcaso</param>
-                            <param id="1" name="Value">ultimocaso</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="784503313404290">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="987077384979492" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Add to" sid="435190539896443" type="System">
-                            <param id="0" name="Variable">numcaso</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="420490260337602">
-                    <conditions />
-                    <actions>
-                        <action id="-16" name="Set opacity" sid="262018359297547" type="casoStatus">
-                            <param id="0" name="Opacity">0</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="296242805015961" type="System">
-                            <param id="0" name="Seconds">1</param>
-                        </action>
-                        <action id="-16" name="Set opacity" sid="829207030338330" type="casoStatus">
-                            <param id="0" name="Opacity">100</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="418884213684987">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="624360867441195" type="System">
+                                    <param id="0" name="Variable">numcaso</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">ultimocaso</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="862753465546932" type="System">
+                                    <param id="0" name="Variable">numcaso</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="819799678679808">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="251387832979965" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="244532771131517" type="System">
+                                    <param id="0" name="Variable">numcaso</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="403775720802580">
+                            <conditions />
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="958929534097468" type="casoStatus">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="142057775258496" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="449912423179019" type="casoStatus">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
         <event-block any="1" sid="358377129614255">
             <conditions>
-                <condition id="6" name="On object clicked" sid="708592224330548" type="Mouse">
+                <condition disabled="1" id="6" name="On object clicked" sid="708592224330548" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">botaoProx</param>
@@ -174,47 +186,108 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="418884213684987">
+                <event-block sid="866967963907939">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="624360867441195" type="System">
+                        <condition id="-14" name="Compare variable" sid="350805016972257" type="System">
                             <param id="0" name="Variable">numcaso</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">ultimocaso</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">5</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="862753465546932" type="System">
-                            <param id="0" name="Variable">numcaso</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="819799678679808">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="251387832979965" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-11" name="Subtract from" sid="244532771131517" type="System">
-                            <param id="0" name="Variable">numcaso</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="403775720802580">
-                    <conditions />
-                    <actions>
-                        <action id="-16" name="Set opacity" sid="958929534097468" type="casoStatus">
-                            <param id="0" name="Opacity">0</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="142057775258496" type="System">
-                            <param id="0" name="Seconds">1</param>
-                        </action>
-                        <action id="-16" name="Set opacity" sid="449912423179019" type="casoStatus">
-                            <param id="0" name="Opacity">100</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="800558199071661">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="442477515465004" type="System">
+                                    <param id="0" name="Variable">numcaso</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="153355611707476" type="System">
+                                    <param id="0" name="Variable">numcaso</param>
+                                    <param id="1" name="Value">ultimocaso</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="784503313404290">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="987077384979492" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="435190539896443" type="System">
+                                    <param id="0" name="Variable">numcaso</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="420490260337602">
+                            <conditions />
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="262018359297547" type="casoStatus">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="296242805015961" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="829207030338330" type="casoStatus">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
+        </event-block>
+        <comment>Posições da seta</comment>
+        <event-block sid="954560147586767">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="293472882041802" type="System">
+                    <param id="0" name="Variable">numcaso</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="689362621917779" type="botaoAnt">
+                    <param id="0" name="X">-200</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="515496413732477">
+            <conditions>
+                <condition id="-22" name="Else" sid="377925813165006" type="System" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="774129887686555" type="botaoAnt">
+                    <param id="0" name="X">58</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="120786702784133">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="261515667720024" type="System">
+                    <param id="0" name="Variable">numcaso</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="948374949449856" type="botaoProx">
+                    <param id="0" name="X">-200</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="492114679047808">
+            <conditions>
+                <condition id="-22" name="Else" sid="337731220233249" type="System" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="164278995712515" type="botaoProx">
+                    <param id="0" name="X">1202</param>
+                </action>
+            </actions>
         </event-block>
         <event-block sid="689268520534780">
             <conditions>
