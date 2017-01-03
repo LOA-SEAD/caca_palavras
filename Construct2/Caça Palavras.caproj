@@ -396,6 +396,21 @@
             </object-type>
         </object-folder>
         <object-folder name="Cena 1" />
+        <object-folder name="Tela Creditos">
+            <object-type name="fundoCreditos" sid="871468901321763">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\Douglas\Downloads\telaCREDITOS.png" />
+            </object-type>
+            <object-type name="Creditos1" sid="781042765908792">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Creditos2" sid="999459995026895">
+                <plugin id="Text" />
+            </object-type>
+            <object-type global="1" name="creditosJSON" sid="272985413293210">
+                <plugin id="ljson" />
+            </object-type>
+        </object-folder>
         <object-type name="Mouse" sid="359155137460880">
             <plugin id="Mouse" />
         </object-type>
@@ -415,12 +430,14 @@
         <layout>Cena 1.xml</layout>
         <layout>Tela de Casos.xml</layout>
         <layout>Jogo.xml</layout>
+        <layout>Tela de Creditos.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Menu.xml</event-sheet>
         <event-sheet>Jogo.xml</event-sheet>
         <event-sheet>Tela de Casos.xml</event-sheet>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Tela de Creditos.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="12" />
@@ -462,6 +479,7 @@
         </file-folder>
         <file-folder name="JSON">
             <file name="casos.json" />
+            <file name="creditos.json" />
         </file-folder>
     </files-folder>
 </c2project>

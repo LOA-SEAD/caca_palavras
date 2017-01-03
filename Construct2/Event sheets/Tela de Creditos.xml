@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Tela de Creditos</name>
+    <events>
+        <event-block sid="279568796207640">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="713420893594924" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Load JSON" sid="457643722180773" type="creditosJSON" />
+                <action id="5" name="Set web font" sid="141942930029624" type="Creditos1">
+                    <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.cs&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="994467606288320" type="Creditos2">
+                    <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.cs&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="961118195273798" type="Creditos1">
+                    <param id="0" name="Text">creditosJSON.GetData(&quot;creditos1&quot;,0)</param>
+                </action>
+                <action id="0" name="Set text" sid="253568588737511" type="Creditos2">
+                    <param id="0" name="Text">creditosJSON.GetData(&quot;creditos2&quot;,0)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
