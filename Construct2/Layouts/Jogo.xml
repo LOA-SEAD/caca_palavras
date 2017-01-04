@@ -28,10 +28,31 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="fundoCacaPalavras" uid="29">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>20</x>
+                        <y>20</y>
+                        <z>0</z>
+                        <width>1000</width>
+                        <height>680</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
-        <layer name="Layer 1" sid="680812467836988">
+        <layer name="cacaPalavras" sid="680812467836988">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -46,7 +67,41 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="cacaPalavrasHTML" uid="28">
+                    <properties>
+                        <id-optional></id-optional>
+                        <initial-visibility>Visible</initial-visibility>
+                        <tooltip></tooltip>
+                        <background>(255, 255, 255)</background>
+                        <border></border>
+                        <scroll>Auto</scroll>
+                        <object>iFrame</object>
+                        <iframe></iframe>
+                        <url></url>
+                        <inserthtml></inserthtml>
+                        <html></html>
+                        <color></color>
+                        <auto-font-size>Default</auto-font-size>
+                        <import></import>
+                        <css-import></css-import>
+                        <javascript-import></javascript-import>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>20</x>
+                        <y>20</y>
+                        <z>0</z>
+                        <width>1000</width>
+                        <height>680</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
     </layers>

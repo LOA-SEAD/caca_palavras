@@ -17,6 +17,7 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="PlayLive" id="htmlCODE" version="1.100000024">iFrame &amp; insertHTML</plugin>
         <plugin author="Joe7" id="ljson" version="1.200000048">Load JSON</plugin>
     </used-plugins>
     <used-behaviors>
@@ -411,6 +412,15 @@
                 <plugin id="ljson" />
             </object-type>
         </object-folder>
+        <object-folder name="Jogo">
+            <object-type name="cacaPalavrasHTML" sid="270242802190270">
+                <plugin id="htmlCODE" />
+            </object-type>
+            <object-type name="fundoCacaPalavras" sid="499042814782764">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+        </object-folder>
         <object-type name="Mouse" sid="359155137460880">
             <plugin id="Mouse" />
         </object-type>
@@ -436,7 +446,7 @@
         <event-sheet>Menu.xml</event-sheet>
         <event-sheet>Jogo.xml</event-sheet>
         <event-sheet>Tela de Casos.xml</event-sheet>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Cena 1.xml</event-sheet>
         <event-sheet>Tela de Creditos.xml</event-sheet>
     </event-folder>
     <global-instances>
@@ -480,6 +490,16 @@
         <file-folder name="JSON">
             <file name="casos.json" />
             <file name="creditos.json" />
+        </file-folder>
+        <file-folder name="HTML">
+            <file name="cacaPalavras.html" />
+        </file-folder>
+        <file-folder name="CSS">
+            <file name="styleCacaPalavras.css" />
+        </file-folder>
+        <file-folder name="JS">
+            <file name="wordfind.js" />
+            <file name="wordfindgame.js" />
         </file-folder>
     </files-folder>
 </c2project>

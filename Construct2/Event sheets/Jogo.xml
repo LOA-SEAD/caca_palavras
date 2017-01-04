@@ -2,5 +2,16 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Jogo</name>
-    <events />
+    <events>
+        <event-block sid="810123370315039">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="297666887279759" type="System" />
+            </conditions>
+            <actions>
+                <action id="13" name="Set URL" sid="459290727587993" type="cacaPalavrasHTML">
+                    <param id="0" name="URL">&quot;cacaPalavras.html&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
