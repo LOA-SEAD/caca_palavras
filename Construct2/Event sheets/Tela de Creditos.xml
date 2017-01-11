@@ -25,5 +25,39 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="476559106693191">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="599424133972241" type="Mouse">
+                    <param id="0" name="Object">botaoAnt</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="689801272438627" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="530898774127398">
+            <conditions>
+                <condition id="-22" name="Else" sid="393675506595165" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="613066008812146" type="Mouse">
+                    <param id="0" name="Cursor style">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="760926162916559">
+            <conditions>
+                <condition id="17" name="On tap object" sid="165468513783363" type="Touch">
+                    <param id="0" name="Object">botaoAnt</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="939316601463450" type="System">
+                    <param id="0" name="Layout">Menu Principal</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

@@ -22,13 +22,16 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
     </used-behaviors>
     <used-effects>
         <effect author="Scirra" id="blurhorizontal">Blur Horizontal</effect>
         <effect author="Scirra" id="blurvertical">Blur Vertical</effect>
+        <effect author="Scirra" id="contrast">Contrast</effect>
         <effect author="Scirra" id="multiply">Multiply</effect>
         <effect author="Scirra" id="screen">Screen</effect>
+        <effect author="Scirra" id="softlight">Soft Light</effect>
         <effect author="Evan Wallace" id="vibrance">Vibrance</effect>
     </used-effects>
     <configurations>
@@ -59,9 +62,6 @@
     </configuration-settings>
     <object-folder>
         <object-folder name="Menu Principal">
-            <object-type name="btnTexto" sid="124512102335160">
-                <plugin id="Text" />
-            </object-type>
             <object-type name="canos" sid="433091950461938">
                 <plugin id="Sprite" />
                 <effects>
@@ -296,6 +296,62 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="btnAjuda" sid="793453209235892">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="467366818319304" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu_ajuda.png">
+                            <collision-poly>
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btnInfo" sid="634564024501330">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="958349379463952" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu_info.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btnJogar" sid="187316095941277">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="694278887041216" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu_jogar.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="cartaz" sid="188305373364832">
+                <plugin id="Sprite" />
+                <effects>
+                    <effect-type name="Vibrance">
+                        <effect id="vibrance" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="601954684164859" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu_botoes.png">
+                            <collision-poly>
+                                <point x="0.0809524" y="0.0562914" />
+                                <point x="0.97619" y="0.0165563" />
+                                <point x="0.947619" y="0.963576" />
+                                <point x="0.5" y="0.983444" />
+                                <point x="0.052381" y="0.963576" />
+                                <point x="0.0380952" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Tela Casos">
             <object-type name="fundoCasos" sid="752527904705218">
@@ -395,8 +451,99 @@
             <object-type global="1" name="caso" sid="489171068871624">
                 <plugin id="Arr" />
             </object-type>
+            <object-type name="btnJogarCaso" sid="760127287218333">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="895368462506728" speed="5">
+                        <frame duration="1" hotspotX="0.50365" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\play.png">
+                            <collision-poly>
+                                <point x="0.10219" y="0.14" />
+                                <point x="0.49635" y="0.07" />
+                                <point x="0.781022" y="0.3" />
+                                <point x="0.854015" y="0.5" />
+                                <point x="0.832117" y="0.77" />
+                                <point x="0.49635" y="0.88" />
+                                <point x="0.131387" y="0.82" />
+                                <point x="0.0510949" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
-        <object-folder name="Cena 1" />
+        <object-folder name="Cena 1">
+            <object-type name="fundoCena1" sid="697519636809772">
+                <plugin id="TiledBg" />
+                <effects>
+                    <effect-type name="Vibrance">
+                        <effect id="vibrance" />
+                    </effect-type>
+                    <effect-type name="Contrast">
+                        <effect id="contrast" />
+                    </effect-type>
+                </effects>
+                <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\fundo.png" />
+            </object-type>
+            <object-type name="lampada" sid="726815448402059">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="511004060102964">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="534438933427661" speed="5">
+                        <frame duration="1" hotspotX="0.484375" hotspotY="0.03125" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\lampada1.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.01" />
+                                <point x="0.448438" y="0.1175" />
+                                <point x="0.5" y="0.12625" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="lampadaLuz" sid="332717382674253">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="696932540135119">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <effects>
+                    <effect-type name="SoftLight">
+                        <effect id="softlight" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="383607998114159" speed="5">
+                        <frame duration="1" hotspotX="0.484375" hotspotY="0.03125" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\lampada2.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="abajur" sid="418536620912728">
+                <plugin id="Sprite" />
+                <effects>
+                    <effect-type name="SoftLight">
+                        <effect id="softlight" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation framecount="10" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="932422802177698" speed="5">
+                        <frame duration="10" hotspotX="0.503356" hotspotY="0.504854" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\luminariaLuz.png" />
+                        <frame duration="0.2" hotspotX="0.503356" hotspotY="0.504854" />
+                        <frame duration="1" hotspotX="0.503356" hotspotY="0.504854" />
+                        <frame duration="0.2" hotspotX="0.503356" hotspotY="0.504854" />
+                        <frame duration="20" hotspotX="0.503356" hotspotY="0.504854" />
+                        <frame duration="0.2" hotspotX="0.503356" hotspotY="0.504854" />
+                        <frame duration="0.5" hotspotX="0.503356" hotspotY="0.504854" />
+                        <frame duration="0.2" hotspotX="0.503356" hotspotY="0.504854" />
+                        <frame duration="0.5" hotspotX="0.503356" hotspotY="0.504854" />
+                        <frame duration="0.2" hotspotX="0.503356" hotspotY="0.504854" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-folder name="Tela Creditos">
             <object-type name="fundoCreditos" sid="871468901321763">
                 <plugin id="TiledBg" />
@@ -429,9 +576,6 @@
         </object-type>
         <object-type name="Touch" sid="573787641399865">
             <plugin id="Touch" />
-        </object-type>
-        <object-type name="Text" sid="699357232273608">
-            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

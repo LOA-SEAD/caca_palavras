@@ -196,12 +196,12 @@
 
       // make sure we are still forming a valid word
       for (var i = 0, len = wordList.length; i < len; i++) {
-        if (wordList[i].indexOf(curWord + $(square).text()) === 0) {
+        //if (wordList[i].indexOf(curWord + $(square).text()) === 0){ 
           $(square).addClass('selected');
           selectedSquares.push(square);
           curWord += $(square).text();
           break;
-        }
+        //}
       }
     };
 
@@ -227,7 +227,7 @@
         }
       }
 
-      // reset the turn
+      // reset the turn, wrong selection
       $('.selected').removeClass('selected');
       startSquare = null;
       selectedSquares = [];

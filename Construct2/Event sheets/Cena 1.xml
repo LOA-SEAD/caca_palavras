@@ -2,5 +2,17 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Cena 1</name>
-    <events />
+    <events>
+        <event-block sid="137620354009264">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="671896634820138" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="898755975599351" type="lampadaLuz">
+                    <param id="0" name="Pin to">lampada</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
