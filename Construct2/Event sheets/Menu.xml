@@ -33,8 +33,11 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Go to layout" sid="788559131228373" type="System">
+                        <action disabled="1" id="-2" name="Go to layout" sid="788559131228373" type="System">
                             <param id="0" name="Layout">Tela de Casos</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="157027319285276" type="System">
+                            <param id="0" name="Layout">Cena 1</param>
                         </action>
                     </actions>
                 </event-block>

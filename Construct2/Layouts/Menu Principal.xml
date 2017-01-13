@@ -40,6 +40,11 @@
                                 <vibrance>3</vibrance>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Contrast">
+                            <parameters>
+                                <contrast>1.1</contrast>
+                            </parameters>
+                        </effect-instance>
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -83,9 +88,9 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <effect-instances>
-                        <effect-instance type="Vibrance">
+                        <effect-instance type="Contrast">
                             <parameters>
-                                <vibrance>1</vibrance>
+                                <contrast>1.2</contrast>
                             </parameters>
                         </effect-instance>
                     </effect-instances>
@@ -212,6 +217,11 @@
                                 <vibrance>2.5</vibrance>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Contrast">
+                            <parameters>
+                                <contrast>1.2</contrast>
+                            </parameters>
+                        </effect-instance>
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -238,7 +248,7 @@
                     <effect-instances>
                         <effect-instance type="Vibrance">
                             <parameters>
-                                <vibrance>4</vibrance>
+                                <vibrance>5</vibrance>
                             </parameters>
                         </effect-instance>
                         <effect-instance type="Screen" />

@@ -147,9 +147,9 @@
         selectedSquares = [startSquare];
         curWord = $(startSquare).text();
         if (lastSquare !== startSquare) {
-          // clear all selected select letters 
+          // clear all selected squares 
           $('.selected').removeClass('selected');
-          // add again the first letter select
+          // add the first selected letter back
           $(startSquare).addClass('selected');
           lastSquare = startSquare;
         }
