@@ -147,7 +147,10 @@
         selectedSquares = [startSquare];
         curWord = $(startSquare).text();
         if (lastSquare !== startSquare) {
-          $(lastSquare).removeClass('selected');
+          // clear all selected select letters 
+          $('.selected').removeClass('selected');
+          // add again the first letter select
+          $(startSquare).addClass('selected');
           lastSquare = startSquare;
         }
         curOrientation = newOrientation;
