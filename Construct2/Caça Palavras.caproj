@@ -728,6 +728,202 @@
                 <plugin id="TiledBg" />
                 <texture />
             </object-type>
+            <object-type name="fundoJogo" sid="879397087759751">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\Douglas\Downloads\telaJOGO_rascunhov02(buraco).png" />
+            </object-type>
+            <object-type name="textoFolheto" sid="336460382065366">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="212737342166198" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500901" original-source="C:\Users\Douglas\Downloads\teste_nada.png">
+                            <collision-poly>
+                                <point x="0.709677" y="0.196375" />
+                                <point x="0.717742" y="0.981873" />
+                                <point x="0.270161" y="0.592145" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500901" original-source="C:\Users\Douglas\Downloads\teste_50.png">
+                            <collision-poly>
+                                <point x="0.178906" y="0.318056" />
+                                <point x="0.183594" y="0.5" />
+                                <point x="0.104687" y="0.813889" />
+                                <point x="0.09375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500901" original-source="C:\Users\Douglas\Downloads\teste_50.png">
+                            <collision-poly>
+                                <point x="0.178906" y="0.318056" />
+                                <point x="0.183594" y="0.5" />
+                                <point x="0.104687" y="0.813889" />
+                                <point x="0.09375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500901" original-source="C:\Users\Douglas\Downloads\teste100.png">
+                            <collision-poly>
+                                <point x="0.178906" y="0.318056" />
+                                <point x="0.183594" y="0.5" />
+                                <point x="0.0484375" y="0.913889" />
+                                <point x="0.09375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500901" original-source="C:\Users\Douglas\Downloads\teste100.png">
+                            <collision-poly>
+                                <point x="0.178906" y="0.318056" />
+                                <point x="0.183594" y="0.5" />
+                                <point x="0.0484375" y="0.913889" />
+                                <point x="0.09375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500901" original-source="C:\Users\Douglas\Downloads\teste_1501.png">
+                            <collision-poly>
+                                <point x="0.178906" y="0.318056" />
+                                <point x="0.183594" y="0.5" />
+                                <point x="0.104687" y="0.813889" />
+                                <point x="0.09375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500901" original-source="C:\Users\Douglas\Downloads\teste_1502.png">
+                            <collision-poly>
+                                <point x="0.178906" y="0.318056" />
+                                <point x="0.183594" y="0.5" />
+                                <point x="0.104687" y="0.813889" />
+                                <point x="0.09375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="poteMoedas" sid="491455098621857">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="544216044347974" speed="0">
+                        <frame duration="1" hotspotX="0.497238" hotspotY="0.526316" original-source="C:\Users\Douglas\Downloads\pote0.png" />
+                        <frame duration="1" hotspotX="0.497238" hotspotY="0.526316" original-source="C:\Users\Douglas\Downloads\pote1.png" />
+                        <frame duration="1" hotspotX="0.497238" hotspotY="0.526316" original-source="C:\Users\Douglas\Downloads\pote2.png" />
+                        <frame duration="1" hotspotX="0.497238" hotspotY="0.526316" original-source="C:\Users\Douglas\Downloads\pote3.png" />
+                        <frame duration="1" hotspotX="0.497238" hotspotY="0.526316" original-source="C:\Users\Douglas\Downloads\pote4.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="fundoMaquina" sid="263810684409963">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="430299942343016" speed="5">
+                        <frame duration="1" hotspotX="0.493431" hotspotY="0.283251" original-source="C:\Users\Douglas\Downloads\maquina_fundo.png">
+                            <collision-poly>
+                                <point x="0.00583942" y="0.150246" />
+                                <point x="0.493431" y="0.00492611" />
+                                <point x="0.992701" y="0.130542" />
+                                <point x="0.992701" y="0.435961" />
+                                <point x="0.493431" y="0.992611" />
+                                <point x="0.00583942" y="0.416256" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="maquina" sid="157574267048859">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="172182967619436" speed="5">
+                        <frame duration="1" hotspotX="0.494709" hotspotY="0.512057" original-source="C:\Users\Douglas\Downloads\maquina.png">
+                            <collision-poly>
+                                <point x="0.047619" y="0.429787" />
+                                <point x="0.494709" y="0.00141844" />
+                                <point x="0.955026" y="0.415603" />
+                                <point x="0.968254" y="0.622695" />
+                                <point x="0.494709" y="0.994326" />
+                                <point x="0.0343915" y="0.608511" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ampulhetaTempo" sid="853698673795547">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="841052004884049" speed="5">
+                        <frame duration="1" hotspotX="0.474227" hotspotY="0.498652" original-source="C:\Users\Douglas\Downloads\ampulheta.png">
+                            <collision-poly>
+                                <point x="0.918367" y="0.233244" />
+                                <point x="0.841837" y="0.930295" />
+                                <point x="0.112245" y="0.930295" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="baseAmpulheta" sid="735833512971264">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="431668833041284" speed="5">
+                        <frame duration="1" hotspotX="0.474227" hotspotY="0.498652" original-source="C:\Users\Douglas\Downloads\base.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.707775" />
+                                <point x="0.867347" y="0.930295" />
+                                <point x="0.5" y="0.989276" />
+                                <point x="0.147959" y="0.922252" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="areiaCima" sid="702169044132925">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\Douglas\Downloads\areia.png" />
+            </object-type>
+            <object-type name="areiaBaixo" sid="532688162898296">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\Douglas\Downloads\areiaBaixo.png" />
+            </object-type>
+            <object-type name="fluxoAreia" sid="761014052994189">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="808486791877677" speed="3">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501348" original-source="C:\Users\Douglas\Downloads\fluxo1.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.495957" />
+                                <point x="0.536082" y="0.498652" />
+                                <point x="0.505155" y="0.74124" />
+                                <point x="0.5" y="0.754717" />
+                                <point x="0.458763" y="0.760108" />
+                                <point x="0.458763" y="0.498652" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501348" original-source="C:\Users\Douglas\Downloads\fluxo12.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.479784" />
+                                <point x="0.536082" y="0.498652" />
+                                <point x="0.505155" y="0.74124" />
+                                <point x="0.5" y="0.754717" />
+                                <point x="0.453608" y="0.762803" />
+                                <point x="0.453608" y="0.498652" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501348" original-source="C:\Users\Douglas\Downloads\fluxo2.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.479784" />
+                                <point x="0.515464" y="0.498652" />
+                                <point x="0.5" y="0.738544" />
+                                <point x="0.5" y="0.684636" />
+                                <point x="0.458763" y="0.760108" />
+                                <point x="0.453608" y="0.498652" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501348">
+                            <collision-poly>
+                                <point x="0.5" y="0.479784" />
+                                <point x="0.536082" y="0.498652" />
+                                <point x="0.505155" y="0.74124" />
+                                <point x="0.5" y="0.754717" />
+                                <point x="0.453608" y="0.762803" />
+                                <point x="0.453608" y="0.498652" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-type name="Mouse" sid="359155137460880">
             <plugin id="Mouse" />

@@ -27,5 +27,29 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="995221494205907">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="529100977197903" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="940547985445392">
+                    <conditions>
+                        <condition id="-6" name="Compare height" sid="319619016363250" type="areiaBaixo">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Height">344</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-6" name="Set height" sid="145183896859802" type="areiaBaixo">
+                            <param id="0" name="Height">areiaBaixo.Height + 0.1</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="655733985443125" type="areiaCima">
+                            <param id="0" name="Height">areiaCima.Height - 0.06</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>
