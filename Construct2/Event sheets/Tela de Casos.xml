@@ -5,6 +5,8 @@
     <events>
         <variable constant="0" name="ultimocaso" sid="933221909810570" static="0" type="number">5</variable>
         <variable constant="0" name="numcaso" sid="733151475499623" static="0" type="number">1</variable>
+        <comment>Valor que o jogador possui atualmente</comment>
+        <variable constant="0" name="dinheiro" sid="519393934167079" static="0" type="number">0</variable>
         <event-block sid="188116339448502">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="801272363977871" type="System" />

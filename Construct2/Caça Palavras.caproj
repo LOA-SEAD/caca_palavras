@@ -724,18 +724,14 @@
             <object-type name="cacaPalavrasHTML" sid="270242802190270">
                 <plugin id="htmlCODE" />
             </object-type>
-            <object-type name="fundoCacaPalavras" sid="499042814782764">
-                <plugin id="TiledBg" />
-                <texture />
-            </object-type>
             <object-type name="fundoJogo" sid="879397087759751">
                 <plugin id="TiledBg" />
-                <texture original-source="C:\Users\Douglas\Downloads\telaJOGO_rascunhov02(buraco).png" />
+                <texture original-source="C:\Users\Douglas\Downloads\telaJOGO.png" />
             </object-type>
             <object-type name="textoFolheto" sid="336460382065366">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="212737342166198" speed="0">
+                    <animation framecount="1" loop="0" name="Normal" pingpong="0" repeatcount="1" repeatto="0" sid="212737342166198" speed="0">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.500901" original-source="C:\Users\Douglas\Downloads\teste_nada.png">
                             <collision-poly>
                                 <point x="0.709677" y="0.196375" />
@@ -743,7 +739,9 @@
                                 <point x="0.270161" y="0.592145" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.500901" original-source="C:\Users\Douglas\Downloads\teste_50.png">
+                    </animation>
+                    <animation framecount="2" loop="0" name="Destaque50" pingpong="0" repeatcount="1" repeatto="0" sid="914985869853780" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500901">
                             <collision-poly>
                                 <point x="0.178906" y="0.318056" />
                                 <point x="0.183594" y="0.5" />
@@ -751,7 +749,7 @@
                                 <point x="0.09375" y="0.5" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.500901" original-source="C:\Users\Douglas\Downloads\teste_50.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500901">
                             <collision-poly>
                                 <point x="0.178906" y="0.318056" />
                                 <point x="0.183594" y="0.5" />
@@ -759,7 +757,9 @@
                                 <point x="0.09375" y="0.5" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.500901" original-source="C:\Users\Douglas\Downloads\teste100.png">
+                    </animation>
+                    <animation framecount="2" loop="0" name="Destaque100" pingpong="0" repeatcount="1" repeatto="0" sid="933862217114322" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500901" original-source="C:\Users\Douglas\Downloads\folheto100teste.png">
                             <collision-poly>
                                 <point x="0.178906" y="0.318056" />
                                 <point x="0.183594" y="0.5" />
@@ -767,7 +767,7 @@
                                 <point x="0.09375" y="0.5" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.500901" original-source="C:\Users\Douglas\Downloads\teste100.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500901">
                             <collision-poly>
                                 <point x="0.178906" y="0.318056" />
                                 <point x="0.183594" y="0.5" />
@@ -775,7 +775,9 @@
                                 <point x="0.09375" y="0.5" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.500901" original-source="C:\Users\Douglas\Downloads\teste_1501.png">
+                    </animation>
+                    <animation framecount="2" loop="0" name="Destaque150" pingpong="0" repeatcount="1" repeatto="0" sid="476142557624216" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500901">
                             <collision-poly>
                                 <point x="0.178906" y="0.318056" />
                                 <point x="0.183594" y="0.5" />
@@ -783,7 +785,7 @@
                                 <point x="0.09375" y="0.5" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.500901" original-source="C:\Users\Douglas\Downloads\teste_1502.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500901">
                             <collision-poly>
                                 <point x="0.178906" y="0.318056" />
                                 <point x="0.183594" y="0.5" />
@@ -802,7 +804,7 @@
                         <frame duration="1" hotspotX="0.497238" hotspotY="0.526316" original-source="C:\Users\Douglas\Downloads\pote1.png" />
                         <frame duration="1" hotspotX="0.497238" hotspotY="0.526316" original-source="C:\Users\Douglas\Downloads\pote2.png" />
                         <frame duration="1" hotspotX="0.497238" hotspotY="0.526316" original-source="C:\Users\Douglas\Downloads\pote3.png" />
-                        <frame duration="1" hotspotX="0.497238" hotspotY="0.526316" original-source="C:\Users\Douglas\Downloads\pote4.png" />
+                        <frame duration="1" hotspotX="0.497238" hotspotY="0.526316" original-source="C:\Users\Douglas\Downloads\pote4teste.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -923,6 +925,24 @@
                         </frame>
                     </animation>
                 </animation-folder>
+            </object-type>
+            <object-type name="botao150" sid="288132826440728">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="botao100" sid="367505183114825">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="botao50" sid="377517120186647">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="dinheiro" sid="409008499282677">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="pista" sid="251059281997646">
+                <plugin id="Text" />
             </object-type>
         </object-folder>
         <object-type name="Mouse" sid="359155137460880">

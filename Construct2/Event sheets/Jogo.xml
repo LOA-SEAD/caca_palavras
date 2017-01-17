@@ -11,6 +11,20 @@
                 <action id="13" name="Set URL" sid="459290727587993" type="cacaPalavrasHTML">
                     <param id="0" name="URL">&quot;cacaPalavras.html&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="513335371679167" type="dinheiro">
+                    <param id="0" name="Family name">&quot;breamcatcher&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="510601771093306" type="dinheiro">
+                    <param id="0" name="Text">dinheiro &amp; &quot;¢&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="121730455001487" type="pista">
+                    <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.cs&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="545922960619327" type="pista">
+                    <param id="0" name="Text">&quot;01. O sapato do assasino era da cor _ _ _ _&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="223757265584952">
@@ -42,14 +56,139 @@
                     </conditions>
                     <actions>
                         <action id="-6" name="Set height" sid="145183896859802" type="areiaBaixo">
-                            <param id="0" name="Height">areiaBaixo.Height + 0.1</param>
+                            <param id="0" name="Height">areiaBaixo.Height + 0.05</param>
                         </action>
                         <action id="-6" name="Set height" sid="655733985443125" type="areiaCima">
-                            <param id="0" name="Height">areiaCima.Height - 0.06</param>
+                            <param id="0" name="Height">areiaCima.Height - 0.0315</param>
                         </action>
+                    </actions>
+                </event-block>
+                <event-block sid="827785132275539">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="673818510041974" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="508370364334292" type="fluxoAreia" />
                     </actions>
                 </event-block>
             </sub-events>
         </event-block>
+        <comment>Para tratar o comportamento do folheto conforme as ações do mouse ali</comment>
+        <event-group description="" sid="441495148994534" title="EventosFolheto">
+            <sub-events>
+                <event-block sid="482838909601860">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="648018988363192" type="Mouse">
+                            <param id="0" name="Object">botao50</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="624551455777842" type="textoFolheto">
+                            <param id="0" name="Animation">&quot;Destaque50&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="324670192903689">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="814830495706499" type="Mouse">
+                            <param id="0" name="Object">botao100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="847172807677234" type="textoFolheto">
+                            <param id="0" name="Animation">&quot;Destaque100&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="392583988743447">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="242313684637242" type="Mouse">
+                            <param id="0" name="Object">botao50</param>
+                        </condition>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="240455356414492" type="Mouse">
+                            <param id="0" name="Object">botao100</param>
+                        </condition>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="213841724311782" type="Mouse">
+                            <param id="0" name="Object">botao150</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="300427386858332" type="textoFolheto">
+                            <param id="0" name="Animation">&quot;Normal&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="769966486035948">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="450830364072713" type="Mouse">
+                            <param id="0" name="Object">botao150</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="599821777799285" type="textoFolheto">
+                            <param id="0" name="Animation">&quot;Destaque150&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="174450157309839">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="353540501543385" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">botao50</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="375787029027031" type="textoFolheto">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="601746714588400">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="199031459677090" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">botao100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="668252682636140" type="textoFolheto">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="171751950488197">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="277685533012216" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">botao150</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="220331429004057" type="textoFolheto">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="284972255238727">
+                    <conditions>
+                        <condition id="3" name="On button released" sid="431616767434804" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="220755021635126" type="textoFolheto">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
