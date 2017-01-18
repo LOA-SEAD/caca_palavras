@@ -844,9 +844,17 @@
             </object-type>
             <object-type name="ampulhetaTempo" sid="853698673795547">
                 <plugin id="Sprite" />
+                <effects>
+                    <effect-type name="Vibrance">
+                        <effect id="vibrance" />
+                    </effect-type>
+                    <effect-type name="Contrast">
+                        <effect id="contrast" />
+                    </effect-type>
+                </effects>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="841052004884049" speed="5">
-                        <frame duration="1" hotspotX="0.474227" hotspotY="0.498652" original-source="C:\Users\Douglas\Downloads\ampulheta.png">
+                        <frame duration="1" hotspotX="0.47541" hotspotY="0.498652" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\ampulheta3.png">
                             <collision-poly>
                                 <point x="0.918367" y="0.233244" />
                                 <point x="0.841837" y="0.930295" />
@@ -856,34 +864,43 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="baseAmpulheta" sid="735833512971264">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="431668833041284" speed="5">
-                        <frame duration="1" hotspotX="0.474227" hotspotY="0.498652" original-source="C:\Users\Douglas\Downloads\base.png">
-                            <collision-poly>
-                                <point x="0.5" y="0.707775" />
-                                <point x="0.867347" y="0.930295" />
-                                <point x="0.5" y="0.989276" />
-                                <point x="0.147959" y="0.922252" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
             <object-type name="areiaCima" sid="702169044132925">
                 <plugin id="TiledBg" />
-                <texture original-source="C:\Users\Douglas\Downloads\areia.png" />
+                <effects>
+                    <effect-type name="Vibrance">
+                        <effect id="vibrance" />
+                    </effect-type>
+                    <effect-type name="Contrast">
+                        <effect id="contrast" />
+                    </effect-type>
+                </effects>
+                <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\areai_cima.png" />
             </object-type>
             <object-type name="areiaBaixo" sid="532688162898296">
                 <plugin id="TiledBg" />
-                <texture original-source="C:\Users\Douglas\Downloads\areiaBaixo.png" />
+                <effects>
+                    <effect-type name="Vibrance">
+                        <effect id="vibrance" />
+                    </effect-type>
+                    <effect-type name="Contrast">
+                        <effect id="contrast" />
+                    </effect-type>
+                </effects>
+                <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\ampulheta.png" />
             </object-type>
             <object-type name="fluxoAreia" sid="761014052994189">
                 <plugin id="Sprite" />
+                <effects>
+                    <effect-type name="Vibrance">
+                        <effect id="vibrance" />
+                    </effect-type>
+                    <effect-type name="Contrast">
+                        <effect id="contrast" />
+                    </effect-type>
+                </effects>
                 <animation-folder>
-                    <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="808486791877677" speed="3">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.501348" original-source="C:\Users\Douglas\Downloads\fluxo1.png">
+                    <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="808486791877677" speed="8">
+                        <frame duration="1" hotspotX="0.52381" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\fluxo1.png">
                             <collision-poly>
                                 <point x="0.5" y="0.495957" />
                                 <point x="0.536082" y="0.498652" />
@@ -893,7 +910,7 @@
                                 <point x="0.458763" y="0.498652" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.501348" original-source="C:\Users\Douglas\Downloads\fluxo12.png">
+                        <frame duration="1" hotspotX="0.52381" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\fluxo3.png">
                             <collision-poly>
                                 <point x="0.5" y="0.479784" />
                                 <point x="0.536082" y="0.498652" />
@@ -903,7 +920,7 @@
                                 <point x="0.453608" y="0.498652" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.501348" original-source="C:\Users\Douglas\Downloads\fluxo2.png">
+                        <frame duration="1" hotspotX="0.52381" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\fluxo2.png">
                             <collision-poly>
                                 <point x="0.5" y="0.479784" />
                                 <point x="0.515464" y="0.498652" />
@@ -913,7 +930,7 @@
                                 <point x="0.453608" y="0.498652" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.501348">
+                        <frame duration="1" hotspotX="0.52381" hotspotY="0.5">
                             <collision-poly>
                                 <point x="0.5" y="0.479784" />
                                 <point x="0.536082" y="0.498652" />
@@ -943,6 +960,25 @@
             </object-type>
             <object-type name="pista" sid="251059281997646">
                 <plugin id="Text" />
+            </object-type>
+            <object-type name="areaiMask" sid="355758796154360">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="347558936683082" speed="5">
+                        <frame duration="1" hotspotX="0.502732" hotspotY="0.501348" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\areiaBaixoMask.png">
+                            <collision-poly>
+                                <point x="0.103825" y="0.0512129" />
+                                <point x="0.497268" y="0" />
+                                <point x="0.896175" y="0.0512129" />
+                                <point x="0.983607" y="0.498652" />
+                                <point x="0.879781" y="0.940701" />
+                                <point x="0.497268" y="1" />
+                                <point x="0.125683" y="0.938005" />
+                                <point x="0.0273224" y="0.498652" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
             </object-type>
         </object-folder>
         <object-type name="Mouse" sid="359155137460880">
