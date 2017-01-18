@@ -25,6 +25,10 @@
                 <action id="0" name="Set text" sid="545922960619327" type="pista">
                     <param id="0" name="Text">&quot;01. O sapato do assasino era da cor _ _ _ _&quot;</param>
                 </action>
+                <action id="-3" name="Set position" sid="311262344278085" type="cacaPalavrasHTML">
+                    <param id="0" name="X">LayoutWidth - 973</param>
+                    <param id="1" name="Y">LayoutHeight - 476</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="223757265584952">

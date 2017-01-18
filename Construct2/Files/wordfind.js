@@ -332,8 +332,8 @@
         
         // initialize the options
         var options = {
-          height:       opts.height || wordList[0].length,
-          width:        opts.width || wordList[0].length,
+          height:       9,
+          width:        15,
           orientations: opts.orientations || allOrientations,
           fillBlanks:   opts.fillBlanks !== undefined ? opts.fillBlanks : true,
           maxAttempts:  opts.maxAttempts || 3,

@@ -286,7 +286,7 @@
                         <id-optional></id-optional>
                         <initial-visibility>Visible</initial-visibility>
                         <tooltip></tooltip>
-                        <background>(255, 255, 255)</background>
+                        <background></background>
                         <border></border>
                         <scroll>Auto</scroll>
                         <object>iFrame</object>
@@ -303,11 +303,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>340</x>
-                        <y>78</y>
+                        <x>307</x>
+                        <y>244</y>
                         <z>0</z>
-                        <width>613</width>
-                        <height>610</height>
+                        <width>697</width>
+                        <height>447</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
