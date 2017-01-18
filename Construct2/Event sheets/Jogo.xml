@@ -8,6 +8,12 @@
                 <condition id="-2" name="On start of layout" sid="297666887279759" type="System" />
             </conditions>
             <actions>
+                <action id="-6" name="Set height" sid="862755181993338" type="areiaBaixo">
+                    <param id="0" name="Height">200</param>
+                </action>
+                <action id="-6" name="Set height" sid="716011925671085" type="areiaCima">
+                    <param id="0" name="Height">292</param>
+                </action>
                 <action id="13" name="Set URL" sid="459290727587993" type="cacaPalavrasHTML">
                     <param id="0" name="URL">&quot;cacaPalavras.html&quot;</param>
                 </action>
@@ -47,19 +53,23 @@
             </conditions>
             <actions />
             <sub-events>
+                <comment>Ampulheta dura, por padrão, 1min</comment>
                 <event-block sid="940547985445392">
                     <conditions>
                         <condition id="-6" name="Compare height" sid="319619016363250" type="areiaBaixo">
                             <param id="0" name="Comparison">2</param>
-                            <param id="1" name="Height">344</param>
+                            <param id="1" name="Height">371</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-6" name="Set height" sid="145183896859802" type="areiaBaixo">
-                            <param id="0" name="Height">areiaBaixo.Height + 0.05</param>
-                        </action>
                         <action id="-6" name="Set height" sid="655733985443125" type="areiaCima">
-                            <param id="0" name="Height">areiaCima.Height - 0.0315</param>
+                            <param id="0" name="Height">areiaCima.Height - (7/240)</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="145183896859802" type="areiaBaixo">
+                            <param id="0" name="Height">areiaBaixo.Height + (19/400)</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="100810755240884" type="fluxoAreia">
+                            <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -68,7 +78,9 @@
                         <condition id="-22" name="Else" sid="673818510041974" type="System" />
                     </conditions>
                     <actions>
-                        <action id="2" name="Stop" sid="508370364334292" type="fluxoAreia" />
+                        <action id="-15" name="Set visible" sid="508370364334292" type="fluxoAreia">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>

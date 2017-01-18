@@ -218,28 +218,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="baseAmpulheta" uid="51">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1093</x>
-                        <y>199</y>
-                        <z>0</z>
-                        <width>194</width>
-                        <height>371</height>
-                        <depth>0</depth>
-                        <hotspotX>0.474226803</hotspotX>
-                        <hotspotY>0.498652279</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
             </instances>
             <effects />
         </layer>
@@ -314,25 +292,35 @@
                         <angle>0</angle>
                     </world>
                 </instance>
-                <instance type="fluxoAreia" uid="54">
+                <instance type="areiaCima" uid="52">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <hotspot>Top-left</hotspot>
                     </properties>
+                    <effect-instances>
+                        <effect-instance type="Vibrance">
+                            <parameters>
+                                <vibrance>0.3</vibrance>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Contrast">
+                            <parameters>
+                                <contrast>1.2</contrast>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1097</x>
-                        <y>200</y>
+                        <x>1192.5</x>
+                        <y>386.5</y>
                         <z>0</z>
-                        <width>194</width>
-                        <height>371</height>
+                        <width>183</width>
+                        <height>292</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.501347721</hotspotY>
-                        <angle>0</angle>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>3.141592741</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -341,14 +329,26 @@
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Bottom-left</hotspot>
                     </properties>
+                    <effect-instances>
+                        <effect-instance type="Vibrance">
+                            <parameters>
+                                <vibrance>0.3</vibrance>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Contrast">
+                            <parameters>
+                                <contrast>1.2</contrast>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1000</x>
-                        <y>360</y>
+                        <x>1005.5</x>
+                        <y>386.5</y>
                         <z>0</z>
-                        <width>194</width>
-                        <height>180</height>
+                        <width>183</width>
+                        <height>200</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>1</hotspotY>
@@ -356,23 +356,59 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="areiaCima" uid="52">
+                <instance type="areaiMask" uid="51">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>6</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1097</x>
+                        <y>202</y>
+                        <z>0</z>
+                        <width>183</width>
+                        <height>371</height>
+                        <depth>0</depth>
+                        <hotspotX>0.502732217</hotspotX>
+                        <hotspotY>0.501347721</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="fluxoAreia" uid="54">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <effect-instances>
+                        <effect-instance type="Vibrance">
+                            <parameters>
+                                <vibrance>0.3</vibrance>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Contrast">
+                            <parameters>
+                                <contrast>1.2</contrast>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1187</x>
-                        <y>202.5</y>
+                        <x>1099</x>
+                        <y>256</y>
                         <z>0</z>
-                        <width>194</width>
-                        <height>115</height>
+                        <width>21</width>
+                        <height>126</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>3.141592741</angle>
+                        <hotspotX>0.523809552</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -424,16 +460,28 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <effect-instances>
+                        <effect-instance type="Vibrance">
+                            <parameters>
+                                <vibrance>0.3</vibrance>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Contrast">
+                            <parameters>
+                                <contrast>1.2</contrast>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1093</x>
-                        <y>200</y>
+                        <x>1092</x>
+                        <y>201</y>
                         <z>0</z>
-                        <width>194</width>
+                        <width>183</width>
                         <height>371</height>
                         <depth>0</depth>
-                        <hotspotX>0.474226803</hotspotX>
+                        <hotspotX>0.475409836</hotspotX>
                         <hotspotY>0.498652279</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
