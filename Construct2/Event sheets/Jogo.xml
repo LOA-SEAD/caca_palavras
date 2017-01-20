@@ -32,8 +32,8 @@
                     <param id="0" name="Text">&quot;01. O sapato do assasino era da cor _ _ _ _&quot;</param>
                 </action>
                 <action id="-3" name="Set position" sid="311262344278085" type="cacaPalavrasHTML">
-                    <param id="0" name="X">LayoutWidth - 973</param>
-                    <param id="1" name="Y">LayoutHeight - 476</param>
+                    <param id="0" name="X">LayoutWidth - 963</param>
+                    <param id="1" name="Y">LayoutHeight - 460</param>
                 </action>
             </actions>
         </event-block>
@@ -67,7 +67,7 @@
                     </conditions>
                     <actions>
                         <action id="-6" name="Set height" sid="655733985443125" type="areiaCima">
-                            <param id="0" name="Height">areiaCima.Height - (7/240)</param>
+                            <param id="0" name="Height">areiaCima.Height - (4/150)</param>
                         </action>
                         <action id="-6" name="Set height" sid="145183896859802" type="areiaBaixo">
                             <param id="0" name="Height">areiaBaixo.Height + (19/400)</param>
@@ -95,71 +95,86 @@
                 <event-block sid="482838909601860">
                     <conditions>
                         <condition id="7" name="Cursor is over object" sid="648018988363192" type="Mouse">
-                            <param id="0" name="Object">botao50</param>
+                            <param id="0" name="Object">bonus1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="624551455777842" type="textoFolheto">
-                            <param id="0" name="Animation">&quot;Destaque50&quot;</param>
-                            <param id="1" name="From">1</param>
+                        <action id="-3" name="Set position" sid="297836527796435" type="bonusSelecao">
+                            <param id="0" name="X">196</param>
+                            <param id="1" name="Y">270</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="324670192903689">
                     <conditions>
                         <condition id="7" name="Cursor is over object" sid="814830495706499" type="Mouse">
-                            <param id="0" name="Object">botao100</param>
+                            <param id="0" name="Object">bonus2</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="847172807677234" type="textoFolheto">
-                            <param id="0" name="Animation">&quot;Destaque100&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="392583988743447">
-                    <conditions>
-                        <condition id="7" inverted="1" name="Cursor is over object" sid="242313684637242" type="Mouse">
-                            <param id="0" name="Object">botao50</param>
-                        </condition>
-                        <condition id="7" inverted="1" name="Cursor is over object" sid="240455356414492" type="Mouse">
-                            <param id="0" name="Object">botao100</param>
-                        </condition>
-                        <condition id="7" inverted="1" name="Cursor is over object" sid="213841724311782" type="Mouse">
-                            <param id="0" name="Object">botao150</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="300427386858332" type="textoFolheto">
-                            <param id="0" name="Animation">&quot;Normal&quot;</param>
-                            <param id="1" name="From">1</param>
+                        <action id="-3" name="Set position" sid="231346181696427" type="bonusSelecao">
+                            <param id="0" name="X">183</param>
+                            <param id="1" name="Y">353</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="769966486035948">
                     <conditions>
                         <condition id="7" name="Cursor is over object" sid="450830364072713" type="Mouse">
-                            <param id="0" name="Object">botao150</param>
+                            <param id="0" name="Object">bonus3</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="599821777799285" type="textoFolheto">
-                            <param id="0" name="Animation">&quot;Destaque150&quot;</param>
-                            <param id="1" name="From">1</param>
+                        <action id="-3" name="Set position" sid="631844205561282" type="bonusSelecao">
+                            <param id="0" name="X">163</param>
+                            <param id="1" name="Y">438</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="174450157309839">
+                <event-block any="1" sid="392583988743447">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="242313684637242" type="Mouse">
+                            <param id="0" name="Object">bonus1</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="240455356414492" type="Mouse">
+                            <param id="0" name="Object">bonus2</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="213841724311782" type="Mouse">
+                            <param id="0" name="Object">bonus3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="908348409400313" type="bonusSelecao">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set cursor style" sid="217755434557631" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="940773435174880">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="584513312852972" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="456185245852567" type="bonusSelecao">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set cursor style" sid="220648442974386" type="Mouse">
+                            <param id="0" name="Cursor style">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="174450157309839">
                     <conditions>
                         <condition id="6" name="On object clicked" sid="353540501543385" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">botao50</param>
+                            <param id="2" name="Object clicked">bonus1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="5" name="Set frame" sid="375787029027031" type="textoFolheto">
+                        <action id="5" name="Set frame" sid="169272413512610" type="bonusSelecao">
                             <param id="0" name="Frame number">1</param>
                         </action>
                     </actions>
@@ -169,11 +184,11 @@
                         <condition id="6" name="On object clicked" sid="199031459677090" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">botao100</param>
+                            <param id="2" name="Object clicked">bonus2</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="5" name="Set frame" sid="668252682636140" type="textoFolheto">
+                        <action id="5" name="Set frame" sid="325671220755047" type="bonusSelecao">
                             <param id="0" name="Frame number">1</param>
                         </action>
                     </actions>
@@ -183,11 +198,11 @@
                         <condition id="6" name="On object clicked" sid="277685533012216" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">botao150</param>
+                            <param id="2" name="Object clicked">bonus3</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="5" name="Set frame" sid="220331429004057" type="textoFolheto">
+                        <action id="5" name="Set frame" sid="544929690605682" type="bonusSelecao">
                             <param id="0" name="Frame number">1</param>
                         </action>
                     </actions>
@@ -199,7 +214,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="5" name="Set frame" sid="220755021635126" type="textoFolheto">
+                        <action id="5" name="Set frame" sid="992094465199219" type="bonusSelecao">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>

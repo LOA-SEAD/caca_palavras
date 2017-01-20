@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="botao50" uid="29">
+                <instance type="bonus1" uid="29">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -37,11 +37,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>107</x>
-                        <y>224</y>
+                        <x>101.014221191</x>
+                        <y>223.587158203</y>
                         <z>0</z>
-                        <width>175</width>
-                        <height>77</height>
+                        <width>191</width>
+                        <height>78</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -49,7 +49,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao100" uid="55">
+                <instance type="bonus2" uid="55">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -57,19 +57,19 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>95</x>
-                        <y>307</y>
+                        <x>91.097442627</x>
+                        <y>305.669555664</y>
                         <z>0</z>
-                        <width>175</width>
-                        <height>77</height>
+                        <width>190</width>
+                        <height>78</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
-                        <angle>0.068853237</angle>
+                        <angle>0.083590522</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao150" uid="56">
+                <instance type="bonus3" uid="56">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -77,15 +77,15 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>77</x>
-                        <y>393</y>
+                        <x>70.260314941</x>
+                        <y>389.453735352</y>
                         <z>0</z>
-                        <width>175</width>
-                        <height>77</height>
+                        <width>200</width>
+                        <height>82</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
-                        <angle>0.068853237</angle>
+                        <angle>0.079478927</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -113,6 +113,18 @@
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
                     </properties>
+                    <effect-instances>
+                        <effect-instance type="Vibrance">
+                            <parameters>
+                                <vibrance>1</vibrance>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Contrast">
+                            <parameters>
+                                <contrast>1.1</contrast>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -174,24 +186,36 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="textoFolheto" uid="46">
+                <instance type="folheto" uid="46">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Normal</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <effect-instances>
+                        <effect-instance type="Vibrance">
+                            <parameters>
+                                <vibrance>0.5</vibrance>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Contrast">
+                            <parameters>
+                                <contrast>1.2</contrast>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>150</x>
-                        <y>442.5</y>
+                        <x>178</x>
+                        <y>381</y>
                         <z>0</z>
-                        <width>300</width>
-                        <height>555</height>
+                        <width>355</width>
+                        <height>679</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.500900924</hotspotY>
+                        <hotspotX>0.501408458</hotspotX>
+                        <hotspotY>0.500736356</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -206,8 +230,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>640</x>
-                        <y>360</y>
+                        <x>645</x>
+                        <y>376</y>
                         <z>0</z>
                         <width>685</width>
                         <height>406</height>
@@ -237,24 +261,27 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="poteMoedas" uid="47">
+                <instance type="bonusSelecao" uid="51">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <effect-instances>
+                        <effect-instance type="Multiply" />
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>201</x>
-                        <y>140</y>
+                        <x>183</x>
+                        <y>353</y>
                         <z>0</z>
-                        <width>181</width>
-                        <height>190</height>
+                        <width>216</width>
+                        <height>90</height>
                         <depth>0</depth>
-                        <hotspotX>0.497237563</hotspotX>
-                        <hotspotY>0.526315808</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -282,7 +309,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>307</x>
-                        <y>244</y>
+                        <y>254</y>
                         <z>0</z>
                         <width>697</width>
                         <height>447</height>
@@ -313,10 +340,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1192.5</x>
-                        <y>386.5</y>
+                        <y>388.5</y>
                         <z>0</z>
                         <width>183</width>
-                        <height>292</height>
+                        <height>294</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -348,32 +375,10 @@
                         <y>386.5</y>
                         <z>0</z>
                         <width>183</width>
-                        <height>200</height>
+                        <height>371</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>1</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="areaiMask" uid="51">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>6</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1097</x>
-                        <y>202</y>
-                        <z>0</z>
-                        <width>183</width>
-                        <height>371</height>
-                        <depth>0</depth>
-                        <hotspotX>0.502732217</hotspotX>
-                        <hotspotY>0.501347721</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -412,6 +417,74 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="ampulhetaMask" uid="59">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <effect-instances>
+                        <effect-instance type="Vibrance">
+                            <parameters>
+                                <vibrance>1</vibrance>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Contrast">
+                            <parameters>
+                                <contrast>1.1</contrast>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1097</x>
+                        <y>364</y>
+                        <z>0</z>
+                        <width>191</width>
+                        <height>56</height>
+                        <depth>0</depth>
+                        <hotspotX>0.502617776</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="dinheiroEtiqueta" uid="47">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <effect-instances>
+                        <effect-instance type="Vibrance">
+                            <parameters>
+                                <vibrance>0.5</vibrance>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Contrast">
+                            <parameters>
+                                <contrast>1.05</contrast>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>200</x>
+                        <y>170</y>
+                        <z>0</z>
+                        <width>158</width>
+                        <height>103</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.504854381</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -438,17 +511,29 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <effect-instances>
+                        <effect-instance type="Vibrance">
+                            <parameters>
+                                <vibrance>0.1</vibrance>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Contrast">
+                            <parameters>
+                                <contrast>1.1</contrast>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>640</x>
-                        <y>360</y>
+                        <y>320</y>
                         <z>0</z>
-                        <width>756</width>
-                        <height>705</height>
+                        <width>755</width>
+                        <height>720</height>
                         <depth>0</depth>
-                        <hotspotX>0.494708985</hotspotX>
-                        <hotspotY>0.512056708</hotspotY>
+                        <hotspotX>0.495364249</hotspotX>
+                        <hotspotY>0.444444448</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -463,7 +548,7 @@
                     <effect-instances>
                         <effect-instance type="Vibrance">
                             <parameters>
-                                <vibrance>0.3</vibrance>
+                                <vibrance>0.1</vibrance>
                             </parameters>
                         </effect-instance>
                         <effect-instance type="Contrast">
@@ -508,7 +593,7 @@
             <instances>
                 <instance type="dinheiro" uid="57">
                     <properties>
-                        <text>Text</text>
+                        <text>$</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-40,400,0</font>
                         <color>54,55,62</color>
@@ -521,11 +606,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>149</x>
-                        <y>145</y>
+                        <x>145</x>
+                        <y>142</y>
                         <z>0</z>
-                        <width>105</width>
-                        <height>55</height>
+                        <width>118</width>
+                        <height>66</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -551,8 +636,8 @@
                         <x>392</x>
                         <y>9</y>
                         <z>0</z>
-                        <width>498</width>
-                        <height>121</height>
+                        <width>507</width>
+                        <height>143</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
