@@ -37,7 +37,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>101.014221191</x>
+                        <x>99.014221191</x>
                         <y>223.587158203</y>
                         <z>0</z>
                         <width>191</width>
@@ -57,15 +57,15 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>91.097442627</x>
-                        <y>305.669555664</y>
+                        <x>89.097442627</x>
+                        <y>306.669555664</y>
                         <z>0</z>
-                        <width>190</width>
+                        <width>191</width>
                         <height>78</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
-                        <angle>0.083590522</angle>
+                        <angle>0.068853237</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -77,15 +77,15 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>70.260314941</x>
-                        <y>389.453735352</y>
+                        <x>75.260314941</x>
+                        <y>393.453735352</y>
                         <z>0</z>
-                        <width>200</width>
-                        <height>82</height>
+                        <width>191</width>
+                        <height>78</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
-                        <angle>0.079478927</angle>
+                        <angle>0.068853237</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -143,7 +143,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="folheto_fundoCacaPalavras" sid="680812467836988">
+        <layer name="folheto" sid="680812467836988">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -245,7 +245,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="pote_cacaPalavras_areia" sid="537743411633649">
+        <layer name="selecao_cacaPalavras_areia" sid="537743411633649">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -488,7 +488,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="maquina" sid="884229210823500">
+        <layer name="maquina_ampulheta" sid="884229210823500">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -645,10 +645,43 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="dicaPowerup" uid="60">
+                    <properties>
+                        <text>Text</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-29,400,0</font>
+                        <color>50,49,49</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>52</x>
+                        <y>479.999938965</y>
+                        <z>0</z>
+                        <width>207</width>
+                        <height>204</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0.08726646</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
     </layers>
-    <nonworld-instances />
+    <nonworld-instances>
+        <instance type="dicaJSON" uid="62">
+            <properties>
+                <json-file>dicaPowerup.json</json-file>
+            </properties>
+        </instance>
+    </nonworld-instances>
     <effects />
 </c2layout>

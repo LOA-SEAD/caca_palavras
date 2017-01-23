@@ -56,7 +56,7 @@
         <prop name="Pause on unfocus">Yes</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">Chrome</prop>
+        <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -1061,6 +1061,12 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="dicaPowerup" sid="524089234794721">
+                <plugin id="Text" />
+            </object-type>
+            <object-type global="1" name="dicaJSON" sid="219002912358268">
+                <plugin id="ljson" />
+            </object-type>
         </object-folder>
         <object-type name="Mouse" sid="359155137460880">
             <plugin id="Mouse" />
@@ -1131,9 +1137,14 @@
         <file-folder name="JSON">
             <file name="casos.json" />
             <file name="creditos.json" />
+            <file name="dicaPowerup.json" />
         </file-folder>
         <file-folder name="HTML">
-            <file name="cacaPalavras.html" />
+            <file name="cacaPalavras1.html" />
+            <file name="cacaPalavras2.html" />
+            <file name="cacaPalavras3.html" />
+            <file name="cacaPalavras4.html" />
+            <file name="cacaPalavras5.html" />
         </file-folder>
         <file-folder name="CSS">
             <file name="styleCacaPalavras.css" />
