@@ -43,6 +43,10 @@
                     <param id="0" name="X">LayoutWidth - 963</param>
                     <param id="1" name="Y">LayoutHeight - 460</param>
                 </action>
+                <action id="-4" name="Set layer visible" sid="476485556265872" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="223757265584952">
@@ -71,7 +75,7 @@
                 <event-block sid="940547985445392">
                     <conditions>
                         <condition id="-6" name="Compare height" sid="319619016363250" type="areiaBaixo">
-                            <param id="0" name="Comparison">2</param>
+                            <param id="0" name="Comparison">3</param>
                             <param id="1" name="Height">371</param>
                         </condition>
                     </conditions>
@@ -81,6 +85,9 @@
                         </action>
                         <action id="-6" name="Set height" sid="145183896859802" type="areiaBaixo">
                             <param id="0" name="Height">areiaBaixo.Height + (19/400)</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="436516935980684" type="areiaCima">
+                            <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="-15" name="Set visible" sid="100810755240884" type="fluxoAreia">
                             <param id="0" name="Visibility">1</param>
@@ -95,11 +102,14 @@
                         <action id="-15" name="Set visible" sid="508370364334292" type="fluxoAreia">
                             <param id="0" name="Visibility">0</param>
                         </action>
+                        <action id="-15" name="Set visible" sid="190601586183717" type="areiaCima">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-block>
-        <comment>Para tratar o comportamento do folheto conforme as ações do mouse ali</comment>
+        <comment>Para tratar o comportamento do folheto conforme as ações do mouse lá</comment>
         <event-group description="" sid="441495148994534" title="EventosFolheto">
             <sub-events>
                 <event-block sid="482838909601860">
@@ -150,24 +160,21 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block any="1" sid="392583988743447">
+                <event-block any="1" sid="522830551392801">
                     <conditions>
-                        <condition id="7" name="Cursor is over object" sid="242313684637242" type="Mouse">
+                        <condition id="7" name="Cursor is over object" sid="184881311508648" type="Mouse">
                             <param id="0" name="Object">bonus1</param>
                         </condition>
-                        <condition id="7" name="Cursor is over object" sid="240455356414492" type="Mouse">
+                        <condition id="7" name="Cursor is over object" sid="488678859358944" type="Mouse">
                             <param id="0" name="Object">bonus2</param>
                         </condition>
-                        <condition id="7" name="Cursor is over object" sid="213841724311782" type="Mouse">
+                        <condition id="7" name="Cursor is over object" sid="864569312032716" type="Mouse">
                             <param id="0" name="Object">bonus3</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="908348409400313" type="bonusSelecao">
+                        <action id="-15" name="Set visible" sid="216952055354023" type="bonusSelecao">
                             <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="0" name="Set cursor style" sid="217755434557631" type="Mouse">
-                            <param id="0" name="Cursor style">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -179,11 +186,92 @@
                         <action id="-15" name="Set visible" sid="456185245852567" type="bonusSelecao">
                             <param id="0" name="Visibility">0</param>
                         </action>
-                        <action id="0" name="Set cursor style" sid="220648442974386" type="Mouse">
-                            <param id="0" name="Cursor style">0</param>
-                        </action>
                         <action id="0" name="Set text" sid="384692413189532" type="dicaPowerup">
                             <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="687132932641317">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="987936160482118" type="Mouse">
+                            <param id="0" name="Object">configBotao</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="548679096340967">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="800186443631636" type="config">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">532</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Set Y" sid="611038482767586" type="config">
+                                    <param id="0" name="Y">config.Y-(1/3)</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="325036932166051" type="config">
+                                    <param id="0" name="X">config.X-(5/30)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="315545726224021">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="221825589758084" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="626314407534921">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="528185682407672" type="config">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">542</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Set Y" sid="157688813535718" type="config">
+                                    <param id="0" name="Y">config.Y+(1/3)</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="832828419428150" type="config">
+                                    <param id="0" name="X">config.X+(5/30)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" sid="392583988743447">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="242313684637242" type="Mouse">
+                            <param id="0" name="Object">bonus1</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="240455356414492" type="Mouse">
+                            <param id="0" name="Object">bonus2</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="213841724311782" type="Mouse">
+                            <param id="0" name="Object">bonus3</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="762190734658599" type="Mouse">
+                            <param id="0" name="Object">configBotao</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="882823922703028" type="Mouse">
+                            <param id="0" name="Object">configMenuX</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="217755434557631" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="329408777769232">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="328021996636492" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="841525366291140" type="Mouse">
+                            <param id="0" name="Cursor style">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -289,6 +377,50 @@
                     <actions>
                         <action id="5" name="Set frame" sid="992094465199219" type="bonusSelecao">
                             <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="560693977861812">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="671771083266593" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">configBotao</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="929614611998261" type="System">
+                            <param id="0" name="Layer">3</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set visible" sid="117073786872925" type="cacaPalavrasHTML">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="192514695270168" type="configMenuX">
+                            <param id="0" name="X">842</param>
+                            <param id="1" name="Y">134</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="511999159280254">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="145903995623125" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">configMenuX</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="813941582246418" type="System">
+                            <param id="0" name="Layer">3</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set visible" sid="858470835284256" type="cacaPalavrasHTML">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="287808779255191" type="configMenuX">
+                            <param id="0" name="X">842</param>
+                            <param id="1" name="Y">-134</param>
                         </action>
                     </actions>
                 </event-block>

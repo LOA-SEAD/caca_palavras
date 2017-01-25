@@ -13,86 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="botoes" sid="183306859385305">
-            <initially-visible>1</initially-visible>
-            <background-color>255,255,255</background-color>
-            <transparent>1</transparent>
-            <parallax>
-                <x>1</x>
-                <y>1</y>
-            </parallax>
-            <zoom-rate>1</zoom-rate>
-            <opacity>1</opacity>
-            <force-own-texture>0</force-own-texture>
-            <global>0</global>
-            <use-render-cells>0</use-render-cells>
-            <blend-mode>0</blend-mode>
-            <effect-fallback>0</effect-fallback>
-            <instances>
-                <instance type="bonus1" uid="29">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>99.014221191</x>
-                        <y>223.587158203</y>
-                        <z>0</z>
-                        <width>191</width>
-                        <height>78</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0.068858586</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="bonus2" uid="55">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>89.097442627</x>
-                        <y>306.669555664</y>
-                        <z>0</z>
-                        <width>191</width>
-                        <height>78</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0.068853237</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="bonus3" uid="56">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>75.260314941</x>
-                        <y>393.453735352</y>
-                        <z>0</z>
-                        <width>191</width>
-                        <height>78</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0.068853237</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-            </instances>
-            <effects />
-        </layer>
-        <layer name="fundo" sid="628988796684206">
+        <layer name="Fundo" sid="628988796684206">
             <initially-visible>1</initially-visible>
             <background-color>0,0,0</background-color>
             <transparent>0</transparent>
@@ -140,10 +61,32 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="fundoMaquina" uid="48">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>645</x>
+                        <y>376</y>
+                        <z>0</z>
+                        <width>685</width>
+                        <height>406</height>
+                        <depth>0</depth>
+                        <hotspotX>0.493430644</hotspotX>
+                        <hotspotY>0.283251226</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
-        <layer name="folheto" sid="680812467836988">
+        <layer name="Jogo" sid="537743411633649">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -159,33 +102,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Text" uid="45">
-                    <properties>
-                        <text>MENU INICIAL</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-37,400,0</font>
-                        <color>255,255,255</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1027</x>
-                        <y>671</y>
-                        <z>0</z>
-                        <width>265</width>
-                        <height>51</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="folheto" uid="46">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -220,9 +136,69 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="fundoMaquina" uid="48">
+                <instance type="bonus1" uid="29">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>99.807807922</x>
+                        <y>222.580078125</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>75</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0.093763493</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="bonus2" uid="55">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>86.843078613</x>
+                        <y>307.575469971</y>
+                        <z>0</z>
+                        <width>204</width>
+                        <height>73</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0.086047225</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="bonus3" uid="56">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>67.99432373</x>
+                        <y>391.252868652</y>
+                        <z>0</z>
+                        <width>204</width>
+                        <height>74</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0.095854767</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="configBotao" uid="65">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -230,37 +206,18 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>645</x>
-                        <y>376</y>
+                        <x>1080.414550781</x>
+                        <y>520.790893555</y>
                         <z>0</z>
-                        <width>685</width>
-                        <height>406</height>
+                        <width>104</width>
+                        <height>90</height>
                         <depth>0</depth>
-                        <hotspotX>0.493430644</hotspotX>
-                        <hotspotY>0.283251226</hotspotY>
-                        <angle>0</angle>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>-0.200713158</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-            </instances>
-            <effects />
-        </layer>
-        <layer name="selecao_cacaPalavras_areia" sid="537743411633649">
-            <initially-visible>1</initially-visible>
-            <background-color>255,255,255</background-color>
-            <transparent>1</transparent>
-            <parallax>
-                <x>1</x>
-                <y>1</y>
-            </parallax>
-            <zoom-rate>1</zoom-rate>
-            <opacity>1</opacity>
-            <force-own-texture>0</force-own-texture>
-            <global>0</global>
-            <use-render-cells>0</use-render-cells>
-            <blend-mode>0</blend-mode>
-            <effect-fallback>0</effect-fallback>
-            <instances>
                 <instance type="bonusSelecao" uid="51">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
@@ -284,39 +241,6 @@
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="cacaPalavrasHTML" uid="28">
-                    <properties>
-                        <id-optional></id-optional>
-                        <initial-visibility>Visible</initial-visibility>
-                        <tooltip></tooltip>
-                        <background></background>
-                        <border></border>
-                        <scroll>Auto</scroll>
-                        <object>iFrame</object>
-                        <iframe></iframe>
-                        <url></url>
-                        <inserthtml></inserthtml>
-                        <html></html>
-                        <color></color>
-                        <auto-font-size>Default</auto-font-size>
-                        <import></import>
-                        <css-import></css-import>
-                        <javascript-import></javascript-import>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>307</x>
-                        <y>254</y>
-                        <z>0</z>
-                        <width>697</width>
-                        <height>447</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
                     </world>
                 </instance>
                 <instance type="areiaCima" uid="52">
@@ -351,38 +275,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="areiaBaixo" uid="53">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Bottom-left</hotspot>
-                    </properties>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>0.3</vibrance>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.2</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1005.5</x>
-                        <y>386.5</y>
-                        <z>0</z>
-                        <width>183</width>
-                        <height>371</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>1</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="fluxoAreia" uid="54">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -413,6 +305,38 @@
                         <depth>0</depth>
                         <hotspotX>0.523809552</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="areiaBaixo" uid="53">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Bottom-left</hotspot>
+                    </properties>
+                    <effect-instances>
+                        <effect-instance type="Vibrance">
+                            <parameters>
+                                <vibrance>0.3</vibrance>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Contrast">
+                            <parameters>
+                                <contrast>1.2</contrast>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1005.5</x>
+                        <y>386.5</y>
+                        <z>0</z>
+                        <width>183</width>
+                        <height>371</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>1</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -451,6 +375,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="moedas" uid="61">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>2</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>200</x>
+                        <y>168</y>
+                        <z>0</z>
+                        <width>158</width>
+                        <height>103</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.524271846</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="dinheiroEtiqueta" uid="47">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -481,59 +427,6 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.504854381</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-            </instances>
-            <effects />
-        </layer>
-        <layer name="maquina_ampulheta" sid="884229210823500">
-            <initially-visible>1</initially-visible>
-            <background-color>255,255,255</background-color>
-            <transparent>1</transparent>
-            <parallax>
-                <x>1</x>
-                <y>1</y>
-            </parallax>
-            <zoom-rate>1</zoom-rate>
-            <opacity>1</opacity>
-            <force-own-texture>0</force-own-texture>
-            <global>0</global>
-            <use-render-cells>0</use-render-cells>
-            <blend-mode>0</blend-mode>
-            <effect-fallback>0</effect-fallback>
-            <instances>
-                <instance type="maquina" uid="49">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>0.1</vibrance>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.1</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>640</x>
-                        <y>320</y>
-                        <z>0</z>
-                        <width>755</width>
-                        <height>720</height>
-                        <depth>0</depth>
-                        <hotspotX>0.495364249</hotspotX>
-                        <hotspotY>0.444444448</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -572,10 +465,112 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="config" uid="64">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <effect-instances>
+                        <effect-instance type="Vibrance">
+                            <parameters>
+                                <vibrance>0.2</vibrance>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Contrast">
+                            <parameters>
+                                <contrast>1.1</contrast>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1093</x>
+                        <y>542</y>
+                        <z>0</z>
+                        <width>137</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.503649652</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="caderneta" uid="63">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <effect-instances>
+                        <effect-instance type="Vibrance">
+                            <parameters>
+                                <vibrance>0.6</vibrance>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Contrast">
+                            <parameters>
+                                <contrast>1.2</contrast>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1143</x>
+                        <y>613</y>
+                        <z>0</z>
+                        <width>274</width>
+                        <height>215</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502325594</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="maquina" uid="49">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <effect-instances>
+                        <effect-instance type="Vibrance">
+                            <parameters>
+                                <vibrance>0.1</vibrance>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Contrast">
+                            <parameters>
+                                <contrast>1.1</contrast>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>640</x>
+                        <y>320</y>
+                        <z>0</z>
+                        <width>755</width>
+                        <height>720</height>
+                        <depth>0</depth>
+                        <hotspotX>0.495364249</hotspotX>
+                        <hotspotY>0.444444448</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
-        <layer name="textos" sid="888548119910938">
+        <layer name="Textos" sid="888548119910938">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -591,6 +586,66 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+                <instance type="cacaPalavrasHTML" uid="28">
+                    <properties>
+                        <id-optional></id-optional>
+                        <initial-visibility>Visible</initial-visibility>
+                        <tooltip></tooltip>
+                        <background></background>
+                        <border></border>
+                        <scroll>Auto</scroll>
+                        <object>iFrame</object>
+                        <iframe></iframe>
+                        <url></url>
+                        <inserthtml></inserthtml>
+                        <html></html>
+                        <color></color>
+                        <auto-font-size>Default</auto-font-size>
+                        <import></import>
+                        <css-import></css-import>
+                        <javascript-import></javascript-import>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>307</x>
+                        <y>254</y>
+                        <z>0</z>
+                        <width>697</width>
+                        <height>447</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                    </world>
+                </instance>
+                <instance type="dicaPowerup" uid="60">
+                    <properties>
+                        <text>Text</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-29,400,0</font>
+                        <color>50,49,49</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>52</x>
+                        <y>479.999938965</y>
+                        <z>0</z>
+                        <width>207</width>
+                        <height>204</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0.08726646</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="dinheiro" uid="57">
                     <properties>
                         <text>$</text>
@@ -645,12 +700,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="dicaPowerup" uid="60">
+                <instance type="Text" uid="45">
                     <properties>
-                        <text>Text</text>
+                        <text>MENU INICIAL</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-29,400,0</font>
-                        <color>50,49,49</color>
+                        <font>Arial,-37,400,0</font>
+                        <color>255,255,255</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -660,15 +715,90 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>52</x>
-                        <y>479.999938965</y>
+                        <x>1027</x>
+                        <y>671</y>
                         <z>0</z>
-                        <width>207</width>
-                        <height>204</height>
+                        <width>265</width>
+                        <height>51</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
-                        <angle>0.08726646</angle>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Menu" sid="339476846494270">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="configMenu" uid="66">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <effect-instances>
+                        <effect-instance type="Vibrance">
+                            <parameters>
+                                <vibrance>0.1</vibrance>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Contrast">
+                            <parameters>
+                                <contrast>1.1</contrast>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>640</x>
+                        <y>360</y>
+                        <z>0</z>
+                        <width>1280</width>
+                        <height>720</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500781238</hotspotX>
+                        <hotspotY>0.501388907</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="configMenuX" uid="68">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>842</x>
+                        <y>-134</y>
+                        <z>0</z>
+                        <width>60</width>
+                        <height>60</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>

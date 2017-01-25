@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Tela de Casos</name>
     <events>
-        <variable constant="0" name="ultimocaso" sid="933221909810570" static="0" type="number">5</variable>
+        <variable constant="0" name="ultimocaso" sid="933221909810570" static="0" type="number">3</variable>
         <variable constant="0" name="numcaso" sid="733151475499623" static="0" type="number">1</variable>
         <comment>Valor que o jogador possui atualmente</comment>
         <variable constant="0" name="dinheiro" sid="519393934167079" static="0" type="number">1000</variable>
@@ -33,42 +33,6 @@
                 </action>
             </actions>
             <sub-events>
-                <event-block sid="910302571569559">
-                    <conditions>
-                        <condition id="-8" name="Compare two values" sid="710454585833426" type="System">
-                            <param id="0" name="First value">casosJSON.GetData(&quot;Caso5&quot;,0)</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="417994098179141" type="System">
-                            <param id="0" name="Variable">ultimocaso</param>
-                            <param id="1" name="Value">4</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="927881882213315" type="System">
-                            <param id="0" name="Seconds">0.0001</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="149152810343106">
-                    <conditions>
-                        <condition id="-8" name="Compare two values" sid="948685446018080" type="System">
-                            <param id="0" name="First value">casosJSON.GetData(&quot;Caso4&quot;,0)</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="481309023200805" type="System">
-                            <param id="0" name="Variable">ultimocaso</param>
-                            <param id="1" name="Value">3</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="876975990933156" type="System">
-                            <param id="0" name="Seconds">0.0001</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="996933958494585">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="172171520663279" type="System">

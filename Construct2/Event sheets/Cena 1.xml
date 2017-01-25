@@ -20,7 +20,11 @@
                     <param id="0" name="Key">27 (Esc)</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="-2" name="Go to layout" sid="193280768449719" type="System">
+                    <param id="0" name="Layout">Tela de Casos</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
