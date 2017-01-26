@@ -3,12 +3,15 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Jogo</name>
     <events>
+        <comment>Serve para monitorar qual dica está sendo vista na máquina naquele momento</comment>
+        <variable constant="0" name="dicaNaMaquina" sid="994501228492553" static="0" type="number">1</variable>
         <event-block sid="810123370315039">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="297666887279759" type="System" />
             </conditions>
             <actions>
                 <action id="0" name="Load JSON" sid="219893275109138" type="dicaJSON" />
+                <action id="0" name="Load JSON" sid="661403228314904" type="perguntasJSON" />
                 <action id="-6" name="Set height" sid="862755181993338" type="areiaBaixo">
                     <param id="0" name="Height">200</param>
                 </action>
@@ -17,6 +20,10 @@
                 </action>
                 <action id="13" name="Set URL" sid="459290727587993" type="cacaPalavrasHTML">
                     <param id="0" name="URL">&quot;cacaPalavras&quot; &amp;  numcaso &amp; &quot;.html&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="734166043841523" type="System">
+                    <param id="0" name="Variable">dicaNaMaquina</param>
+                    <param id="1" name="Value">1</param>
                 </action>
                 <action id="5" name="Set web font" sid="513335371679167" type="dinheiro">
                     <param id="0" name="Family name">&quot;breamcatcher&quot;</param>
@@ -30,7 +37,7 @@
                     <param id="1" name="CSS URL">&quot;stylesheet.cs&quot;</param>
                 </action>
                 <action id="0" name="Set text" sid="545922960619327" type="pista">
-                    <param id="0" name="Text">&quot;01. O sapato do assasino era da cor _ _ _ _&quot;</param>
+                    <param id="0" name="Text">perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;pergunta0&quot;,dicaNaMaquina-1)</param>
                 </action>
                 <action id="5" name="Set web font" sid="107288801167177" type="dicaPowerup">
                     <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
@@ -46,6 +53,19 @@
                 <action id="-4" name="Set layer visible" sid="476485556265872" type="System">
                     <param id="0" name="Layer">3</param>
                     <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Clear" sid="421663245608084" type="statusDicas" />
+                <action id="7" name="Set CSS style" sid="504033110686394" type="respostas">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;20px&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="985248707705091" type="respostas">
+                    <param id="0" name="Property name">&quot;font-family&quot;</param>
+                    <param id="1" name="Value">&quot;Courier New&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="936621367902021" type="respostas">
+                    <param id="0" name="Property name">&quot;text-transform&quot;</param>
+                    <param id="1" name="Value">&quot;lowercase&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -104,6 +124,74 @@
                         </action>
                         <action id="-15" name="Set visible" sid="190601586183717" type="areiaCima">
                             <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Para mudar a pergunta</comment>
+        <event-block sid="607893160655842">
+            <conditions>
+                <condition id="17" name="On tap object" sid="319940891323163" type="Touch">
+                    <param id="0" name="Object">girarPergunta</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="601029030707220" type="System">
+                    <param id="0" name="Variable">dicaNaMaquina</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="360968274717667">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="468701416235497" type="System">
+                            <param id="0" name="Variable">dicaNaMaquina</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="110452253353477" type="System">
+                            <param id="0" name="Variable">dicaNaMaquina</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Legenda: 0 = jogador não mudou nada na dica; 1 = resposta da dica, não aparecerá para o jogador; 2 = Jogador comprou o powerup que permite ver o número de letras e a letra inicial; 3 = jogador acertou a palavra ou comprou o powerup de revelar a palavra</comment>
+                <event-block sid="381009452316945">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Set text" sid="687788313200672" type="pista">
+                            <param id="0" name="Text">perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;pergunta&quot; &amp; statusDicas.At(dicaNaMaquina-1) ,dicaNaMaquina-1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="826504549741291">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="758839528877877" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>Acertou a palavra</comment>
+                <event-block sid="632688362177298">
+                    <conditions>
+                        <condition id="0" name="Compare text" sid="108353288565573" type="respostas">
+                            <param id="0" name="Text">perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;pergunta1&quot;,dicaNaMaquina-1)</param>
+                            <param id="1" name="Case">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="410579985425174" type="pista">
+                            <param id="0" name="Text">perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;pergunta3&quot; ,dicaNaMaquina-1)</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="140042868861216" type="statusDicas">
+                            <param id="0" name="X">dicaNaMaquina-1</param>
+                            <param id="1" name="Value">3</param>
                         </action>
                     </actions>
                 </event-block>
@@ -333,6 +421,13 @@
                                     <param id="0" name="Variable">dinheiro</param>
                                     <param id="1" name="Value">100</param>
                                 </action>
+                                <action id="0" name="Set text" sid="564086331323635" type="pista">
+                                    <param id="0" name="Text">perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;pergunta2&quot;,dicaNaMaquina-1)</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="399934207284422" type="statusDicas">
+                                    <param id="0" name="X">dicaNaMaquina-1</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -363,6 +458,13 @@
                                 <action id="-11" name="Subtract from" sid="515894506203963" type="System">
                                     <param id="0" name="Variable">dinheiro</param>
                                     <param id="1" name="Value">150</param>
+                                </action>
+                                <action id="0" name="Set text" sid="645874576493537" type="pista">
+                                    <param id="0" name="Text">perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;pergunta3&quot;,dicaNaMaquina-1)</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="850844559075180" type="statusDicas">
+                                    <param id="0" name="X">dicaNaMaquina-1</param>
+                                    <param id="1" name="Value">3</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -400,6 +502,9 @@
                             <param id="0" name="X">842</param>
                             <param id="1" name="Y">134</param>
                         </action>
+                        <action id="3" name="Set visible" sid="756388027006485" type="respostas">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="511999159280254">
@@ -421,6 +526,9 @@
                         <action id="-3" name="Set position" sid="287808779255191" type="configMenuX">
                             <param id="0" name="X">842</param>
                             <param id="1" name="Y">-134</param>
+                        </action>
+                        <action id="3" name="Set visible" sid="753593709687817" type="respostas">
+                            <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
                 </event-block>

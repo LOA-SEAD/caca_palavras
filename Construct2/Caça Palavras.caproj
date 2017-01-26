@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="PlayLive" id="htmlCODE" version="1.100000024">iFrame &amp; insertHTML</plugin>
@@ -1078,6 +1079,19 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type global="1" name="statusDicas" sid="745299383139628">
+                <plugin id="Arr" />
+            </object-type>
+            <object-type global="1" name="perguntasJSON" sid="805781775137326">
+                <plugin id="ljson" />
+            </object-type>
+            <object-type name="respostas" sid="920309452046855">
+                <plugin id="TextBox" />
+            </object-type>
+            <object-type name="girarPergunta" sid="845990430971004">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
         </object-folder>
         <object-type name="Mouse" sid="359155137460880">
             <plugin id="Mouse" />
@@ -1090,59 +1104,6 @@
         </object-type>
         <object-type name="Text" sid="981595157067975">
             <plugin id="Text" />
-        </object-type>
-        <object-type name="caderneta" sid="618210374803585">
-            <plugin id="Sprite" />
-            <effects>
-                <effect-type name="Vibrance">
-                    <effect id="vibrance" />
-                </effect-type>
-                <effect-type name="Contrast">
-                    <effect id="contrast" />
-                </effect-type>
-            </effects>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="563725148603543" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502326" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\caderneta.png">
-                        <collision-poly>
-                            <point x="0.208029" y="0.265116" />
-                            <point x="0.5" y="0.186047" />
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
-                            <point x="0.5" y="1" />
-                            <point x="0.10219" y="0.869767" />
-                            <point x="0.0145985" y="0.497674" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="config" sid="573946508919243">
-            <plugin id="Sprite" />
-            <effects>
-                <effect-type name="Vibrance">
-                    <effect id="vibrance" />
-                </effect-type>
-                <effect-type name="Contrast">
-                    <effect id="contrast" />
-                </effect-type>
-            </effects>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="383373861619163" speed="5">
-                    <frame duration="1" hotspotX="0.50365" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\config.png">
-                        <collision-poly>
-                            <point x="0.10219" y="0.14" />
-                            <point x="0.49635" y="0.07" />
-                            <point x="0.781022" y="0.3" />
-                            <point x="0.854015" y="0.5" />
-                            <point x="0.839416" y="0.78" />
-                            <point x="0.49635" y="0.88" />
-                            <point x="0.131387" y="0.82" />
-                            <point x="0.0510949" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
         </object-type>
         <object-type name="configBotao" sid="997026712957049">
             <plugin id="Sprite" />
@@ -1183,6 +1144,59 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="671211261361182" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="config" sid="573946508919243">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Vibrance">
+                    <effect id="vibrance" />
+                </effect-type>
+                <effect-type name="Contrast">
+                    <effect id="contrast" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="383373861619163" speed="5">
+                    <frame duration="1" hotspotX="0.50365" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\config.png">
+                        <collision-poly>
+                            <point x="0.10219" y="0.14" />
+                            <point x="0.49635" y="0.07" />
+                            <point x="0.781022" y="0.3" />
+                            <point x="0.854015" y="0.5" />
+                            <point x="0.839416" y="0.78" />
+                            <point x="0.49635" y="0.88" />
+                            <point x="0.131387" y="0.82" />
+                            <point x="0.0510949" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="caderneta" sid="618210374803585">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Vibrance">
+                    <effect id="vibrance" />
+                </effect-type>
+                <effect-type name="Contrast">
+                    <effect id="contrast" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="563725148603543" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502326" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\caderneta.png">
+                        <collision-poly>
+                            <point x="0.208029" y="0.265116" />
+                            <point x="0.5" y="0.186047" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.10219" y="0.869767" />
+                            <point x="0.0145985" y="0.497674" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -1244,6 +1258,7 @@
             <file name="casos.json" />
             <file name="creditos.json" />
             <file name="dicaPowerup.json" />
+            <file name="dicaCasos.json" />
         </file-folder>
         <file-folder name="HTML">
             <file name="cacaPalavras1.html" />
