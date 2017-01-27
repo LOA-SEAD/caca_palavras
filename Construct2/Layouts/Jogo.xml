@@ -870,6 +870,11 @@
                 <json-file>dicaCasos.json</json-file>
             </properties>
         </instance>
+        <instance type="verificaFimJS" uid="72">
+            <properties>
+                <scriptfile>verificaFim.js</scriptfile>
+            </properties>
+        </instance>
     </nonworld-instances>
     <effects />
 </c2layout>

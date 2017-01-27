@@ -5,6 +5,11 @@
     <events>
         <comment>Serve para monitorar qual dica está sendo vista na máquina naquele momento</comment>
         <variable constant="0" name="dicaNaMaquina" sid="994501228492553" static="0" type="number">1</variable>
+        <comment>Armazena a quantidade de letras que a resposta possui para montar um loop colocando &quot;_&quot;na dica que aparece na máquina</comment>
+        <variable constant="0" name="tamanhoResposta" sid="842182828774310" static="0" type="number">0</variable>
+        <comment>Armazena a palavra que será colocada na máquina</comment>
+        <variable constant="0" name="palavraDica100" sid="237024233155399" static="0" type="text"></variable>
+        <variable constant="0" name="teste" sid="452203129598386" static="0" type="number">2</variable>
         <event-block sid="810123370315039">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="297666887279759" type="System" />
@@ -37,7 +42,7 @@
                     <param id="1" name="CSS URL">&quot;stylesheet.cs&quot;</param>
                 </action>
                 <action id="0" name="Set text" sid="545922960619327" type="pista">
-                    <param id="0" name="Text">perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;pergunta0&quot;,dicaNaMaquina-1)</param>
+                    <param id="0" name="Text">perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;,dicaNaMaquina-1)</param>
                 </action>
                 <action id="5" name="Set web font" sid="107288801167177" type="dicaPowerup">
                     <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
@@ -158,12 +163,79 @@
                         </action>
                     </actions>
                 </event-block>
-                <comment>Legenda: 0 = jogador não mudou nada na dica; 1 = resposta da dica, não aparecerá para o jogador; 2 = Jogador comprou o powerup que permite ver o número de letras e a letra inicial; 3 = jogador acertou a palavra ou comprou o powerup de revelar a palavra</comment>
+                <comment>Legenda: 0 = jogador não mudou nada na dica; 1 = jogador comprou o powerup que permite ver o número de letras e a letra inicial; 2 = jogador acertou a palavra ou comprou o powerup de revelar a palavra</comment>
+                <comment>Apenas copia a frase com o asterisco</comment>
                 <event-block sid="381009452316945">
-                    <conditions />
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="152391310373545" type="System">
+                            <param id="0" name="First value">statusDicas.At(dicaNaMaquina-1)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="687788313200672" type="pista">
-                            <param id="0" name="Text">perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;pergunta&quot; &amp; statusDicas.At(dicaNaMaquina-1) ,dicaNaMaquina-1)</param>
+                            <param id="0" name="Text">perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;,dicaNaMaquina-1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Primeiro monta a palavra colocando a primeira letra da resposta (função left) e preenchendo o resto com &quot;_&quot; conforme o tamanho que ela possui (função len e loop), depois substitui o asterisco na frase pela palavra montada</comment>
+                <event-block sid="202839340584743">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="283367395555731" type="System">
+                            <param id="0" name="First value">statusDicas.At(dicaNaMaquina-1)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="463235388370194" type="System">
+                            <param id="0" name="Variable">palavraDica100</param>
+                            <param id="1" name="Value">left(perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;,dicaNaMaquina-1), 1)</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="801337191998501" type="System">
+                            <param id="0" name="Variable">tamanhoResposta</param>
+                            <param id="1" name="Value">len(perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;,dicaNaMaquina-1))</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="760648023297750">
+                            <conditions>
+                                <condition id="-10" name="For" sid="434582979676319" type="System">
+                                    <param id="0" name="Name">&quot;&quot;</param>
+                                    <param id="1" name="Start index">1</param>
+                                    <param id="2" name="End index">tamanhoResposta-1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="407691109225424" type="System">
+                                    <param id="0" name="Variable">palavraDica100</param>
+                                    <param id="1" name="Value">palavraDica100 &amp; &quot; _&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="695355790190563">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Set text" sid="532657235108341" type="pista">
+                                    <param id="0" name="Text">replace(perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;*&quot;, palavraDica100)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Copia a frase e substitui o asterisco pela resposta correspondente</comment>
+                <event-block sid="745386794326368">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="980064176568601" type="System">
+                            <param id="0" name="First value">statusDicas.At(dicaNaMaquina-1)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="159649336337812" type="pista">
+                            <param id="0" name="Text">replace(perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;*&quot;, perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;, dicaNaMaquina-1))</param>
                         </action>
                     </actions>
                 </event-block>
@@ -181,21 +253,37 @@
                 <event-block sid="632688362177298">
                     <conditions>
                         <condition id="0" name="Compare text" sid="108353288565573" type="respostas">
-                            <param id="0" name="Text">perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;pergunta1&quot;,dicaNaMaquina-1)</param>
+                            <param id="0" name="Text">perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;,dicaNaMaquina-1)</param>
                             <param id="1" name="Case">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="410579985425174" type="pista">
-                            <param id="0" name="Text">perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;pergunta3&quot; ,dicaNaMaquina-1)</param>
+                        <action id="0" name="Set text" sid="947682308685849" type="pista">
+                            <param id="0" name="Text">replace(perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;*&quot;, perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;, dicaNaMaquina-1))</param>
                         </action>
                         <action id="2" name="Set at X" sid="140042868861216" type="statusDicas">
                             <param id="0" name="X">dicaNaMaquina-1</param>
-                            <param id="1" name="Value">3</param>
+                            <param id="1" name="Value">2</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="459293725405922">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="804919346850258" type="System">
+                    <param id="0" name="Interval (seconds)">4.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Execute" sid="514381058533488" type="verificaFimJS">
+                    <param id="0" name="Value">&quot;acabou()&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="926214358178160" type="System">
+                    <param id="0" name="Variable">teste</param>
+                    <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
+                </action>
+            </actions>
         </event-block>
         <comment>Para tratar o comportamento do folheto conforme as ações do mouse lá</comment>
         <event-group description="" sid="441495148994534" title="EventosFolheto">
@@ -408,6 +496,7 @@
                         </action>
                     </actions>
                     <sub-events>
+                        <comment>Primeiro monta a palavra colocando a primeira letra da resposta (função left) e preenchendo o resto com &quot;_&quot; conforme o tamanho que ela possui (função len), depois substitui o asterisco na frase pela palavra montada</comment>
                         <event-block sid="874056874972436">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="963607050647152" type="System">
@@ -415,20 +504,55 @@
                                     <param id="1" name="Comparison">5</param>
                                     <param id="2" name="Value">100</param>
                                 </condition>
+                                <condition id="-8" name="Compare two values" sid="111988101485181" type="System">
+                                    <param id="0" name="First value">statusDicas.At(dicaNaMaquina-1)</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-11" name="Subtract from" sid="927434266668319" type="System">
                                     <param id="0" name="Variable">dinheiro</param>
                                     <param id="1" name="Value">100</param>
                                 </action>
-                                <action id="0" name="Set text" sid="564086331323635" type="pista">
-                                    <param id="0" name="Text">perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;pergunta2&quot;,dicaNaMaquina-1)</param>
+                                <action id="-9" name="Set value" sid="995149505980855" type="System">
+                                    <param id="0" name="Variable">palavraDica100</param>
+                                    <param id="1" name="Value">left(perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;,dicaNaMaquina-1), 1)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="773021437277931" type="System">
+                                    <param id="0" name="Variable">tamanhoResposta</param>
+                                    <param id="1" name="Value">len(perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;,dicaNaMaquina-1))</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="399934207284422" type="statusDicas">
                                     <param id="0" name="X">dicaNaMaquina-1</param>
-                                    <param id="1" name="Value">2</param>
+                                    <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="825272473045357">
+                                    <conditions>
+                                        <condition id="-10" name="For" sid="613419254160316" type="System">
+                                            <param id="0" name="Name">&quot;&quot;</param>
+                                            <param id="1" name="Start index">1</param>
+                                            <param id="2" name="End index">tamanhoResposta-1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="614140151978605" type="System">
+                                            <param id="0" name="Variable">palavraDica100</param>
+                                            <param id="1" name="Value">palavraDica100 &amp; &quot; _&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="397779575173782">
+                                    <conditions />
+                                    <actions>
+                                        <action id="0" name="Set text" sid="287526538777840" type="pista">
+                                            <param id="0" name="Text">replace(perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;*&quot;, palavraDica100)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -446,6 +570,7 @@
                         </action>
                     </actions>
                     <sub-events>
+                        <comment>Copia a frase e substitui o asterisco pela resposta correspondente</comment>
                         <event-block sid="504140412125077">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="962524632093002" type="System">
@@ -453,18 +578,23 @@
                                     <param id="1" name="Comparison">5</param>
                                     <param id="2" name="Value">150</param>
                                 </condition>
+                                <condition id="-8" name="Compare two values" sid="596369458391622" type="System">
+                                    <param id="0" name="First value">statusDicas.At(dicaNaMaquina-1)</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">2</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-11" name="Subtract from" sid="515894506203963" type="System">
                                     <param id="0" name="Variable">dinheiro</param>
                                     <param id="1" name="Value">150</param>
                                 </action>
-                                <action id="0" name="Set text" sid="645874576493537" type="pista">
-                                    <param id="0" name="Text">perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;pergunta3&quot;,dicaNaMaquina-1)</param>
+                                <action id="0" name="Set text" sid="273343114201836" type="pista">
+                                    <param id="0" name="Text">replace(perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;*&quot;, perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;, dicaNaMaquina-1))</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="850844559075180" type="statusDicas">
                                     <param id="0" name="X">dicaNaMaquina-1</param>
-                                    <param id="1" name="Value">3</param>
+                                    <param id="1" name="Value">2</param>
                                 </action>
                             </actions>
                         </event-block>

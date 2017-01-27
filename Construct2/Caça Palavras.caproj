@@ -18,6 +18,7 @@
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Joe7" id="cjs" version="1">Call JS</plugin>
         <plugin author="PlayLive" id="htmlCODE" version="1.100000024">iFrame &amp; insertHTML</plugin>
         <plugin author="Joe7" id="ljson" version="1.200000048">Load JSON</plugin>
     </used-plugins>
@@ -1200,6 +1201,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type global="1" name="verificaFimJS" sid="799853815690657">
+            <plugin id="cjs" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1271,6 +1275,7 @@
         <file-folder name="JS">
             <file name="wordfind.js" />
             <file name="wordfindgame.js" />
+            <file name="verificaFim.js" />
         </file-folder>
     </files-folder>
 </c2project>

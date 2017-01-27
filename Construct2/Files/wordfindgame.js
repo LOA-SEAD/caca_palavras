@@ -223,10 +223,12 @@
           $('.selected').addClass('found');
           wordList.splice(i,1);
           $('.' + curWord).addClass('wordFound');
+          atualiza(1);
         }
 
         if (wordList.length === 0) {
           $('.puzzleSquare').addClass('complete');
+          atualiza(2);
         }
       }
 

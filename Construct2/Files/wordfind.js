@@ -27,7 +27,7 @@
   var WordFind = function () {
 
     // Letters used to fill blank spots in the puzzle
-    var letters = 'abcdefghijklmnoprstuvwy';
+    var letters = 'abcdefghijklmnopqrstuvwxyz';
 
     /**
     * Definitions for all the different orientations in which words can be

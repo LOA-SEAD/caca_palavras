@@ -1,14 +1,8 @@
 ﻿{
-	"caso1pergunta0": ["1 *", "2 *", "3 *", "* 4", "* 5"],
-	"caso1pergunta1": ["cows", "tracks", "arrived", "located", "temquinzeletras"],
-	"caso1pergunta2": ["1 c _ _ _", "2 t _ _ _ _ _", "3 a _ _ _ _ _ _", "4 l _ _ _ _ _ _", "5 t _ _ _ _ _ _ _ _ _ _ _ _ _ _"],
-	"caso1pergunta3": ["1 cows", "2 tracks", "3 arrived", "located 4", "temquinzeletras 5"],
-	"caso2pergunta0": ["teste *", "bla *", "outro * bla", "legal *", "* dabr"],
-	"caso2pergunta1": ["este", "aqui", "corresponde", "aosegundo", "jogo"],
-	"caso2pergunta2": ["teste e _ _ _", "bla a _ _ _", "outro c _ _ _ _ _ _ _ _ _ _ bla", "legal a _ _ _ _ _ _ _ _", "j _ _ _ dabr"],
-	"caso2pergunta3": ["teste este", "bla aqui", "outro corresponde bla", "legal aosegundo", "jogo dabr"],
-	"caso3pergunta0": ["", "", "", "", ""],
-	"caso3pergunta1": ["", "", "", "", ""],
-	"caso3pergunta2": ["", "", "", "", ""],
-	"caso3pergunta3": ["", "", "", "", ""]
+	"caso1perguntas": ["1 *", "2 *", "3 *", "* 4", "* 5"],
+	"caso1respostas": ["cows", "tracks", "arrived", "located", "temquinzeletras"],
+	"caso2perguntas": ["teste *", "bla *", "outro * bla", "legal *", "* dabr"],
+	"caso2respostas": ["este", "aqui", "corresponde", "aosegundo", "jogo"],
+	"caso3perguntas": ["", "", "", "", ""],
+	"caso3respostas": ["", "", "", "", ""]
 }
