@@ -153,7 +153,7 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0.093763493</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
                 <instance type="bonus2" uid="55">
@@ -173,7 +173,7 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0.086047225</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
                 <instance type="bonus3" uid="56">
@@ -193,7 +193,7 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0.095854767</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
                 <instance type="configBotao" uid="65">
@@ -215,7 +215,7 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>-0.200713158</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
                 <instance type="bonusSelecao" uid="51">
@@ -634,11 +634,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>52</x>
-                        <y>479.999938965</y>
+                        <x>51.651382446</x>
+                        <y>483.984741211</y>
                         <z>0</z>
                         <width>207</width>
-                        <height>204</height>
+                        <height>206</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -662,7 +662,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>145</x>
-                        <y>142</y>
+                        <y>145</y>
                         <z>0</z>
                         <width>118</width>
                         <height>66</height>

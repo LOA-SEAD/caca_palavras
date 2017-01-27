@@ -5,7 +5,7 @@
     <events>
         <variable constant="0" name="ultimocaso" sid="933221909810570" static="0" type="number">3</variable>
         <variable constant="0" name="numcaso" sid="733151475499623" static="0" type="number">1</variable>
-        <comment>Valor que o jogador possui atualmente</comment>
+        <comment>Valor que o jogador possui inicialmente</comment>
         <variable constant="0" name="dinheiro" sid="519393934167079" static="0" type="number">1000</variable>
         <event-block sid="188116339448502">
             <conditions>
@@ -13,6 +13,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Load JSON" sid="555394820287902" type="casosJSON" />
+                <action id="0" name="Load JSON" sid="243666303185970" type="casosJSON" />
                 <action id="5" name="Set web font" sid="381127159555238" type="casoNum">
                     <param id="0" name="Family name">&quot;breamcatcher&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>

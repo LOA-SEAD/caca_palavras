@@ -1,8 +1,11 @@
 ﻿{
+	"caso1descricao":["Este é o texto para a descrição do Caso 1."],
 	"caso1perguntas": ["1 *", "2 *", "3 *", "* 4", "* 5"],
 	"caso1respostas": ["cows", "tracks", "arrived", "located", "temquinzeletras"],
+	"caso2descricao":["Este é o texto para a descrição do Caso 2."],
 	"caso2perguntas": ["teste *", "bla *", "outro * bla", "legal *", "* dabr"],
 	"caso2respostas": ["este", "aqui", "corresponde", "aosegundo", "jogo"],
+	"caso3descricao":[""],
 	"caso3perguntas": ["", "", "", "", ""],
 	"caso3respostas": ["", "", "", "", ""]
 }
