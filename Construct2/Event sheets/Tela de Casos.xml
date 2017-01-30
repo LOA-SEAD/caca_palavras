@@ -12,7 +12,6 @@
                 <condition id="-2" name="On start of layout" sid="801272363977871" type="System" />
             </conditions>
             <actions>
-                <action id="0" name="Load JSON" sid="555394820287902" type="casosJSON" />
                 <action id="0" name="Load JSON" sid="243666303185970" type="casosJSON" />
                 <action id="5" name="Set web font" sid="381127159555238" type="casoNum">
                     <param id="0" name="Family name">&quot;breamcatcher&quot;</param>
@@ -26,7 +25,7 @@
                     <param id="0" name="Opacity">0</param>
                 </action>
                 <action id="2" name="Set at X" sid="960209325517963" type="caso">
-                    <param id="0" name="X">1</param>
+                    <param id="0" name="X">2</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="5" name="Set frame" sid="898567746683934" type="casoStatus">
@@ -37,7 +36,7 @@
                 <event-block sid="996933958494585">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="172171520663279" type="System">
-                            <param id="0" name="First value">casosJSON.GetData(&quot;Caso3&quot;,0)</param>
+                            <param id="0" name="First value">casosJSON.GetData(&quot;caso3descricao&quot;,0)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;&quot;</param>
                         </condition>
@@ -55,7 +54,7 @@
                 <event-block sid="794581290343639">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="211137764510795" type="System">
-                            <param id="0" name="First value">casosJSON.GetData(&quot;Caso2&quot;,0)</param>
+                            <param id="0" name="First value">casosJSON.GetData(&quot;caso2descricao&quot;,0)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;&quot;</param>
                         </condition>
@@ -114,8 +113,8 @@
                 <action id="0" name="Set text" sid="485022759523315" type="casoNum">
                     <param id="0" name="Text">&quot;Caso &quot; &amp; numcaso</param>
                 </action>
-                <action id="0" name="Set text" sid="652015446453006" type="casoTxt">
-                    <param id="0" name="Text">replace(casosJSON.GetData(&quot;Caso&quot; &amp; numcaso, 0), &quot;*&quot;, &quot;__________&quot;)</param>
+                <action id="0" name="Set text" sid="487357132554185" type="casoTxt">
+                    <param id="0" name="Text">casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;descricao&quot;, 0)</param>
                 </action>
             </actions>
         </event-block>

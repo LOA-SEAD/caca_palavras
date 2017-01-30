@@ -268,14 +268,9 @@
         </layer>
     </layers>
     <nonworld-instances>
-        <instance type="casosJSON" uid="19">
-            <properties>
-                <json-file>casos.json</json-file>
-            </properties>
-        </instance>
         <instance type="caso" uid="23">
             <properties>
-                <width>5</width>
+                <width>3</width>
                 <height>1</height>
                 <depth>1</depth>
             </properties>

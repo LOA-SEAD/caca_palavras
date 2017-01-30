@@ -17,6 +17,26 @@
                 <action id="5" name="Set frame" sid="619975790446951" type="btnInfo">
                     <param id="0" name="Frame number">0</param>
                 </action>
+                <action id="-30" name="Set layer effect enabled" sid="916731710083740" type="System">
+                    <param id="0" name="Layer">0</param>
+                    <param id="1" name="Mode">0</param>
+                    <param id="2" name="Effect">&quot;BlurHorizontal&quot;</param>
+                </action>
+                <action id="-30" name="Set layer effect enabled" sid="191405250299829" type="System">
+                    <param id="0" name="Layer">0</param>
+                    <param id="1" name="Mode">0</param>
+                    <param id="2" name="Effect">&quot;BlurVertical&quot;</param>
+                </action>
+                <action id="-30" name="Set layer effect enabled" sid="252677885670720" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Mode">0</param>
+                    <param id="2" name="Effect">&quot;BlurHorizontal&quot;</param>
+                </action>
+                <action id="-30" name="Set layer effect enabled" sid="219215190930030" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Mode">0</param>
+                    <param id="2" name="Effect">&quot;BlurVertical&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-group description="" sid="371888959724041" title="Acoes 1">
@@ -53,6 +73,71 @@
                         </condition>
                     </conditions>
                     <actions />
+                    <sub-events>
+                        <event-block sid="614945883921750">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="949834274632127" type="Sprite">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Set Y" sid="854352014191713" type="Sprite">
+                                    <param id="0" name="Y">360</param>
+                                </action>
+                                <action id="-30" name="Set layer effect enabled" sid="857503763498997" type="System">
+                                    <param id="0" name="Layer">0</param>
+                                    <param id="1" name="Mode">1</param>
+                                    <param id="2" name="Effect">&quot;BlurHorizontal&quot;</param>
+                                </action>
+                                <action id="-30" name="Set layer effect enabled" sid="902301848339925" type="System">
+                                    <param id="0" name="Layer">0</param>
+                                    <param id="1" name="Mode">1</param>
+                                    <param id="2" name="Effect">&quot;BlurVertical&quot;</param>
+                                </action>
+                                <action id="-30" name="Set layer effect enabled" sid="298593998616467" type="System">
+                                    <param id="0" name="Layer">1</param>
+                                    <param id="1" name="Mode">1</param>
+                                    <param id="2" name="Effect">&quot;BlurHorizontal&quot;</param>
+                                </action>
+                                <action id="-30" name="Set layer effect enabled" sid="947962391475150" type="System">
+                                    <param id="0" name="Layer">1</param>
+                                    <param id="1" name="Mode">1</param>
+                                    <param id="2" name="Effect">&quot;BlurVertical&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="324318087738332">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="479782378654635" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Set Y" sid="347430670416487" type="Sprite">
+                                    <param id="0" name="Y">-360</param>
+                                </action>
+                                <action id="-30" name="Set layer effect enabled" sid="588928800607498" type="System">
+                                    <param id="0" name="Layer">0</param>
+                                    <param id="1" name="Mode">0</param>
+                                    <param id="2" name="Effect">&quot;BlurHorizontal&quot;</param>
+                                </action>
+                                <action id="-30" name="Set layer effect enabled" sid="805072703099928" type="System">
+                                    <param id="0" name="Layer">0</param>
+                                    <param id="1" name="Mode">0</param>
+                                    <param id="2" name="Effect">&quot;BlurVertical&quot;</param>
+                                </action>
+                                <action id="-30" name="Set layer effect enabled" sid="129145850670244" type="System">
+                                    <param id="0" name="Layer">1</param>
+                                    <param id="1" name="Mode">0</param>
+                                    <param id="2" name="Effect">&quot;BlurHorizontal&quot;</param>
+                                </action>
+                                <action id="-30" name="Set layer effect enabled" sid="943725567176792" type="System">
+                                    <param id="0" name="Layer">1</param>
+                                    <param id="1" name="Mode">0</param>
+                                    <param id="2" name="Effect">&quot;BlurVertical&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block any="1" sid="173745790857829">
                     <conditions>

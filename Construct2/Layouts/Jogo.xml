@@ -743,11 +743,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>693</x>
-                        <y>120</y>
+                        <x>545</x>
+                        <y>198</y>
                         <z>0</z>
-                        <width>199</width>
-                        <height>28</height>
+                        <width>200</width>
+                        <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -865,9 +865,9 @@
                 <depth>1</depth>
             </properties>
         </instance>
-        <instance type="perguntasJSON" uid="69">
+        <instance type="casosJSON" uid="69">
             <properties>
-                <json-file>dicaCasos.json</json-file>
+                <json-file>casos.json</json-file>
             </properties>
         </instance>
         <instance type="verificaFimJS" uid="72">

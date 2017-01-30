@@ -17,7 +17,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Load JSON" sid="219893275109138" type="dicaJSON" />
-                <action id="0" name="Load JSON" sid="661403228314904" type="perguntasJSON" />
+                <action id="0" name="Load JSON" sid="661403228314904" type="casosJSON" />
                 <action id="-9" name="Set value" sid="734166043841523" type="System">
                     <param id="0" name="Variable">dicaNaMaquina</param>
                     <param id="1" name="Value">1</param>
@@ -38,7 +38,7 @@
                     <param id="1" name="CSS URL">&quot;stylesheet.cs&quot;</param>
                 </action>
                 <action id="0" name="Set text" sid="545922960619327" type="pista">
-                    <param id="0" name="Text">perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;,dicaNaMaquina-1)</param>
+                    <param id="0" name="Text">casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;,dicaNaMaquina-1)</param>
                 </action>
                 <action id="5" name="Set web font" sid="107288801167177" type="dicaPowerup">
                     <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
@@ -200,7 +200,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="687788313200672" type="pista">
-                                    <param id="0" name="Text">perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;,dicaNaMaquina-1)</param>
+                                    <param id="0" name="Text">casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;,dicaNaMaquina-1)</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -216,11 +216,11 @@
                             <actions>
                                 <action id="-9" name="Set value" sid="463235388370194" type="System">
                                     <param id="0" name="Variable">palavraDica100</param>
-                                    <param id="1" name="Value">left(perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;,dicaNaMaquina-1), 1)</param>
+                                    <param id="1" name="Value">left(casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;,dicaNaMaquina-1), 1)</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="801337191998501" type="System">
                                     <param id="0" name="Variable">tamanhoResposta</param>
-                                    <param id="1" name="Value">len(perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;,dicaNaMaquina-1))</param>
+                                    <param id="1" name="Value">len(casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;,dicaNaMaquina-1))</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -243,7 +243,7 @@
                                     <conditions />
                                     <actions>
                                         <action id="0" name="Set text" sid="532657235108341" type="pista">
-                                            <param id="0" name="Text">replace(perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;*&quot;, palavraDica100)</param>
+                                            <param id="0" name="Text">replace(casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;*&quot;, palavraDica100)</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -260,7 +260,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="159649336337812" type="pista">
-                                    <param id="0" name="Text">replace(perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;*&quot;, perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;, dicaNaMaquina-1))</param>
+                                    <param id="0" name="Text">replace(casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;*&quot;, casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;, dicaNaMaquina-1))</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -278,13 +278,13 @@
                         <event-block sid="632688362177298">
                             <conditions>
                                 <condition id="0" name="Compare text" sid="108353288565573" type="respostas">
-                                    <param id="0" name="Text">perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;,dicaNaMaquina-1)</param>
+                                    <param id="0" name="Text">casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;,dicaNaMaquina-1)</param>
                                     <param id="1" name="Case">0</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="947682308685849" type="pista">
-                                    <param id="0" name="Text">replace(perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;*&quot;, perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;, dicaNaMaquina-1))</param>
+                                    <param id="0" name="Text">replace(casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;*&quot;, casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;, dicaNaMaquina-1))</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="140042868861216" type="statusDicas">
                                     <param id="0" name="X">dicaNaMaquina-1</param>
@@ -570,11 +570,11 @@
                                 </action>
                                 <action id="-9" name="Set value" sid="995149505980855" type="System">
                                     <param id="0" name="Variable">palavraDica100</param>
-                                    <param id="1" name="Value">left(perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;,dicaNaMaquina-1), 1)</param>
+                                    <param id="1" name="Value">left(casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;,dicaNaMaquina-1), 1)</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="773021437277931" type="System">
                                     <param id="0" name="Variable">tamanhoResposta</param>
-                                    <param id="1" name="Value">len(perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;,dicaNaMaquina-1))</param>
+                                    <param id="1" name="Value">len(casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;,dicaNaMaquina-1))</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="399934207284422" type="statusDicas">
                                     <param id="0" name="X">dicaNaMaquina-1</param>
@@ -601,7 +601,7 @@
                                     <conditions />
                                     <actions>
                                         <action id="0" name="Set text" sid="287526538777840" type="pista">
-                                            <param id="0" name="Text">replace(perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;*&quot;, palavraDica100)</param>
+                                            <param id="0" name="Text">replace(casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;*&quot;, palavraDica100)</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -643,7 +643,7 @@
                                     <param id="1" name="Value">150</param>
                                 </action>
                                 <action id="0" name="Set text" sid="273343114201836" type="pista">
-                                    <param id="0" name="Text">replace(perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;*&quot;, perguntasJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;, dicaNaMaquina-1))</param>
+                                    <param id="0" name="Text">replace(casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;*&quot;, casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;, dicaNaMaquina-1))</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="850844559075180" type="statusDicas">
                                     <param id="0" name="X">dicaNaMaquina-1</param>
