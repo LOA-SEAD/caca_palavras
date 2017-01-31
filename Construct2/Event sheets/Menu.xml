@@ -37,6 +37,10 @@
                     <param id="1" name="Mode">0</param>
                     <param id="2" name="Effect">&quot;BlurVertical&quot;</param>
                 </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="846655058944620" type="menuX">
+                    <param id="0" name="Pin to">Sprite</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
             </actions>
         </event-block>
         <event-group description="" sid="371888959724041" title="Acoes 1">

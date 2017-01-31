@@ -330,9 +330,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="482838909601860">
+                <event-block any="1" sid="482838909601860">
                     <conditions>
                         <condition id="7" name="Cursor is over object" sid="648018988363192" type="Mouse">
+                            <param id="0" name="Object">bonus1</param>
+                        </condition>
+                        <condition id="4" name="Is touching object" sid="504724530227513" type="Touch">
                             <param id="0" name="Object">bonus1</param>
                         </condition>
                     </conditions>
@@ -346,9 +349,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="324670192903689">
+                <event-block any="1" sid="324670192903689">
                     <conditions>
                         <condition id="7" name="Cursor is over object" sid="814830495706499" type="Mouse">
+                            <param id="0" name="Object">bonus2</param>
+                        </condition>
+                        <condition id="4" name="Is touching object" sid="301873188824654" type="Touch">
                             <param id="0" name="Object">bonus2</param>
                         </condition>
                     </conditions>
@@ -362,9 +368,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="769966486035948">
+                <event-block any="1" sid="769966486035948">
                     <conditions>
                         <condition id="7" name="Cursor is over object" sid="450830364072713" type="Mouse">
+                            <param id="0" name="Object">bonus3</param>
+                        </condition>
+                        <condition id="4" name="Is touching object" sid="157680612029896" type="Touch">
                             <param id="0" name="Object">bonus3</param>
                         </condition>
                     </conditions>
@@ -389,6 +398,15 @@
                         <condition id="7" name="Cursor is over object" sid="864569312032716" type="Mouse">
                             <param id="0" name="Object">bonus3</param>
                         </condition>
+                        <condition id="4" name="Is touching object" sid="201612474476537" type="Touch">
+                            <param id="0" name="Object">bonus1</param>
+                        </condition>
+                        <condition id="4" name="Is touching object" sid="779477839822398" type="Touch">
+                            <param id="0" name="Object">bonus2</param>
+                        </condition>
+                        <condition id="4" name="Is touching object" sid="767742161091294" type="Touch">
+                            <param id="0" name="Object">bonus3</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-15" name="Set visible" sid="216952055354023" type="bonusSelecao">
@@ -401,17 +419,20 @@
                         <condition id="-22" name="Else" sid="584513312852972" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="456185245852567" type="bonusSelecao">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
                         <action id="0" name="Set text" sid="384692413189532" type="dicaPowerup">
                             <param id="0" name="Text">&quot;&quot;</param>
                         </action>
+                        <action id="-15" name="Set visible" sid="456185245852567" type="bonusSelecao">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                     </actions>
                 </event-block>
-                <event-block sid="687132932641317">
+                <event-block any="1" sid="687132932641317">
                     <conditions>
                         <condition id="7" name="Cursor is over object" sid="987936160482118" type="Mouse">
+                            <param id="0" name="Object">configBotao</param>
+                        </condition>
+                        <condition id="4" name="Is touching object" sid="432919600507744" type="Touch">
                             <param id="0" name="Object">configBotao</param>
                         </condition>
                     </conditions>
@@ -474,7 +495,7 @@
                             <param id="0" name="Object">configBotao</param>
                         </condition>
                         <condition id="7" name="Cursor is over object" sid="882823922703028" type="Mouse">
-                            <param id="0" name="Object">configMenuX</param>
+                            <param id="0" name="Object">menuX</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -495,17 +516,11 @@
                 </event-block>
                 <event-block any="1" sid="174450157309839">
                     <conditions>
-                        <condition id="6" name="On object clicked" sid="353540501543385" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">bonus1</param>
+                        <condition id="17" name="On tap object" sid="353540501543385" type="Touch">
+                            <param id="0" name="Object">bonus1</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="169272413512610" type="bonusSelecao">
-                            <param id="0" name="Frame number">1</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
                         <event-block sid="315383884865815">
                             <conditions>
@@ -537,17 +552,11 @@
                 </event-block>
                 <event-block sid="601746714588400">
                     <conditions>
-                        <condition id="6" name="On object clicked" sid="199031459677090" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">bonus2</param>
+                        <condition id="17" name="On tap object" sid="199031459677090" type="Touch">
+                            <param id="0" name="Object">bonus2</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="325671220755047" type="bonusSelecao">
-                            <param id="0" name="Frame number">1</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
                         <comment>Primeiro monta a palavra colocando a primeira letra da resposta (função left) e preenchendo o resto com &quot;_&quot; conforme o tamanho que ela possui (função len), depois substitui o asterisco na frase pela palavra montada</comment>
                         <event-block sid="874056874972436">
@@ -611,17 +620,11 @@
                 </event-block>
                 <event-block sid="171751950488197">
                     <conditions>
-                        <condition id="6" name="On object clicked" sid="277685533012216" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">bonus3</param>
+                        <condition id="17" name="On tap object" sid="277685533012216" type="Touch">
+                            <param id="0" name="Object">bonus3</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="544929690605682" type="bonusSelecao">
-                            <param id="0" name="Frame number">1</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
                         <comment>Copia a frase e substitui o asterisco pela resposta correspondente</comment>
                         <event-block sid="504140412125077">
@@ -653,7 +656,35 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="284972255238727">
+                <event-block sid="535060595430683">
+                    <conditions>
+                        <condition id="2" name="Mouse button is down" sid="594133204907847" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="526827407238863">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="395033233861812" type="Mouse">
+                                    <param id="0" name="Object">bonus1</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="168588941787897" type="Mouse">
+                                    <param id="0" name="Object">bonus2</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="401821998365130" type="Mouse">
+                                    <param id="0" name="Object">bonus3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="319728522042969" type="bonusSelecao">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" sid="284972255238727">
                     <conditions>
                         <condition id="3" name="On button released" sid="431616767434804" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
@@ -667,10 +698,8 @@
                 </event-block>
                 <event-block sid="560693977861812">
                     <conditions>
-                        <condition id="6" name="On object clicked" sid="671771083266593" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">configBotao</param>
+                        <condition id="17" name="On tap object" sid="671771083266593" type="Touch">
+                            <param id="0" name="Object">configBotao</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -684,7 +713,7 @@
                         <action id="3" name="Set visible" sid="756388027006485" type="respostas">
                             <param id="0" name="Visibility">0</param>
                         </action>
-                        <action id="-3" name="Set position" sid="192514695270168" type="configMenuX">
+                        <action id="-3" name="Set position" sid="192514695270168" type="menuX">
                             <param id="0" name="X">842</param>
                             <param id="1" name="Y">134</param>
                         </action>
@@ -695,7 +724,7 @@
                         <condition id="6" name="On object clicked" sid="145903995623125" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">configMenuX</param>
+                            <param id="2" name="Object clicked">menuX</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -709,7 +738,7 @@
                         <action id="3" name="Set visible" sid="753593709687817" type="respostas">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="-3" name="Set position" sid="287808779255191" type="configMenuX">
+                        <action id="-3" name="Set position" sid="287808779255191" type="menuX">
                             <param id="0" name="X">842</param>
                             <param id="1" name="Y">-134</param>
                         </action>
