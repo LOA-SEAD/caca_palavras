@@ -1,11 +1,11 @@
 ﻿{
-	"caso1descricao":["Uma mulher solitária se joga de um edificio comercial. No instante em que pula, e está no ar em quedra livre, ela se arrepende de ter pulado, mas já era tarde demais."],
+	"caso1descricao": ["Uma mulher solitária se joga de um edificio comercial. No instante em que pula, e está no ar em quedra livre, ela se arrepende de ter pulado, mas já era tarde demais."],
 	"caso1perguntas": ["A mulher achava que era a única sobrevivente de um acidente * ", "Ela vagou feito alma penada por um ano por toda a * ", "No auge na sua depressão, ela decidiu se * ", "Ela então sobe no topo de um * ", "Ao se jogar, ela descobre não ser a única sobrevivente, pois ouve um * "],
 	"caso1respostas": ["nuclear", "cidade", "matar", "prédio", "telefone"],
-	"caso2descricao":["Este é o texto para a descrição do Caso 2."],
+	"caso2descricao": ["Este é o texto para a descrição do Caso 2."],
 	"caso2perguntas": ["teste *", "bla *", "outro * bla", "legal *", "* dabr"],
 	"caso2respostas": ["este", "aqui", "corresponde", "aosegundo", "jogo"],
-	"caso3descricao":[""],
+	"caso3descricao": [""],
 	"caso3perguntas": ["", "", "", "", ""],
 	"caso3respostas": ["", "", "", "", ""]
 }

@@ -58,7 +58,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">Firefox</prop>
+        <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -355,6 +355,26 @@
                                 <point x="0.5" y="0.983444" />
                                 <point x="0.052381" y="0.963576" />
                                 <point x="0.0380952" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type global="1" name="ajudaJSON" sid="332003943695808">
+                <plugin id="ljson" />
+            </object-type>
+            <object-type name="telaAjuda" sid="198782660156278">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="648601933752300" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_ajuda.png">
+                            <collision-poly>
+                                <point x="0.0416667" y="0.0573529" />
+                                <point x="0.959402" y="0.0558824" />
+                                <point x="0.982906" y="0.5" />
+                                <point x="0.95406" y="0.936765" />
+                                <point x="0.0470085" y="0.935294" />
+                                <point x="0.00747863" y="0.5" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1174,7 +1194,7 @@
         <object-type name="Touch" sid="573787641399865">
             <plugin id="Touch" />
         </object-type>
-        <object-type name="Text" sid="981595157067975">
+        <object-type name="botaoMenuprovisorio" sid="981595157067975">
             <plugin id="Text" />
         </object-type>
         <object-type name="caderneta" sid="618210374803585">
@@ -1206,22 +1226,21 @@
         <object-type global="1" name="verificaFimJS" sid="799853815690657">
             <plugin id="cjs" />
         </object-type>
-        <object-type name="Sprite" sid="198782660156278">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="648601933752300" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_ajuda.png">
-                        <collision-poly>
-                            <point x="0.0416667" y="0.0573529" />
-                            <point x="0.959402" y="0.0558824" />
-                            <point x="0.982906" y="0.5" />
-                            <point x="0.95406" y="0.936765" />
-                            <point x="0.0470085" y="0.935294" />
-                            <point x="0.00747863" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
+        <object-type name="ajudaTexto1" sid="873025769624826">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="940523104947527">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="ajudaTexto2" sid="196329057311144">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="289589402427447">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
         </object-type>
     </object-folder>
     <families />
@@ -1281,6 +1300,7 @@
             <file name="casos.json" />
             <file name="creditos.json" />
             <file name="dicaPowerup.json" />
+            <file name="ajuda.json" />
         </file-folder>
         <file-folder name="HTML">
             <file name="cacaPalavras1.html" />

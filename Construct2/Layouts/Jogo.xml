@@ -700,7 +700,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text" uid="45">
+                <instance type="botaoMenuprovisorio" uid="45">
                     <properties>
                         <text>MENU INICIAL</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -755,7 +755,7 @@
                 </instance>
                 <instance type="girarPergunta" uid="71">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
                     </properties>
                     <blend-mode>0</blend-mode>

@@ -8,6 +8,7 @@
                 <condition id="-2" name="On start of layout" sid="548108657880177" type="System" />
             </conditions>
             <actions>
+                <action id="0" name="Load JSON" sid="861703059672080" type="ajudaJSON" />
                 <action id="5" name="Set frame" sid="503541469249723" type="btnJogar">
                     <param id="0" name="Frame number">0</param>
                 </action>
@@ -37,56 +38,78 @@
                     <param id="1" name="Mode">0</param>
                     <param id="2" name="Effect">&quot;BlurVertical&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="500385207728103" type="ajudaTexto1">
+                    <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.cs&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="975870425934338" type="ajudaTexto2">
+                    <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.cs&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="580180878545595" type="ajudaTexto1">
+                    <param id="0" name="Text">ajudaJSON.GetData(&quot;ajuda1&quot;,0)</param>
+                </action>
+                <action id="0" name="Set text" sid="258163504880128" type="ajudaTexto2">
+                    <param id="0" name="Text">ajudaJSON.GetData(&quot;ajuda2&quot;,0)</param>
+                </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="846655058944620" type="menuX">
-                    <param id="0" name="Pin to">Sprite</param>
+                    <param id="0" name="Pin to">telaAjuda</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="758414269105588" type="ajudaTexto1">
+                    <param id="0" name="Pin to">telaAjuda</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="221444750396689" type="ajudaTexto2">
+                    <param id="0" name="Pin to">telaAjuda</param>
                     <param id="1" name="Mode">0</param>
                 </action>
             </actions>
         </event-block>
         <event-group description="" sid="371888959724041" title="Acoes 1">
             <sub-events>
-                <event-block any="1" sid="679424648496571">
+                <event-block sid="699828816575070">
                     <conditions>
-                        <condition disabled="1" id="6" name="On object clicked" sid="581598580522124" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">btnJogar</param>
-                        </condition>
-                        <condition id="17" name="On tap object" sid="391945234770644" type="Touch">
-                            <param id="0" name="Object">btnJogar</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action disabled="1" id="-2" name="Go to layout" sid="788559131228373" type="System">
-                            <param id="0" name="Layout">Tela de Casos</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="157027319285276" type="System">
-                            <param id="0" name="Layout">Cena 1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block any="1" sid="104918318897574">
-                    <conditions>
-                        <condition disabled="1" id="6" name="On object clicked" sid="779661776055952" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">btnAjuda</param>
-                        </condition>
-                        <condition id="17" name="On tap object" sid="198846335081980" type="Touch">
-                            <param id="0" name="Object">btnAjuda</param>
+                        <condition id="-2" name="Compare Y" sid="923570095921094" type="telaAjuda">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">0</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="614945883921750">
+                        <event-block any="1" sid="679424648496571">
                             <conditions>
-                                <condition id="-2" name="Compare Y" sid="949834274632127" type="Sprite">
-                                    <param id="0" name="Comparison">2</param>
-                                    <param id="1" name="Y co-ordinate">0</param>
+                                <condition disabled="1" id="6" name="On object clicked" sid="581598580522124" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">btnJogar</param>
+                                </condition>
+                                <condition id="17" name="On tap object" sid="391945234770644" type="Touch">
+                                    <param id="0" name="Object">btnJogar</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-2" name="Set Y" sid="854352014191713" type="Sprite">
+                                <action disabled="1" id="-2" name="Go to layout" sid="788559131228373" type="System">
+                                    <param id="0" name="Layout">Tela de Casos</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="157027319285276" type="System">
+                                    <param id="0" name="Layout">Cena 1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="104918318897574">
+                            <conditions>
+                                <condition disabled="1" id="6" name="On object clicked" sid="779661776055952" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">btnAjuda</param>
+                                </condition>
+                                <condition id="17" name="On tap object" sid="198846335081980" type="Touch">
+                                    <param id="0" name="Object">btnAjuda</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Set Y" sid="854352014191713" type="telaAjuda">
                                     <param id="0" name="Y">360</param>
                                 </action>
                                 <action id="-30" name="Set layer effect enabled" sid="857503763498997" type="System">
@@ -111,52 +134,56 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="324318087738332">
+                        <event-block any="1" sid="173745790857829">
                             <conditions>
-                                <condition id="-22" name="Else" sid="479782378654635" type="System" />
+                                <condition disabled="1" id="6" name="On object clicked" sid="196733621885780" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">btnInfo</param>
+                                </condition>
+                                <condition id="17" name="On tap object" sid="643545044381994" type="Touch">
+                                    <param id="0" name="Object">btnInfo</param>
+                                </condition>
                             </conditions>
                             <actions>
-                                <action id="-2" name="Set Y" sid="347430670416487" type="Sprite">
-                                    <param id="0" name="Y">-360</param>
-                                </action>
-                                <action id="-30" name="Set layer effect enabled" sid="588928800607498" type="System">
-                                    <param id="0" name="Layer">0</param>
-                                    <param id="1" name="Mode">0</param>
-                                    <param id="2" name="Effect">&quot;BlurHorizontal&quot;</param>
-                                </action>
-                                <action id="-30" name="Set layer effect enabled" sid="805072703099928" type="System">
-                                    <param id="0" name="Layer">0</param>
-                                    <param id="1" name="Mode">0</param>
-                                    <param id="2" name="Effect">&quot;BlurVertical&quot;</param>
-                                </action>
-                                <action id="-30" name="Set layer effect enabled" sid="129145850670244" type="System">
-                                    <param id="0" name="Layer">1</param>
-                                    <param id="1" name="Mode">0</param>
-                                    <param id="2" name="Effect">&quot;BlurHorizontal&quot;</param>
-                                </action>
-                                <action id="-30" name="Set layer effect enabled" sid="943725567176792" type="System">
-                                    <param id="0" name="Layer">1</param>
-                                    <param id="1" name="Mode">0</param>
-                                    <param id="2" name="Effect">&quot;BlurVertical&quot;</param>
+                                <action id="-2" name="Go to layout" sid="235790523949240" type="System">
+                                    <param id="0" name="Layout">Tela de Creditos</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block any="1" sid="173745790857829">
+                <event-block sid="721954011599761">
                     <conditions>
-                        <condition disabled="1" id="6" name="On object clicked" sid="196733621885780" type="Mouse">
+                        <condition id="6" name="On object clicked" sid="826228405693372" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">btnInfo</param>
-                        </condition>
-                        <condition id="17" name="On tap object" sid="643545044381994" type="Touch">
-                            <param id="0" name="Object">btnInfo</param>
+                            <param id="2" name="Object clicked">menuX</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Go to layout" sid="235790523949240" type="System">
-                            <param id="0" name="Layout">Tela de Creditos</param>
+                        <action id="-2" name="Set Y" sid="297115233575811" type="telaAjuda">
+                            <param id="0" name="Y">-360</param>
+                        </action>
+                        <action id="-30" name="Set layer effect enabled" sid="551938501184931" type="System">
+                            <param id="0" name="Layer">0</param>
+                            <param id="1" name="Mode">0</param>
+                            <param id="2" name="Effect">&quot;BlurHorizontal&quot;</param>
+                        </action>
+                        <action id="-30" name="Set layer effect enabled" sid="935717204531744" type="System">
+                            <param id="0" name="Layer">0</param>
+                            <param id="1" name="Mode">0</param>
+                            <param id="2" name="Effect">&quot;BlurVertical&quot;</param>
+                        </action>
+                        <action id="-30" name="Set layer effect enabled" sid="758016610237594" type="System">
+                            <param id="0" name="Layer">1</param>
+                            <param id="1" name="Mode">0</param>
+                            <param id="2" name="Effect">&quot;BlurHorizontal&quot;</param>
+                        </action>
+                        <action id="-30" name="Set layer effect enabled" sid="264469886386079" type="System">
+                            <param id="0" name="Layer">1</param>
+                            <param id="1" name="Mode">0</param>
+                            <param id="2" name="Effect">&quot;BlurVertical&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -224,38 +251,53 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block any="1" sid="206521396466313">
+                <event-block sid="784760323020619">
                     <conditions>
-                        <condition id="7" name="Cursor is over object" sid="285171705445947" type="Mouse">
-                            <param id="0" name="Object">btnJogar</param>
-                        </condition>
-                        <condition id="7" name="Cursor is over object" sid="594142692047345" type="Mouse">
-                            <param id="0" name="Object">btnAjuda</param>
-                        </condition>
-                        <condition id="7" name="Cursor is over object" sid="780837975575470" type="Mouse">
-                            <param id="0" name="Object">btnInfo</param>
+                        <condition id="-2" name="Compare Y" sid="823857849921415" type="telaAjuda">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">0</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="0" name="Set cursor style" sid="452730089572605" type="Mouse">
-                            <param id="0" name="Cursor style">1</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="206521396466313">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="285171705445947" type="Mouse">
+                                    <param id="0" name="Object">btnJogar</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="594142692047345" type="Mouse">
+                                    <param id="0" name="Object">btnAjuda</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="780837975575470" type="Mouse">
+                                    <param id="0" name="Object">btnInfo</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="452730089572605" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="319603000900573">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="318323615203346" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="587849979840936" type="Mouse">
+                                    <param id="0" name="Cursor style">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
-                <event-block sid="319603000900573">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="318323615203346" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set cursor style" sid="587849979840936" type="Mouse">
-                            <param id="0" name="Cursor style">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block any="1" sid="377654435437962">
+                <event-block sid="377654435437962">
                     <conditions>
                         <condition id="7" name="Cursor is over object" sid="764876026272416" type="Mouse">
                             <param id="0" name="Object">btnJogar</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="748914149626493" type="telaAjuda">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -274,10 +316,14 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block any="1" sid="868436335552459">
+                <event-block sid="868436335552459">
                     <conditions>
                         <condition id="7" name="Cursor is over object" sid="242755404431798" type="Mouse">
                             <param id="0" name="Object">btnAjuda</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="765376799571465" type="telaAjuda">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -296,10 +342,14 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block any="1" sid="106069181040822">
+                <event-block sid="106069181040822">
                     <conditions>
                         <condition id="7" name="Cursor is over object" sid="380495283527635" type="Mouse">
                             <param id="0" name="Object">btnInfo</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="328536690914647" type="telaAjuda">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -320,5 +370,38 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="373414791675213">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="848736852914818" type="telaAjuda">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="857012944097861">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="456905610665515" type="Mouse">
+                            <param id="0" name="Object">menuX</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="466183192194980" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="562130445509013">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="499516332445631" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="112697280491913" type="Mouse">
+                            <param id="0" name="Cursor style">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>

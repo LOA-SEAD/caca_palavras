@@ -317,7 +317,7 @@
                 <event-block sid="779413485256777">
                     <conditions>
                         <condition id="17" name="On tap object" sid="888285292425928" type="Touch">
-                            <param id="0" name="Object">Text</param>
+                            <param id="0" name="Object">botaoMenuprovisorio</param>
                         </condition>
                     </conditions>
                     <actions>
