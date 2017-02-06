@@ -6,6 +6,8 @@
 *     http://github.com/bunkat/wordfind
 */
 
+window.terminou = 0;
+
 (function (document, $, wordfind) {
 
   'use strict';
@@ -223,6 +225,8 @@
           $('.selected').addClass('found');
           wordList.splice(i,1);
           $('.' + curWord).addClass('wordFound');
+          //atualiza(1);
+          window.terminou = 1;
           atualiza(1);
         }
 
