@@ -346,6 +346,3 @@ window.terminou = 0;
   window.wordfindgame = WordFindGame();
 
 }(document, jQuery, wordfind));
-
-
-

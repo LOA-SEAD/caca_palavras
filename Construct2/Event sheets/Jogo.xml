@@ -101,6 +101,17 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="177629846718621">
+            <conditions>
+                <condition id="4" name="Compare JSreturn return" sid="572371205511563" type="cacaPalavrasHTML">
+                    <param id="0" name="JSreturn">&quot;terminou&quot;</param>
+                    <param id="1" name="Case">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="352358061811298" type="caderneta" />
+            </actions>
+        </event-block>
         <event-group description="Trata dos eventos que definem a mecânica de jogo, configura funcionalidades e seta parâmetros para que o jogo funcione." sid="376043561246800" title="MecanicaJogo">
             <sub-events>
                 <event-block sid="995221494205907">
@@ -113,7 +124,7 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <comment>Ampulheta comeca durando 2.5min, mas tem &quot;capacidade&quot; de marcar 5min</comment>
+                        <comment>Ampulheta comeca durando 10min, mas tem &quot;capacidade&quot; de marcar 10min</comment>
                         <event-block sid="940547985445392">
                             <conditions>
                                 <condition id="-6" name="Compare height" sid="319619016363250" type="areiaBaixo">
@@ -123,10 +134,10 @@
                             </conditions>
                             <actions>
                                 <action id="-6" name="Set height" sid="655733985443125" type="areiaCima">
-                                    <param id="0" name="Height">areiaCima.Height - (4/750)</param>
+                                    <param id="0" name="Height">areiaCima.Height - (1/375)</param>
                                 </action>
                                 <action id="-6" name="Set height" sid="145183896859802" type="areiaBaixo">
-                                    <param id="0" name="Height">areiaBaixo.Height + (19/2000)</param>
+                                    <param id="0" name="Height">areiaBaixo.Height + (19/4000)</param>
                                 </action>
                                 <action id="-15" name="Set visible" sid="436516935980684" type="areiaCima">
                                     <param id="0" name="Visibility">1</param>
