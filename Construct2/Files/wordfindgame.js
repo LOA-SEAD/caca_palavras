@@ -225,7 +225,6 @@ window.terminou = 0;
           $('.selected').addClass('found');
           wordList.splice(i,1);
           $('.' + curWord).addClass('wordFound');
-          //atualiza(1);
           window.terminou = 1;
           atualiza(1);
         }
@@ -242,6 +241,9 @@ window.terminou = 0;
       selectedSquares = [];
       curWord = '';
       curOrientation = null;
+      //if (window.terminou === 1) {
+      //  return "terminou"
+      //}
     };
 
     /**

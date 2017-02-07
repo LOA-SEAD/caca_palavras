@@ -103,10 +103,7 @@
         </event-block>
         <event-block sid="177629846718621">
             <conditions>
-                <condition id="4" name="Compare JSreturn return" sid="572371205511563" type="cacaPalavrasHTML">
-                    <param id="0" name="JSreturn">&quot;terminou&quot;</param>
-                    <param id="1" name="Case">0</param>
-                </condition>
+                <condition id="3" name="On JSreturn" sid="572371205511563" type="cacaPalavrasHTML" />
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="352358061811298" type="caderneta" />
@@ -134,10 +131,10 @@
                             </conditions>
                             <actions>
                                 <action id="-6" name="Set height" sid="655733985443125" type="areiaCima">
-                                    <param id="0" name="Height">areiaCima.Height - (1/375)</param>
+                                    <param id="0" name="Height">areiaCima.Height - 0.16 * dt</param>
                                 </action>
                                 <action id="-6" name="Set height" sid="145183896859802" type="areiaBaixo">
-                                    <param id="0" name="Height">areiaBaixo.Height + (19/4000)</param>
+                                    <param id="0" name="Height">areiaBaixo.Height + 0.285 * dt</param>
                                 </action>
                                 <action id="-15" name="Set visible" sid="436516935980684" type="areiaCima">
                                     <param id="0" name="Visibility">1</param>
@@ -305,7 +302,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="459293725405922">
+                <event-block disabled="1" sid="459293725405922">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="804919346850258" type="System">
                             <param id="0" name="Interval (seconds)">4.0</param>
@@ -525,6 +522,7 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>VALÉRIO, ALTERE ISSO PARA QUE ACRESCENTE 2 MINUTOS!!!!!!!!!!!!!</comment>
                 <event-block any="1" sid="174450157309839">
                     <conditions>
                         <condition id="17" name="On tap object" sid="353540501543385" type="Touch">
