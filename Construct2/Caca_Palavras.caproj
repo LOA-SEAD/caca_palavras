@@ -19,7 +19,7 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Joe7" id="cjs" version="1">Call JS</plugin>
-        <plugin author="PlayLive" id="htmlCODE" version="1.100000024">iFrame &amp; insertHTML</plugin>
+        <plugin author="PlayLive" id="htmlCODE" version="1.230000019">HTML | iFrame</plugin>
         <plugin author="Joe7" id="ljson" version="1.200000048">Load JSON</plugin>
     </used-plugins>
     <used-behaviors>

@@ -1,5 +1,5 @@
 //window.terminou = 0;
-//window.variavelInterna;
+window.variavelInterna = 8;
 
 // Adding the script tag to the head as suggested before
 /*var head = document.getElementsByTagName('head')[0];
@@ -14,9 +14,9 @@ script.onload = acabou;
 head.appendChild(script);*/
 
 /*var ajax = new XMLHttpRequest();
-ajax.open( 'GET', 'wordfindgame.js', false ); // <-- the 'false' makes it synchronous
+ajax.open( 'GET', 'wordfindgame.js', true ); // <-- the 'false' makes it synchronous
 ajax.onreadystatechange = function () {
-var script = ajax.response || ajax.responseText;
+  var script = ajax.response || ajax.responseText;
     if (ajax.readyState === 4) {
         switch( ajax.status) {
             case 200:
@@ -32,14 +32,13 @@ var atualiza = function (valor){
   console.log(terminou);
   window['terminou'] = valor;
   window['variavelInterna'] = valor;
-  console.log(terminou);
-  return "terminou";
+  console.log(variavelInterna);
+  //return "variavelInterna";
 }
 
 var acabou = function (){
-  console.log(terminou);
   console.log(variavelInterna);
-  return terminou;
+  //return variavelInterna;
 }
 
 /*(function (wnd, undefined) {

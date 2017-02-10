@@ -47,12 +47,21 @@
                 <action id="0" name="Set text" sid="853942697072124" type="dicaPowerup">
                     <param id="0" name="Text">&quot;&quot;</param>
                 </action>
-                <action id="13" name="Set URL" sid="459290727587993" type="cacaPalavrasHTML">
+                <action id="13" name="Go to URL" sid="459290727587993" type="cacaPalavrasHTML">
                     <param id="0" name="URL">&quot;cacaPalavras&quot; &amp;  numcaso &amp; &quot;.html&quot;</param>
                 </action>
                 <action id="-3" name="Set position" sid="311262344278085" type="cacaPalavrasHTML">
                     <param id="0" name="X">LayoutWidth - 963</param>
                     <param id="1" name="Y">LayoutHeight - 460</param>
+                </action>
+                <action id="19" name="Include Javascript file" sid="600475371456505" type="cacaPalavrasHTML">
+                    <param id="0" name="Javascript file">&quot;wordfind.js&quot;</param>
+                </action>
+                <action id="19" name="Include Javascript file" sid="427858723722925" type="cacaPalavrasHTML">
+                    <param id="0" name="Javascript file">&quot;verificaFim.js&quot;</param>
+                </action>
+                <action id="19" name="Include Javascript file" sid="125879560461001" type="cacaPalavrasHTML">
+                    <param id="0" name="Javascript file">&quot;wordfindgame.js&quot;</param>
                 </action>
                 <action id="0" name="Clear" sid="421663245608084" type="statusDicas" />
                 <action id="7" name="Set CSS style" sid="504033110686394" type="respostas">
@@ -103,7 +112,7 @@
         </event-block>
         <event-block sid="177629846718621">
             <conditions>
-                <condition id="3" name="On JSreturn" sid="572371205511563" type="cacaPalavrasHTML" />
+                <condition id="3" name="On C2 Function" sid="572371205511563" type="cacaPalavrasHTML" />
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="352358061811298" type="caderneta" />
@@ -121,7 +130,7 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <comment>Ampulheta comeca durando 10min, mas tem &quot;capacidade&quot; de marcar 10min</comment>
+                        <comment>Ampulheta comeca durando 10min, mas tem &quot;capacidade&quot; de marcar 20min</comment>
                         <event-block sid="940547985445392">
                             <conditions>
                                 <condition id="-6" name="Compare height" sid="319619016363250" type="areiaBaixo">
@@ -302,17 +311,23 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block disabled="1" sid="459293725405922">
+                <event-block sid="459293725405922">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="804919346850258" type="System">
                             <param id="0" name="Interval (seconds)">4.0</param>
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="21" name="Execute Javascript" sid="290969698873155" type="cacaPalavrasHTML">
+                            <param id="0" name="Javascript">&quot;variavelInterna = terminou&quot;</param>
+                        </action>
+                        <action id="21" name="Execute Javascript" sid="639324644112679" type="cacaPalavrasHTML">
+                            <param id="0" name="Javascript">&quot;wordfindgame.solve()&quot;</param>
+                        </action>
                         <action id="0" name="Execute" sid="514381058533488" type="verificaFimJS">
                             <param id="0" name="Value">&quot;acabou()&quot;</param>
                         </action>
-                        <action id="-9" name="Set value" sid="926214358178160" type="System">
+                        <action disabled="1" id="-9" name="Set value" sid="926214358178160" type="System">
                             <param id="0" name="Variable">teste</param>
                             <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
                         </action>

@@ -218,6 +218,8 @@ window.terminou = 0;
     */
     var endTurn = function () {
 
+      //window.terminou = 0;
+
       // see if we formed a valid word
       for (var i = 0, len = wordList.length; i < len; i++) {
         
@@ -226,6 +228,7 @@ window.terminou = 0;
           wordList.splice(i,1);
           $('.' + curWord).addClass('wordFound');
           window.terminou = 1;
+          this.terminou = 1;
           atualiza(1);
         }
 
@@ -241,6 +244,7 @@ window.terminou = 0;
       selectedSquares = [];
       curWord = '';
       curOrientation = null;
+      return wordList.length;
       //if (window.terminou === 1) {
       //  return "terminou"
       //}
@@ -316,9 +320,9 @@ window.terminou = 0;
       * @param {[[String]]} puzzle: The puzzle to solve
       * @param {[String]} words: The words to solve for
       */
-      solve: function(puzzle, words) {
+      solve: function(/*puzzle, words*/) {
 
-        var solution = wordfind.solve(puzzle, words).found;
+        /*var solution = wordfind.solve(puzzle, words).found;
 
         for( var i = 0, len = solution.length; i < len; i++) {
           var word = solution[i].word,
@@ -335,8 +339,9 @@ window.terminou = 0;
 
             $('.' + word).addClass('wordFound');
           }
-        }
+        }*/
 
+      console.log(this.terminou);
       }
     };
   };
