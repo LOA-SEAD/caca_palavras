@@ -1301,6 +1301,7 @@
             <file name="creditos.json" />
             <file name="dicaPowerup.json" />
             <file name="ajuda.json" />
+            <file name="dialogos.json" />
         </file-folder>
         <file-folder name="HTML">
             <file name="cacaPalavras1.html" />

@@ -318,13 +318,16 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="21" name="Execute Javascript" sid="290969698873155" type="cacaPalavrasHTML">
+                        <action disabled="1" id="21" name="Execute Javascript" sid="290969698873155" type="cacaPalavrasHTML">
                             <param id="0" name="Javascript">&quot;variavelInterna = terminou&quot;</param>
                         </action>
                         <action id="21" name="Execute Javascript" sid="639324644112679" type="cacaPalavrasHTML">
                             <param id="0" name="Javascript">&quot;wordfindgame.solve()&quot;</param>
                         </action>
-                        <action id="0" name="Execute" sid="514381058533488" type="verificaFimJS">
+                        <action id="21" name="Execute Javascript" sid="928105679902129" type="cacaPalavrasHTML">
+                            <param id="0" name="Javascript">&quot;console.log(terminou)&quot;</param>
+                        </action>
+                        <action disabled="1" id="0" name="Execute" sid="514381058533488" type="verificaFimJS">
                             <param id="0" name="Value">&quot;acabou()&quot;</param>
                         </action>
                         <action disabled="1" id="-9" name="Set value" sid="926214358178160" type="System">
@@ -332,6 +335,12 @@
                             <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
                         </action>
                     </actions>
+                </event-block>
+                <event-block sid="304443173323497">
+                    <conditions>
+                        <condition id="3" name="On C2 Function" sid="457926353532763" type="cacaPalavrasHTML" />
+                    </conditions>
+                    <actions />
                 </event-block>
             </sub-events>
         </event-group>

@@ -32,6 +32,7 @@ var atualiza = function (valor){
   console.log(terminou);
   window['terminou'] = valor;
   window['variavelInterna'] = valor;
+  window.$terminou = valor;
   console.log(variavelInterna);
   //return "variavelInterna";
 }

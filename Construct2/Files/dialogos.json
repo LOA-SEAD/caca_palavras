@@ -1,0 +1,21 @@
+﻿{
+    "Introducao0":["CHERLÓQUI", "UuuUHaaAaaAAa... que preguiça. Sinto que meu organismo deseja se recuperar da fadiga, causando em mim uma suspensão periódica de consciência, Lupin."],
+    "Introducao1":["LUPIN", "Já entendi que você está com sono, Cherlóqui. Pare de enrolar! Temos trabalho a fazer."],
+    "Introducao2":["CHERLÓQUI", "Trabalho?! Foi-se o tempo em que minha perspicácia era devidamente recompensada."],
+    "Introducao3":["LUPIN", "Prefere voltar a resolver crimes na rua?"],
+    "Introducao4":["CHERLÓQUI", "NÃÃÃÃÃO!! Cof cof... quero dizer... eu poderia, mas meu intelecto me permite resolver enigmas no conforto deste escritório."],
+    "Introducao5":["LUPIN", "Claro! Óbvio que não tem nada a ver com você ter medo até de uma barata."],
+    "Introducao6":["CHERLÓQUI", "Pare de me enrolar, Lupin, vamos aos casos de hoje."],
+
+    "Vitoria0": ["CHERLÓQUI", "Ora, meu caro Lupin, comece a acreditar em minhas palavras! Eu lhe disse! Caso resolvido sem mover um músculo desta cadeira."],
+    "Vitoria1": ["LUPIN", "Ok, ok! Vamos para o próximo caso."],
+
+    "Derrota0": ["CHERLÓQUI", "Huhumm... foi apenas um lapso. Não me olhe deste jeito, Lupin, você está atrapalhando a minha concentração. Deixe-me tentar novamente."],
+    "Derrota1": ["LUPIN", "Tsc, tsc, tsc..."],
+
+    "Final0": ["CHERLÓQUI", "Por Einstein, já é fim de expediente? Dever cumprido, Lupin. Mais uma vez o mundo foi salvo graças ao meu intelecto."],
+    "Final1": ["LUPIN", "HEY! E eu?"],
+    "Final2": ["CHERLÓQUI", "Talvez você possa ter me inspirado uma vez ou outra, mas não se vanglorie, Lupin, a humildade é uma virtude."],
+    "Final3": ["LUPIN", "Mas você aca..."],
+    "Final4": ["CHERLÓQUI", "Não me aborreça mais com as suas bobagens! E vamos, não podemos perder o capítulo de hoje da novela."]
+}
