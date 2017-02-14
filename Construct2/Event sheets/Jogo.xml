@@ -140,10 +140,10 @@
                             </conditions>
                             <actions>
                                 <action id="-6" name="Set height" sid="655733985443125" type="areiaCima">
-                                    <param id="0" name="Height">areiaCima.Height - 0.16 * dt</param>
+                                    <param id="0" name="Height">areiaCima.Height - 0.08* dt</param>
                                 </action>
                                 <action id="-6" name="Set height" sid="145183896859802" type="areiaBaixo">
-                                    <param id="0" name="Height">areiaBaixo.Height + 0.285 * dt</param>
+                                    <param id="0" name="Height">areiaBaixo.Height + 0.1425 * dt</param>
                                 </action>
                                 <action id="-15" name="Set visible" sid="436516935980684" type="areiaCima">
                                     <param id="0" name="Visibility">1</param>
@@ -181,6 +181,9 @@
                     <conditions>
                         <condition id="17" name="On tap object" sid="319940891323163" type="Touch">
                             <param id="0" name="Object">girarPergunta</param>
+                        </condition>
+                        <condition id="-9" inverted="1" name="Layer is visible" sid="325185935926381" type="System">
+                            <param id="0" name="Layer">3</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -346,118 +349,128 @@
         </event-group>
         <event-group description="Para tratar o comportamento dos botões da tela conforme as ações do mouse (botões de powerups do Menu, botão de configurações na caderneta)" sid="441495148994534" title="EventosMouse">
             <sub-events>
-                <event-block sid="779413485256777">
+                <event-block sid="448403677070406">
                     <conditions>
-                        <condition id="17" name="On tap object" sid="888285292425928" type="Touch">
-                            <param id="0" name="Object">botaoMenuprovisorio</param>
+                        <condition id="-9" inverted="1" name="Layer is visible" sid="906035960998385" type="System">
+                            <param id="0" name="Layer">3</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="323557252587815" type="System">
-                            <param id="0" name="Variable">tempoAtual</param>
-                            <param id="1" name="Value">areiaBaixo.Height</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="181961290269746" type="System">
-                            <param id="0" name="Layout">Menu Principal</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block any="1" sid="482838909601860">
-                    <conditions>
-                        <condition id="7" name="Cursor is over object" sid="648018988363192" type="Mouse">
-                            <param id="0" name="Object">bonus1</param>
-                        </condition>
-                        <condition id="4" name="Is touching object" sid="504724530227513" type="Touch">
-                            <param id="0" name="Object">bonus1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="297836527796435" type="bonusSelecao">
-                            <param id="0" name="X">196</param>
-                            <param id="1" name="Y">270</param>
-                        </action>
-                        <action id="0" name="Set text" sid="227164663994446" type="dicaPowerup">
-                            <param id="0" name="Text">dicaJSON.GetData(&quot;dica50&quot;,0)</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block any="1" sid="324670192903689">
-                    <conditions>
-                        <condition id="7" name="Cursor is over object" sid="814830495706499" type="Mouse">
-                            <param id="0" name="Object">bonus2</param>
-                        </condition>
-                        <condition id="4" name="Is touching object" sid="301873188824654" type="Touch">
-                            <param id="0" name="Object">bonus2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="231346181696427" type="bonusSelecao">
-                            <param id="0" name="X">183</param>
-                            <param id="1" name="Y">353</param>
-                        </action>
-                        <action id="0" name="Set text" sid="516724553518789" type="dicaPowerup">
-                            <param id="0" name="Text">dicaJSON.GetData(&quot;dica100&quot;,0)</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block any="1" sid="769966486035948">
-                    <conditions>
-                        <condition id="7" name="Cursor is over object" sid="450830364072713" type="Mouse">
-                            <param id="0" name="Object">bonus3</param>
-                        </condition>
-                        <condition id="4" name="Is touching object" sid="157680612029896" type="Touch">
-                            <param id="0" name="Object">bonus3</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="631844205561282" type="bonusSelecao">
-                            <param id="0" name="X">163</param>
-                            <param id="1" name="Y">438</param>
-                        </action>
-                        <action id="0" name="Set text" sid="925758595558377" type="dicaPowerup">
-                            <param id="0" name="Text">dicaJSON.GetData(&quot;dica150&quot;,0)</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block any="1" sid="522830551392801">
-                    <conditions>
-                        <condition id="7" name="Cursor is over object" sid="184881311508648" type="Mouse">
-                            <param id="0" name="Object">bonus1</param>
-                        </condition>
-                        <condition id="7" name="Cursor is over object" sid="488678859358944" type="Mouse">
-                            <param id="0" name="Object">bonus2</param>
-                        </condition>
-                        <condition id="7" name="Cursor is over object" sid="864569312032716" type="Mouse">
-                            <param id="0" name="Object">bonus3</param>
-                        </condition>
-                        <condition id="4" name="Is touching object" sid="201612474476537" type="Touch">
-                            <param id="0" name="Object">bonus1</param>
-                        </condition>
-                        <condition id="4" name="Is touching object" sid="779477839822398" type="Touch">
-                            <param id="0" name="Object">bonus2</param>
-                        </condition>
-                        <condition id="4" name="Is touching object" sid="767742161091294" type="Touch">
-                            <param id="0" name="Object">bonus3</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-15" name="Set visible" sid="216952055354023" type="bonusSelecao">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="940773435174880">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="584513312852972" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="384692413189532" type="dicaPowerup">
-                            <param id="0" name="Text">&quot;&quot;</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="456185245852567" type="bonusSelecao">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="779413485256777">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="888285292425928" type="Touch">
+                                    <param id="0" name="Object">botaoMenuprovisorio</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="323557252587815" type="System">
+                                    <param id="0" name="Variable">tempoAtual</param>
+                                    <param id="1" name="Value">areiaBaixo.Height</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="181961290269746" type="System">
+                                    <param id="0" name="Layout">Menu Principal</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="482838909601860">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="648018988363192" type="Mouse">
+                                    <param id="0" name="Object">bonus1</param>
+                                </condition>
+                                <condition id="4" name="Is touching object" sid="504724530227513" type="Touch">
+                                    <param id="0" name="Object">bonus1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="297836527796435" type="bonusSelecao">
+                                    <param id="0" name="X">196</param>
+                                    <param id="1" name="Y">270</param>
+                                </action>
+                                <action id="0" name="Set text" sid="227164663994446" type="dicaPowerup">
+                                    <param id="0" name="Text">dicaJSON.GetData(&quot;dica50&quot;,0)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="324670192903689">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="814830495706499" type="Mouse">
+                                    <param id="0" name="Object">bonus2</param>
+                                </condition>
+                                <condition id="4" name="Is touching object" sid="301873188824654" type="Touch">
+                                    <param id="0" name="Object">bonus2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="231346181696427" type="bonusSelecao">
+                                    <param id="0" name="X">183</param>
+                                    <param id="1" name="Y">353</param>
+                                </action>
+                                <action id="0" name="Set text" sid="516724553518789" type="dicaPowerup">
+                                    <param id="0" name="Text">dicaJSON.GetData(&quot;dica100&quot;,0)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="769966486035948">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="450830364072713" type="Mouse">
+                                    <param id="0" name="Object">bonus3</param>
+                                </condition>
+                                <condition id="4" name="Is touching object" sid="157680612029896" type="Touch">
+                                    <param id="0" name="Object">bonus3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="631844205561282" type="bonusSelecao">
+                                    <param id="0" name="X">163</param>
+                                    <param id="1" name="Y">438</param>
+                                </action>
+                                <action id="0" name="Set text" sid="925758595558377" type="dicaPowerup">
+                                    <param id="0" name="Text">dicaJSON.GetData(&quot;dica150&quot;,0)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="522830551392801">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="184881311508648" type="Mouse">
+                                    <param id="0" name="Object">bonus1</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="488678859358944" type="Mouse">
+                                    <param id="0" name="Object">bonus2</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="864569312032716" type="Mouse">
+                                    <param id="0" name="Object">bonus3</param>
+                                </condition>
+                                <condition id="4" name="Is touching object" sid="201612474476537" type="Touch">
+                                    <param id="0" name="Object">bonus1</param>
+                                </condition>
+                                <condition id="4" name="Is touching object" sid="779477839822398" type="Touch">
+                                    <param id="0" name="Object">bonus2</param>
+                                </condition>
+                                <condition id="4" name="Is touching object" sid="767742161091294" type="Touch">
+                                    <param id="0" name="Object">bonus3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="216952055354023" type="bonusSelecao">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="940773435174880">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="584513312852972" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="384692413189532" type="dicaPowerup">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="456185245852567" type="bonusSelecao">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block any="1" sid="687132932641317">
                     <conditions>
@@ -546,7 +559,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <comment>VALÉRIO, ALTERE ISSO PARA QUE ACRESCENTE 2 MINUTOS!!!!!!!!!!!!!</comment>
                 <event-block any="1" sid="174450157309839">
                     <conditions>
                         <condition id="17" name="On tap object" sid="353540501543385" type="Touch">
@@ -574,10 +586,10 @@
                                     <param id="1" name="Value">50</param>
                                 </action>
                                 <action id="-6" name="Set height" sid="350666356034054" type="areiaCima">
-                                    <param id="0" name="Height">areiaCima.Height+4.8</param>
+                                    <param id="0" name="Height">areiaCima.Height+9.6</param>
                                 </action>
                                 <action id="-6" name="Set height" sid="203180774139231" type="areiaBaixo">
-                                    <param id="0" name="Height">areiaBaixo.Height-8.55</param>
+                                    <param id="0" name="Height">areiaBaixo.Height-17.1</param>
                                 </action>
                             </actions>
                         </event-block>
