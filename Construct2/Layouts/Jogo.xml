@@ -623,7 +623,6 @@
                 <instance type="cacaPalavrasHTML" uid="28">
                     <properties>
                         <id-optional></id-optional>
-                        <class-optional></class-optional>
                         <initial-visibility>Visible</initial-visibility>
                         <tooltip></tooltip>
                         <background></background>
@@ -632,8 +631,8 @@
                         <object>iFrame</object>
                         <iframe></iframe>
                         <url></url>
+                        <inserthtml></inserthtml>
                         <html></html>
-                        <code></code>
                         <color></color>
                         <auto-font-size>Default</auto-font-size>
                         <import></import>

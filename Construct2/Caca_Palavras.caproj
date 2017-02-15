@@ -750,6 +750,79 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type global="1" name="dialogosJSON" sid="843140399657457">
+                <plugin id="ljson" />
+            </object-type>
+            <object-type name="balao1" sid="819340311523910">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="701813246854707" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\balaoP.png">
+                            <collision-poly>
+                                <point x="0.0132743" y="0.0220588" />
+                                <point x="0.99115" y="0.0147059" />
+                                <point x="0.977876" y="0.5" />
+                                <point x="0.853982" y="0.757353" />
+                                <point x="0.5" y="0.727941" />
+                                <point x="0.163717" y="0.727941" />
+                                <point x="0.00442478" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="balao2" sid="273976722769235">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="179896365905297" speed="5">
+                        <frame duration="1" hotspotX="0.501805" hotspotY="0.502262" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\balaoG.png">
+                            <collision-poly>
+                                <point x="0.0216607" y="0.0271493" />
+                                <point x="0.498195" y="0.00904977" />
+                                <point x="0.841155" y="0.199095" />
+                                <point x="0.844765" y="0.80543" />
+                                <point x="0.498195" y="0.986425" />
+                                <point x="0.0144404" y="0.9819" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="balaoM" sid="352755044972128">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="954618269804097" speed="5">
+                        <frame duration="1" hotspotX="0.501916" hotspotY="0.503401" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\balaoM.png">
+                            <collision-poly>
+                                <point x="0.187739" y="0.333333" />
+                                <point x="0.498084" y="0.0136054" />
+                                <point x="0.977012" y="0.0408163" />
+                                <point x="0.961686" y="0.931973" />
+                                <point x="0.498084" y="0.972789" />
+                                <point x="0.187739" y="0.666667" />
+                                <point x="0.141762" y="0.496599" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="diagTexto1" sid="246691148710217">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="diagTexto2" sid="143272269716775">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="diagTexto3" sid="908401106307268">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="fade" sid="826482958109397">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="828868427859747" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Tela Creditos">
             <object-type name="fundoCreditos" sid="871468901321763">
@@ -1250,9 +1323,6 @@
         <object-type global="1" name="verificaFimJS" sid="799853815690657">
             <plugin id="cjs" />
         </object-type>
-        <object-type global="1" name="dialogosJSON" sid="843140399657457">
-            <plugin id="ljson" />
-        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1305,6 +1375,14 @@
                 <file name="breamcatcher-webfont.woff" />
                 <file name="breamcatcher-webfont.woff2" />
                 <file name="stylesheet2.css" />
+            </file-folder>
+            <file-folder name="Cavorting">
+                <file name="cavorting-webfont.eot" />
+                <file name="cavorting-webfont.svg" />
+                <file name="cavorting-webfont.ttf" />
+                <file name="cavorting-webfont.woff" />
+                <file name="cavorting-webfont.woff2" />
+                <file name="stylesheet3.css" />
             </file-folder>
         </file-folder>
         <file-folder name="JSON">
