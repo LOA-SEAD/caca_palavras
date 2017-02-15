@@ -26,6 +26,42 @@
                     <param id="0" name="Layer">3</param>
                     <param id="1" name="Visibility">0</param>
                 </action>
+                <action id="-32" name="Set layer effect parameter" sid="803453506384985" type="System">
+                    <param id="0" name="Layer">0</param>
+                    <param id="1" name="Effect">&quot;BlurHorizontal&quot;</param>
+                    <param id="2" name="Parameter index">0</param>
+                    <param id="3" name="Value">0</param>
+                </action>
+                <action id="-32" name="Set layer effect parameter" sid="658013562949289" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Effect">&quot;BlurHorizontal&quot;</param>
+                    <param id="2" name="Parameter index">0</param>
+                    <param id="3" name="Value">0</param>
+                </action>
+                <action id="-32" name="Set layer effect parameter" sid="788718884452304" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Effect">&quot;BlurHorizontal&quot;</param>
+                    <param id="2" name="Parameter index">0</param>
+                    <param id="3" name="Value">0</param>
+                </action>
+                <action id="-32" name="Set layer effect parameter" sid="494776876354624" type="System">
+                    <param id="0" name="Layer">0</param>
+                    <param id="1" name="Effect">&quot;BlurVertical&quot;</param>
+                    <param id="2" name="Parameter index">0</param>
+                    <param id="3" name="Value">0</param>
+                </action>
+                <action id="-32" name="Set layer effect parameter" sid="496518125154251" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Effect">&quot;BlurVertical&quot;</param>
+                    <param id="2" name="Parameter index">0</param>
+                    <param id="3" name="Value">0</param>
+                </action>
+                <action id="-32" name="Set layer effect parameter" sid="713816498143606" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Effect">&quot;BlurVertical&quot;</param>
+                    <param id="2" name="Parameter index">0</param>
+                    <param id="3" name="Value">0</param>
+                </action>
                 <action id="5" name="Set web font" sid="513335371679167" type="dinheiro">
                     <param id="0" name="Family name">&quot;breamcatcher&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
@@ -47,23 +83,13 @@
                 <action id="0" name="Set text" sid="853942697072124" type="dicaPowerup">
                     <param id="0" name="Text">&quot;&quot;</param>
                 </action>
-                <action id="13" name="Go to URL" sid="459290727587993" type="cacaPalavrasHTML">
+                <action id="13" name="Set URL" sid="459290727587993" type="cacaPalavrasHTML">
                     <param id="0" name="URL">&quot;cacaPalavras&quot; &amp;  numcaso &amp; &quot;.html&quot;</param>
                 </action>
                 <action id="-3" name="Set position" sid="311262344278085" type="cacaPalavrasHTML">
                     <param id="0" name="X">LayoutWidth - 963</param>
                     <param id="1" name="Y">LayoutHeight - 460</param>
                 </action>
-                <action id="19" name="Include Javascript file" sid="600475371456505" type="cacaPalavrasHTML">
-                    <param id="0" name="Javascript file">&quot;wordfind.js&quot;</param>
-                </action>
-                <action id="19" name="Include Javascript file" sid="427858723722925" type="cacaPalavrasHTML">
-                    <param id="0" name="Javascript file">&quot;verificaFim.js&quot;</param>
-                </action>
-                <action id="19" name="Include Javascript file" sid="125879560461001" type="cacaPalavrasHTML">
-                    <param id="0" name="Javascript file">&quot;wordfindgame.js&quot;</param>
-                </action>
-                <action id="0" name="Clear" sid="421663245608084" type="statusDicas" />
                 <action id="7" name="Set CSS style" sid="504033110686394" type="respostas">
                     <param id="0" name="Property name">&quot;font-size&quot;</param>
                     <param id="1" name="Value">&quot;20px&quot;</param>
@@ -76,6 +102,7 @@
                     <param id="0" name="Property name">&quot;text-transform&quot;</param>
                     <param id="1" name="Value">&quot;lowercase&quot;</param>
                 </action>
+                <action id="0" name="Clear" sid="421663245608084" type="statusDicas" />
             </actions>
             <sub-events>
                 <event-block sid="118829801911387">
@@ -110,15 +137,7 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="177629846718621">
-            <conditions>
-                <condition id="3" name="On C2 Function" sid="572371205511563" type="cacaPalavrasHTML" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="352358061811298" type="caderneta" />
-            </actions>
-        </event-block>
-        <event-group description="Trata dos eventos que definem a mecânica de jogo, configura funcionalidades e seta parâmetros para que o jogo funcione." sid="376043561246800" title="MecanicaJogo">
+        <event-group description="Trata dos eventos que definem a mecânica de jogo, configura funcionalidades e seta parâmetros para que o jogo funcione." sid="376043561246800" title="Acoes 4">
             <sub-events>
                 <event-block sid="995221494205907">
                     <conditions>
@@ -190,6 +209,9 @@
                         <action id="-10" name="Add to" sid="601029030707220" type="System">
                             <param id="0" name="Variable">dicaNaMaquina</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="366842085839415" type="respostas">
+                            <param id="0" name="Text">&quot;&quot;</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -321,15 +343,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action disabled="1" id="21" name="Execute Javascript" sid="290969698873155" type="cacaPalavrasHTML">
-                            <param id="0" name="Javascript">&quot;variavelInterna = terminou&quot;</param>
-                        </action>
-                        <action id="21" name="Execute Javascript" sid="639324644112679" type="cacaPalavrasHTML">
-                            <param id="0" name="Javascript">&quot;wordfindgame.solve()&quot;</param>
-                        </action>
-                        <action id="21" name="Execute Javascript" sid="928105679902129" type="cacaPalavrasHTML">
-                            <param id="0" name="Javascript">&quot;console.log(terminou)&quot;</param>
-                        </action>
                         <action disabled="1" id="0" name="Execute" sid="514381058533488" type="verificaFimJS">
                             <param id="0" name="Value">&quot;acabou()&quot;</param>
                         </action>
@@ -339,15 +352,9 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="304443173323497">
-                    <conditions>
-                        <condition id="3" name="On C2 Function" sid="457926353532763" type="cacaPalavrasHTML" />
-                    </conditions>
-                    <actions />
-                </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Para tratar o comportamento dos botões da tela conforme as ações do mouse (botões de powerups do Menu, botão de configurações na caderneta)" sid="441495148994534" title="EventosMouse">
+        <event-group description="Para tratar o comportamento dos botões da tela conforme as ações do mouse (botões de powerups do Menu, botão de configurações na caderneta)" sid="441495148994534" title="Efeitos 4">
             <sub-events>
                 <event-block sid="448403677070406">
                     <conditions>
@@ -357,22 +364,6 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="779413485256777">
-                            <conditions>
-                                <condition id="17" name="On tap object" sid="888285292425928" type="Touch">
-                                    <param id="0" name="Object">botaoMenuprovisorio</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="323557252587815" type="System">
-                                    <param id="0" name="Variable">tempoAtual</param>
-                                    <param id="1" name="Value">areiaBaixo.Height</param>
-                                </action>
-                                <action id="-2" name="Go to layout" sid="181961290269746" type="System">
-                                    <param id="0" name="Layout">Menu Principal</param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-block any="1" sid="482838909601860">
                             <conditions>
                                 <condition id="7" name="Cursor is over object" sid="648018988363192" type="Mouse">
@@ -383,12 +374,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Set text" sid="227164663994446" type="dicaPowerup">
+                                    <param id="0" name="Text">dicaJSON.GetData(&quot;dica50&quot;,0)</param>
+                                </action>
                                 <action id="-3" name="Set position" sid="297836527796435" type="bonusSelecao">
                                     <param id="0" name="X">196</param>
                                     <param id="1" name="Y">270</param>
-                                </action>
-                                <action id="0" name="Set text" sid="227164663994446" type="dicaPowerup">
-                                    <param id="0" name="Text">dicaJSON.GetData(&quot;dica50&quot;,0)</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -470,6 +461,228 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block any="1" sid="392583988743447">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="242313684637242" type="Mouse">
+                                    <param id="0" name="Object">bonus1</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="240455356414492" type="Mouse">
+                                    <param id="0" name="Object">bonus2</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="213841724311782" type="Mouse">
+                                    <param id="0" name="Object">bonus3</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="762190734658599" type="Mouse">
+                                    <param id="0" name="Object">configBotao</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="192431627786467" type="Mouse">
+                                    <param id="0" name="Object">girarPergunta</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="217755434557631" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="329408777769232">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="328021996636492" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="728018416646360" type="Mouse">
+                                    <param id="0" name="Cursor style">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="779413485256777">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="888285292425928" type="Touch">
+                                    <param id="0" name="Object">botaoMenuprovisorio</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="323557252587815" type="System">
+                                    <param id="0" name="Variable">tempoAtual</param>
+                                    <param id="1" name="Value">areiaBaixo.Height</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="181961290269746" type="System">
+                                    <param id="0" name="Layout">Menu Principal</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="174450157309839">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="353540501543385" type="Touch">
+                                    <param id="0" name="Object">bonus1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="315383884865815">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="375976550456200" type="System">
+                                            <param id="0" name="Variable">dinheiro</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">50</param>
+                                        </condition>
+                                        <condition id="-9" name="Is visible" sid="975882969050977" type="fluxoAreia" />
+                                        <condition id="-6" name="Compare height" sid="164843874293935" type="areiaBaixo">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="Height">208.55</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Subtract from" sid="833087466743847" type="System">
+                                            <param id="0" name="Variable">dinheiro</param>
+                                            <param id="1" name="Value">50</param>
+                                        </action>
+                                        <action id="-6" name="Set height" sid="350666356034054" type="areiaCima">
+                                            <param id="0" name="Height">areiaCima.Height+9.6</param>
+                                        </action>
+                                        <action id="-6" name="Set height" sid="203180774139231" type="areiaBaixo">
+                                            <param id="0" name="Height">areiaBaixo.Height-17.1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="601746714588400">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="199031459677090" type="Touch">
+                                    <param id="0" name="Object">bonus2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <comment>Primeiro monta a palavra colocando a primeira letra da resposta (função left) e preenchendo o resto com &quot;_&quot; conforme o tamanho que ela possui (função len), depois substitui o asterisco na frase pela palavra montada</comment>
+                                <event-block sid="874056874972436">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="963607050647152" type="System">
+                                            <param id="0" name="Variable">dinheiro</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">100</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="111988101485181" type="System">
+                                            <param id="0" name="First value">statusDicas.At(dicaNaMaquina-1)</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Subtract from" sid="927434266668319" type="System">
+                                            <param id="0" name="Variable">dinheiro</param>
+                                            <param id="1" name="Value">100</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="995149505980855" type="System">
+                                            <param id="0" name="Variable">palavraDica100</param>
+                                            <param id="1" name="Value">left(casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;,dicaNaMaquina-1), 1)</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="773021437277931" type="System">
+                                            <param id="0" name="Variable">tamanhoResposta</param>
+                                            <param id="1" name="Value">len(casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;,dicaNaMaquina-1))</param>
+                                        </action>
+                                        <action id="2" name="Set at X" sid="399934207284422" type="statusDicas">
+                                            <param id="0" name="X">dicaNaMaquina-1</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="825272473045357">
+                                            <conditions>
+                                                <condition id="-10" name="For" sid="613419254160316" type="System">
+                                                    <param id="0" name="Name">&quot;&quot;</param>
+                                                    <param id="1" name="Start index">1</param>
+                                                    <param id="2" name="End index">tamanhoResposta-1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="614140151978605" type="System">
+                                                    <param id="0" name="Variable">palavraDica100</param>
+                                                    <param id="1" name="Value">palavraDica100 &amp; &quot; _&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="397779575173782">
+                                            <conditions />
+                                            <actions>
+                                                <action id="0" name="Set text" sid="287526538777840" type="pista">
+                                                    <param id="0" name="Text">replace(casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;*&quot;, palavraDica100)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="171751950488197">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="277685533012216" type="Touch">
+                                    <param id="0" name="Object">bonus3</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <comment>Copia a frase e substitui o asterisco pela resposta correspondente</comment>
+                                <event-block sid="504140412125077">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="962524632093002" type="System">
+                                            <param id="0" name="Variable">dinheiro</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">150</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="596369458391622" type="System">
+                                            <param id="0" name="First value">statusDicas.At(dicaNaMaquina-1)</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Second value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Subtract from" sid="515894506203963" type="System">
+                                            <param id="0" name="Variable">dinheiro</param>
+                                            <param id="1" name="Value">150</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="273343114201836" type="pista">
+                                            <param id="0" name="Text">replace(casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;*&quot;, casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;, dicaNaMaquina-1))</param>
+                                        </action>
+                                        <action id="2" name="Set at X" sid="850844559075180" type="statusDicas">
+                                            <param id="0" name="X">dicaNaMaquina-1</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="591333678514293">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="229393068876751" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="406562043499225">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="882823922703028" type="Mouse">
+                                    <param id="0" name="Object">menuX</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="804081398801528" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="146929657750993">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="634053875209679" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="119575966760781" type="Mouse">
+                                    <param id="0" name="Cursor style">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block any="1" sid="687132932641317">
@@ -520,182 +733,6 @@
                                 </action>
                                 <action id="-1" name="Set X" sid="832828419428150" type="config">
                                     <param id="0" name="X">config.X+(5/30)</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block any="1" sid="392583988743447">
-                    <conditions>
-                        <condition id="7" name="Cursor is over object" sid="242313684637242" type="Mouse">
-                            <param id="0" name="Object">bonus1</param>
-                        </condition>
-                        <condition id="7" name="Cursor is over object" sid="240455356414492" type="Mouse">
-                            <param id="0" name="Object">bonus2</param>
-                        </condition>
-                        <condition id="7" name="Cursor is over object" sid="213841724311782" type="Mouse">
-                            <param id="0" name="Object">bonus3</param>
-                        </condition>
-                        <condition id="7" name="Cursor is over object" sid="762190734658599" type="Mouse">
-                            <param id="0" name="Object">configBotao</param>
-                        </condition>
-                        <condition id="7" name="Cursor is over object" sid="882823922703028" type="Mouse">
-                            <param id="0" name="Object">menuX</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set cursor style" sid="217755434557631" type="Mouse">
-                            <param id="0" name="Cursor style">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="329408777769232">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="328021996636492" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set cursor style" sid="841525366291140" type="Mouse">
-                            <param id="0" name="Cursor style">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block any="1" sid="174450157309839">
-                    <conditions>
-                        <condition id="17" name="On tap object" sid="353540501543385" type="Touch">
-                            <param id="0" name="Object">bonus1</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="315383884865815">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="375976550456200" type="System">
-                                    <param id="0" name="Variable">dinheiro</param>
-                                    <param id="1" name="Comparison">5</param>
-                                    <param id="2" name="Value">50</param>
-                                </condition>
-                                <condition id="-9" name="Is visible" sid="975882969050977" type="fluxoAreia" />
-                                <condition id="-6" name="Compare height" sid="164843874293935" type="areiaBaixo">
-                                    <param id="0" name="Comparison">5</param>
-                                    <param id="1" name="Height">208.55</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-11" name="Subtract from" sid="833087466743847" type="System">
-                                    <param id="0" name="Variable">dinheiro</param>
-                                    <param id="1" name="Value">50</param>
-                                </action>
-                                <action id="-6" name="Set height" sid="350666356034054" type="areiaCima">
-                                    <param id="0" name="Height">areiaCima.Height+9.6</param>
-                                </action>
-                                <action id="-6" name="Set height" sid="203180774139231" type="areiaBaixo">
-                                    <param id="0" name="Height">areiaBaixo.Height-17.1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="601746714588400">
-                    <conditions>
-                        <condition id="17" name="On tap object" sid="199031459677090" type="Touch">
-                            <param id="0" name="Object">bonus2</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <comment>Primeiro monta a palavra colocando a primeira letra da resposta (função left) e preenchendo o resto com &quot;_&quot; conforme o tamanho que ela possui (função len), depois substitui o asterisco na frase pela palavra montada</comment>
-                        <event-block sid="874056874972436">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="963607050647152" type="System">
-                                    <param id="0" name="Variable">dinheiro</param>
-                                    <param id="1" name="Comparison">5</param>
-                                    <param id="2" name="Value">100</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="111988101485181" type="System">
-                                    <param id="0" name="First value">statusDicas.At(dicaNaMaquina-1)</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Second value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-11" name="Subtract from" sid="927434266668319" type="System">
-                                    <param id="0" name="Variable">dinheiro</param>
-                                    <param id="1" name="Value">100</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="995149505980855" type="System">
-                                    <param id="0" name="Variable">palavraDica100</param>
-                                    <param id="1" name="Value">left(casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;,dicaNaMaquina-1), 1)</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="773021437277931" type="System">
-                                    <param id="0" name="Variable">tamanhoResposta</param>
-                                    <param id="1" name="Value">len(casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;,dicaNaMaquina-1))</param>
-                                </action>
-                                <action id="2" name="Set at X" sid="399934207284422" type="statusDicas">
-                                    <param id="0" name="X">dicaNaMaquina-1</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                            <sub-events>
-                                <event-block sid="825272473045357">
-                                    <conditions>
-                                        <condition id="-10" name="For" sid="613419254160316" type="System">
-                                            <param id="0" name="Name">&quot;&quot;</param>
-                                            <param id="1" name="Start index">1</param>
-                                            <param id="2" name="End index">tamanhoResposta-1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Set value" sid="614140151978605" type="System">
-                                            <param id="0" name="Variable">palavraDica100</param>
-                                            <param id="1" name="Value">palavraDica100 &amp; &quot; _&quot;</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="397779575173782">
-                                    <conditions />
-                                    <actions>
-                                        <action id="0" name="Set text" sid="287526538777840" type="pista">
-                                            <param id="0" name="Text">replace(casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;*&quot;, palavraDica100)</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="171751950488197">
-                    <conditions>
-                        <condition id="17" name="On tap object" sid="277685533012216" type="Touch">
-                            <param id="0" name="Object">bonus3</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <comment>Copia a frase e substitui o asterisco pela resposta correspondente</comment>
-                        <event-block sid="504140412125077">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="962524632093002" type="System">
-                                    <param id="0" name="Variable">dinheiro</param>
-                                    <param id="1" name="Comparison">5</param>
-                                    <param id="2" name="Value">150</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="596369458391622" type="System">
-                                    <param id="0" name="First value">statusDicas.At(dicaNaMaquina-1)</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Second value">2</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-11" name="Subtract from" sid="515894506203963" type="System">
-                                    <param id="0" name="Variable">dinheiro</param>
-                                    <param id="1" name="Value">150</param>
-                                </action>
-                                <action id="0" name="Set text" sid="273343114201836" type="pista">
-                                    <param id="0" name="Text">replace(casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;*&quot;, casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;respostas&quot;, dicaNaMaquina-1))</param>
-                                </action>
-                                <action id="2" name="Set at X" sid="850844559075180" type="statusDicas">
-                                    <param id="0" name="X">dicaNaMaquina-1</param>
-                                    <param id="1" name="Value">2</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -762,6 +799,42 @@
                             <param id="0" name="X">842</param>
                             <param id="1" name="Y">134</param>
                         </action>
+                        <action id="-32" name="Set layer effect parameter" sid="350565293837595" type="System">
+                            <param id="0" name="Layer">0</param>
+                            <param id="1" name="Effect">&quot;BlurHorizontal&quot;</param>
+                            <param id="2" name="Parameter index">0</param>
+                            <param id="3" name="Value">100</param>
+                        </action>
+                        <action id="-32" name="Set layer effect parameter" sid="786335834982822" type="System">
+                            <param id="0" name="Layer">1</param>
+                            <param id="1" name="Effect">&quot;BlurHorizontal&quot;</param>
+                            <param id="2" name="Parameter index">0</param>
+                            <param id="3" name="Value">100</param>
+                        </action>
+                        <action id="-32" name="Set layer effect parameter" sid="614754117414841" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Effect">&quot;BlurHorizontal&quot;</param>
+                            <param id="2" name="Parameter index">0</param>
+                            <param id="3" name="Value">100</param>
+                        </action>
+                        <action id="-32" name="Set layer effect parameter" sid="753665313250196" type="System">
+                            <param id="0" name="Layer">0</param>
+                            <param id="1" name="Effect">&quot;BlurVertical&quot;</param>
+                            <param id="2" name="Parameter index">0</param>
+                            <param id="3" name="Value">100</param>
+                        </action>
+                        <action id="-32" name="Set layer effect parameter" sid="861647739190751" type="System">
+                            <param id="0" name="Layer">1</param>
+                            <param id="1" name="Effect">&quot;BlurVertical&quot;</param>
+                            <param id="2" name="Parameter index">0</param>
+                            <param id="3" name="Value">100</param>
+                        </action>
+                        <action id="-32" name="Set layer effect parameter" sid="631399137988722" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Effect">&quot;BlurVertical&quot;</param>
+                            <param id="2" name="Parameter index">0</param>
+                            <param id="3" name="Value">100</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="511999159280254">
@@ -787,9 +860,75 @@
                             <param id="0" name="X">842</param>
                             <param id="1" name="Y">-134</param>
                         </action>
+                        <action id="-32" name="Set layer effect parameter" sid="308535658312634" type="System">
+                            <param id="0" name="Layer">0</param>
+                            <param id="1" name="Effect">&quot;BlurHorizontal&quot;</param>
+                            <param id="2" name="Parameter index">0</param>
+                            <param id="3" name="Value">0</param>
+                        </action>
+                        <action id="-32" name="Set layer effect parameter" sid="819523259331593" type="System">
+                            <param id="0" name="Layer">1</param>
+                            <param id="1" name="Effect">&quot;BlurHorizontal&quot;</param>
+                            <param id="2" name="Parameter index">0</param>
+                            <param id="3" name="Value">0</param>
+                        </action>
+                        <action id="-32" name="Set layer effect parameter" sid="209725258078563" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Effect">&quot;BlurHorizontal&quot;</param>
+                            <param id="2" name="Parameter index">0</param>
+                            <param id="3" name="Value">0</param>
+                        </action>
+                        <action id="-32" name="Set layer effect parameter" sid="833927985609808" type="System">
+                            <param id="0" name="Layer">0</param>
+                            <param id="1" name="Effect">&quot;BlurVertical&quot;</param>
+                            <param id="2" name="Parameter index">0</param>
+                            <param id="3" name="Value">0</param>
+                        </action>
+                        <action id="-32" name="Set layer effect parameter" sid="356220589980973" type="System">
+                            <param id="0" name="Layer">1</param>
+                            <param id="1" name="Effect">&quot;BlurVertical&quot;</param>
+                            <param id="2" name="Parameter index">0</param>
+                            <param id="3" name="Value">0</param>
+                        </action>
+                        <action id="-32" name="Set layer effect parameter" sid="159231736016196" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Effect">&quot;BlurVertical&quot;</param>
+                            <param id="2" name="Parameter index">0</param>
+                            <param id="3" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="926798470588138">
+            <conditions>
+                <condition id="0" name="Compare at X" sid="975329199181282" type="statusDicas">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="0" name="Compare at X" sid="396934900352621" type="statusDicas">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="0" name="Compare at X" sid="836395215491521" type="statusDicas">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="0" name="Compare at X" sid="344403975135210" type="statusDicas">
+                    <param id="0" name="X">3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="0" name="Compare at X" sid="980792836555639" type="statusDicas">
+                    <param id="0" name="X">4</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
     </events>
 </c2eventsheet>

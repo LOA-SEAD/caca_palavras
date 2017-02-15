@@ -84,7 +84,24 @@
                     </world>
                 </instance>
             </instances>
-            <effects />
+            <effects>
+                <effect-type name="BlurHorizontal">
+                    <effect id="blurhorizontal" />
+                    <effect-instance type="BlurHorizontal">
+                        <parameters>
+                            <intensity>0</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+                <effect-type name="BlurVertical">
+                    <effect id="blurvertical" />
+                    <effect-instance type="BlurVertical">
+                        <parameters>
+                            <intensity>0</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+            </effects>
         </layer>
         <layer name="Jogo" sid="537743411633649">
             <initially-visible>1</initially-visible>
@@ -568,7 +585,24 @@
                     </world>
                 </instance>
             </instances>
-            <effects />
+            <effects>
+                <effect-type name="BlurHorizontal">
+                    <effect id="blurhorizontal" />
+                    <effect-instance type="BlurHorizontal">
+                        <parameters>
+                            <intensity>0</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+                <effect-type name="BlurVertical">
+                    <effect id="blurvertical" />
+                    <effect-instance type="BlurVertical">
+                        <parameters>
+                            <intensity>0</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+            </effects>
         </layer>
         <layer name="Textos" sid="888548119910938">
             <initially-visible>1</initially-visible>

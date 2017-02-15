@@ -19,7 +19,7 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Joe7" id="cjs" version="1">Call JS</plugin>
-        <plugin author="PlayLive" id="htmlCODE" version="1.230000019">HTML | iFrame</plugin>
+        <plugin author="PlayLive" id="htmlCODE" version="1.100000024">iFrame &amp; insertHTML</plugin>
         <plugin author="Joe7" id="ljson" version="1.200000048">Load JSON</plugin>
     </used-plugins>
     <used-behaviors>
@@ -380,6 +380,22 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="ajudaTexto1" sid="873025769624826">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="940523104947527">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="ajudaTexto2" sid="196329057311144">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="289589402427447">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
         </object-folder>
         <object-folder name="Tela Casos">
             <object-type name="fundoCasos" sid="752527904705218">
@@ -723,6 +739,14 @@
                     <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="748372624452037" speed="1">
                         <frame duration="4" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\fundo2.png" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\fundo1.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="pulaCena" sid="555038155116969">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="802803861053579" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -1149,7 +1173,7 @@
                 </effects>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="597246270236053" speed="5">
-                        <frame duration="1" hotspotX="0.500781" hotspotY="0.501389" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\configMenu.png">
+                        <frame duration="1" hotspotX="0.500781" hotspotY="0.501389" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\configMenu2.png">
                             <collision-poly>
                                 <point x="0.034188" y="0.0419287" />
                                 <point x="0.499145" y="0.00628931" />
@@ -1184,6 +1208,32 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="caderneta" sid="618210374803585">
+                <plugin id="Sprite" />
+                <effects>
+                    <effect-type name="Vibrance">
+                        <effect id="vibrance" />
+                    </effect-type>
+                    <effect-type name="Contrast">
+                        <effect id="contrast" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="563725148603543" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.502326" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\caderneta.png">
+                            <collision-poly>
+                                <point x="0.208029" y="0.265116" />
+                                <point x="0.5" y="0.186047" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="1" />
+                                <point x="0.10219" y="0.869767" />
+                                <point x="0.0145985" y="0.497674" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-type name="Mouse" sid="359155137460880">
             <plugin id="Mouse" />
@@ -1197,50 +1247,11 @@
         <object-type name="botaoMenuprovisorio" sid="981595157067975">
             <plugin id="Text" />
         </object-type>
-        <object-type name="caderneta" sid="618210374803585">
-            <plugin id="Sprite" />
-            <effects>
-                <effect-type name="Vibrance">
-                    <effect id="vibrance" />
-                </effect-type>
-                <effect-type name="Contrast">
-                    <effect id="contrast" />
-                </effect-type>
-            </effects>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="563725148603543" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502326" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\caderneta.png">
-                        <collision-poly>
-                            <point x="0.208029" y="0.265116" />
-                            <point x="0.5" y="0.186047" />
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
-                            <point x="0.5" y="1" />
-                            <point x="0.10219" y="0.869767" />
-                            <point x="0.0145985" y="0.497674" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type global="1" name="verificaFimJS" sid="799853815690657">
             <plugin id="cjs" />
         </object-type>
-        <object-type name="ajudaTexto1" sid="873025769624826">
-            <plugin id="Text" />
-            <behaviors>
-                <behavior-type name="Pin" sid="940523104947527">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-        </object-type>
-        <object-type name="ajudaTexto2" sid="196329057311144">
-            <plugin id="Text" />
-            <behaviors>
-                <behavior-type name="Pin" sid="289589402427447">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
+        <object-type global="1" name="dialogosJSON" sid="843140399657457">
+            <plugin id="ljson" />
         </object-type>
     </object-folder>
     <families />
