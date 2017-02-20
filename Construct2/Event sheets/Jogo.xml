@@ -412,7 +412,7 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="-2" name="Go to layout" sid="834196286557696" type="System">
-                            <param id="0" name="Layout">Cena 1</param>
+                            <param id="0" name="Layout">Cena</param>
                         </action>
                     </actions>
                 </event-block>
@@ -426,7 +426,7 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Go to layout" sid="420692832741914" type="System">
-                            <param id="0" name="Layout">Cena 1</param>
+                            <param id="0" name="Layout">Cena</param>
                         </action>
                     </actions>
                 </event-block>
