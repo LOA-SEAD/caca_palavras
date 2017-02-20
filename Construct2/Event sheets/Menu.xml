@@ -95,7 +95,7 @@
                                     <param id="0" name="Layout">Tela de Casos</param>
                                 </action>
                                 <action id="-2" name="Go to layout" sid="157027319285276" type="System">
-                                    <param id="0" name="Layout">Cena 1</param>
+                                    <param id="0" name="Layout">Cena</param>
                                 </action>
                             </actions>
                         </event-block>
