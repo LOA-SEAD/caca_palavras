@@ -1396,9 +1396,9 @@
             <file name="dialogos.json" />
         </file-folder>
         <file-folder name="HTML">
-            <file name="cacaPalavras1.html" />
-            <file name="cacaPalavras2.html" />
-            <file name="cacaPalavras3.html" />
+            <file name="cacapalavras1.html" />
+            <file name="cacapalavras2.html" />
+            <file name="cacapalavras3.html" />
         </file-folder>
         <file-folder name="CSS">
             <file name="styleCacaPalavras.css" />
