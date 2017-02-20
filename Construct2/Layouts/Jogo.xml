@@ -926,7 +926,7 @@
         </instance>
         <instance type="verificaFimJS" uid="72">
             <properties>
-                <scriptfile>verificaFim.js</scriptfile>
+                <scriptfile>wordfindgame.js</scriptfile>
             </properties>
         </instance>
     </nonworld-instances>

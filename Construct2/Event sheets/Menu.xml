@@ -64,6 +64,9 @@
                     <param id="0" name="Pin to">telaAjuda</param>
                     <param id="1" name="Mode">0</param>
                 </action>
+                <action id="0" name="Execute" sid="377718619113305" type="verificaFimJS">
+                    <param id="0" name="Value">&quot;initialize()&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-group description="" sid="371888959724041" title="Acoes 1">

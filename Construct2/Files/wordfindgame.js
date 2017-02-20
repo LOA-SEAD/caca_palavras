@@ -8,6 +8,68 @@
 
 window.terminou = 0;
 
+function reverse(s){
+    return s.split("").reverse().join("");
+}
+
+function initialize() {
+    sessionStorage.removeItem("dinheiro");
+}
+
+function initializeAcertos() {
+    sessionStorage.removeItem("acertos");
+}
+
+function getValor() {
+	if (typeof(Storage) !== "undefined") {
+    		var dinheiro = sessionStorage.dinheiro
+                if (dinheiro == null || dinheiro == "NaN") {
+                   dinheiro = 0;
+                   sessionStorage.dinheiro = dinheiro;
+                }
+	}
+        
+        
+        //console.log("get => " + sessionStorage.dinheiro);
+        return dinheiro;
+}
+
+function getValorAcertos() {
+  if (typeof(Storage) !== "undefined") {
+        var acertos = sessionStorage.acertos
+                if (acertos == null || acertos == "NaN") {
+                   acertos = 0;
+                   sessionStorage.acertos = acertos;
+                }
+  }
+        
+        
+        //console.log("get => " + sessionStorage.acertos);
+        return acertos;
+}
+
+function setValor(newValue) {
+
+       if (typeof(Storage) !== "undefined") {
+                var dinheiro = sessionStorage.getItem("dinheiro");
+                dinheiro = parseInt(dinheiro) + newValue;
+    		sessionStorage.setItem("dinheiro", dinheiro);
+	}
+        
+        console.log("set => " + dinheiro);	
+}
+
+function setValorAcertos(newValue) {
+
+       if (typeof(Storage) !== "undefined") {
+                var acertos = sessionStorage.getItem("acertos");
+                acertos = parseInt(acertos) + newValue;
+        sessionStorage.setItem("acertos", acertos);
+  }
+        
+        console.log("set => " + acertos);  
+}
+
 (function (document, $, wordfind) {
 
   'use strict';
@@ -223,18 +285,20 @@ window.terminou = 0;
       // see if we formed a valid word
       for (var i = 0, len = wordList.length; i < len; i++) {
         
-        if (wordList[i] === curWord) {
+        if (wordList[i] === curWord || wordList[i] == reverse(curWord)) {
           $('.selected').addClass('found');
           wordList.splice(i,1);
           $('.' + curWord).addClass('wordFound');
-          window.terminou = 1;
-          this.terminou = 1;
-          atualiza(1);
+          //window.terminou = 1;
+          //this.terminou = 1;
+          //atualiza(1);
+          setValor(50);
+          setValorAcertos(1);
         }
 
         if (wordList.length === 0) {
           $('.puzzleSquare').addClass('complete');
-          atualiza(2);
+          //atualiza(2);
         }
       }
 
@@ -341,7 +405,7 @@ window.terminou = 0;
           }
         }*/
 
-      console.log(this.terminou);
+//      console.log(this.terminou);
       }
     };
   };
@@ -353,3 +417,4 @@ window.terminou = 0;
   window.wordfindgame = WordFindGame();
 
 }(document, jQuery, wordfind));
+

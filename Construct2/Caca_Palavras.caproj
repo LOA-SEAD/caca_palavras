@@ -11,7 +11,9 @@
     <saved-with-version>23900</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -1320,7 +1322,13 @@
         <object-type name="botaoMenuprovisorio" sid="981595157067975">
             <plugin id="Text" />
         </object-type>
-        <object-type global="1" name="verificaFimJS" sid="799853815690657">
+        <object-type name="LocalStorage" sid="403851690948231">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="Function" sid="371132082376278">
+            <plugin id="Function" />
+        </object-type>
+        <object-type global="1" name="verificaFimJS" sid="300315608599823">
             <plugin id="cjs" />
         </object-type>
     </object-folder>
@@ -1347,6 +1355,8 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="LocalStorage" uid="86" />
+        <global-instance type="Function" uid="87" />
     </global-instances>
     <sounds-folder />
     <music-folder />
@@ -1402,8 +1412,8 @@
         </file-folder>
         <file-folder name="JS">
             <file name="wordfind.js" />
-            <file name="wordfindgame.js" />
             <file name="verificaFim.js" />
+            <file name="wordfindgame.js" />
         </file-folder>
     </files-folder>
 </c2project>
