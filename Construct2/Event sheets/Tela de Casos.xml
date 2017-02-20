@@ -3,8 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Tela de Casos</name>
     <events>
-        <variable constant="0" name="ultimocaso" sid="933221909810570" static="0" type="number">3</variable>
-        <variable constant="0" name="numcaso" sid="733151475499623" static="0" type="number">1</variable>
+        <variable constant="0" name="ultimocaso" sid="933221909810570" static="0" type="number">2</variable>
+        <variable constant="0" name="numcaso" sid="733151475499623" static="0" type="number">0</variable>
         <comment>Valor que o jogador possui inicialmente</comment>
         <variable constant="0" name="dinheiro" sid="519393934167079" static="0" type="number">1000</variable>
         <event-block sid="188116339448502">
@@ -25,7 +25,7 @@
                     <param id="0" name="Opacity">0</param>
                 </action>
                 <action id="2" name="Set at X" sid="960209325517963" type="caso">
-                    <param id="0" name="X">2</param>
+                    <param id="0" name="X">1</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="5" name="Set frame" sid="898567746683934" type="casoStatus">
@@ -44,7 +44,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="809004843681190" type="System">
                             <param id="0" name="Variable">ultimocaso</param>
-                            <param id="1" name="Value">2</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                         <action id="-16" name="Wait" sid="160579095380537" type="System">
                             <param id="0" name="Seconds">0.0001</param>
@@ -62,7 +62,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="858773032296113" type="System">
                             <param id="0" name="Variable">ultimocaso</param>
-                            <param id="1" name="Value">1</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -111,10 +111,10 @@
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="485022759523315" type="casoNum">
-                    <param id="0" name="Text">&quot;Caso &quot; &amp; numcaso</param>
+                    <param id="0" name="Text">&quot;Caso &quot; &amp; numcaso+1</param>
                 </action>
                 <action id="0" name="Set text" sid="487357132554185" type="casoTxt">
-                    <param id="0" name="Text">casosJSON.GetData(&quot;caso&quot; &amp; numcaso &amp; &quot;descricao&quot;, 0)</param>
+                    <param id="0" name="Text">casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;descricao&quot;, 0)</param>
                 </action>
             </actions>
         </event-block>
@@ -141,7 +141,7 @@
                                 <condition id="-14" name="Compare variable" sid="135904525193641" type="System">
                                     <param id="0" name="Variable">numcaso</param>
                                     <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">1</param>
+                                    <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -343,7 +343,7 @@
                         <condition id="-14" name="Compare variable" sid="293472882041802" type="System">
                             <param id="0" name="Variable">numcaso</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>

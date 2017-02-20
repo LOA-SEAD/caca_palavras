@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Menu</name>
     <events>
+        <comment>Serve para ser verificada quando começa um novo jogo para limpar o valor armazenado na sessionStorage dinheiro</comment>
+        <variable constant="0" name="novoJogo" sid="596513094316818" static="0" type="number">1</variable>
         <event-block sid="532870774512476">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="548108657880177" type="System" />
@@ -63,9 +65,6 @@
                 <action behavior="Pin" id="0" name="Pin to object" sid="221444750396689" type="ajudaTexto2">
                     <param id="0" name="Pin to">telaAjuda</param>
                     <param id="1" name="Mode">0</param>
-                </action>
-                <action id="0" name="Execute" sid="377718619113305" type="verificaFimJS">
-                    <param id="0" name="Value">&quot;initialize()&quot;</param>
                 </action>
             </actions>
         </event-block>

@@ -56,7 +56,7 @@ function setValor(newValue) {
     		sessionStorage.setItem("dinheiro", dinheiro);
 	}
         
-        console.log("set => " + dinheiro);	
+        console.log("set dinheiro => " + dinheiro);	
 }
 
 function setValorAcertos(newValue) {
@@ -67,7 +67,7 @@ function setValorAcertos(newValue) {
         sessionStorage.setItem("acertos", acertos);
   }
         
-        console.log("set => " + acertos);  
+        console.log("set acertos => " + acertos);  
 }
 
 (function (document, $, wordfind) {
