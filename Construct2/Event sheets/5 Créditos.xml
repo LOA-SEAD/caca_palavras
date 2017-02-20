@@ -11,11 +11,11 @@
                 <action id="0" name="Load JSON" sid="457643722180773" type="creditosJSON" />
                 <action id="5" name="Set web font" sid="141942930029624" type="Creditos1">
                     <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
-                    <param id="1" name="CSS URL">&quot;stylesheet.cs&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                 </action>
                 <action id="5" name="Set web font" sid="994467606288320" type="Creditos2">
                     <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
-                    <param id="1" name="CSS URL">&quot;stylesheet.cs&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                 </action>
                 <action id="0" name="Set text" sid="961118195273798" type="Creditos1">
                     <param id="0" name="Text">creditosJSON.GetData(&quot;creditos1&quot;,0)</param>

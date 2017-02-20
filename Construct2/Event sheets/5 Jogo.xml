@@ -71,14 +71,14 @@
                 </action>
                 <action id="5" name="Set web font" sid="121730455001487" type="pista">
                     <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
-                    <param id="1" name="CSS URL">&quot;stylesheet.cs&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                 </action>
                 <action id="0" name="Set text" sid="545922960619327" type="pista">
                     <param id="0" name="Text">casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;perguntas&quot;,dicaNaMaquina-1)</param>
                 </action>
                 <action id="5" name="Set web font" sid="107288801167177" type="dicaPowerup">
                     <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
-                    <param id="1" name="CSS URL">&quot;stylesheet.cs&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                 </action>
                 <action id="0" name="Set text" sid="853942697072124" type="dicaPowerup">
                     <param id="0" name="Text">&quot;&quot;</param>

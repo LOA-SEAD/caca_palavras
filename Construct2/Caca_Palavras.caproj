@@ -1401,7 +1401,7 @@
             <file name="cacapalavras3.html" />
         </file-folder>
         <file-folder name="CSS">
-            <file name="styleCacaPalavras.css" />
+            <file name="stylecacapalavras.css" />
         </file-folder>
         <file-folder name="JS">
             <file name="wordfind.js" />

@@ -50,11 +50,11 @@
                 </action>
                 <action id="5" name="Set web font" sid="500385207728103" type="ajudaTexto1">
                     <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
-                    <param id="1" name="CSS URL">&quot;stylesheet.cs&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                 </action>
                 <action id="5" name="Set web font" sid="975870425934338" type="ajudaTexto2">
                     <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
-                    <param id="1" name="CSS URL">&quot;stylesheet.cs&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                 </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="846655058944620" type="menuX">
                     <param id="0" name="Pin to">telaAjuda</param>

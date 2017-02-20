@@ -14,12 +14,10 @@ function reverse(s){
 
 function initialize() {
     sessionStorage.removeItem("dinheiro");
-    console.log("bla");
 }
 
 function initializeAcertos() {
     sessionStorage.removeItem("acertos");
-    console.log("bla");
 }
 
 function getValor() {
