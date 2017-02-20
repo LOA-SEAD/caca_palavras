@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Tela de Creditos</name>
+    <name>5 Créditos</name>
     <events>
         <event-block sid="279568796207640">
             <conditions>
@@ -58,7 +58,7 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Go to layout" sid="939316601463450" type="System">
-                            <param id="0" name="Layout">Menu Principal</param>
+                            <param id="0" name="Layout">1. Menu</param>
                         </action>
                     </actions>
                 </event-block>

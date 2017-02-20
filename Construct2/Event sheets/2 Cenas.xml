@@ -1,0 +1,1231 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>2 Cenas</name>
+    <events>
+        <variable constant="0" name="cena" sid="164288719393039" static="0" type="number">0</variable>
+        <event-block sid="137620354009264">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="671896634820138" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="898755975599351" type="lampadaLuz">
+                    <param id="0" name="Pin to">lampada</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Load JSON" sid="834081442346614" type="dialogosJSON" />
+                <action id="5" name="Set web font" sid="472884947235052" type="diagTexto1">
+                    <param id="0" name="Family name">&quot;cavorting&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet3.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="368632430323621" type="diagTexto2">
+                    <param id="0" name="Family name">&quot;cavorting&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet3.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="754486950876542" type="diagTexto3">
+                    <param id="0" name="Family name">&quot;cavorting&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet3.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="928965129190092" type="dicaCena">
+                    <param id="0" name="Family name">&quot;breamcatcher&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="982663304561463" type="dicaCena">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-15" name="Set visible" sid="947598519778491" type="balao1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="416867575867554" type="balao2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="612252308863287" type="balao3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="867567846138229" type="fade">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="893676560234617">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="694711472433365" type="System">
+                            <param id="0" name="Variable">timeline</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="264119395704015" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="842982294843103" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="254216814561404" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="508870085672394">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="888703059497227" type="System">
+                            <param id="0" name="Variable">timeline</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="327491223152723">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="692102077696968" type="System">
+                                    <param id="0" name="Variable">ultimocaso</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="876640501357553">
+                                    <conditions>
+                                        <condition id="0" name="Compare at X" sid="962990090836110" type="caso">
+                                            <param id="0" name="X">0</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="0" name="Compare at X" sid="125385640144613" type="caso">
+                                            <param id="0" name="X">1</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="499496592939805" type="System">
+                                            <param id="0" name="Variable">timeline</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="919873689099347">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="558114791847118" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="287972556674437" type="System">
+                                            <param id="0" name="Variable">cena</param>
+                                            <param id="1" name="Value">10</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="900684988318515" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="303495646297472" type="System">
+                                            <param id="0" name="Variable">cena</param>
+                                            <param id="1" name="Value">11</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="402259157479452">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="119396390397917" type="System">
+                                    <param id="0" name="Variable">ultimocaso</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="789419064345359">
+                                    <conditions>
+                                        <condition id="0" name="Compare at X" sid="195784804544866" type="caso">
+                                            <param id="0" name="X">0</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="0" name="Compare at X" sid="244093391511901" type="caso">
+                                            <param id="0" name="X">1</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="0" name="Compare at X" sid="978686562562726" type="caso">
+                                            <param id="0" name="X">2</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="125454997258903" type="System">
+                                            <param id="0" name="Variable">timeline</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="755060449126903">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="127612585269425" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="535894212101107" type="System">
+                                            <param id="0" name="Variable">cena</param>
+                                            <param id="1" name="Value">10</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="503424449177733" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="948109655096917" type="System">
+                                            <param id="0" name="Variable">cena</param>
+                                            <param id="1" name="Value">11</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="706686427354623">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="483126500953859" type="System">
+                            <param id="0" name="Variable">timeline</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="313486989899073" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Value">20</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="876338554101942" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="827951990401073" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Value">21</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="435003607658737">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="447719330591804" type="System">
+                            <param id="0" name="Variable">timeline</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="398676814103199" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Value">30</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="927265592220720" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="127745934936629" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Value">31</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="334580777992163" title="Acoes 2">
+            <sub-events>
+                <event-block sid="589103244387842">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="160513242173278" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="388729310326097" type="fade">
+                            <param id="0" name="Opacity">fade.Opacity-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="820642401100239">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="164283084322244" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="902982160177401" type="diagTexto2">
+                            <param id="0" name="Text">dialogosJSON.GetData(&quot;Introducao0&quot;,1)</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="540311322661195" type="balao2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="373735645107066" type="diagTexto2">
+                            <param id="0" name="Size (pt)">19</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="801761928619839" type="RolmesExp">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="735278292563602">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="388562167459695" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="470341349649310" type="diagTexto2">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="371762703320903" type="balao2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="579075184887529" type="diagTexto3">
+                            <param id="0" name="Text">dialogosJSON.GetData(&quot;Introducao1&quot;,1)</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="374284890493952" type="balao3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="472142726053745" type="diagTexto3">
+                            <param id="0" name="Size (pt)">18</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="625367002270459" type="RolmesExp">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="894765545640495">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="396412370827909" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="985381141850955" type="diagTexto3">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="979046015591289" type="balao3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="407331668531261" type="diagTexto1">
+                            <param id="0" name="Text">dialogosJSON.GetData(&quot;Introducao2&quot;,1)</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="139923081329025" type="balao1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="800348104073795" type="diagTexto1">
+                            <param id="0" name="Size (pt)">16</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="479978408321165" type="RolmesExp">
+                            <param id="0" name="Frame number">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="518691062717563">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="903976112288162" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="894538206700200" type="diagTexto1">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="552898305582253" type="balao1">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="541516943645577" type="diagTexto3">
+                            <param id="0" name="Text">dialogosJSON.GetData(&quot;Introducao3&quot;,1)</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="736587842407509" type="balao3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="700079153425078" type="diagTexto3">
+                            <param id="0" name="Size (pt)">28</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="776089111922760" type="RolmesExp">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="370080001508659">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="957100430126452" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="297750915586636" type="diagTexto3">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="450322172555769" type="balao3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="756850790829866" type="diagTexto2">
+                            <param id="0" name="Text">dialogosJSON.GetData(&quot;Introducao4&quot;,1)</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="859332211352497" type="balao2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="745236174515441" type="diagTexto2">
+                            <param id="0" name="Size (pt)">20</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="471677863857634" type="RolmesExp">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="779860862547318">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="387951540877930" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="973613544199804" type="diagTexto2">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="212639822917768" type="balao2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="876010430664478" type="diagTexto3">
+                            <param id="0" name="Text">dialogosJSON.GetData(&quot;Introducao5&quot;,1)</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="726355787857092" type="balao3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="401439300951963" type="diagTexto3">
+                            <param id="0" name="Size (pt)">22</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="192585304413181" type="RolmesExp">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="413886326663215">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="536022841708429" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="241918810754713" type="diagTexto3">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="180891784240841" type="balao3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="937117993976336" type="diagTexto1">
+                            <param id="0" name="Text">dialogosJSON.GetData(&quot;Introducao6&quot;,1)</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="830773715707511" type="balao1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="559279151024953" type="diagTexto1">
+                            <param id="0" name="Size (pt)">20</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="845181953751974" type="RolmesExp">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="634159036562086">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="914386561668927" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="520383830267579" type="diagTexto1">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="932219890820832" type="balao1">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="304778906207659" type="RolmesExp">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="710153957056544">
+                            <conditions />
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="112162723992756" type="fade">
+                                    <param id="0" name="Opacity">fade.Opacity+1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="257518230732734">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="788986031474127" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="753170671038580" type="fade">
+                            <param id="0" name="Opacity">fade.Opacity-1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="815954115473778" type="RolmesExp">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="990585999546115">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="326270963598402" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="956080289045835" type="diagTexto2">
+                            <param id="0" name="Text">dialogosJSON.GetData(&quot;Vitoria0&quot;,1)</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="691080573174546" type="balao2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="253430104174461" type="diagTexto2">
+                            <param id="0" name="Size (pt)">22</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="399250051501970" type="RolmesExp">
+                            <param id="0" name="Frame number">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="126845817831766">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="986521874582908" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="240202487527729" type="diagTexto2">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="990726608942687" type="balao2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="390571256131667" type="diagTexto3">
+                            <param id="0" name="Text">dialogosJSON.GetData(&quot;Vitoria1&quot;,1)</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="729067363315491" type="balao3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="811922425296076" type="diagTexto3">
+                            <param id="0" name="Size (pt)">26</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="362087840466077" type="RolmesExp">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="230709396324412">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="144109565327410" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="691065455258320" type="diagTexto3">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="886628658260473" type="balao3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="940847416808561" type="RolmesExp">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="520450374799036">
+                            <conditions />
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="584783718111543" type="fade">
+                                    <param id="0" name="Opacity">fade.Opacity+1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="649867962070776">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="453305025939274" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="145280972959277" type="fade">
+                            <param id="0" name="Opacity">fade.Opacity-1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="966075042817502" type="RolmesExp">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="770446923410449">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="224963967370006" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">21</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="853580023268618" type="diagTexto2">
+                            <param id="0" name="Text">dialogosJSON.GetData(&quot;Final0&quot;,1)</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="884022966538987" type="balao2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="397864236891019" type="diagTexto2">
+                            <param id="0" name="Size (pt)">22</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="783401933455687" type="RolmesExp">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="218801483204793">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="828042920825225" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">22</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="753867257383167" type="diagTexto2">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="155607601161772" type="balao2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="937155810866179" type="diagTexto3">
+                            <param id="0" name="Text">dialogosJSON.GetData(&quot;Final1&quot;,1)</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="220884846649224" type="balao3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="788039511190610" type="diagTexto3">
+                            <param id="0" name="Size (pt)">32</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="992127428163181" type="RolmesExp">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="430400699321571">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="501348611705338" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">23</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="962483031696087" type="diagTexto3">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="837393098984403" type="balao3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="487038939899095" type="diagTexto2">
+                            <param id="0" name="Text">dialogosJSON.GetData(&quot;Final2&quot;,1)</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="887424916319957" type="balao2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="812367118005094" type="diagTexto2">
+                            <param id="0" name="Size (pt)">22</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="728969533230649" type="RolmesExp">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="503327967318222">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="913192559993393" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">24</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="187955812430103" type="diagTexto2">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="628809739705814" type="balao2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="668777136789046" type="diagTexto3">
+                            <param id="0" name="Text">dialogosJSON.GetData(&quot;Final3&quot;,1)</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="924458174768868" type="balao3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="961216542870081" type="diagTexto3">
+                            <param id="0" name="Size (pt)">32</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="897198079002165" type="RolmesExp">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="859214080925113">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="868487019663091" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="242259253435598" type="diagTexto3">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="999328802929878" type="balao3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="340844973533750" type="diagTexto2">
+                            <param id="0" name="Text">dialogosJSON.GetData(&quot;Final4&quot;,1)</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="467871149375936" type="balao2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="142515844954712" type="diagTexto2">
+                            <param id="0" name="Size (pt)">23</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="599972845272385" type="RolmesExp">
+                            <param id="0" name="Frame number">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="935487697319842">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="144644408775969" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">26</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="307930518479454" type="diagTexto2">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="277433318160835" type="balao2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="201857604977305" type="RolmesExp">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="193524260933777">
+                            <conditions />
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="541737746986299" type="fade">
+                                    <param id="0" name="Opacity">fade.Opacity+1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="581401905747002">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="339406816127206" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">30</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="641240865277488" type="fade">
+                            <param id="0" name="Opacity">fade.Opacity-1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="144128822842199" type="RolmesExp">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="577088985305174">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="946123250554840" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">31</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="982620258655284" type="diagTexto2">
+                            <param id="0" name="Text">dialogosJSON.GetData(&quot;Derrota0&quot;,1)</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="602243651676061" type="balao2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="370434803641285" type="diagTexto2">
+                            <param id="0" name="Size (pt)">20</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="933500802603459" type="RolmesExp">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="447562590445470">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="320369853951024" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">32</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="897357483035491" type="diagTexto2">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="975839176797693" type="balao2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="174987559555690" type="diagTexto3">
+                            <param id="0" name="Text">dialogosJSON.GetData(&quot;Derrota1&quot;,1)</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="858373193461709" type="balao3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="857860737593406" type="diagTexto3">
+                            <param id="0" name="Size (pt)">32</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="359507836851414" type="RolmesExp">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="485351873540523">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="730929593928605" type="System">
+                            <param id="0" name="Variable">cena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">33</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="544469996573898" type="diagTexto3">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="396064775573682" type="balao3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="833095481351173" type="RolmesExp">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="512905905712133">
+                            <conditions />
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="197891331325719" type="fade">
+                                    <param id="0" name="Opacity">fade.Opacity+1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="971465268587557" title="Efeitos 2">
+            <sub-events>
+                <event-block sid="671875784480280">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="344729454611511" type="Mouse">
+                            <param id="0" name="Object">pulaCena</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="331281702169414" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="287343159226857">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="212221975007753" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="107585288823167" type="Mouse">
+                            <param id="0" name="Cursor style">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="972663705830423">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="676394117861347" type="System">
+                            <param id="0" name="Variable">timeline</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="926152841452282">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="940139884696589" type="Touch">
+                                    <param id="0" name="Object">pulaCena</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="193280768449719" type="System">
+                                    <param id="0" name="Layout">3. Casos</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="999806914980607">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="173447006339571" type="fade">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="419896185247606" type="System">
+                                    <param id="0" name="Variable">cena</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">8</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="281138514693249" type="System">
+                                    <param id="0" name="Layout">3. Casos</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="835042270567864">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="701383629105572" type="System">
+                                    <param id="0" name="Variable">cena</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="268315496786359">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="124328953575041" type="Keyboard">
+                                            <param id="0" name="Key">13 (Return)</param>
+                                        </condition>
+                                        <condition id="0" name="On key pressed" sid="775911134006252" type="Keyboard">
+                                            <param id="0" name="Key">32 (Space)</param>
+                                        </condition>
+                                        <condition id="1" name="On any click" sid="989319280879320" type="Mouse" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="591084621388427" type="System">
+                                            <param id="0" name="Variable">cena</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="292126899875556">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="294521177153072" type="System">
+                                    <param id="0" name="Variable">cena</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="454379770018592" type="dicaCena">
+                                    <param id="0" name="Opacity">dicaCena.Opacity-2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="966963786487302">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="393312818690191" type="System">
+                            <param id="0" name="Variable">timeline</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="188422446431433">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="540701123661149" type="Touch">
+                                    <param id="0" name="Object">pulaCena</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="746259402473888" type="System">
+                                    <param id="0" name="Layout">3. Casos</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="406680646399598">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="261121713924903" type="fade">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="724939578999230" type="System">
+                                    <param id="0" name="Variable">cena</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">13</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="936302645341675" type="System">
+                                    <param id="0" name="Layout">3. Casos</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="811813041531591">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="441268146002445" type="System">
+                                    <param id="0" name="Variable">cena</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">11</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="651362677509471">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="230297112959966" type="Keyboard">
+                                            <param id="0" name="Key">13 (Return)</param>
+                                        </condition>
+                                        <condition id="0" name="On key pressed" sid="598541344497590" type="Keyboard">
+                                            <param id="0" name="Key">32 (Space)</param>
+                                        </condition>
+                                        <condition id="1" name="On any click" sid="200291564889559" type="Mouse" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="430763578694866" type="System">
+                                            <param id="0" name="Variable">cena</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="379525243112195">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="812095756118350" type="System">
+                                    <param id="0" name="Variable">cena</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">12</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="378066843763415" type="dicaCena">
+                                    <param id="0" name="Opacity">dicaCena.Opacity-2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="883045273625271">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="985119076388630" type="System">
+                            <param id="0" name="Variable">timeline</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="461557454582447">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="826927137524166" type="Touch">
+                                    <param id="0" name="Object">pulaCena</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="673598327221957" type="System">
+                                    <param id="0" name="Layout">5. Créditos</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="999718025036301">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="647160285291514" type="fade">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="516316091502730" type="System">
+                                    <param id="0" name="Variable">cena</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">26</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="992102138013153" type="System">
+                                    <param id="0" name="Layout">5. Créditos</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="771933830371967">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="252565791964329" type="System">
+                                    <param id="0" name="Variable">cena</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">21</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="743307216644816">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="858374323944298" type="Keyboard">
+                                            <param id="0" name="Key">13 (Return)</param>
+                                        </condition>
+                                        <condition id="0" name="On key pressed" sid="970519106215317" type="Keyboard">
+                                            <param id="0" name="Key">32 (Space)</param>
+                                        </condition>
+                                        <condition id="1" name="On any click" sid="929272045477696" type="Mouse" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="322902006302827" type="System">
+                                            <param id="0" name="Variable">cena</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="102656219792574">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="561961700164050" type="System">
+                                    <param id="0" name="Variable">cena</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">22</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="142632455516972" type="dicaCena">
+                                    <param id="0" name="Opacity">dicaCena.Opacity-2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="137638056705486">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="978689952213545" type="System">
+                            <param id="0" name="Variable">timeline</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="159724099590325">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="980791186369529" type="Touch">
+                                    <param id="0" name="Object">pulaCena</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="438231092022450" type="System">
+                                    <param id="0" name="Layout">3. Casos</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="970238593122948">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="137477659154361" type="fade">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="137507352513079" type="System">
+                                    <param id="0" name="Variable">cena</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">33</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="430967646638972" type="System">
+                                    <param id="0" name="Layout">3. Casos</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="353156082261219">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="496720006578768" type="System">
+                                    <param id="0" name="Variable">cena</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">31</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="931177645341087">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="866182426572802" type="Keyboard">
+                                            <param id="0" name="Key">13 (Return)</param>
+                                        </condition>
+                                        <condition id="0" name="On key pressed" sid="796290534741069" type="Keyboard">
+                                            <param id="0" name="Key">32 (Space)</param>
+                                        </condition>
+                                        <condition id="1" name="On any click" sid="836469019965105" type="Mouse" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="699740140175933" type="System">
+                                            <param id="0" name="Variable">cena</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="249937690275145">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="673567770495685" type="System">
+                                    <param id="0" name="Variable">cena</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">32</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="288071946481156" type="dicaCena">
+                                    <param id="0" name="Opacity">dicaCena.Opacity-2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

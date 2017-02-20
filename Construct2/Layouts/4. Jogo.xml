@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Jogo</name>
+    <name>4. Jogo</name>
     <sid>338517222861648</sid>
-    <event-sheet>Jogo</event-sheet>
+    <event-sheet>5 Jogo</event-sheet>
     <size>
         <width>1280</width>
         <height>720</height>
@@ -723,10 +723,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>392</x>
-                        <y>9</y>
+                        <y>3</y>
                         <z>0</z>
                         <width>507</width>
-                        <height>143</height>
+                        <height>157</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

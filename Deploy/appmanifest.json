@@ -1,6 +1,6 @@
 ﻿{
-	"name": "Caça Palavras",
-	"short_name": "Caça Palavras",
+	"name": "Caca_Palavras",
+	"short_name": "Caca_Palavras",
 	"start_url": "index.html",
 	"display": "standalone",
 	"orientation": "any",

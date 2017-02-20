@@ -1,0 +1,103 @@
+/**
+* Wordfind.js 0.0.1
+* (c) 2012 Bill, BunKat LLC.
+* Wordfind is freely distributable under the MIT license.
+* For all details and documentation:
+*     http://github.com/bunkat/wordfind
+*/
+
+p {
+  font: 22pt sans-serif;
+  margin: 10px 10px 10px 10px;
+}
+
+/**
+* Styles for the puzzle
+*/
+#puzzle {
+/*  border: 1px solid black;*/
+  padding: 20px;
+  float: left;
+  margin: 3px 10px;
+}
+
+#puzzle div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* style for each square in the puzzle */
+#puzzle .puzzleSquare {
+  height: 40px;
+  width: 40px;
+  text-transform: uppercase;
+  background-color : transparent;
+  border: 0;
+  font: 1.5em, Verdana, "Trebuchet MS", sans-serif;
+  font-size: xx-large;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+/* indicates when a square has been selected */
+#puzzle .selected {
+  background-color: rgba(255, 165, 0, 0.5);
+  border-radius: 27px;
+}
+
+/* indicates that the square is part of a word that has been found */ 
+#puzzle .found {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 27px;
+  color: white;
+}
+
+#puzzle .solved {
+  background-color: rgba(128, 0, 128, 0.5);
+  border-radius: 27px;
+  color: white;
+}
+
+/* indicates that all words have been found */
+#puzzle .complete {
+  background-color: rgba(0, 128, 0, 0.5);
+  border-radius: 27px;
+}
+
+/**
+* Styles for the word list
+*/
+#words {
+  padding-top: 20px;
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+  column-count: 2;
+  column-gap: 20px;
+  width: 300px;
+}
+
+#words ul {
+  list-style-type: none;
+}
+
+#words li {
+  padding: 3px 0;
+  font: 1em sans-serif;
+}
+
+/* indicates that the word has been found */
+#words .wordFound {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/**
+* Styles for the button
+*/
+#solve {
+  margin: 0 30px;
+}

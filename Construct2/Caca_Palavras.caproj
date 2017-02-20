@@ -45,7 +45,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>Menu Principal</first-layout>
+    <first-layout>1. Menu</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -1329,18 +1329,18 @@
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Menu Principal.xml</layout>
-        <layout>Cena.xml</layout>
-        <layout>Tela de Casos.xml</layout>
-        <layout>Jogo.xml</layout>
-        <layout>Tela de Creditos.xml</layout>
+        <layout>1. Menu.xml</layout>
+        <layout>2. Cenas.xml</layout>
+        <layout>3. Casos.xml</layout>
+        <layout>4. Jogo.xml</layout>
+        <layout>5. Créditos.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Menu.xml</event-sheet>
-        <event-sheet>Jogo.xml</event-sheet>
-        <event-sheet>Tela de Casos.xml</event-sheet>
-        <event-sheet>Cena.xml</event-sheet>
-        <event-sheet>Tela de Creditos.xml</event-sheet>
+        <event-sheet>1 Menu.xml</event-sheet>
+        <event-sheet>5 Jogo.xml</event-sheet>
+        <event-sheet>3 Casos.xml</event-sheet>
+        <event-sheet>2 Cenas.xml</event-sheet>
+        <event-sheet>5 Créditos.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="12" />
