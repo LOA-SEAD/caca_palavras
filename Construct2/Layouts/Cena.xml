@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Cena 1</name>
+    <name>Cena</name>
     <sid>360200928566494</sid>
-    <event-sheet>Cena 1</event-sheet>
+    <event-sheet>Cena</event-sheet>
     <size>
         <width>1280</width>
         <height>720</height>
@@ -380,6 +380,33 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="dicaCena" uid="88">
+                    <properties>
+                        <text>Pressione Barra de Espaço ou Enter para prosseguir.</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-24,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>640</x>
+                        <y>695</y>
+                        <z>0</z>
+                        <width>800</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -462,7 +489,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="balaoM" uid="80">
+                <instance type="balao3" uid="80">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -508,12 +535,12 @@
                 </instance>
                 <instance type="diagTexto1" uid="82">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
+                        <font>Arial,-21,400,0</font>
                         <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
@@ -521,11 +548,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>201</x>
-                        <y>140</y>
+                        <x>198</x>
+                        <y>138</y>
                         <z>0</z>
-                        <width>214</width>
-                        <height>91</height>
+                        <width>220</width>
+                        <height>95</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -535,12 +562,12 @@
                 </instance>
                 <instance type="diagTexto2" uid="83">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
+                        <font>Arial,-25,400,0</font>
                         <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
@@ -548,11 +575,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>103</x>
-                        <y>291</y>
+                        <x>99</x>
+                        <y>287</y>
                         <z>0</z>
-                        <width>220</width>
-                        <height>205</height>
+                        <width>228</width>
+                        <height>214</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -562,12 +589,12 @@
                 </instance>
                 <instance type="diagTexto3" uid="84">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
+                        <font>Arial,-24,400,0</font>
                         <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
@@ -575,11 +602,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>904</x>
-                        <y>313</y>
+                        <x>900</x>
+                        <y>311</y>
                         <z>0</z>
-                        <width>197</width>
-                        <height>133</height>
+                        <width>207</width>
+                        <height>139</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

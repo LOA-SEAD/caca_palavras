@@ -790,7 +790,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="balaoM" sid="352755044972128">
+            <object-type name="balao3" sid="352755044972128">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="954618269804097" speed="5">
@@ -824,6 +824,9 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
+            </object-type>
+            <object-type name="dicaCena" sid="953790833969770">
+                <plugin id="Text" />
             </object-type>
         </object-folder>
         <object-folder name="Tela Creditos">
@@ -1335,7 +1338,7 @@
     <families />
     <layout-folder>
         <layout>Menu Principal.xml</layout>
-        <layout>Cena 1.xml</layout>
+        <layout>Cena.xml</layout>
         <layout>Tela de Casos.xml</layout>
         <layout>Jogo.xml</layout>
         <layout>Tela de Creditos.xml</layout>
@@ -1344,7 +1347,7 @@
         <event-sheet>Menu.xml</event-sheet>
         <event-sheet>Jogo.xml</event-sheet>
         <event-sheet>Tela de Casos.xml</event-sheet>
-        <event-sheet>Cena 1.xml</event-sheet>
+        <event-sheet>Cena.xml</event-sheet>
         <event-sheet>Tela de Creditos.xml</event-sheet>
     </event-folder>
     <global-instances>
