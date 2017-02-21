@@ -73,6 +73,17 @@ function setValorAcertos(newValue) {
         console.log("set acertos => " + acertos);  
 }
 
+function atualizarDinheiro(newValue) {
+
+       if (typeof(Storage) !== "undefined") {
+                var dinheiro = sessionStorage.getItem("dinheiro");
+                dinheiro = newValue;
+        sessionStorage.setItem("dinheiro", dinheiro);
+  }
+        
+        console.log("valor dinheiro => " + dinheiro); 
+}
+
 (function (document, $, wordfind) {
 
   'use strict';

@@ -7,6 +7,8 @@
         <variable constant="0" name="novoJogo" sid="596513094316818" static="0" type="number">1</variable>
         <comment>Variável para determinar a timeline das animações do jogo, para controlar o layout das Cenas e determinar qual cena tocar.</comment>
         <variable constant="0" name="timeline" sid="566742069837778" static="0" type="number">0</variable>
+        <comment>Serve para armazenar o quanto de dinheiro o jogador tem no começo de cada fase, sendo atualizado cada vez que um jogador completa um caso</comment>
+        <variable constant="0" name="dinheiroInicial" sid="744131665112205" static="0" type="number">0</variable>
         <event-block sid="532870774512476">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="548108657880177" type="System" />
