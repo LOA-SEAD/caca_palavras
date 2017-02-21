@@ -606,11 +606,27 @@
                             <conditions>
                                 <condition id="-22" name="Else" sid="328021996636492" type="System" />
                             </conditions>
-                            <actions>
-                                <action id="0" name="Set cursor style" sid="728018416646360" type="Mouse">
-                                    <param id="0" name="Cursor style">0</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="462368093978243">
+                                    <conditions />
+                                    <actions>
+                                        <action id="1" name="Set cursor from sprite" sid="246446224510415" type="Mouse">
+                                            <param id="0" name="Sprite">Sprite</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="817635069645937">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="303280484081994" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="728018416646360" type="Mouse">
+                                            <param id="0" name="Cursor style">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block any="1" sid="174450157309839">
                             <conditions>
