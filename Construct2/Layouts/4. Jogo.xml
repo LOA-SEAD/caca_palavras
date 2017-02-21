@@ -866,7 +866,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>403</x>
-                        <y>415</y>
+                        <y>435</y>
                         <z>0</z>
                         <width>400</width>
                         <height>70</height>
@@ -906,7 +906,7 @@
                 </instance>
                 <instance type="btnInfo2" uid="90">
                     <properties>
-                        <text>Informações</text>
+                        <text>Ajuda</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-40,700,0</font>
                         <color>92,72,60</color>
@@ -920,7 +920,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>403</x>
-                        <y>345</y>
+                        <y>355</y>
                         <z>0</z>
                         <width>400</width>
                         <height>70</height>
@@ -949,66 +949,6 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="ajudaTexto1" uid="92">
-                    <properties>
-                        <text>Text1</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-27,400,0</font>
-                        <color>82,73,66</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>244</x>
-                        <y>-560</y>
-                        <z>0</z>
-                        <width>366</width>
-                        <height>456</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="ajudaTexto2" uid="93">
-                    <properties>
-                        <text>Text2</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-27,400,0</font>
-                        <color>82,73,66</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>674</x>
-                        <y>-560</y>
-                        <z>0</z>
-                        <width>366</width>
-                        <height>456</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
