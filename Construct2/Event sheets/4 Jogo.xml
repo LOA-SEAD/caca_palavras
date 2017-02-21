@@ -83,6 +83,30 @@
                 <action id="0" name="Set text" sid="853942697072124" type="dicaPowerup">
                     <param id="0" name="Text">&quot;&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="671968579585579" type="btnMenu2">
+                    <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="159656668522405" type="btnResume">
+                    <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="296693390678286" type="btnInfo2">
+                    <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="444496423659739" type="menuX">
+                    <param id="0" name="Pin to">telaAjuda</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="375929509337592" type="ajudaTexto1">
+                    <param id="0" name="Pin to">telaAjuda</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="546064172221016" type="ajudaTexto2">
+                    <param id="0" name="Pin to">telaAjuda</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
                 <action id="13" name="Set URL" sid="459290727587993" type="cacaPalavrasHTML">
                     <param id="0" name="URL">&quot;cacapalavras&quot; &amp;  numcaso+1 &amp; &quot;.html&quot;</param>
                 </action>
@@ -581,18 +605,6 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="779413485256777">
-                            <conditions>
-                                <condition id="17" name="On tap object" sid="888285292425928" type="Touch">
-                                    <param id="0" name="Object">botaoMenuprovisorio</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-2" name="Go to layout" sid="181961290269746" type="System">
-                                    <param id="0" name="Layout">1. Menu</param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-block any="1" sid="174450157309839">
                             <conditions>
                                 <condition id="17" name="On tap object" sid="353540501543385" type="Touch">
@@ -752,10 +764,16 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="406562043499225">
+                        <event-block any="1" sid="406562043499225">
                             <conditions>
                                 <condition id="7" name="Cursor is over object" sid="882823922703028" type="Mouse">
-                                    <param id="0" name="Object">menuX</param>
+                                    <param id="0" name="Object">btnResume</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="644876432029670" type="Mouse">
+                                    <param id="0" name="Object">btnInfo2</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="972351442726493" type="Mouse">
+                                    <param id="0" name="Object">btnMenu2</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -886,10 +904,6 @@
                         <action id="3" name="Set visible" sid="756388027006485" type="respostas">
                             <param id="0" name="Visibility">0</param>
                         </action>
-                        <action id="-3" name="Set position" sid="192514695270168" type="menuX">
-                            <param id="0" name="X">842</param>
-                            <param id="1" name="Y">134</param>
-                        </action>
                         <action id="-32" name="Set layer effect parameter" sid="350565293837595" type="System">
                             <param id="0" name="Layer">0</param>
                             <param id="1" name="Effect">&quot;BlurHorizontal&quot;</param>
@@ -930,10 +944,8 @@
                 </event-block>
                 <event-block sid="511999159280254">
                     <conditions>
-                        <condition id="6" name="On object clicked" sid="145903995623125" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">menuX</param>
+                        <condition id="17" name="On tap object" sid="145903995623125" type="Touch">
+                            <param id="0" name="Object">btnResume</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -946,10 +958,6 @@
                         </action>
                         <action id="3" name="Set visible" sid="753593709687817" type="respostas">
                             <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="287808779255191" type="menuX">
-                            <param id="0" name="X">842</param>
-                            <param id="1" name="Y">-134</param>
                         </action>
                         <action id="-32" name="Set layer effect parameter" sid="308535658312634" type="System">
                             <param id="0" name="Layer">0</param>
@@ -986,6 +994,26 @@
                             <param id="1" name="Effect">&quot;BlurVertical&quot;</param>
                             <param id="2" name="Parameter index">0</param>
                             <param id="3" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="114028649120293">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="612431667356508" type="Touch">
+                            <param id="0" name="Object">btnInfo2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="579532872737098">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="944831505223096" type="Touch">
+                            <param id="0" name="Object">btnMenu2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="811322800101024" type="System">
+                            <param id="0" name="Layout">1. Menu</param>
                         </action>
                     </actions>
                 </event-block>

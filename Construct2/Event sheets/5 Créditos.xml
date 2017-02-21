@@ -31,7 +31,7 @@
                 <event-block sid="476559106693191">
                     <conditions>
                         <condition id="7" name="Cursor is over object" sid="599424133972241" type="Mouse">
-                            <param id="0" name="Object">botaoAnt</param>
+                            <param id="0" name="Object">btnMenu</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -53,7 +53,7 @@
                 <event-block sid="760926162916559">
                     <conditions>
                         <condition id="17" name="On tap object" sid="165468513783363" type="Touch">
-                            <param id="0" name="Object">botaoAnt</param>
+                            <param id="0" name="Object">btnMenu</param>
                         </condition>
                     </conditions>
                     <actions>
