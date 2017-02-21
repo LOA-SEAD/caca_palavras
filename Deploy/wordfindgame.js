@@ -6,7 +6,6 @@
 *     http://github.com/bunkat/wordfind
 */
 
-window.terminou = 0;
 
 function reverse(s){
     return s.split("").reverse().join("");
@@ -284,7 +283,6 @@ function setValorAcertos(newValue) {
     */
     var endTurn = function () {
 
-      //window.terminou = 0;
 
       // see if we formed a valid word
       var ok = false;
@@ -294,9 +292,6 @@ function setValorAcertos(newValue) {
           $('.selected').addClass('found');
           wordList.splice(i,1);
           $('.' + curWord).addClass('wordFound');
-          //window.terminou = 1;
-          //this.terminou = 1;
-          //atualiza(1);
           setValor(50);
           setValorAcertos(1);
           ok = true;
@@ -318,9 +313,6 @@ function setValorAcertos(newValue) {
       	setValor(-25);
       }
       return wordList.length;
-      //if (window.terminou === 1) {
-      //  return "terminou"
-      //}
      
     };
 
@@ -415,7 +407,6 @@ function setValorAcertos(newValue) {
           }
         }*/
 
-//      console.log(this.terminou);
       }
     };
   };
@@ -426,5 +417,6 @@ function setValorAcertos(newValue) {
   */
   window.wordfindgame = WordFindGame();
 
-}(document, jQuery, wordfind));
+}(document, jQuery, wordfind)
+);
 

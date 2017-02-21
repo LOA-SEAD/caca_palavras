@@ -93,9 +93,6 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action disabled="1" id="-2" name="Go to layout" sid="788559131228373" type="System">
-                                    <param id="0" name="Layout">3. Casos</param>
-                                </action>
                                 <action id="-2" name="Go to layout" sid="157027319285276" type="System">
                                     <param id="0" name="Layout">2. Cenas</param>
                                 </action>

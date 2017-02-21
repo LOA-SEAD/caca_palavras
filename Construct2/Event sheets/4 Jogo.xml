@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>5 Jogo</name>
+    <name>4 Jogo</name>
     <events>
         <comment>Serve para monitorar qual dica está sendo vista na máquina naquele momento</comment>
         <variable constant="0" name="dicaNaMaquina" sid="994501228492553" static="0" type="number">1</variable>

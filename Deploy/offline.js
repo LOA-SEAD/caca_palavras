@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1487630425,
+	"version": 1487682623,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -96,7 +96,6 @@
 		"cacapalavras3.html",
 		"stylecacapalavras.css",
 		"wordfind.js",
-		"verificafim.js",
 		"wordfindgame.js"
 	]
 }

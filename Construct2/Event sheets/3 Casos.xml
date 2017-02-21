@@ -32,6 +32,10 @@
                     <param id="0" name="X">1</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action disabled="1" id="2" name="Set at X" sid="348131265431500" type="caso">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
                 <action id="5" name="Set frame" sid="898567746683934" type="casoStatus">
                     <param id="0" name="Frame number">caso.At(numcaso)</param>
                 </action>

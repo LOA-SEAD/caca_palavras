@@ -1310,6 +1310,9 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type global="1" name="verificaFimJS" sid="300315608599823">
+                <plugin id="cjs" />
+            </object-type>
         </object-folder>
         <object-type name="Mouse" sid="359155137460880">
             <plugin id="Mouse" />
@@ -1323,9 +1326,6 @@
         <object-type name="botaoMenuprovisorio" sid="981595157067975">
             <plugin id="Text" />
         </object-type>
-        <object-type global="1" name="verificaFimJS" sid="300315608599823">
-            <plugin id="cjs" />
-        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1337,7 +1337,7 @@
     </layout-folder>
     <event-folder>
         <event-sheet>1 Menu.xml</event-sheet>
-        <event-sheet>5 Jogo.xml</event-sheet>
+        <event-sheet>4 Jogo.xml</event-sheet>
         <event-sheet>3 Casos.xml</event-sheet>
         <event-sheet>2 Cenas.xml</event-sheet>
         <event-sheet>5 Créditos.xml</event-sheet>
@@ -1391,7 +1391,7 @@
         <file-folder name="JSON">
             <file name="casos.json" />
             <file name="creditos.json" />
-            <file name="dicaPowerup.json" />
+            <file name="dicapowerup.json" />
             <file name="ajuda.json" />
             <file name="dialogos.json" />
         </file-folder>
@@ -1405,7 +1405,6 @@
         </file-folder>
         <file-folder name="JS">
             <file name="wordfind.js" />
-            <file name="verificaFim.js" />
             <file name="wordfindgame.js" />
         </file-folder>
     </files-folder>

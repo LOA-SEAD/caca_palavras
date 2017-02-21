@@ -2,7 +2,7 @@
 <c2layout>
     <name>4. Jogo</name>
     <sid>338517222861648</sid>
-    <event-sheet>5 Jogo</event-sheet>
+    <event-sheet>4 Jogo</event-sheet>
     <size>
         <width>1280</width>
         <height>720</height>
@@ -909,7 +909,7 @@
     <nonworld-instances>
         <instance type="dicaJSON" uid="62">
             <properties>
-                <json-file>dicaPowerup.json</json-file>
+                <json-file>dicapowerup.json</json-file>
             </properties>
         </instance>
         <instance type="statusDicas" uid="67">
