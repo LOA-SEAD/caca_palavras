@@ -360,9 +360,6 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type global="1" name="ajudaJSON" sid="332003943695808">
-                <plugin id="ljson" />
-            </object-type>
             <object-type name="telaAjuda" sid="198782660156278">
                 <plugin id="Sprite" />
                 <animation-folder>
@@ -379,22 +376,6 @@
                         </frame>
                     </animation>
                 </animation-folder>
-            </object-type>
-            <object-type name="ajudaTexto1" sid="873025769624826">
-                <plugin id="Text" />
-                <behaviors>
-                    <behavior-type name="Pin" sid="940523104947527">
-                        <behavior id="Pin" />
-                    </behavior-type>
-                </behaviors>
-            </object-type>
-            <object-type name="ajudaTexto2" sid="196329057311144">
-                <plugin id="Text" />
-                <behaviors>
-                    <behavior-type name="Pin" sid="289589402427447">
-                        <behavior id="Pin" />
-                    </behavior-type>
-                </behaviors>
             </object-type>
             <object-type name="menuX" sid="115755191832992">
                 <plugin id="Sprite" />
@@ -843,16 +824,12 @@
         <object-folder name="Tela Creditos">
             <object-type name="fundoCreditos" sid="871468901321763">
                 <plugin id="TiledBg" />
-                <texture original-source="C:\Users\Douglas\Downloads\telaCREDITOS.png" />
-            </object-type>
-            <object-type name="Creditos1" sid="781042765908792">
-                <plugin id="Text" />
-            </object-type>
-            <object-type name="Creditos2" sid="999459995026895">
-                <plugin id="Text" />
-            </object-type>
-            <object-type global="1" name="creditosJSON" sid="272985413293210">
-                <plugin id="ljson" />
+                <effects>
+                    <effect-type name="Contrast">
+                        <effect id="contrast" />
+                    </effect-type>
+                </effects>
+                <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Créditos\telaCREDITOS.png" />
             </object-type>
         </object-folder>
         <object-folder name="Jogo">
@@ -1414,9 +1391,7 @@
         </file-folder>
         <file-folder name="JSON">
             <file name="casos.json" />
-            <file name="creditos.json" />
             <file name="dicapowerup.json" />
-            <file name="ajuda.json" />
             <file name="dialogos.json" />
         </file-folder>
         <file-folder name="HTML">

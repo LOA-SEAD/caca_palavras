@@ -968,6 +968,21 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="704959717145096">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="978761391722519" type="System">
+                                    <param id="0" name="Variable">cena</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">8</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="378271959277216" type="System">
+                                    <param id="0" name="Variable">cena</param>
+                                    <param id="1" name="Value">8</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="966963786487302">
@@ -1050,6 +1065,21 @@
                             <actions>
                                 <action id="-16" name="Set opacity" sid="378066843763415" type="dicaCena">
                                     <param id="0" name="Opacity">dicaCena.Opacity-2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="629568891356289">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="204707986913601" type="System">
+                                    <param id="0" name="Variable">cena</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">13</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="917168104320938" type="System">
+                                    <param id="0" name="Variable">cena</param>
+                                    <param id="1" name="Value">13</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1138,6 +1168,21 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="353640475088786">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="842176405528330" type="System">
+                                    <param id="0" name="Variable">cena</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">26</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="358614885335672" type="System">
+                                    <param id="0" name="Variable">cena</param>
+                                    <param id="1" name="Value">26</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="137638056705486">
@@ -1220,6 +1265,21 @@
                             <actions>
                                 <action id="-16" name="Set opacity" sid="288071946481156" type="dicaCena">
                                     <param id="0" name="Opacity">dicaCena.Opacity-2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="374340076405455">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="382268328391662" type="System">
+                                    <param id="0" name="Variable">cena</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">33</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="716304056525432" type="System">
+                                    <param id="0" name="Variable">cena</param>
+                                    <param id="1" name="Value">33</param>
                                 </action>
                             </actions>
                         </event-block>

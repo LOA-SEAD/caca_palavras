@@ -14,7 +14,6 @@
                 <condition id="-2" name="On start of layout" sid="548108657880177" type="System" />
             </conditions>
             <actions>
-                <action id="0" name="Load JSON" sid="861703059672080" type="ajudaJSON" />
                 <action id="5" name="Set frame" sid="503541469249723" type="btnJogar">
                     <param id="0" name="Frame number">0</param>
                 </action>
@@ -44,29 +43,7 @@
                     <param id="1" name="Mode">0</param>
                     <param id="2" name="Effect">&quot;BlurVertical&quot;</param>
                 </action>
-                <action id="0" name="Set text" sid="580180878545595" type="ajudaTexto1">
-                    <param id="0" name="Text">ajudaJSON.GetData(&quot;ajuda1&quot;,0)</param>
-                </action>
-                <action id="0" name="Set text" sid="258163504880128" type="ajudaTexto2">
-                    <param id="0" name="Text">ajudaJSON.GetData(&quot;ajuda2&quot;,0)</param>
-                </action>
-                <action id="5" name="Set web font" sid="500385207728103" type="ajudaTexto1">
-                    <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
-                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
-                </action>
-                <action id="5" name="Set web font" sid="975870425934338" type="ajudaTexto2">
-                    <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
-                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
-                </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="846655058944620" type="menuX">
-                    <param id="0" name="Pin to">telaAjuda</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="758414269105588" type="ajudaTexto1">
-                    <param id="0" name="Pin to">telaAjuda</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="221444750396689" type="ajudaTexto2">
                     <param id="0" name="Pin to">telaAjuda</param>
                     <param id="1" name="Mode">0</param>
                 </action>

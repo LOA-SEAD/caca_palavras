@@ -99,14 +99,6 @@
                     <param id="0" name="Pin to">telaAjuda</param>
                     <param id="1" name="Mode">0</param>
                 </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="375929509337592" type="ajudaTexto1">
-                    <param id="0" name="Pin to">telaAjuda</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="546064172221016" type="ajudaTexto2">
-                    <param id="0" name="Pin to">telaAjuda</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
                 <action id="13" name="Set URL" sid="459290727587993" type="cacaPalavrasHTML">
                     <param id="0" name="URL">&quot;cacapalavras&quot; &amp;  numcaso+1 &amp; &quot;.html&quot;</param>
                 </action>
