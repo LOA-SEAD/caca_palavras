@@ -73,17 +73,6 @@ function setValorAcertos(newValue) {
         console.log("set acertos => " + acertos);  
 }
 
-function atualizarDinheiro(newValue) {
-
-       if (typeof(Storage) !== "undefined") {
-                var dinheiro = sessionStorage.getItem("dinheiro");
-                dinheiro = newValue;
-        sessionStorage.setItem("dinheiro", dinheiro);
-  }
-        
-        console.log("valor dinheiro => " + dinheiro); 
-}
-
 (function (document, $, wordfind) {
 
   'use strict';
@@ -325,7 +314,13 @@ function atualizarDinheiro(newValue) {
       selectedSquares = [];
       curWord = '';
       curOrientation = null;
-      if (!ok){
+      //encontra o numero de palavras encontradas pelo jogador
+      if (typeof(Storage) !== "undefined") {
+        var acertos = sessionStorage.getItem("acertos");
+        acertos = parseInt(acertos);
+      }
+      //se o jogador encontrou todas nao retira nenhum ponto dele
+      if (!ok && (acertos != 5)){
       	setValor(-25);
       }
       return wordList.length;
