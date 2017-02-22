@@ -82,7 +82,7 @@
                         <font>Arial,-87,400,0</font>
                         <color>92,72,60</color>
                         <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
@@ -94,7 +94,7 @@
                         <y>96</y>
                         <z>0</z>
                         <width>359</width>
-                        <height>189</height>
+                        <height>125</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
