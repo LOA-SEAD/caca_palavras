@@ -373,7 +373,7 @@
                     </conditions>
                     <actions>
                         <action id="-1" name="Set X" sid="774129887686555" type="botaoAnt">
-                            <param id="0" name="X">58</param>
+                            <param id="0" name="X">70</param>
                         </action>
                     </actions>
                 </event-block>

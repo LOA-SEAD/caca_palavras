@@ -22,6 +22,10 @@
                     <param id="0" name="Variable">dicaNaMaquina</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="-9" name="Set value" sid="897699198595932" type="System">
+                    <param id="0" name="Variable">ajuda</param>
+                    <param id="1" name="Value">0</param>
+                </action>
                 <action id="-4" name="Set layer visible" sid="476485556265872" type="System">
                     <param id="0" name="Layer">&quot;Menu&quot;</param>
                     <param id="1" name="Visibility">0</param>
@@ -98,6 +102,30 @@
                 <action behavior="Pin" id="0" name="Pin to object" sid="444496423659739" type="menuX">
                     <param id="0" name="Pin to">telaAjuda</param>
                     <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="581428585625223" type="ajuda1">
+                    <param id="0" name="Pin to">telaAjuda</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="331847546118710" type="ajuda2">
+                    <param id="0" name="Pin to">telaAjuda</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="344648154880652" type="ajudaPag">
+                    <param id="0" name="Pin to">telaAjuda</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="869320311893144" type="botaoAnt">
+                    <param id="0" name="Pin to">telaAjuda</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="526641405816752" type="botaoProx">
+                    <param id="0" name="Pin to">telaAjuda</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="893514322297487" type="System">
+                    <param id="0" name="Variable">ajuda</param>
+                    <param id="1" name="Value">0</param>
                 </action>
                 <action id="13" name="Set URL" sid="459290727587993" type="cacaPalavrasHTML">
                     <param id="0" name="URL">&quot;cacapalavras&quot; &amp;  numcaso+1 &amp; &quot;.html&quot;</param>
@@ -180,6 +208,15 @@
                         <action id="-9" name="Set value" sid="289916619560164" type="System">
                             <param id="0" name="Variable">numeroAcertos</param>
                             <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
+                        </action>
+                        <action id="0" name="Set text" sid="161131779919802" type="ajudaPag">
+                            <param id="0" name="Text">&quot;Página &quot; &amp; ajudaPag.UID-91+2*ajuda &amp;  &quot; de 6&quot;</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="359888367380833" type="ajuda1">
+                            <param id="0" name="Frame number">ajuda</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="193297450121690" type="ajuda2">
+                            <param id="0" name="Frame number">ajuda</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -559,6 +596,87 @@
         </event-group>
         <event-group description="Para tratar o comportamento dos botões da tela conforme as ações do mouse (botões de powerups do Menu, botão de configurações na caderneta)" sid="441495148994534" title="Efeitos 4">
             <sub-events>
+                <event-block sid="919222953970585">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="158042474146760" type="System">
+                            <param id="0" name="Variable">ajuda</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="127064301209206" type="System">
+                            <param id="0" name="Variable">ajuda</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="896349704179979">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="419778020949868" type="System">
+                            <param id="0" name="Variable">ajuda</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="746347121289006" type="botaoAnt">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="274914054576251" type="botaoProx">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="189061287771099">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="391672851559418" type="System">
+                            <param id="0" name="Variable">ajuda</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="830353217808598" type="botaoAnt">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="424695535111274" type="botaoProx">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="875598184196877">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="802613726081602" type="System">
+                            <param id="0" name="Variable">ajuda</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="735579492484717" type="botaoAnt">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="508254472691772" type="botaoProx">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="144858488365081">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="646961750836482" type="System">
+                            <param id="0" name="Variable">ajuda</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="550447602930903" type="System">
+                            <param id="0" name="Variable">ajuda</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="448403677070406">
                     <conditions>
                         <condition id="-9" inverted="1" name="Layer is visible" sid="906035960998385" type="System">
@@ -1112,7 +1230,23 @@
                             <param id="0" name="Object">btnInfo2</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-2" name="Set Y" sid="958978462177106" type="telaAjuda">
+                            <param id="0" name="Y">360</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="863587242261845">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="479153235512087" type="Touch">
+                            <param id="0" name="Object">menuX</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="407837612699285" type="telaAjuda">
+                            <param id="0" name="Y">-360</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="579532872737098">
                     <conditions>

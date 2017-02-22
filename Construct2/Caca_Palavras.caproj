@@ -360,36 +360,6 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="telaAjuda" sid="198782660156278">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="648601933752300" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_ajuda.png">
-                            <collision-poly>
-                                <point x="0.0416667" y="0.0573529" />
-                                <point x="0.959402" y="0.0558824" />
-                                <point x="0.982906" y="0.5" />
-                                <point x="0.95406" y="0.936765" />
-                                <point x="0.0470085" y="0.935294" />
-                                <point x="0.00747863" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="menuX" sid="115755191832992">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Pin" sid="570964476921949">
-                        <behavior id="Pin" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="671211261361182" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    </animation>
-                </animation-folder>
-            </object-type>
         </object-folder>
         <object-folder name="Tela Casos">
             <object-type name="fundoCasos" sid="752527904705218">
@@ -447,44 +417,6 @@
             </object-type>
             <object-type name="casoTxt" sid="703813256685126">
                 <plugin id="Text" />
-            </object-type>
-            <object-type name="botaoProx" sid="297336292602134">
-                <plugin id="Sprite" />
-                <effects>
-                    <effect-type name="Vibrance">
-                        <effect id="vibrance" />
-                    </effect-type>
-                </effects>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="960796085317254" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\caso_prox.png">
-                            <collision-poly>
-                                <point x="0.0474134" y="0.139706" />
-                                <point x="0.99569" y="0.47549" />
-                                <point x="0.172414" y="1" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="botaoAnt" sid="902670974708144">
-                <plugin id="Sprite" />
-                <effects>
-                    <effect-type name="Vibrance">
-                        <effect id="vibrance" />
-                    </effect-type>
-                </effects>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="248091658208358" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\caso_ant.png">
-                            <collision-poly>
-                                <point x="0.87069" y="0.102941" />
-                                <point x="0.778017" y="0.980392" />
-                                <point x="0.127156" y="0.553922" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
             </object-type>
             <object-type global="1" name="caso" sid="489171068871624">
                 <plugin id="Arr" />
@@ -1323,6 +1255,130 @@
                             <point x="0.5" y="0.794118" />
                             <point x="0.293103" y="0.666667" />
                             <point x="0.206897" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ajuda1" sid="964907061538371">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="956637178149159">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="135541265151595" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ajuda2" sid="592532057583311">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="828898117310955">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="357815313143700" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="telaAjuda" sid="198782660156278">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Vibrance">
+                    <effect id="vibrance" />
+                </effect-type>
+                <effect-type name="Contrast">
+                    <effect id="contrast" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="648601933752300" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_ajuda.png">
+                        <collision-poly>
+                            <point x="0.0416667" y="0.0573529" />
+                            <point x="0.959402" y="0.0558824" />
+                            <point x="0.982906" y="0.5" />
+                            <point x="0.95406" y="0.936765" />
+                            <point x="0.0470085" y="0.935294" />
+                            <point x="0.00747863" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menuX" sid="115755191832992">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="570964476921949">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="671211261361182" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ajudaPag" sid="689154581776211">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="526473616463470">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="botaoProx" sid="297336292602134">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="678501169716186">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="Vibrance">
+                    <effect id="vibrance" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="960796085317254" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\caso_prox.png">
+                        <collision-poly>
+                            <point x="0.0474134" y="0.139706" />
+                            <point x="0.99569" y="0.47549" />
+                            <point x="0.172414" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botaoAnt" sid="902670974708144">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="910491149215171">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="Vibrance">
+                    <effect id="vibrance" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="248091658208358" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\caso_ant.png">
+                        <collision-poly>
+                            <point x="0.87069" y="0.102941" />
+                            <point x="0.778017" y="0.980392" />
+                            <point x="0.127156" y="0.553922" />
                         </collision-poly>
                     </frame>
                 </animation>

@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>1 Menu</name>
     <events>
+        <comment>Variável para controlar as páginas do livro de ajuda com as regras de jogo</comment>
+        <variable constant="0" name="ajuda" sid="466059140149343" static="0" type="number">0</variable>
         <comment>Serve para ser verificada quando começa um novo jogo para limpar o valor armazenado na sessionStorage dinheiro</comment>
         <variable constant="0" name="novoJogo" sid="596513094316818" static="0" type="number">1</variable>
         <comment>Variável para determinar a timeline das animações do jogo, para controlar o layout das Cenas e determinar qual cena tocar.</comment>
@@ -46,6 +48,46 @@
                 <action behavior="Pin" id="0" name="Pin to object" sid="846655058944620" type="menuX">
                     <param id="0" name="Pin to">telaAjuda</param>
                     <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="770934104531797" type="ajuda1">
+                    <param id="0" name="Pin to">telaAjuda</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="233852686540140" type="ajuda2">
+                    <param id="0" name="Pin to">telaAjuda</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="544397785315783" type="ajudaPag">
+                    <param id="0" name="Pin to">telaAjuda</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="760619080448612" type="botaoAnt">
+                    <param id="0" name="Pin to">telaAjuda</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="953373483510095" type="botaoProx">
+                    <param id="0" name="Pin to">telaAjuda</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="400762710093988" type="System">
+                    <param id="0" name="Variable">ajuda</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="448862740704486">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="528705408500679" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="825881686059405" type="ajudaPag">
+                    <param id="0" name="Text">&quot;Página &quot; &amp; ajudaPag.UID-74+2*ajuda &amp;  &quot; de 6&quot;</param>
+                </action>
+                <action id="5" name="Set frame" sid="374601952784958" type="ajuda1">
+                    <param id="0" name="Frame number">ajuda</param>
+                </action>
+                <action id="5" name="Set frame" sid="346597703744910" type="ajuda2">
+                    <param id="0" name="Frame number">ajuda</param>
                 </action>
             </actions>
         </event-block>
@@ -133,12 +175,15 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="721954011599761">
+                <event-block any="1" sid="721954011599761">
                     <conditions>
-                        <condition id="6" name="On object clicked" sid="826228405693372" type="Mouse">
+                        <condition disabled="1" id="6" name="On object clicked" sid="191099910148082" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">menuX</param>
+                        </condition>
+                        <condition id="17" name="On tap object" sid="826228405693372" type="Touch">
+                            <param id="0" name="Object">menuX</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -165,12 +210,125 @@
                             <param id="1" name="Mode">0</param>
                             <param id="2" name="Effect">&quot;BlurVertical&quot;</param>
                         </action>
+                        <action id="-9" name="Set value" sid="133956131694888" type="System">
+                            <param id="0" name="Variable">ajuda</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="748311277630062">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="410818124278480" type="Touch">
+                            <param id="0" name="Object">botaoProx</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="973250188666595" type="botaoProx" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="914722337673973" type="System">
+                            <param id="0" name="Variable">ajuda</param>
+                            <param id="1" name="Value">ajuda+1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="376781918069263">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="556427265491344" type="Touch">
+                            <param id="0" name="Object">botaoAnt</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="443498915937114" type="botaoAnt" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="302947936496194" type="System">
+                            <param id="0" name="Variable">ajuda</param>
+                            <param id="1" name="Value">ajuda-1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="714541582340422" title="Efeitos 1">
             <sub-events>
+                <event-block sid="750992432864887">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="651719895692548" type="System">
+                            <param id="0" name="Variable">ajuda</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="496500604356924" type="System">
+                            <param id="0" name="Variable">ajuda</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="351613822825378">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="315518411241875" type="System">
+                            <param id="0" name="Variable">ajuda</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="552915684213841" type="botaoAnt">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="996624670652514" type="botaoProx">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="624844829760869">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="471600204545755" type="System">
+                            <param id="0" name="Variable">ajuda</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="207041331410797" type="botaoAnt">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="926985985346211" type="botaoProx">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="402764044892576">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="231021986758221" type="System">
+                            <param id="0" name="Variable">ajuda</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="902863853347606" type="botaoAnt">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="703024128998244" type="botaoProx">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="105485055408436">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="795313812579059" type="System">
+                            <param id="0" name="Variable">ajuda</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="167400381558990" type="System">
+                            <param id="0" name="Variable">ajuda</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="479937636673900">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="335576717207295" type="System">
@@ -268,120 +426,147 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="377654435437962">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="764876026272416" type="Mouse">
+                                    <param id="0" name="Object">btnJogar</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="412445542366601" type="btnJogar">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="927426814734570">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="296179064083853" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="884749145033568" type="btnJogar">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="868436335552459">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="242755404431798" type="Mouse">
+                                    <param id="0" name="Object">btnAjuda</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="375487734064189" type="btnAjuda">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="128702174315593">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="417279650405924" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="989638818149030" type="btnAjuda">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="106069181040822">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="380495283527635" type="Mouse">
+                                    <param id="0" name="Object">btnInfo</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="992122038500664" type="btnInfo">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="785382904817245">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="560587250304808" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="405808521440481" type="btnInfo">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="377654435437962">
+                <event-block sid="468942435382278">
                     <conditions>
-                        <condition id="7" name="Cursor is over object" sid="764876026272416" type="Mouse">
-                            <param id="0" name="Object">btnJogar</param>
-                        </condition>
-                        <condition id="-2" name="Compare Y" sid="748914149626493" type="telaAjuda">
-                            <param id="0" name="Comparison">2</param>
-                            <param id="1" name="Y co-ordinate">0</param>
-                        </condition>
+                        <condition id="-22" name="Else" sid="389965290060805" type="System" />
                     </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="412445542366601" type="btnJogar">
-                            <param id="0" name="Frame number">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="927426814734570">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="296179064083853" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="884749145033568" type="btnJogar">
-                            <param id="0" name="Frame number">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="868436335552459">
-                    <conditions>
-                        <condition id="7" name="Cursor is over object" sid="242755404431798" type="Mouse">
-                            <param id="0" name="Object">btnAjuda</param>
-                        </condition>
-                        <condition id="-2" name="Compare Y" sid="765376799571465" type="telaAjuda">
-                            <param id="0" name="Comparison">2</param>
-                            <param id="1" name="Y co-ordinate">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="375487734064189" type="btnAjuda">
-                            <param id="0" name="Frame number">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="128702174315593">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="417279650405924" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="989638818149030" type="btnAjuda">
-                            <param id="0" name="Frame number">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="106069181040822">
-                    <conditions>
-                        <condition id="7" name="Cursor is over object" sid="380495283527635" type="Mouse">
-                            <param id="0" name="Object">btnInfo</param>
-                        </condition>
-                        <condition id="-2" name="Compare Y" sid="328536690914647" type="telaAjuda">
-                            <param id="0" name="Comparison">2</param>
-                            <param id="1" name="Y co-ordinate">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="992122038500664" type="btnInfo">
-                            <param id="0" name="Frame number">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="785382904817245">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="560587250304808" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="405808521440481" type="btnInfo">
-                            <param id="0" name="Frame number">0</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="235459083303293">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="745929749063910" type="Mouse">
+                                    <param id="0" name="Object">menuX</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="397285420816711" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="491564082790840">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="727381964551625" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="967009180081610">
+                                    <conditions>
+                                        <condition id="-9" name="Is visible" sid="933173952176623" type="botaoAnt" />
+                                        <condition id="7" name="Cursor is over object" sid="250227748775796" type="Mouse">
+                                            <param id="0" name="Object">botaoAnt</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="369646742415112" type="Mouse">
+                                            <param id="0" name="Cursor style">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="354844216134749">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="526942948992032" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="822231373748415">
+                                            <conditions>
+                                                <condition id="-9" name="Is visible" sid="467155627150587" type="botaoProx" />
+                                                <condition id="7" name="Cursor is over object" sid="961139091005168" type="Mouse">
+                                                    <param id="0" name="Object">botaoProx</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set cursor style" sid="422477952547280" type="Mouse">
+                                                    <param id="0" name="Cursor style">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="144095799403403">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="878929927079098" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set cursor style" sid="964204586705395" type="Mouse">
+                                                    <param id="0" name="Cursor style">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="373414791675213">
-            <conditions>
-                <condition id="-2" name="Compare Y" sid="848736852914818" type="telaAjuda">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="Y co-ordinate">0</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="857012944097861">
-                    <conditions>
-                        <condition id="7" name="Cursor is over object" sid="456905610665515" type="Mouse">
-                            <param id="0" name="Object">menuX</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set cursor style" sid="466183192194980" type="Mouse">
-                            <param id="0" name="Cursor style">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="562130445509013">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="499516332445631" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set cursor style" sid="112697280491913" type="Mouse">
-                            <param id="0" name="Cursor style">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
     </events>
 </c2eventsheet>

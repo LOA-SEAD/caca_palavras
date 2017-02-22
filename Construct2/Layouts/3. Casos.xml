@@ -171,6 +171,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <effect-instances>
                         <effect-instance type="Vibrance">
                             <parameters>
@@ -200,6 +203,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <effect-instances>
                         <effect-instance type="Vibrance">
                             <parameters>
@@ -210,7 +216,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>58</x>
+                        <x>70</x>
                         <y>360</y>
                         <z>0</z>
                         <width>116</width>
@@ -300,11 +306,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>49</x>
-                        <y>674.5</y>
+                        <x>50</x>
+                        <y>670</y>
                         <z>0</z>
-                        <width>58</width>
-                        <height>51</height>
+                        <width>50</width>
+                        <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
