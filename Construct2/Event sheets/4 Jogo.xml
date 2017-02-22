@@ -269,7 +269,7 @@
                             </actions>
                         </event-block>
                         <comment>Legenda: 0 = jogador não mudou nada na dica; 1 = jogador comprou o powerup que permite ver o número de letras e a letra inicial; 2 = jogador acertou a palavra ou comprou o powerup de revelar a palavra</comment>
-                        <comment>Apenas copia a frase com o asterisco</comment>
+                        <comment>Apenas copia a frase com o espaço para preencher</comment>
                         <event-block sid="381009452316945">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="152391310373545" type="System">
@@ -284,7 +284,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <comment>Primeiro monta a palavra colocando a primeira letra da resposta (função left) e preenchendo o resto com &quot;_&quot; conforme o tamanho que ela possui (função len e loop), depois substitui o asterisco na frase pela palavra montada</comment>
+                        <comment>Primeiro monta a palavra colocando a primeira letra da resposta (função left) e preenchendo o resto com &quot;_&quot; conforme o tamanho que ela possui (função len e loop), depois substitui o espaço para preencher na frase pela palavra montada</comment>
                         <event-block sid="202839340584743">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="283367395555731" type="System">
@@ -329,7 +329,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <comment>Copia a frase e substitui o asterisco pela resposta correspondente</comment>
+                        <comment>Copia a frase e substitui o espaço para preencher pela resposta correspondente</comment>
                         <event-block sid="745386794326368">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="980064176568601" type="System">
@@ -675,7 +675,7 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <comment>Primeiro monta a palavra colocando a primeira letra da resposta (função left) e preenchendo o resto com &quot;_&quot; conforme o tamanho que ela possui (função len), depois substitui o asterisco na frase pela palavra montada</comment>
+                                <comment>Primeiro monta a palavra colocando a primeira letra da resposta (função left) e preenchendo o resto com &quot;_&quot; conforme o tamanho que ela possui (função len), depois substitui o espaço para preencher na frase pela palavra montada</comment>
                                 <event-block sid="874056874972436">
                                     <conditions>
                                         <condition id="-14" name="Compare variable" sid="963607050647152" type="System">
@@ -746,7 +746,7 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <comment>Copia a frase e substitui o asterisco pela resposta correspondente</comment>
+                                <comment>Copia a frase e substitui o espaço para preencher pela resposta correspondente</comment>
                                 <event-block sid="504140412125077">
                                     <conditions>
                                         <condition id="-14" name="Compare variable" sid="962524632093002" type="System">
