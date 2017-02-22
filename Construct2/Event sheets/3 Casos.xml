@@ -14,7 +14,7 @@
             <actions>
                 <action id="0" name="Load JSON" sid="243666303185970" type="casosJSON" />
                 <action id="5" name="Set web font" sid="381127159555238" type="casoNum">
-                    <param id="0" name="Family name">&quot;breamcatcher&quot;</param>
+                    <param id="0" name="Family name">&quot;breamcatcherregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
                 </action>
                 <action id="5" name="Set web font" sid="389237238888136" type="casoTxt">
@@ -22,7 +22,7 @@
                     <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                 </action>
                 <action id="5" name="Set web font" sid="625479387660476" type="dinheiro">
-                    <param id="0" name="Family name">&quot;breamcatcher&quot;</param>
+                    <param id="0" name="Family name">&quot;breamcatcherregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
                 </action>
                 <action id="-16" name="Set opacity" sid="714757852849707" type="casoStatus">

@@ -15,19 +15,19 @@
                 </action>
                 <action id="0" name="Load JSON" sid="834081442346614" type="dialogosJSON" />
                 <action id="5" name="Set web font" sid="472884947235052" type="diagTexto1">
-                    <param id="0" name="Family name">&quot;cavorting&quot;</param>
+                    <param id="0" name="Family name">&quot;cavortingregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet3.css&quot;</param>
                 </action>
                 <action id="5" name="Set web font" sid="368632430323621" type="diagTexto2">
-                    <param id="0" name="Family name">&quot;cavorting&quot;</param>
+                    <param id="0" name="Family name">&quot;cavortingregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet3.css&quot;</param>
                 </action>
                 <action id="5" name="Set web font" sid="754486950876542" type="diagTexto3">
-                    <param id="0" name="Family name">&quot;cavorting&quot;</param>
+                    <param id="0" name="Family name">&quot;cavortingregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet3.css&quot;</param>
                 </action>
                 <action id="5" name="Set web font" sid="928965129190092" type="dicaCena">
-                    <param id="0" name="Family name">&quot;breamcatcher&quot;</param>
+                    <param id="0" name="Family name">&quot;breamcatcherregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
                 </action>
                 <action id="-16" name="Set opacity" sid="982663304561463" type="dicaCena">

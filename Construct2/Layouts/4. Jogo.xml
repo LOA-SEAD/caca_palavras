@@ -396,7 +396,7 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>2</initial-frame>
+                        <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
@@ -409,7 +409,7 @@
                         <height>103</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.524271846</hotspotY>
+                        <hotspotY>0.504854381</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

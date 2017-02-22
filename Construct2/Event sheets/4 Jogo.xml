@@ -63,7 +63,7 @@
                     <param id="3" name="Value">0</param>
                 </action>
                 <action id="5" name="Set web font" sid="513335371679167" type="dinheiro">
-                    <param id="0" name="Family name">&quot;breamcatcher&quot;</param>
+                    <param id="0" name="Family name">&quot;breamcatcherregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
                 </action>
                 <action id="0" name="Set text" sid="510601771093306" type="dinheiro">
@@ -231,6 +231,92 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <comment>Os cinco eventos a seguir servem para controlar a imagem das moedas</comment>
+                        <event-block sid="523430543467237">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="839747394427420" type="System">
+                                    <param id="0" name="Variable">dinheiro</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="189767156712745" type="moedas">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="322801248607770">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="258134921581220" type="System">
+                                    <param id="0" name="Variable">dinheiro</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="904358374786443" type="System">
+                                    <param id="0" name="Variable">dinheiro</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">250</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="749036669229773" type="moedas">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="334961501607368">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="376348716069037" type="System">
+                                    <param id="0" name="Variable">dinheiro</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">250</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="652181784949401" type="System">
+                                    <param id="0" name="Variable">dinheiro</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">500</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="351912988756012" type="moedas">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="750980147386655">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="972795972682435" type="System">
+                                    <param id="0" name="Variable">dinheiro</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">500</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="377142552633517" type="System">
+                                    <param id="0" name="Variable">dinheiro</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">750</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="768878222228217" type="moedas">
+                                    <param id="0" name="Frame number">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="405651153068119">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="799543188434664" type="System">
+                                    <param id="0" name="Variable">dinheiro</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">750</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="897057978164749" type="moedas">
+                                    <param id="0" name="Frame number">4</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <comment>Para mudar a pergunta</comment>
@@ -315,7 +401,7 @@
                                     <actions>
                                         <action id="-9" name="Set value" sid="407691109225424" type="System">
                                             <param id="0" name="Variable">palavraDica100</param>
-                                            <param id="1" name="Value">palavraDica100 &amp; &quot; _&quot;</param>
+                                            <param id="1" name="Value">palavraDica100 &amp; &quot;_&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -722,7 +808,7 @@
                                             <actions>
                                                 <action id="-9" name="Set value" sid="614140151978605" type="System">
                                                     <param id="0" name="Variable">palavraDica100</param>
-                                                    <param id="1" name="Value">palavraDica100 &amp; &quot; _&quot;</param>
+                                                    <param id="1" name="Value">palavraDica100 &amp; &quot;_&quot;</param>
                                                 </action>
                                             </actions>
                                         </event-block>
