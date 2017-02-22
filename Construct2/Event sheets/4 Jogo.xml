@@ -133,7 +133,7 @@
                     <param id="1" name="Value">dinheiroInicial</param>
                 </action>
                 <action id="0" name="Execute" sid="511628503132501" type="verificaFimJS">
-                    <param id="0" name="Value">&quot;atualizarDinheiro(&quot; &amp; dinheiro &amp; &quot;)&quot;</param>
+                    <param id="0" name="Value">&quot;atualizarDinheiro(&quot; &amp; dinheiroInicial &amp; &quot;)&quot;</param>
                 </action>
             </actions>
             <sub-events>
