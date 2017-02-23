@@ -427,26 +427,18 @@
                     <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="895368462506728" speed="0">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Downloads\play.png">
                             <collision-poly>
-                                <point x="0.10219" y="0.14" />
-                                <point x="0.49635" y="0.07" />
-                                <point x="0.781022" y="0.3" />
-                                <point x="0.854015" y="0.5" />
-                                <point x="0.832117" y="0.77" />
-                                <point x="0.49635" y="0.88" />
-                                <point x="0.131387" y="0.82" />
-                                <point x="0.0510949" y="0.5" />
+                                <point x="0.0340082" y="0.0628723" />
+                                <point x="0.898446" y="0" />
+                                <point x="0.968481" y="0.913617" />
+                                <point x="0.0669931" y="0.945" />
                             </collision-poly>
                         </frame>
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Downloads\play2.png">
                             <collision-poly>
-                                <point x="0.0909091" y="0.0638298" />
-                                <point x="0.5" y="0.0212766" />
-                                <point x="0.848485" y="0.106383" />
-                                <point x="0.954545" y="0.5" />
-                                <point x="0.848485" y="0.893617" />
-                                <point x="0.5" y="0.946809" />
-                                <point x="0.0909091" y="0.93617" />
-                                <point x="0.0454545" y="0.5" />
+                                <point x="0.0340082" y="0.0628723" />
+                                <point x="0.898446" y="0" />
+                                <point x="0.968481" y="0.913617" />
+                                <point x="0.0669931" y="0.945" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -683,16 +675,23 @@
             <object-type name="pulaCena" sid="555038155116969">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="802803861053579" speed="5">
-                        <frame duration="1" hotspotX="0.506494" hotspotY="0.504587" original-source="C:\Users\Douglas\Downloads\avancar.png">
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="802803861053579" speed="0">
+                        <frame duration="1" hotspotX="0.506494" hotspotY="0.504587" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\skip.png">
                             <collision-poly>
-                                <point x="0.012987" y="0.00917431" />
-                                <point x="0.493506" y="0" />
-                                <point x="0.974026" y="0.0183486" />
-                                <point x="0.961039" y="0.972477" />
-                                <point x="0.493506" y="0.724771" />
-                                <point x="0.194805" y="0.862385" />
-                                <point x="0.012987" y="0.495413" />
+                                <point x="0.0227273" y="0" />
+                                <point x="0.970779" y="0" />
+                                <point x="0.974026" y="0.983945" />
+                                <point x="0.512986" y="0.71789" />
+                                <point x="0.012987" y="0.961009" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.506494" hotspotY="0.504587" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\skip2.png">
+                            <collision-poly>
+                                <point x="0.0227273" y="0" />
+                                <point x="0.970779" y="0" />
+                                <point x="0.974026" y="0.983945" />
+                                <point x="0.512986" y="0.71789" />
+                                <point x="0.012987" y="0.961009" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1268,15 +1267,12 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="430272469880585" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.506024" original-source="C:\Users\Douglas\Downloads\home.png">
+                    <frame duration="1" hotspotX="0.503597" hotspotY="0.505263" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\home.png">
                         <collision-poly>
-                            <point x="0.362069" y="0.411765" />
-                            <point x="0.862069" y="0.156863" />
-                            <point x="0.543103" y="0.5" />
-                            <point x="0.560345" y="0.5" />
-                            <point x="0.5" y="0.794118" />
-                            <point x="0.293103" y="0.666667" />
-                            <point x="0.206897" y="0.5" />
+                            <point x="0" y="0.138081" />
+                            <point x="0.703796" y="0" />
+                            <point x="0.956835" y="1" />
+                            <point x="0.163732" y="1" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1345,8 +1341,27 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="671211261361182" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="671211261361182" speed="0">
+                    <frame duration="1" hotspotX="0.506329" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\ajudaX.png">
+                        <collision-poly>
+                            <point x="0.132911" y="0" />
+                            <point x="0.392405" y="0.305556" />
+                            <point x="0.977848" y="0.0972222" />
+                            <point x="0.762658" y="0.59375" />
+                            <point x="0.778481" y="1" />
+                            <point x="0" y="0.815972" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506329" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\ajudaX2.png">
+                        <collision-poly>
+                            <point x="0.132911" y="0" />
+                            <point x="0.392405" y="0.305556" />
+                            <point x="0.977848" y="0.0972222" />
+                            <point x="0.762658" y="0.59375" />
+                            <point x="0.778481" y="1" />
+                            <point x="0" y="0.815972" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

@@ -306,16 +306,38 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>100</x>
-                        <y>679</y>
+                        <x>112</x>
+                        <y>683</y>
                         <z>0</z>
-                        <width>128</width>
-                        <height>83</height>
+                        <width>139</width>
+                        <height>95</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.506024122</hotspotY>
+                        <hotspotX>0.50359714</hotspotX>
+                        <hotspotY>0.50526315</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="configBotao" uid="98">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>99</x>
+                        <y>680</y>
+                        <z>0</z>
+                        <width>102</width>
+                        <height>99</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>-0.169073388</angle>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
             </instances>
