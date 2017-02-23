@@ -562,7 +562,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="menuX" uid="73">
+                <instance type="ajudaX" uid="73">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

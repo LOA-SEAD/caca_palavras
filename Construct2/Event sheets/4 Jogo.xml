@@ -99,7 +99,7 @@
                     <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                 </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="444496423659739" type="menuX">
+                <action behavior="Pin" id="0" name="Pin to object" sid="444496423659739" type="ajudaX">
                     <param id="0" name="Pin to">telaAjuda</param>
                     <param id="1" name="Mode">0</param>
                 </action>
@@ -991,33 +991,106 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block any="1" sid="406562043499225">
+                        <event-block sid="406562043499225">
                             <conditions>
-                                <condition id="7" name="Cursor is over object" sid="882823922703028" type="Mouse">
-                                    <param id="0" name="Object">btnResume</param>
-                                </condition>
-                                <condition id="7" name="Cursor is over object" sid="644876432029670" type="Mouse">
-                                    <param id="0" name="Object">btnInfo2</param>
-                                </condition>
-                                <condition id="7" name="Cursor is over object" sid="972351442726493" type="Mouse">
-                                    <param id="0" name="Object">btnMenu2</param>
-                                </condition>
+                                <condition id="-4" name="Is outside layout" sid="792178475629258" type="telaAjuda" />
                             </conditions>
-                            <actions>
-                                <action id="0" name="Set cursor style" sid="804081398801528" type="Mouse">
-                                    <param id="0" name="Cursor style">1</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="109343030092863">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="160689540517964" type="Mouse">
+                                            <param id="0" name="Object">btnResume</param>
+                                        </condition>
+                                        <condition id="7" name="Cursor is over object" sid="191910543513868" type="Mouse">
+                                            <param id="0" name="Object">btnInfo2</param>
+                                        </condition>
+                                        <condition id="7" name="Cursor is over object" sid="862571418980053" type="Mouse">
+                                            <param id="0" name="Object">btnMenu2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="659811993558243" type="Mouse">
+                                            <param id="0" name="Cursor style">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="146929657750993">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="634053875209679" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="119575966760781" type="Mouse">
+                                            <param id="0" name="Cursor style">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
-                        <event-block sid="146929657750993">
+                        <event-block sid="921485823670189">
                             <conditions>
-                                <condition id="-22" name="Else" sid="634053875209679" type="System" />
+                                <condition id="-22" name="Else" sid="447946844071250" type="System" />
                             </conditions>
-                            <actions>
-                                <action id="0" name="Set cursor style" sid="119575966760781" type="Mouse">
-                                    <param id="0" name="Cursor style">0</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="933829434415638">
+                                    <conditions>
+                                        <condition id="-9" name="Is visible" sid="364253328154106" type="botaoAnt" />
+                                        <condition id="7" name="Cursor is over object" sid="123088394157995" type="Mouse">
+                                            <param id="0" name="Object">botaoAnt</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="484252560123742" type="Mouse">
+                                            <param id="0" name="Cursor style">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="313560371939580">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="716615273713251" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="831895097589245">
+                                            <conditions>
+                                                <condition id="-9" name="Is visible" sid="752713142800945" type="botaoProx" />
+                                                <condition id="7" name="Cursor is over object" sid="757208927370957" type="Mouse">
+                                                    <param id="0" name="Object">botaoProx</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set cursor style" sid="574403156224127" type="Mouse">
+                                                    <param id="0" name="Cursor style">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="110021940871794">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="767292319835696" type="System" />
+                                                <condition id="7" name="Cursor is over object" sid="908598539132624" type="Mouse">
+                                                    <param id="0" name="Object">ajudaX</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set cursor style" sid="610248092960897" type="Mouse">
+                                                    <param id="0" name="Cursor style">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="941053912068979">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="222017442769575" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set cursor style" sid="493112890052519" type="Mouse">
+                                                    <param id="0" name="Cursor style">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -1239,12 +1312,38 @@
                 <event-block sid="863587242261845">
                     <conditions>
                         <condition id="17" name="On tap object" sid="479153235512087" type="Touch">
-                            <param id="0" name="Object">menuX</param>
+                            <param id="0" name="Object">ajudaX</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-2" name="Set Y" sid="407837612699285" type="telaAjuda">
                             <param id="0" name="Y">-360</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="841286851538769">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="672308271558070" type="Touch">
+                            <param id="0" name="Object">botaoAnt</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="268386469679036" type="System">
+                            <param id="0" name="Variable">ajuda</param>
+                            <param id="1" name="Value">ajuda-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="753482638057322">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="387281405820943" type="Touch">
+                            <param id="0" name="Object">botaoProx</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="940558182275361" type="System">
+                            <param id="0" name="Variable">ajuda</param>
+                            <param id="1" name="Value">ajuda+1</param>
                         </action>
                     </actions>
                 </event-block>
