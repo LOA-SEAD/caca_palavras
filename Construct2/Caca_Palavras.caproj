@@ -369,7 +369,7 @@
                         <effect id="contrast" />
                     </effect-type>
                 </effects>
-                <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\tela_casos.png" />
+                <texture original-source="C:\Users\Douglas\Downloads\fundo2.png" />
             </object-type>
             <object-type name="casoNum" sid="934284011670522">
                 <plugin id="Text" />
@@ -424,8 +424,8 @@
             <object-type name="btnJogarCaso" sid="760127287218333">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="895368462506728" speed="5">
-                        <frame duration="1" hotspotX="0.50365" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\play.png">
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="895368462506728" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Downloads\play.png">
                             <collision-poly>
                                 <point x="0.10219" y="0.14" />
                                 <point x="0.49635" y="0.07" />
@@ -435,6 +435,18 @@
                                 <point x="0.49635" y="0.88" />
                                 <point x="0.131387" y="0.82" />
                                 <point x="0.0510949" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Downloads\play2.png">
+                            <collision-poly>
+                                <point x="0.0909091" y="0.0638298" />
+                                <point x="0.5" y="0.0212766" />
+                                <point x="0.848485" y="0.106383" />
+                                <point x="0.954545" y="0.5" />
+                                <point x="0.848485" y="0.893617" />
+                                <point x="0.5" y="0.946809" />
+                                <point x="0.0909091" y="0.93617" />
+                                <point x="0.0454545" y="0.5" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -672,7 +684,17 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="802803861053579" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.506494" hotspotY="0.504587" original-source="C:\Users\Douglas\Downloads\avancar.png">
+                            <collision-poly>
+                                <point x="0.012987" y="0.00917431" />
+                                <point x="0.493506" y="0" />
+                                <point x="0.974026" y="0.0183486" />
+                                <point x="0.961039" y="0.972477" />
+                                <point x="0.493506" y="0.724771" />
+                                <point x="0.194805" y="0.862385" />
+                                <point x="0.012987" y="0.495413" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -1246,7 +1268,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="430272469880585" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\caso_ant.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506024" original-source="C:\Users\Douglas\Downloads\home.png">
                         <collision-poly>
                             <point x="0.362069" y="0.411765" />
                             <point x="0.862069" y="0.156863" />

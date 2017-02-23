@@ -43,6 +43,9 @@
                 <action id="5" name="Set frame" sid="898567746683934" type="casoStatus">
                     <param id="0" name="Frame number">caso.At(numcaso)</param>
                 </action>
+                <action id="5" name="Set frame" sid="232912006218244" type="btnJogarCaso">
+                    <param id="0" name="Frame number">1</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="996933958494585">
@@ -72,9 +75,12 @@
                         <action id="-16" name="Set opacity" sid="257557077928945" type="casoStatus">
                             <param id="0" name="Opacity">100</param>
                         </action>
+                        <action id="5" name="Set frame" sid="227397237806242" type="btnJogarCaso">
+                            <param id="0" name="Frame number">caso.At(numcaso)</param>
+                        </action>
                     </actions>
                 </event-block>
-                <event-block sid="485421947492056">
+                <event-block disabled="1" sid="485421947492056">
                     <conditions>
                         <condition id="0" name="Compare at X" sid="353218299406521" type="caso">
                             <param id="0" name="X">numcaso</param>
@@ -83,20 +89,18 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Set position" sid="183532878721335" type="btnJogarCaso">
-                            <param id="0" name="X">1191.5</param>
-                            <param id="1" name="Y">650</param>
+                        <action id="5" name="Set frame" sid="183532878721335" type="btnJogarCaso">
+                            <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="690629102778151">
+                <event-block disabled="1" sid="690629102778151">
                     <conditions>
                         <condition id="-22" name="Else" sid="282369349978929" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-3" name="Set position" sid="826564396140760" type="btnJogarCaso">
-                            <param id="0" name="X">1191.5</param>
-                            <param id="1" name="Y">800</param>
+                        <action id="5" name="Set frame" sid="826564396140760" type="btnJogarCaso">
+                            <param id="0" name="Frame number">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -145,9 +149,8 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-3" name="Set position" sid="901961420305140" type="btnJogarCaso">
-                                    <param id="0" name="X">1191.5</param>
-                                    <param id="1" name="Y">800</param>
+                                <action id="5" name="Set frame" sid="986232173798152" type="btnJogarCaso">
+                                    <param id="0" name="Frame number">1</param>
                                 </action>
                                 <action id="-11" name="Subtract from" sid="244532771131517" type="System">
                                     <param id="0" name="Variable">numcaso</param>
@@ -156,7 +159,7 @@
                                 <action id="-16" name="Set opacity" sid="958929534097468" type="casoStatus">
                                     <param id="0" name="Opacity">0</param>
                                 </action>
-                                <action id="-16" name="Set opacity" sid="798942020406468" type="btnJogarCaso">
+                                <action disabled="1" id="-16" name="Set opacity" sid="798942020406468" type="btnJogarCaso">
                                     <param id="0" name="Opacity">0</param>
                                 </action>
                                 <action id="5" name="Set frame" sid="968297182871863" type="casoStatus">
@@ -168,8 +171,11 @@
                                 <action id="-16" name="Set opacity" sid="449912423179019" type="casoStatus">
                                     <param id="0" name="Opacity">100</param>
                                 </action>
-                                <action id="-16" name="Set opacity" sid="678859610616864" type="btnJogarCaso">
+                                <action disabled="1" id="-16" name="Set opacity" sid="448242081485190" type="btnJogarCaso">
                                     <param id="0" name="Opacity">100</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="678859610616864" type="btnJogarCaso">
+                                    <param id="0" name="Frame number">caso.At(numcaso)</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -185,9 +191,8 @@
                                 <action id="-16" name="Wait" sid="375119883604020" type="System">
                                     <param id="0" name="Seconds">0.5</param>
                                 </action>
-                                <action id="-3" name="Set position" sid="590715350606725" type="btnJogarCaso">
-                                    <param id="0" name="X">1191.5</param>
-                                    <param id="1" name="Y">650</param>
+                                <action id="5" name="Set frame" sid="261449184793030" type="btnJogarCaso">
+                                    <param id="0" name="Frame number">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -199,9 +204,8 @@
                                 <action id="-16" name="Wait" sid="341121806495910" type="System">
                                     <param id="0" name="Seconds">0.5</param>
                                 </action>
-                                <action id="-3" name="Set position" sid="379540840456125" type="btnJogarCaso">
-                                    <param id="0" name="X">1191.5</param>
-                                    <param id="1" name="Y">800</param>
+                                <action id="5" name="Set frame" sid="839479605897767" type="btnJogarCaso">
+                                    <param id="0" name="Frame number">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -232,9 +236,8 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-3" name="Set position" sid="519703834521881" type="btnJogarCaso">
-                                    <param id="0" name="X">1191.5</param>
-                                    <param id="1" name="Y">800</param>
+                                <action id="5" name="Set frame" sid="840712770235596" type="btnJogarCaso">
+                                    <param id="0" name="Frame number">1</param>
                                 </action>
                                 <action id="-10" name="Add to" sid="435190539896443" type="System">
                                     <param id="0" name="Variable">numcaso</param>
@@ -243,7 +246,7 @@
                                 <action id="-16" name="Set opacity" sid="262018359297547" type="casoStatus">
                                     <param id="0" name="Opacity">0</param>
                                 </action>
-                                <action id="-16" name="Set opacity" sid="845778305214588" type="btnJogarCaso">
+                                <action disabled="1" id="-16" name="Set opacity" sid="845778305214588" type="btnJogarCaso">
                                     <param id="0" name="Opacity">0</param>
                                 </action>
                                 <action id="5" name="Set frame" sid="819350407845567" type="casoStatus">
@@ -255,8 +258,8 @@
                                 <action id="-16" name="Set opacity" sid="829207030338330" type="casoStatus">
                                     <param id="0" name="Opacity">100</param>
                                 </action>
-                                <action id="-16" name="Set opacity" sid="554507022311034" type="btnJogarCaso">
-                                    <param id="0" name="Opacity">100</param>
+                                <action id="5" name="Set frame" sid="913469017079758" type="btnJogarCaso">
+                                    <param id="0" name="Frame number">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -272,9 +275,8 @@
                                 <action id="-16" name="Wait" sid="247226602552437" type="System">
                                     <param id="0" name="Seconds">0.5</param>
                                 </action>
-                                <action id="-3" name="Set position" sid="290053798682147" type="btnJogarCaso">
-                                    <param id="0" name="X">1191.5</param>
-                                    <param id="1" name="Y">650</param>
+                                <action id="5" name="Set frame" sid="738858616947461" type="btnJogarCaso">
+                                    <param id="0" name="Frame number">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -286,9 +288,8 @@
                                 <action id="-16" name="Wait" sid="224111347512477" type="System">
                                     <param id="0" name="Seconds">0.5</param>
                                 </action>
-                                <action id="-3" name="Set position" sid="794780769065501" type="btnJogarCaso">
-                                    <param id="0" name="X">1191.5</param>
-                                    <param id="1" name="Y">800</param>
+                                <action id="5" name="Set frame" sid="533478884034160" type="btnJogarCaso">
+                                    <param id="0" name="Frame number">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -300,11 +301,22 @@
                             <param id="0" name="Object">btnJogarCaso</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-2" name="Go to layout" sid="275936771650272" type="System">
-                            <param id="0" name="Layout">4. Jogo</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="216060092299372">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="264779620794053" type="btnJogarCaso">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="275936771650272" type="System">
+                                    <param id="0" name="Layout">4. Jogo</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="419969124295528">
                     <conditions>
