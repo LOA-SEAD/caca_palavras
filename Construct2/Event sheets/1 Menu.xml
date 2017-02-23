@@ -590,13 +590,20 @@
                                 <action id="0" name="Set cursor style" sid="397285420816711" type="Mouse">
                                     <param id="0" name="Cursor style">1</param>
                                 </action>
+                                <action id="5" name="Set frame" sid="170331956974930" type="ajudaX">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="491564082790840">
                             <conditions>
                                 <condition id="-22" name="Else" sid="727381964551625" type="System" />
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="5" name="Set frame" sid="192623173694240" type="ajudaX">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
                             <sub-events>
                                 <event-block sid="967009180081610">
                                     <conditions>

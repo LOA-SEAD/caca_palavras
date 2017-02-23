@@ -1143,6 +1143,9 @@
                                                 <action id="0" name="Set cursor style" sid="610248092960897" type="Mouse">
                                                     <param id="0" name="Cursor style">1</param>
                                                 </action>
+                                                <action id="5" name="Set frame" sid="585059255332356" type="ajudaX">
+                                                    <param id="0" name="Frame number">1</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="941053912068979">
@@ -1152,6 +1155,9 @@
                                             <actions>
                                                 <action id="0" name="Set cursor style" sid="493112890052519" type="Mouse">
                                                     <param id="0" name="Cursor style">0</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="493019141410170" type="ajudaX">
+                                                    <param id="0" name="Frame number">0</param>
                                                 </action>
                                             </actions>
                                         </event-block>

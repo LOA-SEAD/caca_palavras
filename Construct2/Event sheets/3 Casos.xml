@@ -360,37 +360,6 @@
         </event-group>
         <event-group description="" sid="509358109553362" title="Efeitos 3">
             <sub-events>
-                <event-block any="1" sid="696801078152766">
-                    <conditions>
-                        <condition id="7" name="Cursor is over object" sid="290729209770535" type="Mouse">
-                            <param id="0" name="Object">botaoProx</param>
-                        </condition>
-                        <condition id="7" name="Cursor is over object" sid="954744329497043" type="Mouse">
-                            <param id="0" name="Object">botaoAnt</param>
-                        </condition>
-                        <condition id="7" name="Cursor is over object" sid="724530903657013" type="Mouse">
-                            <param id="0" name="Object">btnJogarCaso</param>
-                        </condition>
-                        <condition id="7" name="Cursor is over object" sid="199363957468754" type="Mouse">
-                            <param id="0" name="Object">btnMenu</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set cursor style" sid="622789414592583" type="Mouse">
-                            <param id="0" name="Cursor style">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="366427668712097">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="664478044448166" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set cursor style" sid="737431743782338" type="Mouse">
-                            <param id="0" name="Cursor style">0</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="954560147586767">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="293472882041802" type="System">
@@ -438,6 +407,87 @@
                             <param id="0" name="X">1202</param>
                         </action>
                     </actions>
+                </event-block>
+                <event-block any="1" sid="696801078152766">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="290729209770535" type="Mouse">
+                            <param id="0" name="Object">botaoProx</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="954744329497043" type="Mouse">
+                            <param id="0" name="Object">botaoAnt</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="724530903657013" type="Mouse">
+                            <param id="0" name="Object">btnJogarCaso</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="199363957468754" type="Mouse">
+                            <param id="0" name="Object">configBotao</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="622789414592583" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="366427668712097">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="664478044448166" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="737431743782338" type="Mouse">
+                            <param id="0" name="Cursor style">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="678654295924990">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="872274660169178" type="Mouse">
+                            <param id="0" name="Object">configBotao</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="709691585789164">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="851025378365736" type="btnMenu">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">673</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Set Y" sid="333434482817136" type="btnMenu">
+                                    <param id="0" name="Y">btnMenu.Y-(1/3)</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="908673741998030" type="btnMenu">
+                                    <param id="0" name="X">btnMenu.X-(5/30)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="838699328944243">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="974101215768423" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="185277744354937">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="477016299195399" type="btnMenu">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">683</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Set Y" sid="130144666656029" type="btnMenu">
+                                    <param id="0" name="Y">btnMenu.Y+(1/3)</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="766212120845708" type="btnMenu">
+                                    <param id="0" name="X">btnMenu.X+(5/30)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
