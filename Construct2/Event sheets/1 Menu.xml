@@ -45,7 +45,7 @@
                     <param id="1" name="Mode">0</param>
                     <param id="2" name="Effect">&quot;BlurVertical&quot;</param>
                 </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="846655058944620" type="menuX">
+                <action behavior="Pin" id="0" name="Pin to object" sid="846655058944620" type="ajudaX">
                     <param id="0" name="Pin to">telaAjuda</param>
                     <param id="1" name="Mode">0</param>
                 </action>
@@ -180,10 +180,10 @@
                         <condition disabled="1" id="6" name="On object clicked" sid="191099910148082" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">menuX</param>
+                            <param id="2" name="Object clicked">ajudaX</param>
                         </condition>
                         <condition id="17" name="On tap object" sid="826228405693372" type="Touch">
-                            <param id="0" name="Object">menuX</param>
+                            <param id="0" name="Object">ajudaX</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -503,7 +503,7 @@
                         <event-block any="1" sid="235459083303293">
                             <conditions>
                                 <condition id="7" name="Cursor is over object" sid="745929749063910" type="Mouse">
-                                    <param id="0" name="Object">menuX</param>
+                                    <param id="0" name="Object">ajudaX</param>
                                 </condition>
                             </conditions>
                             <actions>

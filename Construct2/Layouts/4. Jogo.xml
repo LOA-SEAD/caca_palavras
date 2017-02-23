@@ -854,7 +854,7 @@
                     <properties>
                         <text>Voltar ao Menu</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-40,700,0</font>
+                        <font>Arial,-27,700,0</font>
                         <color>92,72,60</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -869,7 +869,7 @@
                         <y>435</y>
                         <z>0</z>
                         <width>400</width>
-                        <height>70</height>
+                        <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -881,7 +881,7 @@
                     <properties>
                         <text>Resumir</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-40,700,0</font>
+                        <font>Arial,-27,700,0</font>
                         <color>92,72,60</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -896,7 +896,7 @@
                         <y>275</y>
                         <z>0</z>
                         <width>400</width>
-                        <height>70</height>
+                        <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -908,7 +908,7 @@
                     <properties>
                         <text>Ajuda</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-40,700,0</font>
+                        <font>Arial,-27,700,0</font>
                         <color>92,72,60</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -923,7 +923,7 @@
                         <y>355</y>
                         <z>0</z>
                         <width>400</width>
-                        <height>70</height>
+                        <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -965,7 +965,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="menuX" uid="68">
+                <instance type="ajudaX" uid="68">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

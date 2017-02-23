@@ -6,6 +6,7 @@
 *     http://github.com/bunkat/wordfind
 */
 
+window.terminou = 0;
 
 function reverse(s){
     return s.split("").reverse().join("");
@@ -70,6 +71,17 @@ function setValorAcertos(newValue) {
   }
         
         console.log("set acertos => " + acertos);  
+}
+
+function atualizarDinheiro(newValue) {
+
+       if (typeof(Storage) !== "undefined") {
+                var dinheiro = sessionStorage.getItem("dinheiro");
+                dinheiro = newValue;
+        sessionStorage.setItem("dinheiro", dinheiro);
+  }
+        
+        console.log("valor dinheiro => " + dinheiro); 
 }
 
 (function (document, $, wordfind) {
@@ -283,6 +295,7 @@ function setValorAcertos(newValue) {
     */
     var endTurn = function () {
 
+      //window.terminou = 0;
 
       // see if we formed a valid word
       var ok = false;
@@ -292,6 +305,9 @@ function setValorAcertos(newValue) {
           $('.selected').addClass('found');
           wordList.splice(i,1);
           $('.' + curWord).addClass('wordFound');
+          //window.terminou = 1;
+          //this.terminou = 1;
+          //atualiza(1);
           setValor(50);
           setValorAcertos(1);
           ok = true;
@@ -309,10 +325,19 @@ function setValorAcertos(newValue) {
       selectedSquares = [];
       curWord = '';
       curOrientation = null;
-      if (!ok){
+      //encontra o numero de palavras encontradas pelo jogador
+      if (typeof(Storage) !== "undefined") {
+        var acertos = sessionStorage.getItem("acertos");
+        acertos = parseInt(acertos);
+      }
+      //se o jogador encontrou todas nao retira nenhum ponto dele
+      if (!ok && (acertos != 5)){
       	setValor(-25);
       }
       return wordList.length;
+      //if (window.terminou === 1) {
+      //  return "terminou"
+      //}
      
     };
 
@@ -407,6 +432,7 @@ function setValorAcertos(newValue) {
           }
         }*/
 
+//      console.log(this.terminou);
       }
     };
   };
@@ -417,6 +443,5 @@ function setValorAcertos(newValue) {
   */
   window.wordfindgame = WordFindGame();
 
-}(document, jQuery, wordfind)
-);
+}(document, jQuery, wordfind));
 

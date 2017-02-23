@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1487682623
+#1487859346
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
@@ -16,12 +16,9 @@ images/btnajuda-sheet0.png
 images/btninfo-sheet0.png
 images/btnjogar-sheet0.png
 images/cartaz-sheet0.png
-images/telaajuda-sheet0.png
 images/fundocasos.png
 images/casostatus-sheet0.png
 images/casostatus-sheet1.png
-images/botaoprox-sheet0.png
-images/botaoant-sheet0.png
 images/btnjogarcaso-sheet0.png
 images/lampada-sheet0.png
 images/lampadaluz-sheet0.png
@@ -55,12 +52,23 @@ images/dinheiroetiqueta-sheet0.png
 images/bonusselecao-sheet0.png
 images/moedas-sheet0.png
 images/moedas-sheet1.png
+images/moedas-sheet2.png
 images/girarpergunta.png
 images/config-sheet0.png
 images/configmenu-sheet0.png
-images/menux-sheet0.png
 images/configbotao-sheet0.png
 images/caderneta-sheet0.png
+images/btnmenu-sheet0.png
+images/ajuda1-sheet0.png
+images/ajuda1-sheet1.png
+images/ajuda1-sheet2.png
+images/ajuda2-sheet0.png
+images/ajuda2-sheet1.png
+images/ajuda2-sheet2.png
+images/telaajuda-sheet0.png
+images/menux-sheet0.png
+images/botaoprox-sheet0.png
+images/botaoant-sheet0.png
 icon-16.png
 icon-32.png
 icon-114.png
@@ -86,9 +94,7 @@ cavorting-webfont.woff
 cavorting-webfont.woff2
 stylesheet3.css
 casos.json
-creditos.json
 dicapowerup.json
-ajuda.json
 dialogos.json
 cacapalavras1.html
 cacapalavras2.html

@@ -1337,7 +1337,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="menuX" sid="115755191832992">
+        <object-type name="ajudaX" sid="115755191832992">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Pin" sid="570964476921949">
