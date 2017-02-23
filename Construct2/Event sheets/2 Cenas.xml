@@ -9,6 +9,7 @@
                 <condition id="-2" name="On start of layout" sid="671896634820138" type="System" />
             </conditions>
             <actions>
+                <action id="33" name="Stop all" sid="666809380326856" type="Audio" />
                 <action behavior="Pin" id="0" name="Pin to object" sid="898755975599351" type="lampadaLuz">
                     <param id="0" name="Pin to">lampada</param>
                     <param id="1" name="Mode">0</param>
@@ -902,6 +903,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="562945784528254" type="Audio">
+                                    <param id="0" name="Audio file">passa_mouse</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">volumeSons</param>
+                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                </action>
                                 <action id="-2" name="Go to layout" sid="193280768449719" type="System">
                                     <param id="0" name="Layout">3. Casos</param>
                                 </action>
@@ -1002,6 +1009,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="654858734509130" type="Audio">
+                                    <param id="0" name="Audio file">passa_mouse</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">volumeSons</param>
+                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                </action>
                                 <action id="-2" name="Go to layout" sid="746259402473888" type="System">
                                     <param id="0" name="Layout">3. Casos</param>
                                 </action>
@@ -1102,6 +1115,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="118936522734048" type="Audio">
+                                    <param id="0" name="Audio file">passa_mouse</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">volumeSons</param>
+                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                </action>
                                 <action id="-2" name="Go to layout" sid="673598327221957" type="System">
                                     <param id="0" name="Layout">5. Créditos</param>
                                 </action>
@@ -1202,6 +1221,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="264258033014445" type="Audio">
+                                    <param id="0" name="Audio file">passa_mouse</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">volumeSons</param>
+                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                </action>
                                 <action id="-2" name="Go to layout" sid="438231092022450" type="System">
                                     <param id="0" name="Layout">3. Casos</param>
                                 </action>

@@ -16,6 +16,25 @@
                 <condition id="-2" name="On start of layout" sid="297666887279759" type="System" />
             </conditions>
             <actions>
+                <action id="4" name="Preload" sid="139565545611255" type="Audio">
+                    <param id="0" name="Audio file">cafe</param>
+                </action>
+                <action id="4" name="Preload" sid="966031561135787" type="Audio">
+                    <param id="0" name="Audio file">ideia</param>
+                </action>
+                <action id="4" name="Preload" sid="809538648898796" type="Audio">
+                    <param id="0" name="Audio file">informante</param>
+                </action>
+                <action id="4" name="Preload" sid="583350594184978" type="Audio">
+                    <param id="0" name="Audio file">passa_evidencia_setas</param>
+                </action>
+                <action id="4" name="Preload" sid="268404370659913" type="Audio">
+                    <param id="0" name="Audio file">quando_digita_certo</param>
+                </action>
+                <action id="4" name="Preload" sid="360211118886379" type="Audio">
+                    <param id="0" name="Audio file">tempo_acabando</param>
+                </action>
+                <action id="33" name="Stop all" sid="844989848722192" type="Audio" />
                 <action id="0" name="Load JSON" sid="219893275109138" type="dicaJSON" />
                 <action id="0" name="Load JSON" sid="661403228314904" type="casosJSON" />
                 <action id="-9" name="Set value" sid="734166043841523" type="System">
@@ -268,6 +287,24 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <comment>Dispara o evento de alerta quando falta apenas 15 segundos para acabar</comment>
+                        <event-block sid="467632693686683">
+                            <conditions>
+                                <condition id="-6" name="Compare height" sid="731963689825736" type="areiaBaixo">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Height">368.8625</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="288842328079963" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="513078231295019" type="Audio">
+                                    <param id="0" name="Audio file">tempo_acabando</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">volumeSons</param>
+                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <comment>Os cinco eventos a seguir servem para controlar a imagem das moedas</comment>
                         <event-block sid="523430543467237">
                             <conditions>
@@ -367,6 +404,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="255969037299234" type="Audio">
+                            <param id="0" name="Audio file">passa_evidencia_setas</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
                         <action id="-10" name="Add to" sid="601029030707220" type="System">
                             <param id="0" name="Variable">dicaNaMaquina</param>
                             <param id="1" name="Value">1</param>
@@ -486,6 +529,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="402370361012148" type="Audio">
+                                    <param id="0" name="Audio file">quando_digita_certo</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">volumeSons</param>
+                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                </action>
                                 <action id="0" name="Set text" sid="947682308685849" type="pista">
                                     <param id="0" name="Text">replace(casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;....................&quot;, casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;respostas&quot;, dicaNaMaquina-1))</param>
                                 </action>
@@ -854,6 +903,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="343671865321159" type="Audio">
+                                            <param id="0" name="Audio file">cafe</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">volumeSons</param>
+                                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                        </action>
                                         <action id="0" name="Execute" sid="449220203803829" type="verificaFimJS">
                                             <param id="0" name="Value">&quot;setValor(-50)&quot;</param>
                                         </action>
@@ -894,6 +949,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="719941667626213" type="Audio">
+                                            <param id="0" name="Audio file">ideia</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">volumeSons</param>
+                                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                        </action>
                                         <action id="0" name="Execute" sid="626940584808753" type="verificaFimJS">
                                             <param id="0" name="Value">&quot;setValor(-100)&quot;</param>
                                         </action>
@@ -965,6 +1026,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="218746928738134" type="Audio">
+                                            <param id="0" name="Audio file">informante</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">volumeSons</param>
+                                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                        </action>
                                         <action id="0" name="Execute" sid="283601797865931" type="verificaFimJS">
                                             <param id="0" name="Value">&quot;setValor(-150)&quot;</param>
                                         </action>

@@ -11,11 +11,29 @@
         <variable constant="0" name="timeline" sid="566742069837778" static="0" type="number">0</variable>
         <comment>Serve para armazenar o quanto de dinheiro o jogador tem no começo de cada fase, sendo atualizado cada vez que um jogador completa um caso</comment>
         <variable constant="0" name="dinheiroInicial" sid="744131665112205" static="0" type="number">0</variable>
+        <variable constant="0" name="volumeMusica" sid="729920663115312" static="0" type="number">0</variable>
+        <variable constant="0" name="volumeSons" sid="439164393262442" static="0" type="number">0</variable>
         <event-block sid="532870774512476">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="548108657880177" type="System" />
             </conditions>
             <actions>
+                <action id="4" name="Preload" sid="437655290715192" type="Audio">
+                    <param id="0" name="Audio file">ambiencia_noite</param>
+                </action>
+                <action id="4" name="Preload" sid="179294739516372" type="Audio">
+                    <param id="0" name="Audio file">luz_piscando</param>
+                </action>
+                <action id="4" name="Preload" sid="387069097131925" type="Audio">
+                    <param id="0" name="Audio file">passa_mouse</param>
+                </action>
+                <action id="4" name="Preload" sid="215185736740733" type="Audio">
+                    <param id="0" name="Audio file">som_neon</param>
+                </action>
+                <action id="4" name="Preload" sid="360884853814825" type="Audio">
+                    <param id="0" name="Audio file">pagina_virando</param>
+                </action>
+                <action id="33" name="Stop all" sid="163869210879055" type="Audio" />
                 <action id="5" name="Set frame" sid="503541469249723" type="btnJogar">
                     <param id="0" name="Frame number">0</param>
                 </action>
@@ -73,6 +91,24 @@
                     <param id="0" name="Variable">ajuda</param>
                     <param id="1" name="Value">0</param>
                 </action>
+                <action id="0" name="Play" sid="653634138179183" type="Audio">
+                    <param id="0" name="Audio file">ambiencia_noite</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">volumeMusica</param>
+                    <param id="1" name="Tag (optional)">&quot;musicaMenu&quot;</param>
+                </action>
+                <action disabled="1" id="0" name="Play" sid="654445256128766" type="Audio">
+                    <param id="0" name="Audio file">luz_piscando</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">volumeMusica</param>
+                    <param id="1" name="Tag (optional)">&quot;musicaMenu&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="364861167510964" type="Audio">
+                    <param id="0" name="Audio file">som_neon</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">volumeMusica</param>
+                    <param id="1" name="Tag (optional)">&quot;musicaMenu&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="448862740704486">
@@ -88,6 +124,14 @@
                 </action>
                 <action id="5" name="Set frame" sid="346597703744910" type="ajuda2">
                     <param id="0" name="Frame number">ajuda</param>
+                </action>
+                <action id="3" name="Set volume" sid="353598738915886" type="Audio">
+                    <param id="0" name="Tag">&quot;musicaMenu&quot;</param>
+                    <param id="1" name="dB">volumeMusica</param>
+                </action>
+                <action id="3" name="Set volume" sid="526491240687311" type="Audio">
+                    <param id="0" name="Tag">&quot;sons&quot;</param>
+                    <param id="1" name="dB">volumeSons</param>
                 </action>
             </actions>
         </event-block>
@@ -114,6 +158,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="914731212329392" type="Audio">
+                                    <param id="0" name="Audio file">passa_mouse</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">volumeSons</param>
+                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                </action>
                                 <action id="-2" name="Go to layout" sid="157027319285276" type="System">
                                     <param id="0" name="Layout">2. Cenas</param>
                                 </action>
@@ -131,6 +181,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="861709090392210" type="Audio">
+                                    <param id="0" name="Audio file">passa_mouse</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">volumeSons</param>
+                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                </action>
                                 <action id="-2" name="Set Y" sid="854352014191713" type="telaAjuda">
                                     <param id="0" name="Y">360</param>
                                 </action>
@@ -168,6 +224,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="831574671238323" type="Audio">
+                                    <param id="0" name="Audio file">passa_mouse</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">volumeSons</param>
+                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                </action>
                                 <action id="-2" name="Go to layout" sid="235790523949240" type="System">
                                     <param id="0" name="Layout">5. Créditos</param>
                                 </action>
@@ -187,6 +249,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="232441142519143" type="Audio">
+                            <param id="0" name="Audio file">passa_mouse</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
                         <action id="-2" name="Set Y" sid="297115233575811" type="telaAjuda">
                             <param id="0" name="Y">-360</param>
                         </action>
@@ -224,6 +292,12 @@
                         <condition id="-9" name="Is visible" sid="973250188666595" type="botaoProx" />
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="603402680682296" type="Audio">
+                            <param id="0" name="Audio file">pagina_virando</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
                         <action id="-9" name="Set value" sid="914722337673973" type="System">
                             <param id="0" name="Variable">ajuda</param>
                             <param id="1" name="Value">ajuda+1</param>
@@ -238,6 +312,12 @@
                         <condition id="-9" name="Is visible" sid="443498915937114" type="botaoAnt" />
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="341005245853640" type="Audio">
+                            <param id="0" name="Audio file">pagina_virando</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
                         <action id="-9" name="Set value" sid="302947936496194" type="System">
                             <param id="0" name="Variable">ajuda</param>
                             <param id="1" name="Value">ajuda-1</param>

@@ -138,7 +138,14 @@
                             <param id="0" name="Key">37 (Left arrow)</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Play" sid="985356452102600" type="Audio">
+                            <param id="0" name="Audio file">pagina_virando</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="403775720802580">
                             <conditions>
@@ -225,7 +232,14 @@
                             <param id="0" name="Key">39 (Right arrow)</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Play" sid="166300008419556" type="Audio">
+                            <param id="0" name="Audio file">pagina_virando</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="420490260337602">
                             <conditions>
@@ -311,6 +325,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="276705998550390" type="Audio">
+                                    <param id="0" name="Audio file">passa_mouse</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">volumeSons</param>
+                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                </action>
                                 <action id="-2" name="Go to layout" sid="275936771650272" type="System">
                                     <param id="0" name="Layout">4. Jogo</param>
                                 </action>
@@ -325,6 +345,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="749770032319772" type="Audio">
+                            <param id="0" name="Audio file">passa_mouse</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
                         <action id="-2" name="Go to layout" sid="513078021205210" type="System">
                             <param id="0" name="Layout">1. Menu</param>
                         </action>
