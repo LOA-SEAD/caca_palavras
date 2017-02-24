@@ -14,18 +14,16 @@
 <script type="text/javascript" src="wordfindgame.js"></script>
 <script>
 
-  var words = ['nuclear', 'cidade', 'matar', 'prédio', 'telefone'];
-
   // start a word find game
-  var gamePuzzle = wordfindgame.create(words, '#puzzle', '#words');
+  var gamePuzzle = wordfindgame.create(1, '#puzzle', '#words');
 
   $('#solve').click( function() {
-    wordfindgame.solve(gamePuzzle, words);
+    //wordfindgame.solve(gamePuzzle, words);
   });
 
   // create just a puzzle, without filling in the blanks and print to console
   var puzzle = wordfind.newPuzzle(
-    words, 
+    1, 
     {height: 18, width:18, fillBlanks: false}
   );
   wordfind.print(puzzle);

@@ -364,6 +364,57 @@ function atualizarDinheiro(newValue) {
       return null;
     };
 
+    //Fonte: https://trechodecodigo.wordpress.com/remover-acentos-javascript/
+    var removerAcento = function(palavra){
+      var palavraSemAcento = "";
+      var caracterComAcento = "áàãâäéèêëíìîïóòõôöúùûüçÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÇ";
+      var caracterSemAcento = "aaaaaeeeeiiiiooooouuuucAAAAAEEEEIIIIOOOOOUUUUC";
+
+      for (var i = 0; i < palavra.length; i++){
+        var char = palavra.substr(i, 1);
+        var indexAcento = caracterComAcento.indexOf(char);
+        if (indexAcento != -1) {
+          palavraSemAcento += caracterSemAcento.substr(indexAcento, 1);
+        } else {
+          palavraSemAcento += char;
+        }
+      }
+
+      return palavraSemAcento;
+    } 
+
+    var readJSON = function(caso){
+      var palavras = "";
+      var casos = "";
+
+        $.ajax({
+            url: "casos.json",
+            //force to handle it as text
+            dataType: "text",
+            mimeType: "application/json",
+            async: false,
+            success: function(data) {
+
+                //data downloaded so we call parseJSON function
+                //and pass downloaded data
+                casos = $.parseJSON(data);
+                //now json variable contains data in json format
+                //let's display a few items
+                if (caso == 1){
+                  palavras = casos.caso1respostas;
+                }
+                if (caso == 2){
+                  palavras = casos.caso2respostas;
+                }
+                if (caso == 3){
+                  palavras = casos.caso3respostas;
+                }
+            }
+        });
+
+        return palavras;
+    };
+
     return {
 
       /**
@@ -371,16 +422,20 @@ function atualizarDinheiro(newValue) {
       *
       * Returns the puzzle that was created.
       *
-      * @param {[String]} words: The words to add to the puzzle
+      * @param {[String]} number: The number of case
       * @param {String} puzzleEl: Selector to use when inserting the puzzle
       * @param {String} wordsEl: Selector to use when inserting the word list
       * @param {Options} options: WordFind options to use when creating the puzzle
       */
-      create: function(words, puzzleEl, wordsEl, options) {
+      create: function(number, puzzleEl, wordsEl, options) {
         
+        var words = readJSON(number);
+        for (var i = 0; i < words.length; i++) {
+          words[i] = removerAcento(words[i]);
+        }
         wordList = words.slice(0).sort();
 
-        var puzzle = wordfind.newPuzzle(words, options);
+        var puzzle = wordfind.newPuzzle(number, options);
 
         // draw out all of the words
         drawPuzzle(puzzleEl, puzzle);
@@ -433,7 +488,9 @@ function atualizarDinheiro(newValue) {
         }*/
 
 //      console.log(this.terminou);
-      }
+      },
+
+
     };
   };
 

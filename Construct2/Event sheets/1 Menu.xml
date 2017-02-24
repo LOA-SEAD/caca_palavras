@@ -21,17 +21,20 @@
                 <action id="4" name="Preload" sid="437655290715192" type="Audio">
                     <param id="0" name="Audio file">ambiencia_noite</param>
                 </action>
-                <action id="4" name="Preload" sid="179294739516372" type="Audio">
+                <action id="4" name="Preload" sid="718026852754159" type="Audio">
                     <param id="0" name="Audio file">luz_piscando</param>
-                </action>
-                <action id="4" name="Preload" sid="387069097131925" type="Audio">
-                    <param id="0" name="Audio file">passa_mouse</param>
                 </action>
                 <action id="4" name="Preload" sid="215185736740733" type="Audio">
                     <param id="0" name="Audio file">som_neon</param>
                 </action>
+                <action id="4" name="Preload" sid="387069097131925" type="Audio">
+                    <param id="0" name="Audio file">click_mouse</param>
+                </action>
                 <action id="4" name="Preload" sid="360884853814825" type="Audio">
                     <param id="0" name="Audio file">pagina_virando</param>
+                </action>
+                <action id="4" name="Preload" sid="305323277021873" type="Audio">
+                    <param id="0" name="Audio file">mouse_over</param>
                 </action>
                 <action id="33" name="Stop all" sid="163869210879055" type="Audio" />
                 <action id="5" name="Set frame" sid="503541469249723" type="btnJogar">
@@ -97,7 +100,7 @@
                     <param id="3" name="Volume">volumeMusica</param>
                     <param id="1" name="Tag (optional)">&quot;musicaMenu&quot;</param>
                 </action>
-                <action disabled="1" id="0" name="Play" sid="654445256128766" type="Audio">
+                <action id="0" name="Play" sid="609467971387961" type="Audio">
                     <param id="0" name="Audio file">luz_piscando</param>
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">volumeMusica</param>
@@ -159,7 +162,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Play" sid="914731212329392" type="Audio">
-                                    <param id="0" name="Audio file">passa_mouse</param>
+                                    <param id="0" name="Audio file">click_mouse</param>
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">volumeSons</param>
                                     <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
@@ -182,7 +185,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Play" sid="861709090392210" type="Audio">
-                                    <param id="0" name="Audio file">passa_mouse</param>
+                                    <param id="0" name="Audio file">click_mouse</param>
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">volumeSons</param>
                                     <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
@@ -225,7 +228,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Play" sid="831574671238323" type="Audio">
-                                    <param id="0" name="Audio file">passa_mouse</param>
+                                    <param id="0" name="Audio file">click_mouse</param>
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">volumeSons</param>
                                     <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
@@ -250,7 +253,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Play" sid="232441142519143" type="Audio">
-                            <param id="0" name="Audio file">passa_mouse</param>
+                            <param id="0" name="Audio file">click_mouse</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">volumeSons</param>
                             <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
@@ -495,6 +498,21 @@
                                     <param id="0" name="Cursor style">1</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="622601995913979">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="321675296010982" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="673045848090280" type="Audio">
+                                            <param id="0" name="Audio file">mouse_over</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">volumeSons</param>
+                                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="319603000900573">
                             <conditions>
@@ -594,6 +612,21 @@
                                     <param id="0" name="Frame number">1</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="403473961521932">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="180511293387513" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="949451335457491" type="Audio">
+                                            <param id="0" name="Audio file">mouse_over</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">volumeSons</param>
+                                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="491564082790840">
                             <conditions>
@@ -617,6 +650,21 @@
                                             <param id="0" name="Cursor style">1</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="923618370378656">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="698201905190403" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Play" sid="745189616668944" type="Audio">
+                                                    <param id="0" name="Audio file">mouse_over</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">volumeSons</param>
+                                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="354844216134749">
                                     <conditions>
@@ -636,6 +684,21 @@
                                                     <param id="0" name="Cursor style">1</param>
                                                 </action>
                                             </actions>
+                                            <sub-events>
+                                                <event-block sid="807635306942529">
+                                                    <conditions>
+                                                        <condition id="-4" name="Trigger once while true" sid="786464769793499" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Play" sid="202734206484625" type="Audio">
+                                                            <param id="0" name="Audio file">mouse_over</param>
+                                                            <param id="2" name="Loop">0</param>
+                                                            <param id="3" name="Volume">volumeSons</param>
+                                                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                         <event-block sid="144095799403403">
                                             <conditions>

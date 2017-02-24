@@ -59,7 +59,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">Chrome</prop>
+        <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -1151,9 +1151,9 @@
             <object-type name="respostas" sid="920309452046855">
                 <plugin id="TextBox" />
             </object-type>
-            <object-type name="girarPergunta" sid="845990430971004">
+            <object-type name="descerEvidencia" sid="845990430971004">
                 <plugin id="TiledBg" />
-                <texture />
+                <texture original-source="C:\Users\Douglas\Downloads\roda_provisoria.png" />
             </object-type>
             <object-type name="config" sid="573946508919243">
                 <plugin id="Sprite" />
@@ -1253,6 +1253,10 @@
             </object-type>
             <object-type name="btnResume" sid="217343985335489">
                 <plugin id="Text" />
+            </object-type>
+            <object-type name="subirEvidencia" sid="807717658392811">
+                <plugin id="TiledBg" />
+                <texture />
             </object-type>
         </object-folder>
         <object-type name="Mouse" sid="359155137460880">
@@ -1449,7 +1453,7 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Audio" uid="98">
+        <global-instance type="Audio" uid="100">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -1465,7 +1469,7 @@
         </global-instance>
     </global-instances>
     <sounds-folder>
-        <file name="passa_mouse.ogg" />
+        <file name="click_mouse.ogg" />
         <file name="pagina_virando.ogg" />
         <file name="cafe.ogg" />
         <file name="ideia.ogg" />
@@ -1473,11 +1477,12 @@
         <file name="passa_evidencia_setas.ogg" />
         <file name="quando_digita_certo.ogg" />
         <file name="tempo_acabando.ogg" />
+        <file name="mouse_over.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="ambiencia_noite.ogg" />
-        <file name="luz_piscando.ogg" />
         <file name="som_neon.ogg" />
+        <file name="luz_piscando.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">

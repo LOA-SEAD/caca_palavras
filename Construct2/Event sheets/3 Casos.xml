@@ -326,7 +326,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Play" sid="276705998550390" type="Audio">
-                                    <param id="0" name="Audio file">passa_mouse</param>
+                                    <param id="0" name="Audio file">click_mouse</param>
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">volumeSons</param>
                                     <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
@@ -346,7 +346,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Play" sid="749770032319772" type="Audio">
-                            <param id="0" name="Audio file">passa_mouse</param>
+                            <param id="0" name="Audio file">click_mouse</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">volumeSons</param>
                             <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
@@ -428,6 +428,21 @@
                             <param id="0" name="Cursor style">1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="200409097003497">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="184680722550869" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="685012495150885" type="Audio">
+                                    <param id="0" name="Audio file">mouse_over</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">volumeSons</param>
+                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="366427668712097">
                     <conditions>

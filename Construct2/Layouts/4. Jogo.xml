@@ -760,7 +760,7 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="girarPergunta" uid="71">
+                <instance type="descerEvidencia" uid="71">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -768,11 +768,31 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>948</x>
-                        <y>136</y>
+                        <x>951</x>
+                        <y>147</y>
                         <z>0</z>
-                        <width>48</width>
-                        <height>112</height>
+                        <width>45</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="subirEvidencia" uid="101">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>307</x>
+                        <y>148</y>
+                        <z>0</z>
+                        <width>45</width>
+                        <height>100</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

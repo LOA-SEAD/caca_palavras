@@ -24,6 +24,19 @@
                         </action>
                     </actions>
                     <sub-events>
+                        <event-block sid="941116484484195">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="124336244919271" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="785435880167364" type="Audio">
+                                    <param id="0" name="Audio file">mouse_over</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">volumeSons</param>
+                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="526531595630890">
                             <conditions>
                                 <condition id="-2" name="Compare Y" sid="895041380722121" type="btnMenu">
@@ -77,6 +90,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="609050626390380" type="Audio">
+                            <param id="0" name="Audio file">click_mouse</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
                         <action id="-2" name="Go to layout" sid="939316601463450" type="System">
                             <param id="0" name="Layout">1. Menu</param>
                         </action>

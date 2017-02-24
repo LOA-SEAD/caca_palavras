@@ -289,6 +289,57 @@
       }
     };
 
+    //Fonte: https://trechodecodigo.wordpress.com/remover-acentos-javascript/
+    var removerAcento = function(palavra){
+      var palavraSemAcento = "";
+      var caracterComAcento = "áàãâäéèêëíìîïóòõôöúùûüçÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÇ";
+      var caracterSemAcento = "aaaaaeeeeiiiiooooouuuucAAAAAEEEEIIIIOOOOOUUUUC";
+
+      for (var i = 0; i < palavra.length; i++){
+        var char = palavra.substr(i, 1);
+        var indexAcento = caracterComAcento.indexOf(char);
+        if (indexAcento != -1) {
+          palavraSemAcento += caracterSemAcento.substr(indexAcento, 1);
+        } else {
+          palavraSemAcento += char;
+        }
+      }
+
+      return palavraSemAcento;
+    } 
+
+    var readJSON = function(caso){
+        var palavras = "";
+        var casos = "";
+
+        $.ajax({
+            url: "casos.json",
+            //force to handle it as text
+            dataType: "text",
+            mimeType: "application/json",
+            async: false,
+            success: function(data) {
+
+                //data downloaded so we call parseJSON function
+                //and pass downloaded data
+                casos = $.parseJSON(data);
+                //now json variable contains data in json format
+                //let's display a few items
+                if (caso == 1){
+                  palavras = casos.caso1respostas;
+                }
+                if (caso == 2){
+                  palavras = casos.caso2respostas;
+                }
+                if (caso == 3){
+                  palavras = casos.caso3respostas;
+                }
+            }
+        });
+
+        return palavras;
+    };
+
     return {
 
       /**
@@ -317,13 +368,17 @@
       *
       * Returns the puzzle that was created.
       *
-      * @param {[String]} words: List of words to include in the puzzle
+      * @param {[String]} number: The number of case
       * @param {options} settings: The options to use for this puzzle
       * @api public
       */
-      newPuzzle: function(words, settings) {
+      newPuzzle: function(number, settings) {
         var wordList, puzzle, attempts = 0, opts = settings || {};
 
+        var words = readJSON(number);
+        for (var i = 0; i < words.length; i++) {
+          words[i] = removerAcento(words[i]);
+        }
         // copy and sort the words by length, inserting words into the puzzle
         // from longest to shortest works out the best
         wordList = words.slice(0).sort( function (a,b) {

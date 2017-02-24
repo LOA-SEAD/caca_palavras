@@ -393,11 +393,11 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <comment>Para mudar a pergunta</comment>
+                <comment>Para mudar a evidência, indo para a pista abaixo</comment>
                 <event-block sid="607893160655842">
                     <conditions>
                         <condition id="17" name="On tap object" sid="319940891323163" type="Touch">
-                            <param id="0" name="Object">girarPergunta</param>
+                            <param id="0" name="Object">descerEvidencia</param>
                         </condition>
                         <condition id="-9" inverted="1" name="Layer is visible" sid="325185935926381" type="System">
                             <param id="0" name="Layer">&quot;Menu&quot;</param>
@@ -512,6 +512,125 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <comment>Para mudar a evidência, indo para a pista acima</comment>
+                <event-block sid="890301112474390">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="394919561596793" type="Touch">
+                            <param id="0" name="Object">subirEvidencia</param>
+                        </condition>
+                        <condition id="-9" inverted="1" name="Layer is visible" sid="926796635483755" type="System">
+                            <param id="0" name="Layer">&quot;Menu&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="922719047789778" type="Audio">
+                            <param id="0" name="Audio file">passa_evidencia_setas</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="112542007168065" type="System">
+                            <param id="0" name="Variable">dicaNaMaquina</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="296184664735487" type="respostas">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="212552389615579">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="557296566624851" type="System">
+                                    <param id="0" name="Variable">dicaNaMaquina</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="974812717078396" type="System">
+                                    <param id="0" name="Variable">dicaNaMaquina</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Legenda: 0 = jogador não mudou nada na dica; 1 = jogador comprou o powerup que permite ver o número de letras e a letra inicial; 2 = jogador acertou a palavra ou comprou o powerup de revelar a palavra</comment>
+                        <comment>Apenas copia a frase com o espaço para preencher</comment>
+                        <event-block sid="567408935019630">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="819253885517927" type="System">
+                                    <param id="0" name="First value">statusDicas.At(dicaNaMaquina-1)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="425362760138789" type="pista">
+                                    <param id="0" name="Text">casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;perguntas&quot;,dicaNaMaquina-1)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Primeiro monta a palavra colocando a primeira letra da resposta (função left) e preenchendo o resto com &quot;_&quot; conforme o tamanho que ela possui (função len e loop), depois substitui o espaço para preencher na frase pela palavra montada</comment>
+                        <event-block sid="969824963495657">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="678717475028145" type="System">
+                                    <param id="0" name="First value">statusDicas.At(dicaNaMaquina-1)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="532454452928653" type="System">
+                                    <param id="0" name="Variable">palavraDica100</param>
+                                    <param id="1" name="Value">left(casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;respostas&quot;,dicaNaMaquina-1), 1)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="684005557060904" type="System">
+                                    <param id="0" name="Variable">tamanhoResposta</param>
+                                    <param id="1" name="Value">len(casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;respostas&quot;,dicaNaMaquina-1))</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="774777064325413">
+                                    <conditions>
+                                        <condition id="-10" name="For" sid="268903608433571" type="System">
+                                            <param id="0" name="Name">&quot;&quot;</param>
+                                            <param id="1" name="Start index">1</param>
+                                            <param id="2" name="End index">tamanhoResposta-1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="646541131598393" type="System">
+                                            <param id="0" name="Variable">palavraDica100</param>
+                                            <param id="1" name="Value">palavraDica100 &amp; &quot;_&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="907304823559266">
+                                    <conditions />
+                                    <actions>
+                                        <action id="0" name="Set text" sid="223267408336952" type="pista">
+                                            <param id="0" name="Text">replace(casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;....................&quot;, palavraDica100)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>Copia a frase e substitui o espaço para preencher pela resposta correspondente</comment>
+                        <event-block sid="119135793029833">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="518120397425682" type="System">
+                                    <param id="0" name="First value">statusDicas.At(dicaNaMaquina-1)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="464128429567947" type="pista">
+                                    <param id="0" name="Text">replace(casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;....................&quot;, casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;respostas&quot;, dicaNaMaquina-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <event-block sid="826504549741291">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="758839528877877" type="Keyboard">
@@ -520,12 +639,17 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <comment>Acertou a palavra</comment>
+                        <comment>Acertou a palavra e ela ainda não havia sido preenchida ainda</comment>
                         <event-block sid="632688362177298">
                             <conditions>
                                 <condition id="0" name="Compare text" sid="108353288565573" type="respostas">
                                     <param id="0" name="Text">casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;respostas&quot;,dicaNaMaquina-1)</param>
                                     <param id="1" name="Case">0</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="435631628920880" type="System">
+                                    <param id="0" name="First value">statusDicas.At(dicaNaMaquina-1)</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Second value">2</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -538,31 +662,21 @@
                                 <action id="0" name="Set text" sid="947682308685849" type="pista">
                                     <param id="0" name="Text">replace(casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;....................&quot;, casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;respostas&quot;, dicaNaMaquina-1))</param>
                                 </action>
+                                <action id="0" name="Set text" sid="197815782753876" type="respostas">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="0" name="Execute" sid="242279595639713" type="verificaFimJS">
+                                    <param id="0" name="Value">&quot;setValor(+50)&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="608991269929436" type="System">
+                                    <param id="0" name="Variable">dinheiro</param>
+                                    <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="140042868861216" type="statusDicas">
+                                    <param id="0" name="X">dicaNaMaquina-1</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
                             </actions>
-                            <sub-events>
-                                <event-block sid="951939647195140">
-                                    <conditions>
-                                        <condition id="-8" name="Compare two values" sid="435631628920880" type="System">
-                                            <param id="0" name="First value">statusDicas.At(dicaNaMaquina-1)</param>
-                                            <param id="1" name="Comparison">1</param>
-                                            <param id="2" name="Second value">2</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Execute" sid="242279595639713" type="verificaFimJS">
-                                            <param id="0" name="Value">&quot;setValor(+50)&quot;</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="608991269929436" type="System">
-                                            <param id="0" name="Variable">dinheiro</param>
-                                            <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
-                                        </action>
-                                        <action id="2" name="Set at X" sid="140042868861216" type="statusDicas">
-                                            <param id="0" name="X">dicaNaMaquina-1</param>
-                                            <param id="1" name="Value">2</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
                         </event-block>
                         <event-block sid="901207210607915">
                             <conditions>
@@ -846,7 +960,10 @@
                                     <param id="0" name="Object">configBotao</param>
                                 </condition>
                                 <condition id="7" name="Cursor is over object" sid="192431627786467" type="Mouse">
-                                    <param id="0" name="Object">girarPergunta</param>
+                                    <param id="0" name="Object">descerEvidencia</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="654094263508369" type="Mouse">
+                                    <param id="0" name="Object">subirEvidencia</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -854,6 +971,21 @@
                                     <param id="0" name="Cursor style">1</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="439507590480839">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="861619986375900" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="403712369433619" type="Audio">
+                                            <param id="0" name="Audio file">mouse_over</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">volumeSons</param>
+                                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="329408777769232">
                             <conditions>
@@ -1081,6 +1213,21 @@
                                             <param id="0" name="Cursor style">1</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="336039767689681">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="939504315675828" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Play" sid="825506358487538" type="Audio">
+                                                    <param id="0" name="Audio file">mouse_over</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">volumeSons</param>
+                                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="146929657750993">
                                     <conditions>
@@ -1112,6 +1259,21 @@
                                             <param id="0" name="Cursor style">1</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="164885786528683">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="521635449970500" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Play" sid="638073330337511" type="Audio">
+                                                    <param id="0" name="Audio file">mouse_over</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">volumeSons</param>
+                                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="313560371939580">
                                     <conditions>
@@ -1131,6 +1293,21 @@
                                                     <param id="0" name="Cursor style">1</param>
                                                 </action>
                                             </actions>
+                                            <sub-events>
+                                                <event-block sid="690531151372113">
+                                                    <conditions>
+                                                        <condition id="-4" name="Trigger once while true" sid="421258989418224" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Play" sid="392992388947968" type="Audio">
+                                                            <param id="0" name="Audio file">mouse_over</param>
+                                                            <param id="2" name="Loop">0</param>
+                                                            <param id="3" name="Volume">volumeSons</param>
+                                                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                         <event-block sid="110021940871794">
                                             <conditions>
@@ -1147,6 +1324,21 @@
                                                     <param id="0" name="Frame number">1</param>
                                                 </action>
                                             </actions>
+                                            <sub-events>
+                                                <event-block sid="955904506890337">
+                                                    <conditions>
+                                                        <condition id="-4" name="Trigger once while true" sid="458977568140792" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Play" sid="297387193431321" type="Audio">
+                                                            <param id="0" name="Audio file">mouse_over</param>
+                                                            <param id="2" name="Loop">0</param>
+                                                            <param id="3" name="Volume">volumeSons</param>
+                                                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                         <event-block sid="941053912068979">
                                             <conditions>
@@ -1267,6 +1459,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="402637512444737" type="Audio">
+                            <param id="0" name="Audio file">click_mouse</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
                         <action id="-4" name="Set layer visible" sid="929614611998261" type="System">
                             <param id="0" name="Layer">3</param>
                             <param id="1" name="Visibility">1</param>
@@ -1322,6 +1520,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="176876895163997" type="Audio">
+                            <param id="0" name="Audio file">click_mouse</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
                         <action id="-4" name="Set layer visible" sid="813941582246418" type="System">
                             <param id="0" name="Layer">3</param>
                             <param id="1" name="Visibility">0</param>
@@ -1377,6 +1581,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="743845588528849" type="Audio">
+                            <param id="0" name="Audio file">click_mouse</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
                         <action id="-2" name="Set Y" sid="958978462177106" type="telaAjuda">
                             <param id="0" name="Y">360</param>
                         </action>
@@ -1389,6 +1599,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="646552874667491" type="Audio">
+                            <param id="0" name="Audio file">click_mouse</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
                         <action id="-2" name="Set Y" sid="407837612699285" type="telaAjuda">
                             <param id="0" name="Y">-360</param>
                         </action>
@@ -1401,6 +1617,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="492779339969032" type="Audio">
+                            <param id="0" name="Audio file">pagina_virando</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
                         <action id="-9" name="Set value" sid="268386469679036" type="System">
                             <param id="0" name="Variable">ajuda</param>
                             <param id="1" name="Value">ajuda-1</param>
@@ -1414,6 +1636,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="841347697186944" type="Audio">
+                            <param id="0" name="Audio file">pagina_virando</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
                         <action id="-9" name="Set value" sid="940558182275361" type="System">
                             <param id="0" name="Variable">ajuda</param>
                             <param id="1" name="Value">ajuda+1</param>
@@ -1427,6 +1655,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="573280026683143" type="Audio">
+                            <param id="0" name="Audio file">click_mouse</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
                         <action id="0" name="Execute" sid="266081049855750" type="verificaFimJS">
                             <param id="0" name="Value">&quot;atualizarDinheiro(&quot; &amp; dinheiroInicial &amp; &quot;)&quot;</param>
                         </action>
