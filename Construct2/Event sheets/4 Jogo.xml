@@ -11,6 +11,8 @@
         <variable constant="0" name="palavraDica100" sid="237024233155399" static="0" type="text"></variable>
         <comment>Controla o numero de acertos que o jogador já obteve naquela fase</comment>
         <variable constant="0" name="numeroAcertos" sid="452203129598386" static="0" type="number">0</variable>
+        <comment>Controla se o jogador já pode acertar a pista final ou não</comment>
+        <variable constant="0" name="liberaPistaFinal" sid="152279806839397" static="0" type="number">0</variable>
         <event-block sid="810123370315039">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="297666887279759" type="System" />
@@ -40,6 +42,10 @@
                 <action id="-9" name="Set value" sid="734166043841523" type="System">
                     <param id="0" name="Variable">dicaNaMaquina</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="575337352751754" type="System">
+                    <param id="0" name="Variable">liberaPistaFinal</param>
+                    <param id="1" name="Value">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="897699198595932" type="System">
                     <param id="0" name="Variable">ajuda</param>
@@ -419,6 +425,7 @@
                         </action>
                     </actions>
                     <sub-events>
+                        <comment>Caso o jogador ainda não possa acertar a pista final</comment>
                         <event-block sid="360968274717667">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="468701416235497" type="System">
@@ -426,9 +433,30 @@
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">6</param>
                                 </condition>
+                                <condition id="-14" name="Compare variable" sid="336499781163814" type="System">
+                                    <param id="0" name="Variable">liberaPistaFinal</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-9" name="Set value" sid="110452253353477" type="System">
+                                    <param id="0" name="Variable">dicaNaMaquina</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Com a pista final liberada</comment>
+                        <event-block sid="857258955236744">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="623014991785270" type="System">
+                                    <param id="0" name="Variable">dicaNaMaquina</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="149081166836070" type="System">
                                     <param id="0" name="Variable">dicaNaMaquina</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
@@ -538,10 +566,16 @@
                         </action>
                     </actions>
                     <sub-events>
+                        <comment>Caso o jogador ainda não possa acertar a pista final</comment>
                         <event-block sid="212552389615579">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="557296566624851" type="System">
                                     <param id="0" name="Variable">dicaNaMaquina</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="382400021138826" type="System">
+                                    <param id="0" name="Variable">liberaPistaFinal</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
@@ -550,6 +584,27 @@
                                 <action id="-9" name="Set value" sid="974812717078396" type="System">
                                     <param id="0" name="Variable">dicaNaMaquina</param>
                                     <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Com a pista final liberada</comment>
+                        <event-block sid="380339692812374">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="125285294468968" type="System">
+                                    <param id="0" name="Variable">dicaNaMaquina</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="612727926962243" type="System">
+                                    <param id="0" name="Variable">liberaPistaFinal</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="636318182723688" type="System">
+                                    <param id="0" name="Variable">dicaNaMaquina</param>
+                                    <param id="1" name="Value">6</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -640,70 +695,174 @@
                     <actions />
                     <sub-events>
                         <comment>Acertou a palavra e ela ainda não havia sido preenchida ainda</comment>
-                        <event-block sid="632688362177298">
+                        <event-block sid="995824185900999">
                             <conditions>
-                                <condition id="0" name="Compare text" sid="108353288565573" type="respostas">
-                                    <param id="0" name="Text">casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;respostas&quot;,dicaNaMaquina-1)</param>
-                                    <param id="1" name="Case">0</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="435631628920880" type="System">
-                                    <param id="0" name="First value">statusDicas.At(dicaNaMaquina-1)</param>
-                                    <param id="1" name="Comparison">1</param>
-                                    <param id="2" name="Second value">2</param>
+                                <condition id="-14" name="Compare variable" sid="581862612067853" type="System">
+                                    <param id="0" name="Variable">liberaPistaFinal</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="402370361012148" type="Audio">
-                                    <param id="0" name="Audio file">quando_digita_certo</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">volumeSons</param>
-                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
-                                </action>
-                                <action id="0" name="Set text" sid="947682308685849" type="pista">
-                                    <param id="0" name="Text">replace(casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;....................&quot;, casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;respostas&quot;, dicaNaMaquina-1))</param>
-                                </action>
-                                <action id="0" name="Set text" sid="197815782753876" type="respostas">
-                                    <param id="0" name="Text">&quot;&quot;</param>
-                                </action>
-                                <action id="0" name="Execute" sid="242279595639713" type="verificaFimJS">
-                                    <param id="0" name="Value">&quot;setValor(+50)&quot;</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="608991269929436" type="System">
-                                    <param id="0" name="Variable">dinheiro</param>
-                                    <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
-                                </action>
-                                <action id="2" name="Set at X" sid="140042868861216" type="statusDicas">
-                                    <param id="0" name="X">dicaNaMaquina-1</param>
-                                    <param id="1" name="Value">2</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="632688362177298">
+                                    <conditions>
+                                        <condition id="0" name="Compare text" sid="108353288565573" type="respostas">
+                                            <param id="0" name="Text">casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;respostas&quot;,dicaNaMaquina-1)</param>
+                                            <param id="1" name="Case">0</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="435631628920880" type="System">
+                                            <param id="0" name="First value">statusDicas.At(dicaNaMaquina-1)</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Second value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="402370361012148" type="Audio">
+                                            <param id="0" name="Audio file">quando_digita_certo</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">volumeSons</param>
+                                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="947682308685849" type="pista">
+                                            <param id="0" name="Text">replace(casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;....................&quot;, casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;respostas&quot;, dicaNaMaquina-1))</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="197815782753876" type="respostas">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                        <action id="0" name="Execute" sid="242279595639713" type="verificaFimJS">
+                                            <param id="0" name="Value">&quot;setValor(+50)&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="608991269929436" type="System">
+                                            <param id="0" name="Variable">dinheiro</param>
+                                            <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
+                                        </action>
+                                        <action id="2" name="Set at X" sid="140042868861216" type="statusDicas">
+                                            <param id="0" name="X">dicaNaMaquina-1</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="901207210607915">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="106561793384915" type="System" />
+                                        <condition id="0" inverted="1" name="Compare text" sid="512295950551175" type="respostas">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                            <param id="1" name="Case">0</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="106590199206407" type="System">
+                                            <param id="0" name="First value">statusDicas.At(dicaNaMaquina-1)</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Second value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Execute" sid="937188929715815" type="verificaFimJS">
+                                            <param id="0" name="Value">&quot;setValor(-25)&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="164787722496690" type="System">
+                                            <param id="0" name="Variable">dinheiro</param>
+                                            <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
-                        <event-block sid="901207210607915">
+                        <comment>Caso a pista final já esteja liberada</comment>
+                        <event-block sid="336671148177210">
                             <conditions>
-                                <condition id="-22" name="Else" sid="106561793384915" type="System" />
-                                <condition id="0" inverted="1" name="Compare text" sid="512295950551175" type="respostas">
-                                    <param id="0" name="Text">&quot;&quot;</param>
-                                    <param id="1" name="Case">0</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="106590199206407" type="System">
-                                    <param id="0" name="First value">statusDicas.At(dicaNaMaquina-1)</param>
-                                    <param id="1" name="Comparison">1</param>
-                                    <param id="2" name="Second value">2</param>
+                                <condition id="-14" name="Compare variable" sid="615203267723611" type="System">
+                                    <param id="0" name="Variable">liberaPistaFinal</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="0" name="Execute" sid="937188929715815" type="verificaFimJS">
-                                    <param id="0" name="Value">&quot;setValor(-25)&quot;</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="164787722496690" type="System">
-                                    <param id="0" name="Variable">dinheiro</param>
-                                    <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="543212217263815">
+                                    <conditions>
+                                        <condition id="0" name="Compare text" sid="639791659687892" type="respostas">
+                                            <param id="0" name="Text">casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;pistafinal&quot;,0)</param>
+                                            <param id="1" name="Case">0</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="787605963458843" type="System">
+                                            <param id="0" name="First value">statusDicas.At(dicaNaMaquina-1)</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Second value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="281809533580386" type="Audio">
+                                            <param id="0" name="Audio file">quando_digita_certo</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">volumeSons</param>
+                                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="873864386657756" type="pista">
+                                            <param id="0" name="Text">replace(casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;perguntas&quot;, dicaNaMaquina-1), &quot;....................&quot;, casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;pistafinal&quot;,0))</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="710478982589312" type="respostas">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                        <action id="0" name="Execute" sid="693557267002887" type="verificaFimJS">
+                                            <param id="0" name="Value">&quot;setValor(+50)&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="217892655524292" type="System">
+                                            <param id="0" name="Variable">dinheiro</param>
+                                            <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
+                                        </action>
+                                        <action id="2" name="Set at X" sid="162464452320346" type="statusDicas">
+                                            <param id="0" name="X">dicaNaMaquina-1</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="169724105258111" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="2" name="Set at X" sid="947713509256732" type="caso">
+                                            <param id="0" name="X">numcaso</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="684716955424573" type="System">
+                                            <param id="0" name="Variable">dinheiroInicial</param>
+                                            <param id="1" name="Value">dinheiro</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="550016676644957" type="System">
+                                            <param id="0" name="Variable">timeline</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-2" name="Go to layout" sid="958771453801973" type="System">
+                                            <param id="0" name="Layout">2. Cenas</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="635120963152905">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="624876244873056" type="System" />
+                                        <condition id="0" inverted="1" name="Compare text" sid="519883304525085" type="respostas">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                            <param id="1" name="Case">0</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="213313901819880" type="System">
+                                            <param id="0" name="First value">statusDicas.At(dicaNaMaquina-1)</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Second value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Execute" sid="981732257631341" type="verificaFimJS">
+                                            <param id="0" name="Value">&quot;setValor(-25)&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="795604375638537" type="System">
+                                            <param id="0" name="Variable">dinheiro</param>
+                                            <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
-                <comment>Faz a verificação de se o jogador já encontrou todas as palavras no caça-palavras e também já preencheu todas elas corretamente na folha de pistas, caracterizando a vitória do jogador</comment>
+                <comment>Faz a verificação de se o jogador já encontrou todas as palavras no caça-palavras e também já preencheu todas elas corretamente na folha de pistas, liberando a pista final para ser adivinhada</comment>
                 <event-block sid="926798470588138">
                     <conditions>
                         <condition id="0" name="Compare at X" sid="975329199181282" type="statusDicas">
@@ -736,22 +895,23 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">5</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="422743377583492" type="System">
+                            <param id="0" name="Variable">liberaPistaFinal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action id="2" name="Set at X" sid="142344599046287" type="caso">
-                            <param id="0" name="X">numcaso</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
                         <action id="-9" name="Set value" sid="621311008933070" type="System">
-                            <param id="0" name="Variable">dinheiroInicial</param>
-                            <param id="1" name="Value">dinheiro</param>
+                            <param id="0" name="Variable">liberaPistaFinal</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                         <action id="-9" name="Set value" sid="138088099926753" type="System">
-                            <param id="0" name="Variable">timeline</param>
-                            <param id="1" name="Value">1</param>
+                            <param id="0" name="Variable">dicaNaMaquina</param>
+                            <param id="1" name="Value">6</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="834196286557696" type="System">
-                            <param id="0" name="Layout">2. Cenas</param>
+                        <action id="0" name="Set text" sid="332204841408408" type="pista">
+                            <param id="0" name="Text">casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;perguntas&quot;,dicaNaMaquina-1)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1079,6 +1239,11 @@
                                             <param id="1" name="Comparison">2</param>
                                             <param id="2" name="Second value">1</param>
                                         </condition>
+                                        <condition id="-8" name="Compare two values" sid="751817016430999" type="System">
+                                            <param id="0" name="First value">liberaPistaFinal</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Play" sid="719941667626213" type="Audio">
@@ -1155,6 +1320,11 @@
                                             <param id="0" name="First value">statusDicas.At(dicaNaMaquina-1)</param>
                                             <param id="1" name="Comparison">2</param>
                                             <param id="2" name="Second value">2</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="295242935426086" type="System">
+                                            <param id="0" name="First value">liberaPistaFinal</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
