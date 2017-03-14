@@ -124,15 +124,23 @@
                     <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="730299048643453" type="textoAjuda1">
+                    <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="330791465044112" type="textoAjuda2">
+                    <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="105886830292373" type="ajudaPag">
+                    <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="444496423659739" type="ajudaX">
                     <param id="0" name="Pin to">telaAjuda</param>
                     <param id="1" name="Mode">0</param>
                 </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="581428585625223" type="ajuda1">
-                    <param id="0" name="Pin to">telaAjuda</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="331847546118710" type="ajuda2">
+                <action behavior="Pin" id="0" name="Pin to object" sid="581428585625223" type="imagemAjuda">
                     <param id="0" name="Pin to">telaAjuda</param>
                     <param id="1" name="Mode">0</param>
                 </action>
@@ -145,6 +153,14 @@
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="526641405816752" type="botaoProx">
+                    <param id="0" name="Pin to">telaAjuda</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="974982057492828" type="textoAjuda1">
+                    <param id="0" name="Pin to">telaAjuda</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="251147839257757" type="textoAjuda2">
                     <param id="0" name="Pin to">telaAjuda</param>
                     <param id="1" name="Mode">0</param>
                 </action>
@@ -235,16 +251,47 @@
                             <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
                         </action>
                         <action id="0" name="Set text" sid="161131779919802" type="ajudaPag">
-                            <param id="0" name="Text">&quot;Página &quot; &amp; ajudaPag.UID-91+2*ajuda &amp;  &quot; de 6&quot;</param>
+                            <param id="0" name="Text">&quot;Página &quot; &amp; ajudaPag.UID-91+2*ajuda &amp;  &quot; de 4&quot;</param>
                         </action>
-                        <action id="5" name="Set frame" sid="359888367380833" type="ajuda1">
-                            <param id="0" name="Frame number">ajuda</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="193297450121690" type="ajuda2">
+                        <action id="5" name="Set frame" sid="359888367380833" type="imagemAjuda">
                             <param id="0" name="Frame number">ajuda</param>
                         </action>
                     </actions>
                     <sub-events>
+                        <event-block sid="720837731470956">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="307792017416261" type="System">
+                                    <param id="0" name="Variable">ajuda</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="774474115736870" type="textoAjuda1">
+                                    <param id="0" name="Text">&quot;Bem-vindo, Detetive Rolmes.&quot; &amp; newline &amp; newline &amp; &quot;Seu objetivo é resolver todos os casos misteriosos a tempo. Você tem 10 minutos iniciais para resolver um caso, mas antes, tem de resolver o enigma descobrindo as 5 palavras secretas, só assim você sabe o que procurar no caça-palavras, e acumula dinheiro para ajudá-lo a resolver este mistério.&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="475359298162854" type="textoAjuda2">
+                                    <param id="0" name="Text">&quot;Para encontrar as palavras você pode:&quot; &amp; newline &amp; &quot;- Selecioná-las com o mouse na horizontal, vertical, diagonal ou de trás pra frente;&quot; &amp; newline &amp; &quot;- Comprar melhorias (tempo extra, dicas, etc.).&quot; &amp; newline &amp; &quot;Para solucionar o caso você deve:&quot; &amp; newline &amp; &quot;- Escrever as pistas encontradas no papel da máquina de escrever e, por fim, adivinhar a pista final.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="626898482901460">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="208072315161059" type="System">
+                                    <param id="0" name="Variable">ajuda</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="653201490030588" type="textoAjuda1">
+                                    <param id="0" name="Text">newline &amp; newline &amp; newline &amp; newline &amp; newline &amp; newline &amp; newline &amp; newline &amp; newline &amp; &quot;Clique na imagem para expandi-la ou reduzi-la&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="880226852041703" type="textoAjuda2">
+                                    <param id="0" name="Text">newline &amp; &quot;1. - Dinheiro acumulado&quot; &amp; newline &amp; &quot;2. - Melhorias&quot; &amp; newline &amp; &quot;3. - Evidências (6 ao todo, 5 do caso e 1 final)&quot; &amp; newline &amp; &quot;4. - Setas para selecionar as evidências&quot; &amp; newline &amp; &quot;5. - Digitar pistas&quot; &amp; newline &amp; &quot;6. - Caça-Palavra&quot; &amp; newline &amp; &quot;7. - Tempo (10 minutos)&quot; &amp; newline &amp; &quot;8. - Opções&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <comment>Ampulheta comeca durando 10min, mas tem &quot;capacidade&quot; de marcar 20min</comment>
                         <event-block sid="940547985445392">
                             <conditions>
@@ -934,69 +981,52 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="896349704179979">
+                <event-block sid="425545775060227">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="419778020949868" type="System">
+                        <condition id="-14" name="Compare variable" sid="511653532124540" type="System">
                             <param id="0" name="Variable">ajuda</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="746347121289006" type="botaoAnt">
+                        <action id="-15" name="Set visible" sid="144988062544225" type="botaoAnt">
                             <param id="0" name="Visibility">0</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="274914054576251" type="botaoProx">
+                        <action id="-15" name="Set visible" sid="867924929821609" type="botaoProx">
                             <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block any="1" sid="189061287771099">
+                <event-block any="1" sid="431747901801773">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="391672851559418" type="System">
+                        <condition id="-14" name="Compare variable" sid="791406043860037" type="System">
                             <param id="0" name="Variable">ajuda</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="830353217808598" type="botaoAnt">
+                        <action id="-15" name="Set visible" sid="888719824335440" type="botaoAnt">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="424695535111274" type="botaoProx">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="875598184196877">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="802613726081602" type="System">
-                            <param id="0" name="Variable">ajuda</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-15" name="Set visible" sid="735579492484717" type="botaoAnt">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="508254472691772" type="botaoProx">
+                        <action id="-15" name="Set visible" sid="359091547422575" type="botaoProx">
                             <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="144858488365081">
+                <event-block sid="881271275355305">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="646961750836482" type="System">
+                        <condition id="-14" name="Compare variable" sid="817602201829453" type="System">
                             <param id="0" name="Variable">ajuda</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">2</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Set value" sid="550447602930903" type="System">
+                        <action id="-9" name="Set value" sid="320019348865042" type="System">
                             <param id="0" name="Variable">ajuda</param>
-                            <param id="1" name="Value">2</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>

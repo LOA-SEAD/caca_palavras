@@ -1283,7 +1283,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="ajuda1" sid="964907061538371">
+        <object-type name="imagemAjuda" sid="964907061538371">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Pin" sid="956637178149159">
@@ -1291,25 +1291,18 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="135541265151595" speed="0">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="135541265151595" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="ajuda2" sid="592532057583311">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Pin" sid="828898117310955">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="357815313143700" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\imagem_menu_ajuda_mini.png">
+                        <collision-poly>
+                            <point x="0.28" y="0.248889" />
+                            <point x="0.72" y="0.248889" />
+                            <point x="1" y="0.5" />
+                            <point x="0.7175" y="0.748889" />
+                            <point x="0.2825" y="0.748889" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -1428,6 +1421,22 @@
         </object-type>
         <object-type name="Audio" sid="969666716246723">
             <plugin id="Audio" />
+        </object-type>
+        <object-type name="textoAjuda1" sid="965273974837027">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="675885077663546">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="textoAjuda2" sid="273903965408540">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="296008634708087">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
         </object-type>
     </object-folder>
     <families />
