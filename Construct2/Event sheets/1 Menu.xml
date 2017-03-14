@@ -70,10 +70,6 @@
                     <param id="0" name="Pin to">telaAjuda</param>
                     <param id="1" name="Mode">0</param>
                 </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="770934104531797" type="imagemAjuda">
-                    <param id="0" name="Pin to">telaAjuda</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="544397785315783" type="ajudaPag">
                     <param id="0" name="Pin to">telaAjuda</param>
                     <param id="1" name="Mode">0</param>
@@ -151,37 +147,43 @@
                 </action>
             </actions>
             <sub-events>
-                <event-block sid="111351362410954">
+                <event-block sid="984193488317284">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="341958989747549" type="System">
+                        <condition id="-14" name="Compare variable" sid="724978336166686" type="System">
                             <param id="0" name="Variable">ajuda</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="543377230341467" type="textoAjuda1">
+                        <action id="0" name="Set text" sid="487716175692247" type="textoAjuda1">
                             <param id="0" name="Text">&quot;Bem-vindo, Detetive Rolmes.&quot; &amp; newline &amp; newline &amp; &quot;Seu objetivo é resolver todos os casos misteriosos a tempo. Você tem 10 minutos iniciais para resolver um caso, mas antes, tem de resolver o enigma descobrindo as 5 palavras secretas, só assim você sabe o que procurar no caça-palavras, e acumula dinheiro para ajudá-lo a resolver este mistério.&quot;</param>
                         </action>
-                        <action id="0" name="Set text" sid="382120233027763" type="textoAjuda2">
-                            <param id="0" name="Text">&quot;Para encontrar as palavras você pode:&quot; &amp; newline &amp; &quot;- Selecioná-las com o mouse na horizontal, vertical, diagonal ou de trás pra frente;&quot; &amp; newline &amp; &quot;- Comprar melhorias (tempo extra, dicas, etc.).&quot; &amp; newline &amp; &quot;Para solucionar o caso você deve:&quot; &amp; newline &amp; &quot;- Escrever as pistas encontradas no papel da máquina de escrever e, por fim, adivinhar a pista final.&quot;</param>
+                        <action id="3" name="Set font size" sid="257893903406665" type="textoAjuda1">
+                            <param id="0" name="Size (pt)">22</param>
+                        </action>
+                        <action id="0" name="Set text" sid="454101093766008" type="textoAjuda2">
+                            <param id="0" name="Text">&quot;Para encontrar as palavras você pode:&quot; &amp; newline &amp; &quot;- Clicar / tocar e arrastar na horizontal, vertical, diagonal ou de trás pra frente;&quot; &amp; newline &amp; &quot;- Comprar melhorias (tempo extra, dicas, etc.).&quot; &amp; newline &amp; &quot;Para solucionar o caso você deve:&quot; &amp; newline &amp; &quot;- Escrever as pistas encontradas no papel da máquina de escrever e, por fim, adivinhar a pista final.&quot;</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="688970518150656">
+                <event-block sid="153543450645551">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="656887648876715" type="System">
+                        <condition id="-14" name="Compare variable" sid="494915287759852" type="System">
                             <param id="0" name="Variable">ajuda</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="403327597329051" type="textoAjuda1">
-                            <param id="0" name="Text">newline &amp; newline &amp; newline &amp; newline &amp; newline &amp; newline &amp; newline &amp; newline &amp; newline &amp; &quot;Clique na imagem para expandi-la ou reduzi-la&quot;</param>
+                        <action id="0" name="Set text" sid="332436958864909" type="textoAjuda1">
+                            <param id="0" name="Text">newline &amp; newline &amp; newline &amp; newline &amp; newline &amp; newline &amp; newline &amp; newline &amp; newline &amp; newline &amp; newline &amp; &quot;Clique ou toque na imagem para expandí-la ou minimizá-la.&quot;</param>
                         </action>
-                        <action id="0" name="Set text" sid="624486806577441" type="textoAjuda2">
-                            <param id="0" name="Text">newline &amp; &quot;1. - Dinheiro acumulado&quot; &amp; newline &amp; &quot;2. - Melhorias&quot; &amp; newline &amp; &quot;3. - Evidências (6 ao todo, 5 do caso e 1 final)&quot; &amp; newline &amp; &quot;4. - Setas para selecionar as evidências&quot; &amp; newline &amp; &quot;5. - Digitar pistas&quot; &amp; newline &amp; &quot;6. - Caça-Palavra&quot; &amp; newline &amp; &quot;7. - Tempo (10 minutos)&quot; &amp; newline &amp; &quot;8. - Opções&quot;</param>
+                        <action id="3" name="Set font size" sid="980869313606730" type="textoAjuda1">
+                            <param id="0" name="Size (pt)">18</param>
+                        </action>
+                        <action id="0" name="Set text" sid="755832484297913" type="textoAjuda2">
+                            <param id="0" name="Text">newline &amp;&#x0D;&#x0A;&quot;1. Dinheiro acumulado&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;2. Melhorias&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;3. Evidências (6 ao todo, 5 do caso e 1 final)&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;4. Setas para selecionar as evidências&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;5. Digitar pistas&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;6. Caça-Palavra&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;7. Tempo (10 minutos)&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;8. Opções&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -191,10 +193,7 @@
             <sub-events>
                 <event-block sid="699828816575070">
                     <conditions>
-                        <condition id="-2" name="Compare Y" sid="923570095921094" type="telaAjuda">
-                            <param id="0" name="Comparison">2</param>
-                            <param id="1" name="Y co-ordinate">0</param>
-                        </condition>
+                        <condition id="-4" name="Is outside layout" sid="923570095921094" type="telaAjuda" />
                     </conditions>
                     <actions />
                     <sub-events>
@@ -241,6 +240,14 @@
                                 </action>
                                 <action id="-2" name="Set Y" sid="854352014191713" type="telaAjuda">
                                     <param id="0" name="Y">360</param>
+                                </action>
+                                <action id="-7" name="Set size" sid="950126955068471" type="imagemAjuda">
+                                    <param id="0" name="Width">384</param>
+                                    <param id="1" name="Height">216</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="556946166296317" type="imagemAjuda">
+                                    <param id="0" name="X">429</param>
+                                    <param id="1" name="Y">341</param>
                                 </action>
                                 <action id="-30" name="Set layer effect enabled" sid="857503763498997" type="System">
                                     <param id="0" name="Layer">0</param>
@@ -289,92 +296,188 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block any="1" sid="721954011599761">
+                <event-block sid="609526305814866">
                     <conditions>
-                        <condition disabled="1" id="6" name="On object clicked" sid="191099910148082" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">ajudaX</param>
-                        </condition>
-                        <condition id="17" name="On tap object" sid="826228405693372" type="Touch">
-                            <param id="0" name="Object">ajudaX</param>
+                        <condition id="-22" name="Else" sid="347189113474693" type="System" />
+                        <condition id="-1" name="Compare X" sid="511004725226755" type="imagemAjuda">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">500</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="232441142519143" type="Audio">
-                            <param id="0" name="Audio file">click_mouse</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">volumeSons</param>
-                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
-                        </action>
-                        <action id="-2" name="Set Y" sid="297115233575811" type="telaAjuda">
-                            <param id="0" name="Y">-360</param>
-                        </action>
-                        <action id="-30" name="Set layer effect enabled" sid="551938501184931" type="System">
-                            <param id="0" name="Layer">0</param>
-                            <param id="1" name="Mode">0</param>
-                            <param id="2" name="Effect">&quot;BlurHorizontal&quot;</param>
-                        </action>
-                        <action id="-30" name="Set layer effect enabled" sid="935717204531744" type="System">
-                            <param id="0" name="Layer">0</param>
-                            <param id="1" name="Mode">0</param>
-                            <param id="2" name="Effect">&quot;BlurVertical&quot;</param>
-                        </action>
-                        <action id="-30" name="Set layer effect enabled" sid="758016610237594" type="System">
-                            <param id="0" name="Layer">1</param>
-                            <param id="1" name="Mode">0</param>
-                            <param id="2" name="Effect">&quot;BlurHorizontal&quot;</param>
-                        </action>
-                        <action id="-30" name="Set layer effect enabled" sid="264469886386079" type="System">
-                            <param id="0" name="Layer">1</param>
-                            <param id="1" name="Mode">0</param>
-                            <param id="2" name="Effect">&quot;BlurVertical&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="133956131694888" type="System">
-                            <param id="0" name="Variable">ajuda</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="721954011599761">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="826228405693372" type="Touch">
+                                    <param id="0" name="Object">ajudaX</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="232441142519143" type="Audio">
+                                    <param id="0" name="Audio file">click_mouse</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">volumeSons</param>
+                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="297115233575811" type="telaAjuda">
+                                    <param id="0" name="Y">-360</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="562046290641670" type="imagemAjuda">
+                                    <param id="0" name="X">429</param>
+                                    <param id="1" name="Y">-379</param>
+                                </action>
+                                <action id="-7" name="Set size" sid="533972956677965" type="imagemAjuda">
+                                    <param id="0" name="Width">384</param>
+                                    <param id="1" name="Height">216</param>
+                                </action>
+                                <action id="-30" name="Set layer effect enabled" sid="551938501184931" type="System">
+                                    <param id="0" name="Layer">0</param>
+                                    <param id="1" name="Mode">0</param>
+                                    <param id="2" name="Effect">&quot;BlurHorizontal&quot;</param>
+                                </action>
+                                <action id="-30" name="Set layer effect enabled" sid="935717204531744" type="System">
+                                    <param id="0" name="Layer">0</param>
+                                    <param id="1" name="Mode">0</param>
+                                    <param id="2" name="Effect">&quot;BlurVertical&quot;</param>
+                                </action>
+                                <action id="-30" name="Set layer effect enabled" sid="758016610237594" type="System">
+                                    <param id="0" name="Layer">1</param>
+                                    <param id="1" name="Mode">0</param>
+                                    <param id="2" name="Effect">&quot;BlurHorizontal&quot;</param>
+                                </action>
+                                <action id="-30" name="Set layer effect enabled" sid="264469886386079" type="System">
+                                    <param id="0" name="Layer">1</param>
+                                    <param id="1" name="Mode">0</param>
+                                    <param id="2" name="Effect">&quot;BlurVertical&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="133956131694888" type="System">
+                                    <param id="0" name="Variable">ajuda</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="748311277630062">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="410818124278480" type="Touch">
+                                    <param id="0" name="Object">botaoProx</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="973250188666595" type="botaoProx" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="603402680682296" type="Audio">
+                                    <param id="0" name="Audio file">pagina_virando</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">volumeSons</param>
+                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="914722337673973" type="System">
+                                    <param id="0" name="Variable">ajuda</param>
+                                    <param id="1" name="Value">ajuda+1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="376781918069263">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="556427265491344" type="Touch">
+                                    <param id="0" name="Object">botaoAnt</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="443498915937114" type="botaoAnt" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="341005245853640" type="Audio">
+                                    <param id="0" name="Audio file">pagina_virando</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">volumeSons</param>
+                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="302947936496194" type="System">
+                                    <param id="0" name="Variable">ajuda</param>
+                                    <param id="1" name="Value">ajuda-1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="481159107266705">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="576251240117330" type="Touch">
+                                    <param id="0" name="Object">imagemAjuda</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="757774755803687" type="imagemAjuda">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="529351836822469" type="telaAjuda" />
+                                <action id="-32" name="Set layer effect parameter" sid="444724124648269" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Effect">&quot;BlurHorizontal&quot;</param>
+                                    <param id="2" name="Parameter index">0</param>
+                                    <param id="3" name="Value">100</param>
+                                </action>
+                                <action id="-32" name="Set layer effect parameter" sid="427175677465844" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Effect">&quot;BlurVertical&quot;</param>
+                                    <param id="2" name="Parameter index">0</param>
+                                    <param id="3" name="Value">100</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="410859669665900" type="System">
+                                    <param id="0" name="Seconds">0.0001</param>
+                                </action>
+                                <action id="-7" name="Set size" sid="874385557671186" type="imagemAjuda">
+                                    <param id="0" name="Width">896</param>
+                                    <param id="1" name="Height">504</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="633457387035514" type="imagemAjuda">
+                                    <param id="0" name="X">640</param>
+                                    <param id="1" name="Y">360</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
-                <event-block sid="748311277630062">
+                <event-block sid="628157294938595">
                     <conditions>
-                        <condition id="17" name="On tap object" sid="410818124278480" type="Touch">
-                            <param id="0" name="Object">botaoProx</param>
-                        </condition>
-                        <condition id="-9" name="Is visible" sid="973250188666595" type="botaoProx" />
+                        <condition id="-22" name="Else" sid="237828217315254" type="System" />
                     </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="603402680682296" type="Audio">
-                            <param id="0" name="Audio file">pagina_virando</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">volumeSons</param>
-                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="914722337673973" type="System">
-                            <param id="0" name="Variable">ajuda</param>
-                            <param id="1" name="Value">ajuda+1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="376781918069263">
-                    <conditions>
-                        <condition id="17" name="On tap object" sid="556427265491344" type="Touch">
-                            <param id="0" name="Object">botaoAnt</param>
-                        </condition>
-                        <condition id="-9" name="Is visible" sid="443498915937114" type="botaoAnt" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="341005245853640" type="Audio">
-                            <param id="0" name="Audio file">pagina_virando</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">volumeSons</param>
-                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="302947936496194" type="System">
-                            <param id="0" name="Variable">ajuda</param>
-                            <param id="1" name="Value">ajuda-1</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="964475593722674">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="379074408944562" type="Touch">
+                                    <param id="0" name="Object">imagemAjuda</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="958722260866397" type="imagemAjuda">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-32" name="Set layer effect parameter" sid="601831847187414" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Effect">&quot;BlurHorizontal&quot;</param>
+                                    <param id="2" name="Parameter index">0</param>
+                                    <param id="3" name="Value">0</param>
+                                </action>
+                                <action id="-32" name="Set layer effect parameter" sid="140422426456091" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Effect">&quot;BlurVertical&quot;</param>
+                                    <param id="2" name="Parameter index">0</param>
+                                    <param id="3" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="687677312808523" type="System">
+                                    <param id="0" name="Seconds">0.0001</param>
+                                </action>
+                                <action id="-7" name="Set size" sid="775150663657461" type="imagemAjuda">
+                                    <param id="0" name="Width">384</param>
+                                    <param id="1" name="Height">216</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="161865036584277" type="imagemAjuda">
+                                    <param id="0" name="X">429</param>
+                                    <param id="1" name="Y">341</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -506,10 +609,7 @@
                 </event-block>
                 <event-block sid="784760323020619">
                     <conditions>
-                        <condition id="-2" name="Compare Y" sid="823857849921415" type="telaAjuda">
-                            <param id="0" name="Comparison">2</param>
-                            <param id="1" name="Y co-ordinate">0</param>
-                        </condition>
+                        <condition id="-4" name="Is outside layout" sid="823857849921415" type="telaAjuda" />
                     </conditions>
                     <actions />
                     <sub-events>
@@ -627,6 +727,10 @@
                 <event-block sid="468942435382278">
                     <conditions>
                         <condition id="-22" name="Else" sid="389965290060805" type="System" />
+                        <condition id="-1" name="Compare X" sid="411070467886314" type="imagemAjuda">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">500</param>
+                        </condition>
                     </conditions>
                     <actions />
                     <sub-events>
@@ -741,6 +845,34 @@
                                                     <param id="0" name="Cursor style">0</param>
                                                 </action>
                                             </actions>
+                                            <sub-events>
+                                                <event-block sid="913391345807095">
+                                                    <conditions>
+                                                        <condition id="3" name="Compare frame" sid="875973143657886" type="imagemAjuda">
+                                                            <param id="0" name="Comparison">0</param>
+                                                            <param id="1" name="Number">1</param>
+                                                        </condition>
+                                                        <condition id="7" name="Cursor is over object" sid="477889037527140" type="Mouse">
+                                                            <param id="0" name="Object">imagemAjuda</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Set cursor style" sid="369539425334081" type="Mouse">
+                                                            <param id="0" name="Cursor style">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="172163005685171">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="624691824710840" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Set cursor style" sid="489233558514068" type="Mouse">
+                                                            <param id="0" name="Cursor style">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>

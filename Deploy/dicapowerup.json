@@ -1,5 +1,5 @@
 ﻿{
-	"dica50": ["Compre mais 2 minutos para resolver o caso."],
-	"dica100": ["Compre para descobrir a primeira letra e o tamanho da palavra secreta selecionada."],
-	"dica150": ["Compre para descobrir uma palavra secreta de uma dica do caso."]
+	"dica50": ["Adiciona 2 minutos para resolver o caso."],
+	"dica100": ["Revela a primeira letra e o tamanho da palavra secreta."],
+	"dica150": ["Revela uma palavra secreta da evidência."]
 }

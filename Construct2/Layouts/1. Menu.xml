@@ -587,36 +587,11 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="imagemAjuda" uid="34">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>429</x>
-                        <y>-339</y>
-                        <z>0</z>
-                        <width>400</width>
-                        <height>450</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="ajudaPag" uid="75">
                     <properties>
                         <text>Página Y de X</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
+                        <font>Arial,-16,700,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -646,7 +621,7 @@
                     <properties>
                         <text>Página Y+1 de X</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
+                        <font>Arial,-16,700,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -754,10 +729,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>671</x>
+                        <x>661</x>
                         <y>-564</y>
                         <z>0</z>
-                        <width>360</width>
+                        <width>380</width>
                         <height>450</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -784,14 +759,72 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>249</x>
+                        <x>239</x>
                         <y>-564</y>
                         <z>0</z>
-                        <width>360</width>
+                        <width>380</width>
                         <height>450</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects>
+                <effect-type name="BlurHorizontal">
+                    <effect id="blurhorizontal" />
+                    <effect-instance type="BlurHorizontal">
+                        <parameters>
+                            <intensity>0</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+                <effect-type name="BlurVertical">
+                    <effect id="blurvertical" />
+                    <effect-instance type="BlurVertical">
+                        <parameters>
+                            <intensity>0</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+            </effects>
+        </layer>
+        <layer name="AjudaMax" sid="826855926650423">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="imagemAjuda" uid="34">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>429</x>
+                        <y>-379</y>
+                        <z>0</z>
+                        <width>384</width>
+                        <height>216</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
