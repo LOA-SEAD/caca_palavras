@@ -407,7 +407,6 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Destroy" sid="529351836822469" type="telaAjuda" />
                                 <action id="-32" name="Set layer effect parameter" sid="444724124648269" type="System">
                                     <param id="0" name="Layer">2</param>
                                     <param id="1" name="Effect">&quot;BlurHorizontal&quot;</param>
