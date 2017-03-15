@@ -134,9 +134,6 @@
                         <condition id="17" name="On tap object" sid="386429443501719" type="Touch">
                             <param id="0" name="Object">botaoAnt</param>
                         </condition>
-                        <condition id="0" name="On key pressed" sid="459193424074497" type="Keyboard">
-                            <param id="0" name="Key">37 (Left arrow)</param>
-                        </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Play" sid="985356452102600" type="Audio">
@@ -228,9 +225,6 @@
                         <condition id="17" name="On tap object" sid="231485598902353" type="Touch">
                             <param id="0" name="Object">botaoProx</param>
                         </condition>
-                        <condition id="0" name="On key pressed" sid="396444737261472" type="Keyboard">
-                            <param id="0" name="Key">39 (Right arrow)</param>
-                        </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Play" sid="166300008419556" type="Audio">
@@ -303,6 +297,183 @@
                                     <param id="0" name="Seconds">0.5</param>
                                 </action>
                                 <action id="5" name="Set frame" sid="533478884034160" type="btnJogarCaso">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="913584720147217">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="534094453572285" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                        <condition id="-1" name="Compare X" sid="816548667922813" type="botaoAnt">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="699756438062175" type="Audio">
+                            <param id="0" name="Audio file">pagina_virando</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="962820514935015">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="555796699895737" type="System">
+                                    <param id="0" name="Variable">numcaso</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="477791938155502" type="btnJogarCaso">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="972189690603843" type="System">
+                                    <param id="0" name="Variable">numcaso</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="529409390662894" type="casoStatus">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
+                                <action disabled="1" id="-16" name="Set opacity" sid="387239653365510" type="btnJogarCaso">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="199310592905298" type="casoStatus">
+                                    <param id="0" name="Frame number">caso.At(numcaso)</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="703654821289732" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="182492849165300" type="casoStatus">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
+                                <action disabled="1" id="-16" name="Set opacity" sid="711421102991289" type="btnJogarCaso">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="293002388448900" type="btnJogarCaso">
+                                    <param id="0" name="Frame number">caso.At(numcaso)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="150149530745771">
+                            <conditions>
+                                <condition id="0" name="Compare at X" sid="832946582228963" type="caso">
+                                    <param id="0" name="X">numcaso</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="228862210169815" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="507812852071728" type="btnJogarCaso">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="199097968574715">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="101435936453710" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="160725570724600" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="871356720905298" type="btnJogarCaso">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="374629608755799">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="499402370177649" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                        <condition id="-1" name="Compare X" sid="776899484492001" type="botaoProx">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="874167526961955" type="Audio">
+                            <param id="0" name="Audio file">pagina_virando</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="205330760192626">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="796820869799155" type="System">
+                                    <param id="0" name="Variable">numcaso</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">ultimocaso</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="743913929304393" type="btnJogarCaso">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="357711942570037" type="System">
+                                    <param id="0" name="Variable">numcaso</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="309583277154363" type="casoStatus">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
+                                <action disabled="1" id="-16" name="Set opacity" sid="563347899533828" type="btnJogarCaso">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="531333386648371" type="casoStatus">
+                                    <param id="0" name="Frame number">caso.At(numcaso)</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="711270303049358" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="959094065436507" type="casoStatus">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="339618048400538" type="btnJogarCaso">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="259645398202499">
+                            <conditions>
+                                <condition id="0" name="Compare at X" sid="800995917589020" type="caso">
+                                    <param id="0" name="X">numcaso</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="277938232261687" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="653343819509895" type="btnJogarCaso">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="427230704782081">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="116890280089877" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="499986061039697" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="551412827078781" type="btnJogarCaso">
                                     <param id="0" name="Frame number">1</param>
                                 </action>
                             </actions>

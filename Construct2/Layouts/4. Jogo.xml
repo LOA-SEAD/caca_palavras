@@ -874,7 +874,7 @@
                     <properties>
                         <text>Voltar ao Menu</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-27,700,0</font>
+                        <font>Arial,-40,700,0</font>
                         <color>92,72,60</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -886,10 +886,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>403</x>
-                        <y>435</y>
+                        <y>430</y>
                         <z>0</z>
                         <width>400</width>
-                        <height>50</height>
+                        <height>60</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -901,7 +901,7 @@
                     <properties>
                         <text>Resumir</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-27,700,0</font>
+                        <font>Arial,-40,700,0</font>
                         <color>92,72,60</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -913,10 +913,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>403</x>
-                        <y>275</y>
+                        <y>270</y>
                         <z>0</z>
                         <width>400</width>
-                        <height>50</height>
+                        <height>60</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -928,7 +928,7 @@
                     <properties>
                         <text>Ajuda</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-27,700,0</font>
+                        <font>Arial,-40,700,0</font>
                         <color>92,72,60</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -940,10 +940,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>403</x>
-                        <y>355</y>
+                        <y>350</y>
                         <z>0</z>
                         <width>400</width>
-                        <height>50</height>
+                        <height>60</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

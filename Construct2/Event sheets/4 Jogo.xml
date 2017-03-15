@@ -1951,6 +1951,62 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="820082716831461">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="249672903282340" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="199256915899417" type="botaoAnt" />
+                        <condition id="-1" name="Compare X" sid="195473892026550" type="imagemAjuda">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">500</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="300500954828178" type="imagemAjuda">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="358405466403701" type="Audio">
+                            <param id="0" name="Audio file">pagina_virando</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="649004911038330" type="System">
+                            <param id="0" name="Variable">ajuda</param>
+                            <param id="1" name="Value">ajuda-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="560012831079844">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="558491630471645" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="444319420211709" type="botaoProx" />
+                        <condition id="-1" name="Compare X" sid="691661057440652" type="imagemAjuda">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">500</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="837863022931559" type="imagemAjuda">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="255333944953105" type="Audio">
+                            <param id="0" name="Audio file">pagina_virando</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="213558587386945" type="System">
+                            <param id="0" name="Variable">ajuda</param>
+                            <param id="1" name="Value">ajuda+1</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="323696931976575">
                     <conditions>
                         <condition id="17" name="On tap object" sid="983271012901352" type="Touch">
