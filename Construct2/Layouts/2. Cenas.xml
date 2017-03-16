@@ -36,18 +36,6 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>0</vibrance>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.3</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -139,18 +127,6 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>2</vibrance>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.2</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -192,34 +168,6 @@
                         <hotspotY>0.03125</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="lampadaLuz" uid="36">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="SoftLight" />
-                    </effect-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>620</x>
-                        <y>-15</y>
-                        <z>0</z>
-                        <width>1280</width>
-                        <height>800</height>
-                        <depth>0</depth>
-                        <hotspotX>0.484375</hotspotX>
-                        <hotspotY>0.03125</hotspotY>
-                        <angle>0</angle>
-                        <opacity>0.5</opacity>
                     </world>
                 </instance>
                 <instance type="lampada" uid="33">
@@ -266,18 +214,6 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>1</vibrance>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.2</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -293,83 +229,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Uotson" uid="40">
+                <instance type="Rolmes" uid="43">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.2</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>818</x>
-                        <y>455</y>
-                        <z>0</z>
-                        <width>85</width>
-                        <height>133</height>
-                        <depth>0</depth>
-                        <hotspotX>0.505882382</hotspotX>
-                        <hotspotY>0.503759384</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Rolmes" uid="42">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <effect-instances>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.2</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>440</x>
-                        <y>416</y>
-                        <z>0</z>
-                        <width>191</width>
-                        <height>269</height>
-                        <depth>0</depth>
-                        <hotspotX>0.502617776</hotspotX>
-                        <hotspotY>0.501858711</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="RolmesExp" uid="43">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <effect-instances>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.2</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>462</x>
-                        <y>346</y>
+                        <x>459</x>
+                        <y>351</y>
                         <z>0</z>
                         <width>52</width>
                         <height>36</height>

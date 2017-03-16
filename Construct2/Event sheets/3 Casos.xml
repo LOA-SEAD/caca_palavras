@@ -480,10 +480,13 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="581490606421190">
+                <event-block any="1" sid="581490606421190">
                     <conditions>
                         <condition id="17" name="On tap object" sid="197240588483907" type="Touch">
                             <param id="0" name="Object">btnJogarCaso</param>
+                        </condition>
+                        <condition id="0" name="On key pressed" sid="891964284854023" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -587,9 +590,6 @@
                         <condition id="7" name="Cursor is over object" sid="954744329497043" type="Mouse">
                             <param id="0" name="Object">botaoAnt</param>
                         </condition>
-                        <condition id="7" name="Cursor is over object" sid="724530903657013" type="Mouse">
-                            <param id="0" name="Object">btnJogarCaso</param>
-                        </condition>
                         <condition id="7" name="Cursor is over object" sid="199363957468754" type="Mouse">
                             <param id="0" name="Object">configBotao</param>
                         </condition>
@@ -618,6 +618,38 @@
                 <event-block sid="366427668712097">
                     <conditions>
                         <condition id="-22" name="Else" sid="664478044448166" type="System" />
+                        <condition id="7" name="Cursor is over object" sid="560578527332117" type="Mouse">
+                            <param id="0" name="Object">btnJogarCaso</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="354726938954738" type="btnJogarCaso">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="116974998335668" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="950094520921294">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="911419713628291" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="435559381360695" type="Audio">
+                                    <param id="0" name="Audio file">mouse_over</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">volumeSons</param>
+                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="497346331352143">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="375134280833793" type="System" />
                     </conditions>
                     <actions>
                         <action id="0" name="Set cursor style" sid="737431743782338" type="Mouse">

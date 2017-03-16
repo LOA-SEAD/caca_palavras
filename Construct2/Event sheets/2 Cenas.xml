@@ -267,7 +267,7 @@
                         <action id="3" name="Set font size" sid="373735645107066" type="diagTexto2">
                             <param id="0" name="Size (pt)">19</param>
                         </action>
-                        <action id="5" name="Set frame" sid="801761928619839" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="801761928619839" type="Rolmes">
                             <param id="0" name="Frame number">1</param>
                         </action>
                     </actions>
@@ -296,7 +296,7 @@
                         <action id="3" name="Set font size" sid="472142726053745" type="diagTexto3">
                             <param id="0" name="Size (pt)">18</param>
                         </action>
-                        <action id="5" name="Set frame" sid="625367002270459" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="625367002270459" type="Rolmes">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
@@ -325,7 +325,7 @@
                         <action id="3" name="Set font size" sid="800348104073795" type="diagTexto1">
                             <param id="0" name="Size (pt)">16</param>
                         </action>
-                        <action id="5" name="Set frame" sid="479978408321165" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="479978408321165" type="Rolmes">
                             <param id="0" name="Frame number">3</param>
                         </action>
                     </actions>
@@ -354,7 +354,7 @@
                         <action id="3" name="Set font size" sid="700079153425078" type="diagTexto3">
                             <param id="0" name="Size (pt)">28</param>
                         </action>
-                        <action id="5" name="Set frame" sid="776089111922760" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="776089111922760" type="Rolmes">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
@@ -383,7 +383,7 @@
                         <action id="3" name="Set font size" sid="745236174515441" type="diagTexto2">
                             <param id="0" name="Size (pt)">20</param>
                         </action>
-                        <action id="5" name="Set frame" sid="471677863857634" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="471677863857634" type="Rolmes">
                             <param id="0" name="Frame number">2</param>
                         </action>
                     </actions>
@@ -412,7 +412,7 @@
                         <action id="3" name="Set font size" sid="401439300951963" type="diagTexto3">
                             <param id="0" name="Size (pt)">22</param>
                         </action>
-                        <action id="5" name="Set frame" sid="192585304413181" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="192585304413181" type="Rolmes">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
@@ -441,7 +441,7 @@
                         <action id="3" name="Set font size" sid="559279151024953" type="diagTexto1">
                             <param id="0" name="Size (pt)">20</param>
                         </action>
-                        <action id="5" name="Set frame" sid="845181953751974" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="845181953751974" type="Rolmes">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
@@ -461,7 +461,7 @@
                         <action id="-15" name="Set visible" sid="932219890820832" type="balao1">
                             <param id="0" name="Visibility">0</param>
                         </action>
-                        <action id="5" name="Set frame" sid="304778906207659" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="304778906207659" type="Rolmes">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
@@ -488,7 +488,7 @@
                         <action id="-16" name="Set opacity" sid="753170671038580" type="fade">
                             <param id="0" name="Opacity">fade.Opacity-1</param>
                         </action>
-                        <action id="5" name="Set frame" sid="815954115473778" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="815954115473778" type="Rolmes">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
@@ -511,7 +511,7 @@
                         <action id="3" name="Set font size" sid="253430104174461" type="diagTexto2">
                             <param id="0" name="Size (pt)">22</param>
                         </action>
-                        <action id="5" name="Set frame" sid="399250051501970" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="399250051501970" type="Rolmes">
                             <param id="0" name="Frame number">3</param>
                         </action>
                     </actions>
@@ -540,7 +540,7 @@
                         <action id="3" name="Set font size" sid="811922425296076" type="diagTexto3">
                             <param id="0" name="Size (pt)">26</param>
                         </action>
-                        <action id="5" name="Set frame" sid="362087840466077" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="362087840466077" type="Rolmes">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
@@ -560,7 +560,7 @@
                         <action id="-15" name="Set visible" sid="886628658260473" type="balao3">
                             <param id="0" name="Visibility">0</param>
                         </action>
-                        <action id="5" name="Set frame" sid="940847416808561" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="940847416808561" type="Rolmes">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
@@ -587,7 +587,7 @@
                         <action id="-16" name="Set opacity" sid="145280972959277" type="fade">
                             <param id="0" name="Opacity">fade.Opacity-1</param>
                         </action>
-                        <action id="5" name="Set frame" sid="966075042817502" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="966075042817502" type="Rolmes">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
@@ -610,7 +610,7 @@
                         <action id="3" name="Set font size" sid="397864236891019" type="diagTexto2">
                             <param id="0" name="Size (pt)">22</param>
                         </action>
-                        <action id="5" name="Set frame" sid="783401933455687" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="783401933455687" type="Rolmes">
                             <param id="0" name="Frame number">2</param>
                         </action>
                     </actions>
@@ -639,7 +639,7 @@
                         <action id="3" name="Set font size" sid="788039511190610" type="diagTexto3">
                             <param id="0" name="Size (pt)">32</param>
                         </action>
-                        <action id="5" name="Set frame" sid="992127428163181" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="992127428163181" type="Rolmes">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
@@ -668,7 +668,7 @@
                         <action id="3" name="Set font size" sid="812367118005094" type="diagTexto2">
                             <param id="0" name="Size (pt)">22</param>
                         </action>
-                        <action id="5" name="Set frame" sid="728969533230649" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="728969533230649" type="Rolmes">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
@@ -697,7 +697,7 @@
                         <action id="3" name="Set font size" sid="961216542870081" type="diagTexto3">
                             <param id="0" name="Size (pt)">32</param>
                         </action>
-                        <action id="5" name="Set frame" sid="897198079002165" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="897198079002165" type="Rolmes">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
@@ -726,7 +726,7 @@
                         <action id="3" name="Set font size" sid="142515844954712" type="diagTexto2">
                             <param id="0" name="Size (pt)">23</param>
                         </action>
-                        <action id="5" name="Set frame" sid="599972845272385" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="599972845272385" type="Rolmes">
                             <param id="0" name="Frame number">3</param>
                         </action>
                     </actions>
@@ -746,7 +746,7 @@
                         <action id="-15" name="Set visible" sid="277433318160835" type="balao2">
                             <param id="0" name="Visibility">0</param>
                         </action>
-                        <action id="5" name="Set frame" sid="201857604977305" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="201857604977305" type="Rolmes">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
@@ -773,7 +773,7 @@
                         <action id="-16" name="Set opacity" sid="641240865277488" type="fade">
                             <param id="0" name="Opacity">fade.Opacity-1</param>
                         </action>
-                        <action id="5" name="Set frame" sid="144128822842199" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="144128822842199" type="Rolmes">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
@@ -796,7 +796,7 @@
                         <action id="3" name="Set font size" sid="370434803641285" type="diagTexto2">
                             <param id="0" name="Size (pt)">20</param>
                         </action>
-                        <action id="5" name="Set frame" sid="933500802603459" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="933500802603459" type="Rolmes">
                             <param id="0" name="Frame number">1</param>
                         </action>
                     </actions>
@@ -825,7 +825,7 @@
                         <action id="3" name="Set font size" sid="857860737593406" type="diagTexto3">
                             <param id="0" name="Size (pt)">32</param>
                         </action>
-                        <action id="5" name="Set frame" sid="359507836851414" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="359507836851414" type="Rolmes">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
@@ -845,7 +845,7 @@
                         <action id="-15" name="Set visible" sid="396064775573682" type="balao3">
                             <param id="0" name="Visibility">0</param>
                         </action>
-                        <action id="5" name="Set frame" sid="833095481351173" type="RolmesExp">
+                        <action id="5" name="Set frame" sid="833095481351173" type="Rolmes">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>

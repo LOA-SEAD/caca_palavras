@@ -34,13 +34,6 @@
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.2</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>

@@ -34,13 +34,6 @@
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.05</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -106,21 +99,11 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>1</initial-frame>
+                        <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <effect-instances>
                         <effect-instance type="Multiply" />
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>0.5</vibrance>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.2</contrast>
-                            </parameters>
-                        </effect-instance>
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -174,13 +157,6 @@
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>0.15</vibrance>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -206,13 +182,6 @@
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>0.15</vibrance>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>

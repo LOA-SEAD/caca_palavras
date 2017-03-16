@@ -34,18 +34,6 @@
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>1</vibrance>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.1</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -71,7 +59,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>645</x>
+                        <x>652</x>
                         <y>376</y>
                         <z>0</z>
                         <width>685</width>
@@ -126,18 +114,6 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>0.5</vibrance>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.2</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -268,19 +244,14 @@
                     <effect-instances>
                         <effect-instance type="Vibrance">
                             <parameters>
-                                <vibrance>0.3</vibrance>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.2</contrast>
+                                <vibrance>0.8</vibrance>
                             </parameters>
                         </effect-instance>
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1192.5</x>
+                        <x>1232.5</x>
                         <y>388.5</y>
                         <z>0</z>
                         <width>183</width>
@@ -302,19 +273,14 @@
                     <effect-instances>
                         <effect-instance type="Vibrance">
                             <parameters>
-                                <vibrance>0.3</vibrance>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.2</contrast>
+                                <vibrance>0.8</vibrance>
                             </parameters>
                         </effect-instance>
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1099</x>
+                        <x>1139</x>
                         <y>256</y>
                         <z>0</z>
                         <width>21</width>
@@ -334,20 +300,15 @@
                     <effect-instances>
                         <effect-instance type="Vibrance">
                             <parameters>
-                                <vibrance>0.3</vibrance>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.2</contrast>
+                                <vibrance>0.8</vibrance>
                             </parameters>
                         </effect-instance>
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1005.5</x>
-                        <y>386.5</y>
+                        <x>1045.5</x>
+                        <y>385.5</y>
                         <z>0</z>
                         <width>183</width>
                         <height>371</height>
@@ -365,22 +326,10 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>1</vibrance>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.1</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1097</x>
+                        <x>1137</x>
                         <y>364</y>
                         <z>0</z>
                         <width>191</width>
@@ -421,18 +370,6 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>0.5</vibrance>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.05</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -455,22 +392,10 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>0.1</vibrance>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.2</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1092</x>
+                        <x>1132</x>
                         <y>201</y>
                         <z>0</z>
                         <width>183</width>
@@ -489,18 +414,6 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>0.2</vibrance>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.1</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -523,18 +436,6 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>0.6</vibrance>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.2</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -557,28 +458,16 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>0.1</vibrance>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.1</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>640</x>
+                        <x>653</x>
                         <y>320</y>
                         <z>0</z>
-                        <width>755</width>
+                        <width>754</width>
                         <height>720</height>
                         <depth>0</depth>
-                        <hotspotX>0.495364249</hotspotX>
+                        <hotspotX>0.496021211</hotspotX>
                         <hotspotY>0.444444448</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -657,7 +546,7 @@
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-29,400,0</font>
+                        <font>Arial,-29,700,0</font>
                         <color>50,49,49</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -722,10 +611,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>392</x>
+                        <x>398</x>
                         <y>3</y>
                         <z>0</z>
-                        <width>507</width>
+                        <width>510</width>
                         <height>157</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -762,42 +651,42 @@
                 </instance>
                 <instance type="descerEvidencia" uid="71">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <hotspot>Center</hotspot>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>951</x>
-                        <y>147</y>
+                        <x>985</x>
+                        <y>218</y>
                         <z>0</z>
-                        <width>45</width>
-                        <height>100</height>
+                        <width>38</width>
+                        <height>50</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
                 <instance type="subirEvidencia" uid="101">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <hotspot>Center</hotspot>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>307</x>
-                        <y>148</y>
+                        <x>985</x>
+                        <y>169</y>
                         <z>0</z>
-                        <width>45</width>
-                        <height>100</height>
+                        <width>38</width>
+                        <height>40</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
             </instances>
@@ -843,18 +732,6 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>0.1</vibrance>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.1</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -872,81 +749,81 @@
                 </instance>
                 <instance type="btnMenu2" uid="45">
                     <properties>
-                        <text>Voltar ao Menu</text>
+                        <text>menu principal</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-40,700,0</font>
-                        <color>92,72,60</color>
+                        <font>Arial,-53,400,0</font>
+                        <color>48,38,31</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
+                        <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>403</x>
-                        <y>430</y>
+                        <x>605</x>
+                        <y>460</y>
                         <z>0</z>
-                        <width>400</width>
-                        <height>60</height>
+                        <width>350</width>
+                        <height>80</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="btnResume" uid="11">
                     <properties>
-                        <text>Resumir</text>
+                        <text>continuar</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-40,700,0</font>
-                        <color>92,72,60</color>
+                        <font>Arial,-53,400,0</font>
+                        <color>48,38,31</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
+                        <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>403</x>
-                        <y>270</y>
+                        <x>605</x>
+                        <y>300</y>
                         <z>0</z>
-                        <width>400</width>
-                        <height>60</height>
+                        <width>350</width>
+                        <height>80</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="btnInfo2" uid="90">
                     <properties>
-                        <text>Ajuda</text>
+                        <text>ajuda</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-40,700,0</font>
-                        <color>92,72,60</color>
+                        <font>Arial,-53,400,0</font>
+                        <color>48,38,31</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
+                        <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>403</x>
-                        <y>350</y>
+                        <x>605</x>
+                        <y>380</y>
                         <z>0</z>
-                        <width>400</width>
-                        <height>60</height>
+                        <width>350</width>
+                        <height>80</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -958,18 +835,6 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>0.3</vibrance>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.1</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1140,13 +1005,6 @@
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>0.15</vibrance>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1172,13 +1030,6 @@
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>0.15</vibrance>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1245,6 +1096,47 @@
                         <z>0</z>
                         <width>384</width>
                         <height>216</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="FadeOut" sid="805245548346372">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="fadeOut" uid="36">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>640</x>
+                        <y>360</y>
+                        <z>0</z>
+                        <width>1280</width>
+                        <height>720</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

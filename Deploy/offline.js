@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1489526997,
+	"version": 1489698280,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -28,8 +28,6 @@
 		"images/abajur-sheet0.png",
 		"images/ampulheta-sheet0.png",
 		"images/rolmes-sheet0.png",
-		"images/rolmesexp-sheet0.png",
-		"images/uotson-sheet0.png",
 		"images/fundocena1-sheet0.png",
 		"images/pulacena-sheet0.png",
 		"images/pulacena-sheet1.png",
@@ -62,6 +60,7 @@
 		"images/configbotao-sheet0.png",
 		"images/caderneta-sheet0.png",
 		"images/subirevidencia.png",
+		"images/fadeout-sheet0.png",
 		"images/btnmenu-sheet0.png",
 		"images/imagemajuda-sheet0.png",
 		"images/telaajuda-sheet0.png",
@@ -105,6 +104,12 @@
 		"cavorting-webfont.woff",
 		"cavorting-webfont.woff2",
 		"stylesheet3.css",
+		"painted-webfont.eot",
+		"painted-webfont.svg",
+		"painted-webfont.ttf",
+		"painted-webfont.woff",
+		"painted-webfont.woff2",
+		"stylesheet4.css",
 		"casos.json",
 		"dicapowerup.json",
 		"dialogos.json",
@@ -113,6 +118,7 @@
 		"cacapalavras3.html",
 		"stylecacapalavras.css",
 		"wordfind.js",
-		"wordfindgame.js"
+		"wordfindgame.js",
+		"cursor.png"
 	]
 }

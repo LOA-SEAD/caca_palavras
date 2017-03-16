@@ -64,20 +64,12 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-folder name="Menu Principal">
+        <object-folder name="1 Menu">
             <object-type name="canos" sid="433091950461938">
                 <plugin id="Sprite" />
-                <effects>
-                    <effect-type name="BlurHorizontal">
-                        <effect id="blurhorizontal" />
-                    </effect-type>
-                    <effect-type name="BlurVertical">
-                        <effect id="blurvertical" />
-                    </effect-type>
-                </effects>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="528162594183850" speed="5">
-                        <frame duration="1" hotspotX="0.501859" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu_cano.png">
+                        <frame duration="1" hotspotX="0.501859" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Menu\tela_menu_cano.png">
                             <collision-poly>
                                 <point x="0.271375" y="0.101389" />
                                 <point x="0.498141" y="0" />
@@ -165,15 +157,7 @@
             </object-type>
             <object-type name="fundoMenu" sid="423442279722922">
                 <plugin id="TiledBg" />
-                <effects>
-                    <effect-type name="Vibrance">
-                        <effect id="vibrance" />
-                    </effect-type>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
-                </effects>
-                <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu2.png" />
+                <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Menu\tela_menu.png" />
             </object-type>
             <object-type name="luminaria" sid="235940213759085">
                 <plugin id="Sprite" />
@@ -341,14 +325,9 @@
             </object-type>
             <object-type name="cartaz" sid="188305373364832">
                 <plugin id="Sprite" />
-                <effects>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
-                </effects>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="601954684164859" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_menu_botoes.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Menu\tela_menu_botoes.png">
                             <collision-poly>
                                 <point x="0.0809524" y="0.0562914" />
                                 <point x="0.97619" y="0.0165563" />
@@ -362,15 +341,10 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder name="Tela Casos">
+        <object-folder name="3 Casos">
             <object-type name="fundoCasos" sid="752527904705218">
                 <plugin id="TiledBg" />
-                <effects>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
-                </effects>
-                <texture original-source="C:\Users\Douglas\Downloads\fundo2.png" />
+                <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Casos\tela_casos.png" />
             </object-type>
             <object-type name="casoNum" sid="934284011670522">
                 <plugin id="Text" />
@@ -381,16 +355,10 @@
                     <effect-type name="Multiply">
                         <effect id="multiply" />
                     </effect-type>
-                    <effect-type name="Vibrance">
-                        <effect id="vibrance" />
-                    </effect-type>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
                 </effects>
                 <animation-folder>
                     <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="258669829165833" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.501018" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\caso_aberto.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501018" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Casos\caso_aberto.png">
                             <collision-poly>
                                 <point x="0.561321" y="0.484725" />
                                 <point x="0.0754717" y="0.798371" />
@@ -401,7 +369,7 @@
                                 <point x="0.448113" y="0.498982" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.501018" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\caso_fechado.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501018" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Casos\caso_fechado.png">
                             <collision-poly>
                                 <point x="0.504717" y="0.435845" />
                                 <point x="0.5" y="0.228106" />
@@ -426,7 +394,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="895368462506728" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Downloads\play.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Casos\play1.png">
                             <collision-poly>
                                 <point x="0.0340082" y="0.0628723" />
                                 <point x="0.898446" y="0" />
@@ -434,7 +402,7 @@
                                 <point x="0.0669931" y="0.945" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Downloads\play2.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Casos\play2.png">
                             <collision-poly>
                                 <point x="0.0340082" y="0.0628723" />
                                 <point x="0.898446" y="0" />
@@ -449,7 +417,7 @@
                 <plugin id="ljson" />
             </object-type>
         </object-folder>
-        <object-folder name="Cena 1">
+        <object-folder name="2 Cena">
             <object-type name="lampada" sid="726815448402059">
                 <plugin id="Sprite" />
                 <behaviors>
@@ -483,7 +451,7 @@
                 </effects>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="383607998114159" speed="5">
-                        <frame duration="1" hotspotX="0.484375" hotspotY="0.03125" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\lampada2.png" />
+                        <frame duration="1" hotspotX="0.484375" hotspotY="0.03125" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena\lampada2.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -511,17 +479,9 @@
             </object-type>
             <object-type name="abajur" sid="982176846519389">
                 <plugin id="Sprite" />
-                <effects>
-                    <effect-type name="Vibrance">
-                        <effect id="vibrance" />
-                    </effect-type>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
-                </effects>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="937893237238695" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\abajur.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Cena\abajur.png">
                             <collision-poly>
                                 <point x="0.220588" y="0.12" />
                                 <point x="0.5" y="0.024" />
@@ -538,17 +498,9 @@
             </object-type>
             <object-type name="ampulheta" sid="269226509768706">
                 <plugin id="Sprite" />
-                <effects>
-                    <effect-type name="Vibrance">
-                        <effect id="vibrance" />
-                    </effect-type>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
-                </effects>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="362790787746301" speed="5">
-                        <frame duration="1" hotspotX="0.516129" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\ampulheta.png">
+                        <frame duration="1" hotspotX="0.516129" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Cena\ampulheta.png">
                             <collision-poly>
                                 <point x="0.0967742" y="0.0681818" />
                                 <point x="0.483871" y="0.0454545" />
@@ -561,38 +513,11 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Rolmes" sid="781671277075093">
+            <object-type name="Rolmes" sid="814942568430553">
                 <plugin id="Sprite" />
-                <effects>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
-                </effects>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="954658742286121" speed="5">
-                        <frame duration="1" hotspotX="0.502618" hotspotY="0.501859" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\rolmes.png">
-                            <collision-poly>
-                                <point x="0.246073" y="0.174721" />
-                                <point x="0.497382" y="0.00371747" />
-                                <point x="0.769634" y="0.163569" />
-                                <point x="0.848168" y="0.498141" />
-                                <point x="0.994764" y="0.996283" />
-                                <point x="0.0209424" y="0.98513" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="RolmesExp" sid="814942568430553">
-                <plugin id="Sprite" />
-                <effects>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
-                </effects>
                 <animation-folder>
                     <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="893133768194729" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\rolmesExp1.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Cena\rolmesExp1.png">
                             <collision-poly>
                                 <point x="0.288462" y="0.416667" />
                                 <point x="0.826923" y="0.25" />
@@ -602,7 +527,7 @@
                                 <point x="0.730769" y="0.5" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\rolmesExp2.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Cena\rolmesExp2.png">
                             <collision-poly>
                                 <point x="0.346154" y="0.5" />
                                 <point x="0.634615" y="0.527778" />
@@ -612,7 +537,7 @@
                                 <point x="0.0384615" y="0.5" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\rolmesExp3.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Cena\rolmesExp3.png">
                             <collision-poly>
                                 <point x="0.0961538" y="0.138889" />
                                 <point x="0.961538" y="0.0555556" />
@@ -621,7 +546,7 @@
                                 <point x="0.0961538" y="0.861111" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\rolmesExp4.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Cena\rolmesExp4.png">
                             <collision-poly>
                                 <point x="0.211538" y="0.305556" />
                                 <point x="0.807692" y="0.277778" />
@@ -632,44 +557,12 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Uotson" sid="254473585672019">
-                <plugin id="Sprite" />
-                <effects>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
-                </effects>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="159597053417367" speed="5">
-                        <frame duration="1" hotspotX="0.505882" hotspotY="0.503759" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\uotson.png">
-                            <collision-poly>
-                                <point x="0.129412" y="0.0827068" />
-                                <point x="0.494118" y="0" />
-                                <point x="0.858824" y="0.0902256" />
-                                <point x="0.858824" y="0.496241" />
-                                <point x="0.505882" y="0.684211" />
-                                <point x="0.494118" y="0.93985" />
-                                <point x="0.376471" y="0.759399" />
-                                <point x="0.105882" y="0.496241" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
             <object-type name="fundoCena1" sid="414103229980828">
                 <plugin id="Sprite" />
-                <effects>
-                    <effect-type name="Vibrance">
-                        <effect id="vibrance" />
-                    </effect-type>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
-                </effects>
                 <animation-folder>
                     <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="748372624452037" speed="1">
-                        <frame duration="4" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\fundo2.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\fundo1.png" />
+                        <frame duration="4" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Cena\fundo2.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Cena\fundo1.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -677,7 +570,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="802803861053579" speed="0">
-                        <frame duration="1" hotspotX="0.506494" hotspotY="0.504587" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\skip.png">
+                        <frame duration="1" hotspotX="0.506494" hotspotY="0.504587" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Cena\skip.png">
                             <collision-poly>
                                 <point x="0.0227273" y="0" />
                                 <point x="0.970779" y="0" />
@@ -686,7 +579,7 @@
                                 <point x="0.012987" y="0.961009" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.506494" hotspotY="0.504587" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Cena 1\skip2.png">
+                        <frame duration="1" hotspotX="0.506494" hotspotY="0.504587" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Cena\skip2.png">
                             <collision-poly>
                                 <point x="0.0227273" y="0" />
                                 <point x="0.970779" y="0" />
@@ -775,46 +668,25 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
-        <object-folder name="Tela Creditos">
+        <object-folder name="5 Créditos">
             <object-type name="fundoCreditos" sid="871468901321763">
                 <plugin id="TiledBg" />
-                <effects>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
-                </effects>
-                <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Créditos\telaCREDITOS.png" />
+                <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Créditos\telaCREDITOS.png" />
             </object-type>
         </object-folder>
-        <object-folder name="Jogo">
+        <object-folder name="4 Jogo">
             <object-type name="cacaPalavrasHTML" sid="270242802190270">
                 <plugin id="htmlCODE" />
             </object-type>
             <object-type name="fundoJogo" sid="879397087759751">
                 <plugin id="TiledBg" />
-                <effects>
-                    <effect-type name="Vibrance">
-                        <effect id="vibrance" />
-                    </effect-type>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
-                </effects>
-                <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\fundo.png" />
+                <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Jogo\fundo.png" />
             </object-type>
             <object-type name="folheto" sid="336460382065366">
                 <plugin id="Sprite" />
-                <effects>
-                    <effect-type name="Vibrance">
-                        <effect id="vibrance" />
-                    </effect-type>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
-                </effects>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Normal" pingpong="0" repeatcount="1" repeatto="0" sid="212737342166198" speed="0">
-                        <frame duration="1" hotspotX="0.501408" hotspotY="0.500736" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\bonus.png">
+                        <frame duration="1" hotspotX="0.501408" hotspotY="0.500736" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Jogo\bonus.png">
                             <collision-poly>
                                 <point x="0.709677" y="0.196375" />
                                 <point x="0.717742" y="0.981873" />
@@ -897,24 +769,14 @@
             </object-type>
             <object-type name="maquina" sid="157574267048859">
                 <plugin id="Sprite" />
-                <effects>
-                    <effect-type name="Vibrance">
-                        <effect id="vibrance" />
-                    </effect-type>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
-                </effects>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="172182967619436" speed="5">
-                        <frame duration="1" hotspotX="0.495364" hotspotY="0.444444" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\maquina.png">
+                        <frame duration="1" hotspotX="0.496021" hotspotY="0.444444" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Jogo\maquina.png">
                             <collision-poly>
-                                <point x="0.047619" y="0.429787" />
-                                <point x="0.494709" y="0.00141844" />
-                                <point x="0.955026" y="0.415603" />
-                                <point x="0.968254" y="0.622695" />
-                                <point x="0.494709" y="0.994326" />
-                                <point x="0.0343915" y="0.608511" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -922,17 +784,9 @@
             </object-type>
             <object-type name="ampulhetaTempo" sid="853698673795547">
                 <plugin id="Sprite" />
-                <effects>
-                    <effect-type name="Vibrance">
-                        <effect id="vibrance" />
-                    </effect-type>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
-                </effects>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="841052004884049" speed="5">
-                        <frame duration="1" hotspotX="0.47541" hotspotY="0.498652" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\ampulheta3.png">
+                        <frame duration="1" hotspotX="0.47541" hotspotY="0.498652" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Jogo\ampulheta.png">
                             <collision-poly>
                                 <point x="0.918367" y="0.233244" />
                                 <point x="0.841837" y="0.930295" />
@@ -948,11 +802,8 @@
                     <effect-type name="Vibrance">
                         <effect id="vibrance" />
                     </effect-type>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
                 </effects>
-                <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\areai_cima.png" />
+                <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Jogo\areai_cima.png" />
             </object-type>
             <object-type name="areiaBaixo" sid="532688162898296">
                 <plugin id="TiledBg" />
@@ -960,11 +811,8 @@
                     <effect-type name="Vibrance">
                         <effect id="vibrance" />
                     </effect-type>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
                 </effects>
-                <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\ampulheta.png" />
+                <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Jogo\areia_baixo.png" />
             </object-type>
             <object-type name="fluxoAreia" sid="761014052994189">
                 <plugin id="Sprite" />
@@ -972,13 +820,10 @@
                     <effect-type name="Vibrance">
                         <effect id="vibrance" />
                     </effect-type>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
                 </effects>
                 <animation-folder>
                     <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="808486791877677" speed="8">
-                        <frame duration="1" hotspotX="0.52381" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\fluxo1.png">
+                        <frame duration="1" hotspotX="0.52381" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Jogo\fluxo1.png">
                             <collision-poly>
                                 <point x="0.5" y="0.495957" />
                                 <point x="0.536082" y="0.498652" />
@@ -988,7 +833,7 @@
                                 <point x="0.458763" y="0.498652" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.52381" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\fluxo3.png">
+                        <frame duration="1" hotspotX="0.52381" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Jogo\fluxo3.png">
                             <collision-poly>
                                 <point x="0.5" y="0.479784" />
                                 <point x="0.536082" y="0.498652" />
@@ -998,7 +843,7 @@
                                 <point x="0.453608" y="0.498652" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.52381" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\fluxo2.png">
+                        <frame duration="1" hotspotX="0.52381" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Jogo\fluxo2.png">
                             <collision-poly>
                                 <point x="0.5" y="0.479784" />
                                 <point x="0.515464" y="0.498652" />
@@ -1008,7 +853,7 @@
                                 <point x="0.453608" y="0.498652" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.52381" hotspotY="0.5">
+                        <frame duration="1" hotspotX="0.52381" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Jogo\fluxo3.png">
                             <collision-poly>
                                 <point x="0.5" y="0.479784" />
                                 <point x="0.536082" y="0.498652" />
@@ -1041,17 +886,9 @@
             </object-type>
             <object-type name="ampulhetaMask" sid="698049939705580">
                 <plugin id="Sprite" />
-                <effects>
-                    <effect-type name="Vibrance">
-                        <effect id="vibrance" />
-                    </effect-type>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
-                </effects>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="647912682051627" speed="5">
-                        <frame duration="1" hotspotX="0.502618" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\areiaBaixoMask2.png">
+                        <frame duration="1" hotspotX="0.502618" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Jogo\areiaBaixoMask2.png">
                             <collision-poly>
                                 <point x="0.0209424" y="0.0714286" />
                                 <point x="0.497382" y="0.785714" />
@@ -1066,17 +903,9 @@
             </object-type>
             <object-type name="dinheiroEtiqueta" sid="633744516134700">
                 <plugin id="Sprite" />
-                <effects>
-                    <effect-type name="Vibrance">
-                        <effect id="vibrance" />
-                    </effect-type>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
-                </effects>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="125943775777562" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\etiqueta.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Jogo\etiqueta.png">
                             <collision-poly>
                                 <point x="0.164557" y="0.252427" />
                                 <point x="0.5" y="0.23301" />
@@ -1139,7 +968,7 @@
                     <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="179095548299964" speed="0">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.504854" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.504854" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.524272" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.504854" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.524272" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.524272" />
                     </animation>
@@ -1157,17 +986,9 @@
             </object-type>
             <object-type name="config" sid="573946508919243">
                 <plugin id="Sprite" />
-                <effects>
-                    <effect-type name="Vibrance">
-                        <effect id="vibrance" />
-                    </effect-type>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
-                </effects>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="383373861619163" speed="5">
-                        <frame duration="1" hotspotX="0.50365" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\config.png">
+                        <frame duration="1" hotspotX="0.50365" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Jogo\config.png">
                             <collision-poly>
                                 <point x="0.10219" y="0.14" />
                                 <point x="0.49635" y="0.07" />
@@ -1184,17 +1005,9 @@
             </object-type>
             <object-type name="configMenu" sid="942787824885342">
                 <plugin id="Sprite" />
-                <effects>
-                    <effect-type name="Vibrance">
-                        <effect id="vibrance" />
-                    </effect-type>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
-                </effects>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="597246270236053" speed="5">
-                        <frame duration="1" hotspotX="0.500781" hotspotY="0.501389" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\configMenu2.png">
+                        <frame duration="1" hotspotX="0.500781" hotspotY="0.501389" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Jogo\configMenu2.png">
                             <collision-poly>
                                 <point x="0.034188" y="0.0419287" />
                                 <point x="0.499145" y="0.00628931" />
@@ -1218,17 +1031,9 @@
             </object-type>
             <object-type name="caderneta" sid="618210374803585">
                 <plugin id="Sprite" />
-                <effects>
-                    <effect-type name="Vibrance">
-                        <effect id="vibrance" />
-                    </effect-type>
-                    <effect-type name="Contrast">
-                        <effect id="contrast" />
-                    </effect-type>
-                </effects>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="563725148603543" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.502326" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Jogo\caderneta.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.502326" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Jogo\caderneta.png">
                             <collision-poly>
                                 <point x="0.208029" y="0.265116" />
                                 <point x="0.5" y="0.186047" />
@@ -1258,6 +1063,14 @@
                 <plugin id="TiledBg" />
                 <texture />
             </object-type>
+            <object-type name="fadeOut" sid="158791153830403">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="402532907394741" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Desktop\fadeout.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-type name="Mouse" sid="359155137460880">
             <plugin id="Mouse" />
@@ -1272,7 +1085,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="430272469880585" speed="5">
-                    <frame duration="1" hotspotX="0.503597" hotspotY="0.505263" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\home.png">
+                    <frame duration="1" hotspotX="0.503597" hotspotY="0.505263" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Casos\home.png">
                         <collision-poly>
                             <point x="0" y="0.138081" />
                             <point x="0.703796" y="0" />
@@ -1288,23 +1101,15 @@
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="135541265151595" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\imagem_menu_ajuda2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\imagem_menu_ajuda.png" />
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="telaAjuda" sid="198782660156278">
             <plugin id="Sprite" />
-            <effects>
-                <effect-type name="Vibrance">
-                    <effect id="vibrance" />
-                </effect-type>
-                <effect-type name="Contrast">
-                    <effect id="contrast" />
-                </effect-type>
-            </effects>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="648601933752300" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\tela_ajuda.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Menu\tela_ajuda.png">
                         <collision-poly>
                             <point x="0.0416667" y="0.0573529" />
                             <point x="0.959402" y="0.0558824" />
@@ -1326,7 +1131,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="671211261361182" speed="0">
-                    <frame duration="1" hotspotX="0.506329" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\ajudaX.png">
+                    <frame duration="1" hotspotX="0.506329" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Menu\ajudaX.png">
                         <collision-poly>
                             <point x="0.132911" y="0" />
                             <point x="0.392405" y="0.305556" />
@@ -1336,7 +1141,7 @@
                             <point x="0" y="0.815972" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.506329" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Menu\ajudaX2.png">
+                    <frame duration="1" hotspotX="0.506329" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Menu\ajudaX2.png">
                         <collision-poly>
                             <point x="0.132911" y="0" />
                             <point x="0.392405" y="0.305556" />
@@ -1364,14 +1169,9 @@
                     <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
-            <effects>
-                <effect-type name="Vibrance">
-                    <effect id="vibrance" />
-                </effect-type>
-            </effects>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="960796085317254" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\caso_prox.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Casos\caso_prox.png">
                         <collision-poly>
                             <point x="0.0474134" y="0.139706" />
                             <point x="0.99569" y="0.47549" />
@@ -1388,14 +1188,9 @@
                     <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
-            <effects>
-                <effect-type name="Vibrance">
-                    <effect id="vibrance" />
-                </effect-type>
-            </effects>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="248091658208358" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados\Tela de Casos\caso_ant.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Tela de Casos\caso_ant.png">
                         <collision-poly>
                             <point x="0.87069" y="0.102941" />
                             <point x="0.778017" y="0.980392" />
@@ -1513,6 +1308,14 @@
                 <file name="cavorting-webfont.woff2" />
                 <file name="stylesheet3.css" />
             </file-folder>
+            <file-folder name="Painted">
+                <file name="painted-webfont.eot" />
+                <file name="painted-webfont.svg" />
+                <file name="painted-webfont.ttf" />
+                <file name="painted-webfont.woff" />
+                <file name="painted-webfont.woff2" />
+                <file name="stylesheet4.css" />
+            </file-folder>
         </file-folder>
         <file-folder name="JSON">
             <file name="casos.json" />
@@ -1530,6 +1333,9 @@
         <file-folder name="JS">
             <file name="wordfind.js" />
             <file name="wordfindgame.js" />
+        </file-folder>
+        <file-folder name="Cursor">
+            <file name="cursor.png" />
         </file-folder>
     </files-folder>
 </c2project>

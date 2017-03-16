@@ -34,18 +34,6 @@
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>3</vibrance>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.1</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -104,13 +92,6 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.2</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -465,18 +446,6 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="BlurHorizontal">
-                            <parameters>
-                                <intensity>0.85</intensity>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="BlurVertical">
-                            <parameters>
-                                <intensity>0.85</intensity>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -535,18 +504,6 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>0.3</vibrance>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Contrast">
-                            <parameters>
-                                <contrast>1.1</contrast>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -657,13 +614,6 @@
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>0.15</vibrance>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -689,13 +639,6 @@
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>0.15</vibrance>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
