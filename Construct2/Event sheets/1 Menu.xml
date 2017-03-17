@@ -481,6 +481,12 @@
                             <param id="2" name="Parameter index">0</param>
                             <param id="3" name="Value">100</param>
                         </action>
+                        <action id="0" name="Play" sid="725474449874098" type="Audio">
+                            <param id="0" name="Audio file">click_mouse</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
                         <action id="-16" name="Wait" sid="410859669665900" type="System">
                             <param id="0" name="Seconds">0.0001</param>
                         </action>
@@ -520,6 +526,12 @@
                             <param id="1" name="Effect">&quot;BlurVertical&quot;</param>
                             <param id="2" name="Parameter index">0</param>
                             <param id="3" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="396268047869986" type="Audio">
+                            <param id="0" name="Audio file">click_mouse</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
                         </action>
                         <action id="-16" name="Wait" sid="687677312808523" type="System">
                             <param id="0" name="Seconds">0.0001</param>
@@ -779,37 +791,37 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="468942435382278">
+                <event-block sid="474470155250240">
                     <conditions>
-                        <condition id="-22" name="Else" sid="389965290060805" type="System" />
-                        <condition id="-1" name="Compare X" sid="411070467886314" type="imagemAjuda">
-                            <param id="0" name="Comparison">2</param>
-                            <param id="1" name="X co-ordinate">500</param>
-                        </condition>
+                        <condition id="-22" name="Else" sid="759967786156252" type="System" />
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block any="1" sid="235459083303293">
+                        <event-block sid="428332490047149">
                             <conditions>
-                                <condition id="7" name="Cursor is over object" sid="745929749063910" type="Mouse">
+                                <condition id="7" name="Cursor is over object" sid="888233280905634" type="Mouse">
                                     <param id="0" name="Object">ajudaX</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="816483104933329" type="imagemAjuda">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">500</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set cursor style" sid="397285420816711" type="Mouse">
+                                <action id="0" name="Set cursor style" sid="558221756432510" type="Mouse">
                                     <param id="0" name="Cursor style">1</param>
                                 </action>
-                                <action id="5" name="Set frame" sid="170331956974930" type="ajudaX">
+                                <action id="5" name="Set frame" sid="884390793726301" type="ajudaX">
                                     <param id="0" name="Frame number">1</param>
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block sid="403473961521932">
+                                <event-block sid="998239136510267">
                                     <conditions>
-                                        <condition id="-4" name="Trigger once while true" sid="180511293387513" type="System" />
+                                        <condition id="-4" name="Trigger once while true" sid="177131614336539" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Play" sid="949451335457491" type="Audio">
+                                        <action id="0" name="Play" sid="622288455361123" type="Audio">
                                             <param id="0" name="Audio file">mouse_over</param>
                                             <param id="2" name="Loop">0</param>
                                             <param id="3" name="Volume">volumeSons</param>
@@ -819,35 +831,39 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="491564082790840">
+                        <event-block sid="654975704857642">
                             <conditions>
-                                <condition id="-22" name="Else" sid="727381964551625" type="System" />
+                                <condition id="-22" name="Else" sid="858122625895380" type="System" />
                             </conditions>
                             <actions>
-                                <action id="5" name="Set frame" sid="192623173694240" type="ajudaX">
+                                <action id="5" name="Set frame" sid="877006086771671" type="ajudaX">
                                     <param id="0" name="Frame number">0</param>
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block sid="967009180081610">
+                                <event-block sid="266861562215020">
                                     <conditions>
-                                        <condition id="-9" name="Is visible" sid="933173952176623" type="botaoAnt" />
-                                        <condition id="7" name="Cursor is over object" sid="250227748775796" type="Mouse">
+                                        <condition id="-9" name="Is visible" sid="958719338129754" type="botaoAnt" />
+                                        <condition id="7" name="Cursor is over object" sid="251227322106908" type="Mouse">
                                             <param id="0" name="Object">botaoAnt</param>
+                                        </condition>
+                                        <condition id="-1" name="Compare X" sid="854089049271603" type="imagemAjuda">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="X co-ordinate">500</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set cursor style" sid="369646742415112" type="Mouse">
+                                        <action id="0" name="Set cursor style" sid="181006911387017" type="Mouse">
                                             <param id="0" name="Cursor style">1</param>
                                         </action>
                                     </actions>
                                     <sub-events>
-                                        <event-block sid="923618370378656">
+                                        <event-block sid="175579436796434">
                                             <conditions>
-                                                <condition id="-4" name="Trigger once while true" sid="698201905190403" type="System" />
+                                                <condition id="-4" name="Trigger once while true" sid="858399687300423" type="System" />
                                             </conditions>
                                             <actions>
-                                                <action id="0" name="Play" sid="745189616668944" type="Audio">
+                                                <action id="0" name="Play" sid="740382010874677" type="Audio">
                                                     <param id="0" name="Audio file">mouse_over</param>
                                                     <param id="2" name="Loop">0</param>
                                                     <param id="3" name="Volume">volumeSons</param>
@@ -857,31 +873,35 @@
                                         </event-block>
                                     </sub-events>
                                 </event-block>
-                                <event-block sid="354844216134749">
+                                <event-block sid="227244663832335">
                                     <conditions>
-                                        <condition id="-22" name="Else" sid="526942948992032" type="System" />
+                                        <condition id="-22" name="Else" sid="360524196800752" type="System" />
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block sid="822231373748415">
+                                        <event-block sid="991502224790397">
                                             <conditions>
-                                                <condition id="-9" name="Is visible" sid="467155627150587" type="botaoProx" />
-                                                <condition id="7" name="Cursor is over object" sid="961139091005168" type="Mouse">
+                                                <condition id="-9" name="Is visible" sid="119990126768358" type="botaoProx" />
+                                                <condition id="7" name="Cursor is over object" sid="387704665750482" type="Mouse">
                                                     <param id="0" name="Object">botaoProx</param>
+                                                </condition>
+                                                <condition id="-1" name="Compare X" sid="355164040967923" type="imagemAjuda">
+                                                    <param id="0" name="Comparison">2</param>
+                                                    <param id="1" name="X co-ordinate">500</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="0" name="Set cursor style" sid="422477952547280" type="Mouse">
+                                                <action id="0" name="Set cursor style" sid="520738459741275" type="Mouse">
                                                     <param id="0" name="Cursor style">1</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
-                                                <event-block sid="807635306942529">
+                                                <event-block sid="684996346749835">
                                                     <conditions>
-                                                        <condition id="-4" name="Trigger once while true" sid="786464769793499" type="System" />
+                                                        <condition id="-4" name="Trigger once while true" sid="362230371658093" type="System" />
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Play" sid="202734206484625" type="Audio">
+                                                        <action id="0" name="Play" sid="472480723836211" type="Audio">
                                                             <param id="0" name="Audio file">mouse_over</param>
                                                             <param id="2" name="Loop">0</param>
                                                             <param id="3" name="Volume">volumeSons</param>
@@ -891,38 +911,53 @@
                                                 </event-block>
                                             </sub-events>
                                         </event-block>
-                                        <event-block sid="144095799403403">
+                                        <event-block sid="714389102606554">
                                             <conditions>
-                                                <condition id="-22" name="Else" sid="878929927079098" type="System" />
+                                                <condition id="-22" name="Else" sid="685442910159621" type="System" />
                                             </conditions>
                                             <actions>
-                                                <action id="0" name="Set cursor style" sid="964204586705395" type="Mouse">
+                                                <action id="0" name="Set cursor style" sid="177944429652233" type="Mouse">
                                                     <param id="0" name="Cursor style">0</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
-                                                <event-block sid="913391345807095">
+                                                <event-block sid="234128384132878">
                                                     <conditions>
-                                                        <condition id="3" name="Compare frame" sid="875973143657886" type="imagemAjuda">
+                                                        <condition id="3" name="Compare frame" sid="427061692819555" type="imagemAjuda">
                                                             <param id="0" name="Comparison">0</param>
                                                             <param id="1" name="Number">1</param>
                                                         </condition>
-                                                        <condition id="7" name="Cursor is over object" sid="477889037527140" type="Mouse">
+                                                        <condition id="7" name="Cursor is over object" sid="878045065787026" type="Mouse">
                                                             <param id="0" name="Object">imagemAjuda</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Set cursor style" sid="369539425334081" type="Mouse">
+                                                        <action id="0" name="Set cursor style" sid="215387907818328" type="Mouse">
                                                             <param id="0" name="Cursor style">1</param>
                                                         </action>
                                                     </actions>
+                                                    <sub-events>
+                                                        <event-block sid="515710969018912">
+                                                            <conditions>
+                                                                <condition id="-4" name="Trigger once while true" sid="757454941512405" type="System" />
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="0" name="Play" sid="358364595459819" type="Audio">
+                                                                    <param id="0" name="Audio file">mouse_over</param>
+                                                                    <param id="2" name="Loop">0</param>
+                                                                    <param id="3" name="Volume">volumeSons</param>
+                                                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
                                                 </event-block>
-                                                <event-block sid="172163005685171">
+                                                <event-block sid="467085901489295">
                                                     <conditions>
-                                                        <condition id="-22" name="Else" sid="624691824710840" type="System" />
+                                                        <condition id="-22" name="Else" sid="183647940026948" type="System" />
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Set cursor style" sid="489233558514068" type="Mouse">
+                                                        <action id="0" name="Set cursor style" sid="935751900324100" type="Mouse">
                                                             <param id="0" name="Cursor style">0</param>
                                                         </action>
                                                     </actions>

@@ -342,7 +342,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <comment>Dispara o evento de alerta quando falta apenas 15 segundos para acabar</comment>
+                        <comment>Dispara o evento de alerta quando falta apenas 15 segundos para acabar, sendo que esse som tem uma tag especial para poder ser pausado após comprarmos um café</comment>
                         <event-block sid="467632693686683">
                             <conditions>
                                 <condition id="-6" name="Compare height" sid="731963689825736" type="areiaBaixo">
@@ -356,7 +356,20 @@
                                     <param id="0" name="Audio file">tempo_acabando</param>
                                     <param id="2" name="Loop">1</param>
                                     <param id="3" name="Volume">volumeSons</param>
-                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                    <param id="1" name="Tag (optional)">&quot;sonsAcabando&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="776613821095734">
+                            <conditions>
+                                <condition id="-6" name="Compare height" sid="447541445680119" type="areiaBaixo">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Height">368.8625</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Stop" sid="161712476722184" type="Audio">
+                                    <param id="0" name="Tag">&quot;sonsAcabando&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -753,7 +766,7 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <comment>Acertou a palavra e ela ainda não havia sido preenchida ainda</comment>
+                        <comment>Ainda está descobrindo as evidências normais</comment>
                         <event-block sid="995824185900999">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="581862612067853" type="System">
@@ -764,6 +777,7 @@
                             </conditions>
                             <actions />
                             <sub-events>
+                                <comment>Acertou a palavra e ela ainda não havia sido preenchida ainda</comment>
                                 <event-block sid="632688362177298">
                                     <conditions>
                                         <condition id="0" name="Compare text" sid="108353288565573" type="respostas">
@@ -802,6 +816,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment>Errou a palavra e ela ainda não havia sido preenchida ainda</comment>
                                 <event-block sid="901207210607915">
                                     <conditions>
                                         <condition id="-22" name="Else" sid="106561793384915" type="System" />
@@ -838,6 +853,7 @@
                             </conditions>
                             <actions />
                             <sub-events>
+                                <comment>Acertou a palavra e ela ainda não havia sido preenchida ainda</comment>
                                 <event-block sid="543212217263815">
                                     <conditions>
                                         <condition id="0" name="Compare text" sid="639791659687892" type="respostas">
@@ -894,6 +910,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment>Errou a palavra e ela ainda não havia sido preenchida ainda</comment>
                                 <event-block sid="635120963152905">
                                     <conditions>
                                         <condition id="-22" name="Else" sid="624876244873056" type="System" />
@@ -1619,6 +1636,21 @@
                                                             <param id="0" name="Cursor style">1</param>
                                                         </action>
                                                     </actions>
+                                                    <sub-events>
+                                                        <event-block sid="641790445472418">
+                                                            <conditions>
+                                                                <condition id="-4" name="Trigger once while true" sid="760540754534869" type="System" />
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="0" name="Play" sid="215921981052529" type="Audio">
+                                                                    <param id="0" name="Audio file">mouse_over</param>
+                                                                    <param id="2" name="Loop">0</param>
+                                                                    <param id="3" name="Volume">volumeSons</param>
+                                                                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
                                                 </event-block>
                                                 <event-block sid="909363514453985">
                                                     <conditions>
@@ -2074,6 +2106,12 @@
                             <param id="2" name="Parameter index">0</param>
                             <param id="3" name="Value">100</param>
                         </action>
+                        <action id="0" name="Play" sid="744825152719319" type="Audio">
+                            <param id="0" name="Audio file">click_mouse</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
+                        </action>
                         <action id="-16" name="Wait" sid="293184610402551" type="System">
                             <param id="0" name="Seconds">0.0001</param>
                         </action>
@@ -2113,6 +2151,12 @@
                             <param id="1" name="Effect">&quot;BlurVertical&quot;</param>
                             <param id="2" name="Parameter index">0</param>
                             <param id="3" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="548774177245300" type="Audio">
+                            <param id="0" name="Audio file">click_mouse</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeSons</param>
+                            <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
                         </action>
                         <action id="-16" name="Wait" sid="727626763320101" type="System">
                             <param id="0" name="Seconds">0.0001</param>
