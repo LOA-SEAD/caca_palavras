@@ -1143,7 +1143,7 @@
                                     <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
                                 </action>
                                 <action id="-2" name="Go to layout" sid="673598327221957" type="System">
-                                    <param id="0" name="Layout">5. Créditos</param>
+                                    <param id="0" name="Layout">5. Creditos</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1161,7 +1161,7 @@
                             </conditions>
                             <actions>
                                 <action id="-2" name="Go to layout" sid="992102138013153" type="System">
-                                    <param id="0" name="Layout">5. Créditos</param>
+                                    <param id="0" name="Layout">5. Creditos</param>
                                 </action>
                             </actions>
                         </event-block>

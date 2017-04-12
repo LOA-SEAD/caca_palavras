@@ -668,7 +668,7 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
-        <object-folder name="5 Créditos">
+        <object-folder name="5 Creditos">
             <object-type name="fundoCreditos" sid="871468901321763">
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Créditos\telaCREDITOS.png" />
@@ -1226,14 +1226,14 @@
         <layout>2. Cenas.xml</layout>
         <layout>3. Casos.xml</layout>
         <layout>4. Jogo.xml</layout>
-        <layout>5. Créditos.xml</layout>
+        <layout>5. Creditos.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>1 Menu.xml</event-sheet>
         <event-sheet>4 Jogo.xml</event-sheet>
         <event-sheet>3 Casos.xml</event-sheet>
         <event-sheet>2 Cenas.xml</event-sheet>
-        <event-sheet>5 Créditos.xml</event-sheet>
+        <event-sheet>5 Creditos.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="12" />
