@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Caca_Palavras</name>
-    <description></description>
+    <description>C.I.A.</description>
     <version>1.0.0.0</version>
     <author>Laboratório de Objetos de Aprendizagem - UFSCar</author>
     <author-email>loa@sead.ufscar.br</author-email>
     <author-website>http://www.loa.sead.ufscar.br</author-website>
-    <app-id></app-id>
+    <app-id>CIA</app-id>
     <unique-id>2fj1b49bm44m8</unique-id>
-    <saved-with-version>23900</saved-with-version>
+    <saved-with-version>24400</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>

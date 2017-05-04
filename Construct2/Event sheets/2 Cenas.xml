@@ -971,7 +971,7 @@
                                         <condition id="0" name="On key pressed" sid="775911134006252" type="Keyboard">
                                             <param id="0" name="Key">32 (Space)</param>
                                         </condition>
-                                        <condition id="1" name="On any click" sid="989319280879320" type="Mouse" />
+                                        <condition id="14" name="On tap" sid="989319280879320" type="Touch" />
                                     </conditions>
                                     <actions>
                                         <action id="-10" name="Add to" sid="591084621388427" type="System">
