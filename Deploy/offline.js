@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1494261541,
+	"version": 1494277403,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -81,7 +81,7 @@
 		"media/ambiencia_noite.ogg",
 		"media/som_neon.ogg",
 		"media/luz_piscando.ogg",
-		"media/trilha.ogg",
+		"media/la_noia.ogg",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",

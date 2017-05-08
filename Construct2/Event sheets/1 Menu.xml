@@ -37,7 +37,7 @@
                     <param id="0" name="Audio file">mouse_over</param>
                 </action>
                 <action id="4" name="Preload" sid="555749225031795" type="Audio">
-                    <param id="0" name="Audio file">trilha</param>
+                    <param id="0" name="Audio file">la_noia</param>
                 </action>
                 <action id="33" name="Stop all" sid="163869210879055" type="Audio" />
                 <action id="5" name="Set frame" sid="503541469249723" type="btnJogar">
@@ -113,19 +113,19 @@
                     <param id="0" name="Audio file">ambiencia_noite</param>
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">volumeMusica</param>
-                    <param id="1" name="Tag (optional)">&quot;musicaMenu&quot;</param>
+                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
                 </action>
                 <action id="0" name="Play" sid="609467971387961" type="Audio">
                     <param id="0" name="Audio file">luz_piscando</param>
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">volumeMusica</param>
-                    <param id="1" name="Tag (optional)">&quot;musicaMenu&quot;</param>
+                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
                 </action>
                 <action id="0" name="Play" sid="364861167510964" type="Audio">
                     <param id="0" name="Audio file">som_neon</param>
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">volumeMusica</param>
-                    <param id="1" name="Tag (optional)">&quot;musicaMenu&quot;</param>
+                    <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -138,7 +138,7 @@
                     <param id="0" name="Text">&quot;Página &quot; &amp; ajudaPag.UID-74+2*ajuda &amp;  &quot; de 4&quot;</param>
                 </action>
                 <action id="3" name="Set volume" sid="353598738915886" type="Audio">
-                    <param id="0" name="Tag">&quot;musicaMenu&quot;</param>
+                    <param id="0" name="Tag">&quot;musica&quot;</param>
                     <param id="1" name="dB">volumeMusica</param>
                 </action>
                 <action id="3" name="Set volume" sid="526491240687311" type="Audio">

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Caca_Palavras</name>
-    <description>C.I.A.</description>
+    <description>Cherlóqui Investigações de Acasos</description>
     <version>1.0.0.0</version>
     <author>Laboratório de Objetos de Aprendizagem - UFSCar</author>
     <author-email>loa@sead.ufscar.br</author-email>
     <author-website>http://www.loa.sead.ufscar.br</author-website>
-    <app-id>CIA</app-id>
+    <app-id></app-id>
     <unique-id>2fj1b49bm44m8</unique-id>
     <saved-with-version>24400</saved-with-version>
     <used-plugins>
@@ -1273,7 +1273,7 @@
         <file name="ambiencia_noite.ogg" />
         <file name="som_neon.ogg" />
         <file name="luz_piscando.ogg" />
-        <file name="trilha.ogg" />
+        <file name="la_noia.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">

@@ -9,7 +9,9 @@
                 <condition id="-2" name="On start of layout" sid="671896634820138" type="System" />
             </conditions>
             <actions>
-                <action id="33" name="Stop all" sid="666809380326856" type="Audio" />
+                <action id="6" name="Stop" sid="666809380326856" type="Audio">
+                    <param id="0" name="Tag">&quot;sons&quot;</param>
+                </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="898755975599351" type="lampadaLuz">
                     <param id="0" name="Pin to">lampada</param>
                     <param id="1" name="Mode">0</param>
@@ -239,9 +241,9 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Play" sid="359848656452543" type="Audio">
-                            <param id="0" name="Audio file">trilha</param>
+                            <param id="0" name="Audio file">la_noia</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">-8</param>
                             <param id="1" name="Tag (optional)">&quot;musica&quot;</param>
                         </action>
                     </actions>
