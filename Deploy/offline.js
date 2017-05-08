@@ -1,9 +1,10 @@
 ﻿{
-	"version": 1489698280,
+	"version": 1494261541,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
 		"jquery-2.1.1.min.js",
+		"offlineClient.js",
 		"images/canos-sheet0.png",
 		"images/efeitos-sheet0.png",
 		"images/fundomenu.png",
@@ -80,6 +81,7 @@
 		"media/ambiencia_noite.ogg",
 		"media/som_neon.ogg",
 		"media/luz_piscando.ogg",
+		"media/trilha.ogg",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",

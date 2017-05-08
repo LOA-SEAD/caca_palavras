@@ -36,7 +36,6 @@
                 <action id="4" name="Preload" sid="360211118886379" type="Audio">
                     <param id="0" name="Audio file">tempo_acabando</param>
                 </action>
-                <action id="33" name="Stop all" sid="844989848722192" type="Audio" />
                 <action id="0" name="Load JSON" sid="219893275109138" type="dicaJSON" />
                 <action id="0" name="Load JSON" sid="661403228314904" type="casosJSON" />
                 <action id="-9" name="Set value" sid="734166043841523" type="System">

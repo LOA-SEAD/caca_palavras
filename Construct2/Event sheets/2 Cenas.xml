@@ -231,6 +231,21 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="351864573716369">
+                    <conditions>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="824560201616387" type="Audio">
+                            <param id="0" name="Tag">&quot;musica&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="359848656452543" type="Audio">
+                            <param id="0" name="Audio file">trilha</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;musica&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-block>
         <event-group description="" sid="334580777992163" title="Acoes 2">

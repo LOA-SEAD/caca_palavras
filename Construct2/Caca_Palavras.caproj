@@ -1273,6 +1273,7 @@
         <file name="ambiencia_noite.ogg" />
         <file name="som_neon.ogg" />
         <file name="luz_piscando.ogg" />
+        <file name="trilha.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">
