@@ -671,7 +671,7 @@
         <object-folder name="5 Creditos">
             <object-type name="fundoCreditos" sid="871468901321763">
                 <plugin id="TiledBg" />
-                <texture original-source="C:\Users\Valério\Documents\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Créditos\telaCREDITOS.png" />
+                <texture original-source="E:\luizv\Google Drive\Projetos\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Créditos\telaCREDITOS.png" />
             </object-type>
         </object-folder>
         <object-folder name="4 Jogo">
