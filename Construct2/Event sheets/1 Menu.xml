@@ -160,13 +160,13 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="487716175692247" type="textoAjuda1">
-                            <param id="0" name="Text">&quot;Bem-vindo, Detetive Rolmes.&quot; &amp; newline &amp; newline &amp; &quot;Seu objetivo é resolver todos os casos misteriosos a tempo. Você tem 10 minutos iniciais para resolver um caso, mas antes, tem de resolver o enigma descobrindo as 5 palavras secretas, só assim você sabe o que procurar no caça-palavras, e acumula dinheiro para ajudá-lo a resolver este mistério.&quot;</param>
+                            <param id="0" name="Text">&quot;Bem-vindo, Detetive Rolmes.&quot; &amp; newline &amp; newline &amp; &quot;Seu objetivo é resolver cada caso em 10 minutos. A partir de 5 evidências que lhe serão apresentadas em cada caso, você deverá encontrar as pistas no caça-palavras que as completam. A cada palavra encontrada você ganhará dinheiro para comprar auxílios que lhe ajudarão a solucionar o caso.&quot;</param>
                         </action>
                         <action id="3" name="Set font size" sid="257893903406665" type="textoAjuda1">
                             <param id="0" name="Size (pt)">22</param>
                         </action>
                         <action id="0" name="Set text" sid="454101093766008" type="textoAjuda2">
-                            <param id="0" name="Text">&quot;Para encontrar as palavras você pode:&quot; &amp; newline &amp; &quot;- Clicar / tocar e arrastar na horizontal, vertical, diagonal ou de trás pra frente;&quot; &amp; newline &amp; &quot;- Comprar melhorias (tempo extra, dicas, etc.).&quot; &amp; newline &amp; &quot;Para solucionar o caso você deve:&quot; &amp; newline &amp; &quot;- Escrever as pistas encontradas no papel da máquina de escrever e, por fim, adivinhar a pista final.&quot;</param>
+                            <param id="0" name="Text">&quot;Para encontrar as palavras você pode:&quot; &amp; newline &amp; &#x0D;&#x0A;&quot;- Clicar/tocar e arrastar na horizontal, vertical, diagonal ou de trás pra frente;&quot; &amp; newline &amp; &#x0D;&#x0A;&quot;- Comprar tempo extra e dicas;&quot; &amp; newline &amp; &#x0D;&#x0A;&quot;- Escrever no papel de evidências as pistas encontradas no caça-palavras.&quot; &amp; newline &amp; &#x0D;&#x0A;&quot;Após resolver as 5 evidências, escreva no papel a solução do caso.&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -186,7 +186,7 @@
                             <param id="0" name="Size (pt)">18</param>
                         </action>
                         <action id="0" name="Set text" sid="755832484297913" type="textoAjuda2">
-                            <param id="0" name="Text">newline &amp;&#x0D;&#x0A;&quot;1. Dinheiro acumulado&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;2. Melhorias&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;3. Evidências (6 ao todo, 5 do caso e 1 final)&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;4. Setas para selecionar as evidências&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;5. Digitar pistas&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;6. Caça-Palavra&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;7. Tempo (10 minutos)&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;8. Opções&quot;</param>
+                            <param id="0" name="Text">newline &amp;&#x0D;&#x0A;&quot;1. Dinheiro acumulado;&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;2. Auxilios;&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;3. Evidências (5 pistas e 1 solução);&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;4. Setas para seleção das evidências;&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;5. Digitar pistas;&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;6. Caça-Palavras;&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;7. Tempo (inicial: 10 minutos);&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;8. Configurações.&quot;</param>
                         </action>
                     </actions>
                 </event-block>
