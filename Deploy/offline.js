@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1494378680,
+	"version": 1503953803,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -62,6 +62,7 @@
 		"images/caderneta-sheet0.png",
 		"images/subirevidencia.png",
 		"images/fadeout-sheet0.png",
+		"images/notificacoes.png",
 		"images/btnmenu-sheet0.png",
 		"images/imagemajuda-sheet0.png",
 		"images/telaajuda-sheet0.png",
