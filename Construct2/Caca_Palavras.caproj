@@ -1073,7 +1073,7 @@
             </object-type>
             <object-type name="notificacoes" sid="372123728875238">
                 <plugin id="TiledBg" />
-                <texture original-source="C:\Users\Valerio\Desktop\Sem Título-2.png" />
+                <texture />
             </object-type>
         </object-folder>
         <object-type name="Mouse" sid="359155137460880">

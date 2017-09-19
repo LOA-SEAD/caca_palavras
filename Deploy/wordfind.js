@@ -289,12 +289,14 @@
       }
     };
 
-    //Fonte: https://trechodecodigo.wordpress.com/remover-acentos-javascript/
-    var removerAcento = function(palavra){
+    //Fontes: https://trechodecodigo.wordpress.com/remover-acentos-javascript/
+    //        https://www.w3schools.com/jsref/jsref_replace.asp
+    var tratarPalavra = function(palavra){
       var palavraSemAcento = "";
       var caracterComAcento = "áàãâäéèêëíìîïóòõôöúùûüçÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÇ";
       var caracterSemAcento = "aaaaaeeeeiiiiooooouuuucAAAAAEEEEIIIIOOOOOUUUUC";
 
+      //Troca acentos da palavra por caracteres normais
       for (var i = 0; i < palavra.length; i++){
         var char = palavra.substr(i, 1);
         var indexAcento = caracterComAcento.indexOf(char);
@@ -304,6 +306,9 @@
           palavraSemAcento += char;
         }
       }
+
+      //Remove alguns possiveis caracteres especiais
+      palavraSemAcento = palavraSemAcento.replace(/ |-|&|#|@/g, "");
 
       return palavraSemAcento;
     } 
@@ -377,7 +382,7 @@
 
         var words = readJSON(number);
         for (var i = 0; i < words.length; i++) {
-          words[i] = removerAcento(words[i]);
+          words[i] = tratarPalavra(words[i]);
         }
         // copy and sort the words by length, inserting words into the puzzle
         // from longest to shortest works out the best
