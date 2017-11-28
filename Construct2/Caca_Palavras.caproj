@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -671,7 +672,30 @@
         <object-folder name="5 Creditos">
             <object-type name="fundoCreditos" sid="871468901321763">
                 <plugin id="TiledBg" />
-                <texture original-source="E:\luizv\Google Drive\Projetos\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Créditos\telaCREDITOS.png" />
+                <texture original-source="C:\Users\Valerio\Google Drive\LOA\Projetos\Caça-Palavras Unicamp\Ilustrações\Arquivos Exportados com saturação\Créditos\telaCREDITOS2.png" />
+            </object-type>
+            <object-type name="CredTitulos" sid="711773030469714">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="CredNomes" sid="157284749270328">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="ccbysa" sid="775312396789035">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="173214618622920" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.516129" original-source="C:\Users\Valerio\Desktop\88x31.png">
+                            <collision-poly>
+                                <point x="0.0113636" y="0.0322581" />
+                                <point x="0.5" y="0" />
+                                <point x="0.988636" y="0.0322581" />
+                                <point x="0.988636" y="0.967742" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0113636" y="0.967742" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
             </object-type>
         </object-folder>
         <object-folder name="4 Jogo">
@@ -1223,6 +1247,9 @@
                 </behavior-type>
             </behaviors>
         </object-type>
+        <object-type name="Browser" sid="510703399636393">
+            <plugin id="Browser" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1261,6 +1288,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
+        <global-instance type="Browser" uid="121" />
     </global-instances>
     <sounds-folder>
         <file name="click_mouse.ogg" />

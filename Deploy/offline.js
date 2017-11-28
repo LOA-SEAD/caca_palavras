@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1505838731,
+	"version": 1511900055,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -37,6 +37,7 @@
 		"images/balao3-sheet0.png",
 		"images/fade-sheet0.png",
 		"images/fundocreditos.png",
+		"images/ccbysa-sheet0.png",
 		"images/fundojogo.png",
 		"images/folheto-sheet0.png",
 		"images/folheto-sheet1.png",

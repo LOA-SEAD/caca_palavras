@@ -7,9 +7,115 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="713420893594924" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action id="5" name="Set web font" sid="445458044082886" type="CredTitulos">
+                    <param id="0" name="Family name">&quot;breamcatcherregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="323427852004131" type="CredNomes">
+                    <param id="0" name="Family name">&quot;fragment_coreroman&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="511995748330512">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="223782664357055" type="CredNomes">
+                            <param id="0" name="Unique ID">112</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="844587797099355" type="CredNomes">
+                            <param id="0" name="Text">&quot;Delano Medeiros Beder&quot; &amp; newline &amp; &quot;Joice Lee Otsuka&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="302990371297533">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="974862875022760" type="CredNomes">
+                            <param id="0" name="Unique ID">113</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="169147693814688" type="CredNomes">
+                            <param id="0" name="Text">&quot;Ana Esther Rodrigues de Camargo&quot; &amp; newline &amp; &quot;Marcos Tsuda&quot; &amp; newline &amp; &quot;Rogério Augusto Bordini&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="244475879405917">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="249858921277986" type="CredNomes">
+                            <param id="0" name="Unique ID">114</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="344310090179101" type="CredNomes">
+                            <param id="0" name="Text">&quot;Catarine Santana Ohnuma&quot; &amp; newline &amp; &quot;Luiz Valério Neto&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="152818610894043">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="932610719142597" type="CredNomes">
+                            <param id="0" name="Unique ID">115</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="403595798487070" type="CredNomes">
+                            <param id="0" name="Text">&quot;Douglas Antonio Martins Barbino&quot; &amp; newline &amp; &quot;Luiz Valério Neto&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="306874981100897">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="427600677397534" type="CredNomes">
+                            <param id="0" name="Unique ID">116</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="611732588601067" type="CredNomes">
+                            <param id="0" name="Text">&quot;Felipe Mendes &quot; &amp; newline &amp; &quot;Bruno Fernandes Leandro&quot; &amp; newline &amp; &quot;Guilherme Lima&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="199858981937643">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="955355817832523" type="CredNomes">
+                            <param id="0" name="Unique ID">117</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="300170451435962" type="CredNomes">
+                            <param id="0" name="Text">&quot;Daniel Lopes Santiago&quot; &amp; newline &amp; &quot;Rogério Augusto Bordini&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="914571666509170">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="751569834953938" type="CredNomes">
+                            <param id="0" name="Unique ID">118</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="122270769464748" type="CredNomes">
+                            <param id="0" name="Text">&quot;André Constantino da Silva&quot; &amp; newline &amp; &quot;Fernanda Maria Pereira Freire&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="900133341409045">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="333381784321751" type="CredNomes">
+                            <param id="0" name="Unique ID">119</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="834029658545223" type="CredNomes">
+                            <param id="0" name="Text">&quot;Copyright © 2011 BunKat LLC&quot; &amp; newline &amp; &quot;&lt;bill@bunkat.com&gt;. Fonte:&quot; &amp; newline &amp;&#x0D;&#x0A;&quot;https://github.com/bunkat/wordfind&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
-        <event-group description="" sid="849950976425065" title="Acoes 5" />
         <event-group description="" sid="714587678207041" title="Efeitos 5">
             <sub-events>
                 <event-block sid="602323687956506">
@@ -59,11 +165,7 @@
                     <conditions>
                         <condition id="-22" name="Else" sid="438418424961842" type="System" />
                     </conditions>
-                    <actions>
-                        <action id="0" name="Set cursor style" sid="613066008812146" type="Mouse">
-                            <param id="0" name="Cursor style">0</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
                         <event-block sid="547734231507706">
                             <conditions>
@@ -78,6 +180,28 @@
                                 </action>
                                 <action id="-1" name="Set X" sid="569470886291969" type="btnMenu">
                                     <param id="0" name="X">btnMenu.X+(5/30)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="625924803836544">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="572135402385620" type="Mouse">
+                                    <param id="0" name="Object">ccbysa</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="613066008812146" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="155597066373161">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="166192776127030" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="665970965279916" type="Mouse">
+                                    <param id="0" name="Cursor style">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -98,6 +222,19 @@
                         </action>
                         <action id="-2" name="Go to layout" sid="939316601463450" type="System">
                             <param id="0" name="Layout">1. Menu</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="754420995458092">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="476732128301192" type="Touch">
+                            <param id="0" name="Object">ccbysa</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="8" name="Open URL in new window" sid="451793553164337" type="Browser">
+                            <param id="0" name="URL">&quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;</param>
+                            <param id="1" name="Tag">&quot;Licenca&quot;</param>
                         </action>
                     </actions>
                 </event-block>
