@@ -404,7 +404,7 @@
                 <event-block sid="926509886218713">
                     <conditions>
                         <condition id="3" name="On key released" sid="219932068366575" type="Keyboard">
-                            <param id="0" name="Key">37 (Left arrow)</param>
+                            <param id="0" name="Key">37</param>
                         </condition>
                         <condition id="-9" name="Is visible" sid="991939063702000" type="botaoAnt" />
                         <condition id="-1" name="Compare X" sid="251666325647697" type="imagemAjuda">
@@ -432,7 +432,7 @@
                 <event-block sid="726141850160468">
                     <conditions>
                         <condition id="3" name="On key released" sid="719167563517395" type="Keyboard">
-                            <param id="0" name="Key">39 (Right arrow)</param>
+                            <param id="0" name="Key">39</param>
                         </condition>
                         <condition id="-9" name="Is visible" sid="597267746615875" type="botaoProx" />
                         <condition id="-1" name="Compare X" sid="778621724233825" type="imagemAjuda">

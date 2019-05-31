@@ -983,10 +983,10 @@
                                 <event-block any="1" sid="268315496786359">
                                     <conditions>
                                         <condition id="0" name="On key pressed" sid="124328953575041" type="Keyboard">
-                                            <param id="0" name="Key">13 (Return)</param>
+                                            <param id="0" name="Key">13</param>
                                         </condition>
                                         <condition id="0" name="On key pressed" sid="775911134006252" type="Keyboard">
-                                            <param id="0" name="Key">32 (Space)</param>
+                                            <param id="0" name="Key">32</param>
                                         </condition>
                                         <condition id="14" name="On tap" sid="989319280879320" type="Touch" />
                                     </conditions>
@@ -1089,10 +1089,10 @@
                                 <event-block any="1" sid="651362677509471">
                                     <conditions>
                                         <condition id="0" name="On key pressed" sid="230297112959966" type="Keyboard">
-                                            <param id="0" name="Key">13 (Return)</param>
+                                            <param id="0" name="Key">13</param>
                                         </condition>
                                         <condition id="0" name="On key pressed" sid="598541344497590" type="Keyboard">
-                                            <param id="0" name="Key">32 (Space)</param>
+                                            <param id="0" name="Key">32</param>
                                         </condition>
                                         <condition id="1" name="On any click" sid="200291564889559" type="Mouse" />
                                     </conditions>
@@ -1195,10 +1195,10 @@
                                 <event-block any="1" sid="743307216644816">
                                     <conditions>
                                         <condition id="0" name="On key pressed" sid="858374323944298" type="Keyboard">
-                                            <param id="0" name="Key">13 (Return)</param>
+                                            <param id="0" name="Key">13</param>
                                         </condition>
                                         <condition id="0" name="On key pressed" sid="970519106215317" type="Keyboard">
-                                            <param id="0" name="Key">32 (Space)</param>
+                                            <param id="0" name="Key">32</param>
                                         </condition>
                                         <condition id="1" name="On any click" sid="929272045477696" type="Mouse" />
                                     </conditions>
@@ -1301,10 +1301,10 @@
                                 <event-block any="1" sid="931177645341087">
                                     <conditions>
                                         <condition id="0" name="On key pressed" sid="866182426572802" type="Keyboard">
-                                            <param id="0" name="Key">13 (Return)</param>
+                                            <param id="0" name="Key">13</param>
                                         </condition>
                                         <condition id="0" name="On key pressed" sid="796290534741069" type="Keyboard">
-                                            <param id="0" name="Key">32 (Space)</param>
+                                            <param id="0" name="Key">32</param>
                                         </condition>
                                         <condition id="1" name="On any click" sid="836469019965105" type="Mouse" />
                                     </conditions>

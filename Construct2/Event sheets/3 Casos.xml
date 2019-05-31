@@ -306,7 +306,7 @@
                 <event-block sid="913584720147217">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="534094453572285" type="Keyboard">
-                            <param id="0" name="Key">37 (Left arrow)</param>
+                            <param id="0" name="Key">37</param>
                         </condition>
                         <condition id="-1" name="Compare X" sid="816548667922813" type="botaoAnt">
                             <param id="0" name="Comparison">4</param>
@@ -396,7 +396,7 @@
                 <event-block sid="374629608755799">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="499402370177649" type="Keyboard">
-                            <param id="0" name="Key">39 (Right arrow)</param>
+                            <param id="0" name="Key">39</param>
                         </condition>
                         <condition id="-1" name="Compare X" sid="776899484492001" type="botaoProx">
                             <param id="0" name="Comparison">4</param>
@@ -486,7 +486,7 @@
                             <param id="0" name="Object">btnJogarCaso</param>
                         </condition>
                         <condition id="0" name="On key pressed" sid="891964284854023" type="Keyboard">
-                            <param id="0" name="Key">13 (Return)</param>
+                            <param id="0" name="Key">13</param>
                         </condition>
                     </conditions>
                     <actions />

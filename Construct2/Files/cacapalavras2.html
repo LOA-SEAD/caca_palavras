@@ -10,23 +10,23 @@
 
 
 <script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
-<script type="text/javascript" src="wordfind.js"></script>
-<script type="text/javascript" src="wordfindgame.js"></script> 
+<script type="text/javascript" src="wordfind2.js"></script>
+<script type="text/javascript" src="wordfindgame2.js"></script> 
 <script>
 
   // start a word find game
-  var gamePuzzle = wordfindgame.create(2, '#puzzle', '#words');
+  var gamePuzzle = wordfindgame2.create(2, '#puzzle', '#words');
 
   $('#solve').click( function() {
-    //wordfindgame.solve(gamePuzzle, words);
+    //wordfindgame2.solve(gamePuzzle, words);
   });
 
   // create just a puzzle, without filling in the blanks and print to console
-  var puzzle = wordfind.newPuzzle(
+  var puzzle = wordfind2.newPuzzle(
     2, 
     {height: 18, width:18, fillBlanks: false}
   );
-  wordfind.print(puzzle);
+  wordfind2.print(puzzle);
 
 </script>
 </body>

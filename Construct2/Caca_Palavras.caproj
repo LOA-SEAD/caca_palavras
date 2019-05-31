@@ -8,7 +8,7 @@
     <author-website>http://www.loa.sead.ufscar.br</author-website>
     <app-id></app-id>
     <unique-id>2fj1b49bm44m8</unique-id>
-    <saved-with-version>24400</saved-with-version>
+    <saved-with-version>26900</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
@@ -1071,7 +1071,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type global="1" name="verificaFimJS" sid="300315608599823">
+            <object-type global="1" name="verificaFimJS1" sid="300315608599823">
                 <plugin id="cjs" />
             </object-type>
             <object-type name="btnMenu2" sid="981595157067975">
@@ -1098,6 +1098,12 @@
             <object-type name="notificacoes" sid="372123728875238">
                 <plugin id="TiledBg" />
                 <texture />
+            </object-type>
+            <object-type global="1" name="verificaFimJS2" sid="309774905395763">
+                <plugin id="cjs" />
+            </object-type>
+            <object-type global="1" name="verificaFimJS3" sid="238086092244974">
+                <plugin id="cjs" />
             </object-type>
         </object-folder>
         <object-type name="Mouse" sid="359155137460880">
@@ -1364,8 +1370,12 @@
             <file name="stylecacapalavras.css" />
         </file-folder>
         <file-folder name="JS">
-            <file name="wordfind.js" />
-            <file name="wordfindgame.js" />
+            <file name="wordfind1.js" />
+            <file name="wordfind2.js" />
+            <file name="wordfind3.js" />
+            <file name="wordfindgame1.js" />
+            <file name="wordfindgame2.js" />
+            <file name="wordfindgame3.js" />
         </file-folder>
         <file-folder name="Cursor">
             <file name="cursor.png" />

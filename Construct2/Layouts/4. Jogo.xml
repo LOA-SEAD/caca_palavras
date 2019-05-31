@@ -600,7 +600,7 @@
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-40,400,0</font>
+                        <font>Arial,-40,700,0</font>
                         <color>50,49,49</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -1211,9 +1211,19 @@
                 <json-file>casos.json</json-file>
             </properties>
         </instance>
-        <instance type="verificaFimJS" uid="72">
+        <instance type="verificaFimJS1" uid="72">
             <properties>
-                <scriptfile>wordfindgame.js</scriptfile>
+                <scriptfile>wordfindgame1.js</scriptfile>
+            </properties>
+        </instance>
+        <instance type="verificaFimJS2" uid="122">
+            <properties>
+                <scriptfile>wordfindgame2.js</scriptfile>
+            </properties>
+        </instance>
+        <instance type="verificaFimJS3" uid="123">
+            <properties>
+                <scriptfile>wordfindgame3.js</scriptfile>
             </properties>
         </instance>
     </nonworld-instances>

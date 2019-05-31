@@ -183,9 +183,6 @@
                     <param id="1" name="Value">&quot;lowercase&quot;</param>
                 </action>
                 <action id="0" name="Clear" sid="421663245608084" type="statusDicas" />
-                <action id="0" name="Execute" sid="582155161757505" type="verificaFimJS">
-                    <param id="0" name="Value">&quot;initializeAcertos()&quot;</param>
-                </action>
                 <action id="-6" name="Set height" sid="716011925671085" type="areiaCima">
                     <param id="0" name="Height">246</param>
                 </action>
@@ -195,9 +192,6 @@
                 <action id="-9" name="Set value" sid="247452783936572" type="System">
                     <param id="0" name="Variable">dinheiro</param>
                     <param id="1" name="Value">dinheiroInicial</param>
-                </action>
-                <action id="0" name="Execute" sid="511628503132501" type="verificaFimJS">
-                    <param id="0" name="Value">&quot;atualizarDinheiro(&quot; &amp; dinheiroInicial &amp; &quot;)&quot;</param>
                 </action>
             </actions>
             <sub-events>
@@ -209,13 +203,112 @@
                             <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="313078945761195">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="846980073844376" type="System">
+                                    <param id="0" name="Variable">numcaso</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Execute" sid="496405017475902" type="verificaFimJS1">
+                                    <param id="0" name="Value">&quot;initialize()&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="976441586208864" type="System">
+                                    <param id="0" name="Variable">novoJogo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="820920469383681">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="923822739348069" type="System">
+                                    <param id="0" name="Variable">numcaso</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Execute" sid="339547629601445" type="verificaFimJS2">
+                                    <param id="0" name="Value">&quot;initialize()&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="815432074488671" type="System">
+                                    <param id="0" name="Variable">novoJogo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="658754191930019">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="760674045155572" type="System">
+                                    <param id="0" name="Variable">numcaso</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Execute" sid="831481739647274" type="verificaFimJS3">
+                                    <param id="0" name="Value">&quot;initialize()&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="856140271314849" type="System">
+                                    <param id="0" name="Variable">novoJogo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="963334408384170">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="659905644327955" type="System">
+                            <param id="0" name="Variable">numcaso</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
                     <actions>
-                        <action id="0" name="Execute" sid="496405017475902" type="verificaFimJS">
-                            <param id="0" name="Value">&quot;initialize()&quot;</param>
+                        <action id="0" name="Execute" sid="582155161757505" type="verificaFimJS1">
+                            <param id="0" name="Value">&quot;initializeAcertos()&quot;</param>
                         </action>
-                        <action id="-9" name="Set value" sid="976441586208864" type="System">
-                            <param id="0" name="Variable">novoJogo</param>
-                            <param id="1" name="Value">0</param>
+                        <action id="0" name="Execute" sid="938653737214548" type="verificaFimJS1">
+                            <param id="0" name="Value">&quot;atualizarDinheiro(&quot; &amp; dinheiroInicial &amp; &quot;)&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="491436057347189">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="129980155507246" type="System">
+                            <param id="0" name="Variable">numcaso</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Execute" sid="849022853237530" type="verificaFimJS2">
+                            <param id="0" name="Value">&quot;initializeAcertos()&quot;</param>
+                        </action>
+                        <action id="0" name="Execute" sid="893974013595200" type="verificaFimJS2">
+                            <param id="0" name="Value">&quot;atualizarDinheiro(&quot; &amp; dinheiroInicial &amp; &quot;)&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="758415787851055">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="527943763633141" type="System">
+                            <param id="0" name="Variable">numcaso</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Execute" sid="805798380410169" type="verificaFimJS3">
+                            <param id="0" name="Value">&quot;initializeAcertos()&quot;</param>
+                        </action>
+                        <action id="0" name="Execute" sid="570826779428887" type="verificaFimJS3">
+                            <param id="0" name="Value">&quot;atualizarDinheiro(&quot; &amp; dinheiroInicial &amp; &quot;)&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -227,32 +320,110 @@
                     <conditions>
                         <condition id="-1" name="Every tick" sid="529100977197903" type="System" />
                     </conditions>
-                    <actions>
-                        <action id="0" name="Execute" sid="132283987836833" type="verificaFimJS">
-                            <param id="0" name="Value">&quot;getValor()&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="947086449511391" type="System">
-                            <param id="0" name="Variable">dinheiro</param>
-                            <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
-                        </action>
-                        <action id="0" name="Set text" sid="324678903864543" type="dinheiro">
-                            <param id="0" name="Text">dinheiro &amp; &quot;¢&quot;</param>
-                        </action>
-                        <action id="0" name="Execute" sid="393554739170274" type="verificaFimJS">
-                            <param id="0" name="Value">&quot;getValorAcertos()&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="289916619560164" type="System">
-                            <param id="0" name="Variable">numeroAcertos</param>
-                            <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
-                        </action>
-                        <action id="0" name="Set text" sid="161131779919802" type="ajudaPag">
-                            <param id="0" name="Text">&quot;Página &quot; &amp; ajudaPag.UID-91+2*ajuda &amp;  &quot; de 4&quot;</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="359888367380833" type="imagemAjuda">
-                            <param id="0" name="Frame number">ajuda</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
+                        <event-block sid="906656768379289">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="189102542095852" type="System">
+                                    <param id="0" name="Variable">numcaso</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Execute" sid="132283987836833" type="verificaFimJS1">
+                                    <param id="0" name="Value">&quot;getValor()&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="947086449511391" type="System">
+                                    <param id="0" name="Variable">dinheiro</param>
+                                    <param id="1" name="Value">verificaFimJS1.ReadExecutionReturn</param>
+                                </action>
+                                <action id="0" name="Set text" sid="324678903864543" type="dinheiro">
+                                    <param id="0" name="Text">dinheiro &amp; &quot;¢&quot;</param>
+                                </action>
+                                <action id="0" name="Execute" sid="393554739170274" type="verificaFimJS1">
+                                    <param id="0" name="Value">&quot;getValorAcertos()&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="289916619560164" type="System">
+                                    <param id="0" name="Variable">numeroAcertos</param>
+                                    <param id="1" name="Value">verificaFimJS1.ReadExecutionReturn</param>
+                                </action>
+                                <action id="0" name="Set text" sid="161131779919802" type="ajudaPag">
+                                    <param id="0" name="Text">&quot;Página &quot; &amp; ajudaPag.UID-91+2*ajuda &amp;  &quot; de 4&quot;</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="359888367380833" type="imagemAjuda">
+                                    <param id="0" name="Frame number">ajuda</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="628728873630063">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="732382314078331" type="System">
+                                    <param id="0" name="Variable">numcaso</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Execute" sid="974805481289748" type="verificaFimJS2">
+                                    <param id="0" name="Value">&quot;getValor()&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="240403694458914" type="System">
+                                    <param id="0" name="Variable">dinheiro</param>
+                                    <param id="1" name="Value">verificaFimJS2.ReadExecutionReturn</param>
+                                </action>
+                                <action id="0" name="Set text" sid="535195180927167" type="dinheiro">
+                                    <param id="0" name="Text">dinheiro &amp; &quot;¢&quot;</param>
+                                </action>
+                                <action id="0" name="Execute" sid="222492682411905" type="verificaFimJS2">
+                                    <param id="0" name="Value">&quot;atualizarDinheiro(&quot; &amp; dinheiroInicial &amp; &quot;)&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="242959626893721" type="System">
+                                    <param id="0" name="Variable">numeroAcertos</param>
+                                    <param id="1" name="Value">verificaFimJS2.ReadExecutionReturn</param>
+                                </action>
+                                <action id="0" name="Set text" sid="188038260352259" type="ajudaPag">
+                                    <param id="0" name="Text">&quot;Página &quot; &amp; ajudaPag.UID-91+2*ajuda &amp;  &quot; de 4&quot;</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="894276324457611" type="imagemAjuda">
+                                    <param id="0" name="Frame number">ajuda</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="832268040335505">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="167268316669053" type="System">
+                                    <param id="0" name="Variable">numcaso</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Execute" sid="781189750761601" type="verificaFimJS3">
+                                    <param id="0" name="Value">&quot;getValor()&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="196343665882848" type="System">
+                                    <param id="0" name="Variable">dinheiro</param>
+                                    <param id="1" name="Value">verificaFimJS3.ReadExecutionReturn</param>
+                                </action>
+                                <action id="0" name="Set text" sid="272059886456465" type="dinheiro">
+                                    <param id="0" name="Text">dinheiro &amp; &quot;¢&quot;</param>
+                                </action>
+                                <action id="0" name="Execute" sid="403717102984449" type="verificaFimJS3">
+                                    <param id="0" name="Value">&quot;atualizarDinheiro(&quot; &amp; dinheiroInicial &amp; &quot;)&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="726923474954514" type="System">
+                                    <param id="0" name="Variable">numeroAcertos</param>
+                                    <param id="1" name="Value">verificaFimJS3.ReadExecutionReturn</param>
+                                </action>
+                                <action id="0" name="Set text" sid="703980881787556" type="ajudaPag">
+                                    <param id="0" name="Text">&quot;Página &quot; &amp; ajudaPag.UID-91+2*ajuda &amp;  &quot; de 4&quot;</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="699107502724294" type="imagemAjuda">
+                                    <param id="0" name="Frame number">ajuda</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="720837731470956">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="307792017416261" type="System">
@@ -476,7 +647,7 @@
                                     <param id="0" name="Object">descerEvidencia</param>
                                 </condition>
                                 <condition id="0" name="On key pressed" sid="647587881914929" type="Keyboard">
-                                    <param id="0" name="Key">40 (Down arrow)</param>
+                                    <param id="0" name="Key">40</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -682,7 +853,7 @@
                                     <param id="0" name="Object">subirEvidencia</param>
                                 </condition>
                                 <condition id="0" name="On key pressed" sid="934767232285797" type="Keyboard">
-                                    <param id="0" name="Key">38 (Up arrow)</param>
+                                    <param id="0" name="Key">38</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -892,7 +1063,7 @@
                 <event-block sid="826504549741291">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="758839528877877" type="Keyboard">
-                            <param id="0" name="Key">13 (Return)</param>
+                            <param id="0" name="Key">13</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -934,18 +1105,67 @@
                                         <action id="0" name="Set text" sid="197815782753876" type="respostas">
                                             <param id="0" name="Text">&quot;&quot;</param>
                                         </action>
-                                        <action id="0" name="Execute" sid="242279595639713" type="verificaFimJS">
-                                            <param id="0" name="Value">&quot;setValor(+50)&quot;</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="608991269929436" type="System">
-                                            <param id="0" name="Variable">dinheiro</param>
-                                            <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
-                                        </action>
                                         <action id="2" name="Set at X" sid="140042868861216" type="statusDicas">
                                             <param id="0" name="X">dicaNaMaquina-1</param>
                                             <param id="1" name="Value">2</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="899825077764867">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="776625076006155" type="System">
+                                                    <param id="0" name="Variable">numcaso</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Execute" sid="242279595639713" type="verificaFimJS1">
+                                                    <param id="0" name="Value">&quot;setValor(+50)&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="608991269929436" type="System">
+                                                    <param id="0" name="Variable">dinheiro</param>
+                                                    <param id="1" name="Value">verificaFimJS1.ReadExecutionReturn</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="745268973227882">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="359957341759351" type="System">
+                                                    <param id="0" name="Variable">numcaso</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Execute" sid="370507338496018" type="verificaFimJS2">
+                                                    <param id="0" name="Value">&quot;setValor(+50)&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="828548520662134" type="System">
+                                                    <param id="0" name="Variable">dinheiro</param>
+                                                    <param id="1" name="Value">verificaFimJS2.ReadExecutionReturn</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="574099341590233">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="205733868621623" type="System">
+                                                    <param id="0" name="Variable">numcaso</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Execute" sid="258512475863895" type="verificaFimJS3">
+                                                    <param id="0" name="Value">&quot;setValor(+50)&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="156784252648453" type="System">
+                                                    <param id="0" name="Variable">dinheiro</param>
+                                                    <param id="1" name="Value">verificaFimJS3.ReadExecutionReturn</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <comment>Errou a palavra e ela não havia sido preenchida ainda</comment>
                                 <event-block sid="901207210607915">
@@ -961,15 +1181,63 @@
                                             <param id="2" name="Second value">2</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="0" name="Execute" sid="937188929715815" type="verificaFimJS">
-                                            <param id="0" name="Value">&quot;setValor(-25)&quot;</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="164787722496690" type="System">
-                                            <param id="0" name="Variable">dinheiro</param>
-                                            <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="393103738713438">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="989880818941364" type="System">
+                                                    <param id="0" name="Variable">numcaso</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Execute" sid="532792706905853" type="verificaFimJS1">
+                                                    <param id="0" name="Value">&quot;setValor(-25)&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="727823165805810" type="System">
+                                                    <param id="0" name="Variable">dinheiro</param>
+                                                    <param id="1" name="Value">verificaFimJS1.ReadExecutionReturn</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="452456787315084">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="977103261021600" type="System">
+                                                    <param id="0" name="Variable">numcaso</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Execute" sid="534643792245950" type="verificaFimJS2">
+                                                    <param id="0" name="Value">&quot;setValor(-25)&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="828319854309125" type="System">
+                                                    <param id="0" name="Variable">dinheiro</param>
+                                                    <param id="1" name="Value">verificaFimJS2.ReadExecutionReturn</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="706904214695608">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="733869190686209" type="System">
+                                                    <param id="0" name="Variable">numcaso</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Execute" sid="442986084022635" type="verificaFimJS3">
+                                                    <param id="0" name="Value">&quot;setValor(-25)&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="991893933130777" type="System">
+                                                    <param id="0" name="Variable">dinheiro</param>
+                                                    <param id="1" name="Value">verificaFimJS3.ReadExecutionReturn</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -1009,13 +1277,6 @@
                                         </action>
                                         <action id="0" name="Set text" sid="710478982589312" type="respostas">
                                             <param id="0" name="Text">&quot;&quot;</param>
-                                        </action>
-                                        <action id="0" name="Execute" sid="693557267002887" type="verificaFimJS">
-                                            <param id="0" name="Value">&quot;setValor(+50)&quot;</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="217892655524292" type="System">
-                                            <param id="0" name="Variable">dinheiro</param>
-                                            <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
                                         </action>
                                         <action id="2" name="Set at X" sid="162464452320346" type="statusDicas">
                                             <param id="0" name="X">dicaNaMaquina-1</param>
@@ -1139,6 +1400,62 @@
                                             <param id="0" name="Layout">2. Cenas</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="391951720683845">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="504086609920143" type="System">
+                                                    <param id="0" name="Variable">numcaso</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Execute" sid="693557267002887" type="verificaFimJS1">
+                                                    <param id="0" name="Value">&quot;setValor(+50)&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="217892655524292" type="System">
+                                                    <param id="0" name="Variable">dinheiro</param>
+                                                    <param id="1" name="Value">verificaFimJS1.ReadExecutionReturn</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="560351443214366">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="779702119256033" type="System">
+                                                    <param id="0" name="Variable">numcaso</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Execute" sid="561768854271822" type="verificaFimJS2">
+                                                    <param id="0" name="Value">&quot;setValor(+50)&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="681139183203774" type="System">
+                                                    <param id="0" name="Variable">dinheiro</param>
+                                                    <param id="1" name="Value">verificaFimJS2.ReadExecutionReturn</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="366806369265876">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="685676524191375" type="System">
+                                                    <param id="0" name="Variable">numcaso</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Execute" sid="736641079440274" type="verificaFimJS3">
+                                                    <param id="0" name="Value">&quot;setValor(+50)&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="950847108165091" type="System">
+                                                    <param id="0" name="Variable">dinheiro</param>
+                                                    <param id="1" name="Value">verificaFimJS3.ReadExecutionReturn</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <comment>Errou a palavra e ela não havia sido preenchida ainda</comment>
                                 <event-block sid="635120963152905">
@@ -1154,15 +1471,63 @@
                                             <param id="2" name="Second value">2</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="0" name="Execute" sid="981732257631341" type="verificaFimJS">
-                                            <param id="0" name="Value">&quot;setValor(-25)&quot;</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="795604375638537" type="System">
-                                            <param id="0" name="Variable">dinheiro</param>
-                                            <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="224234243488255">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="326391125128236" type="System">
+                                                    <param id="0" name="Variable">numcaso</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Execute" sid="920753414437380" type="verificaFimJS1">
+                                                    <param id="0" name="Value">&quot;setValor(-25)&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="653923847780295" type="System">
+                                                    <param id="0" name="Variable">dinheiro</param>
+                                                    <param id="1" name="Value">verificaFimJS1.ReadExecutionReturn</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="859856089147078">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="574547914660994" type="System">
+                                                    <param id="0" name="Variable">numcaso</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Execute" sid="105187374421903" type="verificaFimJS2">
+                                                    <param id="0" name="Value">&quot;setValor(-25)&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="729544642110601" type="System">
+                                                    <param id="0" name="Variable">dinheiro</param>
+                                                    <param id="1" name="Value">verificaFimJS2.ReadExecutionReturn</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="511508916181433">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="488856524219178" type="System">
+                                                    <param id="0" name="Variable">numcaso</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Execute" sid="931072912126869" type="verificaFimJS3">
+                                                    <param id="0" name="Value">&quot;setValor(-25)&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="424535643942633" type="System">
+                                                    <param id="0" name="Variable">dinheiro</param>
+                                                    <param id="1" name="Value">verificaFimJS3.ReadExecutionReturn</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -1499,13 +1864,6 @@
                                             <param id="3" name="Volume">volumeSons</param>
                                             <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
                                         </action>
-                                        <action id="0" name="Execute" sid="449220203803829" type="verificaFimJS">
-                                            <param id="0" name="Value">&quot;setValor(-50)&quot;</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="505377681504720" type="System">
-                                            <param id="0" name="Variable">dinheiro</param>
-                                            <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
-                                        </action>
                                         <action id="-6" name="Set height" sid="350666356034054" type="areiaCima">
                                             <param id="0" name="Height">areiaCima.Height+9.6</param>
                                         </action>
@@ -1513,13 +1871,69 @@
                                             <param id="0" name="Height">areiaBaixo.Height-17.1</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="591703084287672">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="772364664251832" type="System">
+                                                    <param id="0" name="Variable">numcaso</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Execute" sid="264653634430791" type="verificaFimJS1">
+                                                    <param id="0" name="Value">&quot;setValor(-50)&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="505377681504720" type="System">
+                                                    <param id="0" name="Variable">dinheiro</param>
+                                                    <param id="1" name="Value">verificaFimJS1.ReadExecutionReturn</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="629309441796779">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="283895951059377" type="System">
+                                                    <param id="0" name="Variable">numcaso</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Execute" sid="830103825688461" type="verificaFimJS2">
+                                                    <param id="0" name="Value">&quot;setValor(-50)&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="537190221303353" type="System">
+                                                    <param id="0" name="Variable">dinheiro</param>
+                                                    <param id="1" name="Value">verificaFimJS2.ReadExecutionReturn</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="992580198584695">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="279998866304938" type="System">
+                                                    <param id="0" name="Variable">numcaso</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Execute" sid="946886769163120" type="verificaFimJS3">
+                                                    <param id="0" name="Value">&quot;setValor(-50)&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="789657795949615" type="System">
+                                                    <param id="0" name="Variable">dinheiro</param>
+                                                    <param id="1" name="Value">verificaFimJS3.ReadExecutionReturn</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
                         <event-block any="1" sid="426723869609667">
                             <conditions>
                                 <condition id="0" name="On key pressed" sid="135874221509127" type="Keyboard">
-                                    <param id="0" name="Key">80 (P)</param>
+                                    <param id="0" name="Key">80</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -1577,13 +1991,6 @@
                                             <param id="3" name="Volume">volumeSons</param>
                                             <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
                                         </action>
-                                        <action id="0" name="Execute" sid="626940584808753" type="verificaFimJS">
-                                            <param id="0" name="Value">&quot;setValor(-100)&quot;</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="730474010398475" type="System">
-                                            <param id="0" name="Variable">dinheiro</param>
-                                            <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
-                                        </action>
                                         <action id="-9" name="Set value" sid="995149505980855" type="System">
                                             <param id="0" name="Variable">palavraDica100</param>
                                             <param id="1" name="Value">left(casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;respostas&quot;,dicaNaMaquina-1), 1)</param>
@@ -1598,6 +2005,60 @@
                                         </action>
                                     </actions>
                                     <sub-events>
+                                        <event-block sid="846324908623315">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="466913349450635" type="System">
+                                                    <param id="0" name="Variable">numcaso</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Execute" sid="106664941371026" type="verificaFimJS1">
+                                                    <param id="0" name="Value">&quot;setValor(-100)&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="434924926246572" type="System">
+                                                    <param id="0" name="Variable">dinheiro</param>
+                                                    <param id="1" name="Value">verificaFimJS1.ReadExecutionReturn</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="973456082722652">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="502167442057021" type="System">
+                                                    <param id="0" name="Variable">numcaso</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Execute" sid="884693342666689" type="verificaFimJS2">
+                                                    <param id="0" name="Value">&quot;setValor(-100)&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="902648208543834" type="System">
+                                                    <param id="0" name="Variable">dinheiro</param>
+                                                    <param id="1" name="Value">verificaFimJS2.ReadExecutionReturn</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="149501770843621">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="147248117453417" type="System">
+                                                    <param id="0" name="Variable">numcaso</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Execute" sid="471361423793908" type="verificaFimJS3">
+                                                    <param id="0" name="Value">&quot;setValor(-100)&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="798819871361500" type="System">
+                                                    <param id="0" name="Variable">dinheiro</param>
+                                                    <param id="1" name="Value">verificaFimJS3.ReadExecutionReturn</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
                                         <event-block sid="825272473045357">
                                             <conditions>
                                                 <condition id="-10" name="For" sid="613419254160316" type="System">
@@ -1681,19 +2142,66 @@
                                             <param id="3" name="Volume">volumeSons</param>
                                             <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
                                         </action>
-                                        <action id="0" name="Execute" sid="283601797865931" type="verificaFimJS">
-                                            <param id="0" name="Value">&quot;setValor(-150)&quot;</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="783457134696023" type="System">
-                                            <param id="0" name="Variable">dinheiro</param>
-                                            <param id="1" name="Value">verificaFimJS.ReadExecutionReturn</param>
-                                        </action>
                                         <action id="2" name="Set at X" sid="850844559075180" type="statusDicas">
                                             <param id="0" name="X">dicaNaMaquina-1</param>
                                             <param id="1" name="Value">2</param>
                                         </action>
                                     </actions>
                                     <sub-events>
+                                        <event-block sid="765877140825327">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="565263287422243" type="System">
+                                                    <param id="0" name="Variable">numcaso</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Execute" sid="727831927171289" type="verificaFimJS1">
+                                                    <param id="0" name="Value">&quot;setValor(-150)&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="722585853663831" type="System">
+                                                    <param id="0" name="Variable">dinheiro</param>
+                                                    <param id="1" name="Value">verificaFimJS1.ReadExecutionReturn</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="928718530371431">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="182599341826988" type="System">
+                                                    <param id="0" name="Variable">numcaso</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Execute" sid="852798729030472" type="verificaFimJS2">
+                                                    <param id="0" name="Value">&quot;setValor(-150)&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="315137081449292" type="System">
+                                                    <param id="0" name="Variable">dinheiro</param>
+                                                    <param id="1" name="Value">verificaFimJS2.ReadExecutionReturn</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="483342311855294">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="754523696837335" type="System">
+                                                    <param id="0" name="Variable">numcaso</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Execute" sid="308625313606416" type="verificaFimJS3">
+                                                    <param id="0" name="Value">&quot;setValor(-150)&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="540927321640931" type="System">
+                                                    <param id="0" name="Variable">dinheiro</param>
+                                                    <param id="1" name="Value">verificaFimJS3.ReadExecutionReturn</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
                                         <event-block sid="249879355955602">
                                             <conditions>
                                                 <condition id="-14" name="Compare variable" sid="579845178684208" type="System">
@@ -2120,7 +2628,7 @@
                                     <param id="0" name="Object">btnResume</param>
                                 </condition>
                                 <condition id="0" name="On key pressed" sid="187881961852995" type="Keyboard">
-                                    <param id="0" name="Key">27 (Esc)</param>
+                                    <param id="0" name="Key">27</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -2217,9 +2725,6 @@
                                     <param id="3" name="Volume">volumeSons</param>
                                     <param id="1" name="Tag (optional)">&quot;sons&quot;</param>
                                 </action>
-                                <action id="0" name="Execute" sid="266081049855750" type="verificaFimJS">
-                                    <param id="0" name="Value">&quot;atualizarDinheiro(&quot; &amp; dinheiroInicial &amp; &quot;)&quot;</param>
-                                </action>
                                 <action id="-9" name="Set value" sid="135767137106236" type="System">
                                     <param id="0" name="Variable">dinheiro</param>
                                     <param id="1" name="Value">dinheiroInicial</param>
@@ -2228,6 +2733,50 @@
                                     <param id="0" name="Layout">1. Menu</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="988217518558905">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="127471502652878" type="System">
+                                            <param id="0" name="Variable">numcaso</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Execute" sid="598194837721104" type="verificaFimJS1">
+                                            <param id="0" name="Value">&quot;atualizarDinheiro(&quot; &amp; dinheiroInicial &amp; &quot;)&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="790107400345306">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="559091449407333" type="System">
+                                            <param id="0" name="Variable">numcaso</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Execute" sid="694853583860103" type="verificaFimJS2">
+                                            <param id="0" name="Value">&quot;atualizarDinheiro(&quot; &amp; dinheiroInicial &amp; &quot;)&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="141498878141389">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="493053389771526" type="System">
+                                            <param id="0" name="Variable">numcaso</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Execute" sid="270079568164481" type="verificaFimJS3">
+                                            <param id="0" name="Value">&quot;atualizarDinheiro(&quot; &amp; dinheiroInicial &amp; &quot;)&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -2310,7 +2859,7 @@
                 <event-block sid="820082716831461">
                     <conditions>
                         <condition id="3" name="On key released" sid="249672903282340" type="Keyboard">
-                            <param id="0" name="Key">37 (Left arrow)</param>
+                            <param id="0" name="Key">37</param>
                         </condition>
                         <condition id="-9" name="Is visible" sid="199256915899417" type="botaoAnt" />
                         <condition id="-1" name="Compare X" sid="195473892026550" type="imagemAjuda">
@@ -2338,7 +2887,7 @@
                 <event-block sid="560012831079844">
                     <conditions>
                         <condition id="3" name="On key released" sid="558491630471645" type="Keyboard">
-                            <param id="0" name="Key">39 (Right arrow)</param>
+                            <param id="0" name="Key">39</param>
                         </condition>
                         <condition id="-9" name="Is visible" sid="444319420211709" type="botaoProx" />
                         <condition id="-1" name="Compare X" sid="691661057440652" type="imagemAjuda">
