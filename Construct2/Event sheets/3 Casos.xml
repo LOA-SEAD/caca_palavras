@@ -6,7 +6,6 @@
         <variable constant="0" name="ultimocaso" sid="933221909810570" static="0" type="number">2</variable>
         <variable constant="0" name="numcaso" sid="733151475499623" static="0" type="number">0</variable>
         <comment>Valor que o jogador possui inicialmente</comment>
-        <variable constant="0" name="dinheiro" sid="519393934167079" static="0" type="number">0</variable>
         <event-block sid="188116339448502">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="801272363977871" type="System" />
@@ -118,7 +117,7 @@
                     <param id="0" name="Text">casosJSON.GetData(&quot;caso&quot; &amp; numcaso+1 &amp; &quot;descricao&quot;, 0)</param>
                 </action>
                 <action id="0" name="Set text" sid="151191972795113" type="dinheiro">
-                    <param id="0" name="Text">&quot;Você tem: &quot; &amp; dinheiro &amp; &quot;¢&quot;</param>
+                    <param id="0" name="Text">&quot;Você tem: &quot; &amp; dinheiroInicial &amp; &quot;¢&quot;</param>
                 </action>
             </actions>
         </event-block>

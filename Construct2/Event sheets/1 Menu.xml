@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>1 Menu</name>
     <events>
+        <variable constant="0" name="dinheiro" sid="519393934167079" static="0" type="number">0</variable>
         <comment>Variável para controlar as páginas do livro de ajuda com as regras de jogo</comment>
         <variable constant="0" name="ajuda" sid="466059140149343" static="0" type="number">0</variable>
         <comment>Serve para ser verificada quando começa um novo jogo para limpar o valor armazenado na sessionStorage dinheiro</comment>
