@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1505838731,
+	"version": 1571254870,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -37,6 +37,7 @@
 		"images/balao3-sheet0.png",
 		"images/fade-sheet0.png",
 		"images/fundocreditos.png",
+		"images/ccbysa-sheet0.png",
 		"images/fundojogo.png",
 		"images/folheto-sheet0.png",
 		"images/folheto-sheet1.png",
@@ -120,8 +121,12 @@
 		"cacapalavras2.html",
 		"cacapalavras3.html",
 		"stylecacapalavras.css",
-		"wordfind.js",
-		"wordfindgame.js",
+		"wordfind1.js",
+		"wordfind2.js",
+		"wordfind3.js",
+		"wordfindgame1.js",
+		"wordfindgame2.js",
+		"wordfindgame3.js",
 		"cursor.png"
 	]
 }

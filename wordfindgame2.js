@@ -84,7 +84,7 @@ function atualizarDinheiro(newValue) {
         console.log("valor dinheiro => " + dinheiro); 
 }
 
-(function (document, $, wordfind) {
+(function (document, $, wordfind2) {
 
   'use strict';
 
@@ -100,7 +100,7 @@ function atualizarDinheiro(newValue) {
   *
   * @api private
   */
-  var WordFindGame = function() {
+  var WordFindGame2 = function() {
 
     // List of words for this game
     var wordList;
@@ -352,8 +352,8 @@ function atualizarDinheiro(newValue) {
     */
     var calcOrientation = function (x1, y1, x2, y2) {
 
-      for (var orientation in wordfind.orientations) {
-        var nextFn = wordfind.orientations[orientation];
+      for (var orientation in wordfind2.orientations) {
+        var nextFn = wordfind2.orientations[orientation];
         var nextPos = nextFn(x1, y1, 1);
 
         if (nextPos.x === x2 && nextPos.y === y2) {
@@ -440,7 +440,7 @@ function atualizarDinheiro(newValue) {
         }
         wordList = words.slice(0).sort();
 
-        var puzzle = wordfind.newPuzzle(number, options);
+        var puzzle = wordfind2.newPuzzle(number, options);
 
         // draw out all of the words
         drawPuzzle(puzzleEl, puzzle);
@@ -473,14 +473,14 @@ function atualizarDinheiro(newValue) {
       */
       solve: function(/*puzzle, words*/) {
 
-        /*var solution = wordfind.solve(puzzle, words).found;
+        /*var solution = wordfind2.solve(puzzle, words).found;
 
         for( var i = 0, len = solution.length; i < len; i++) {
           var word = solution[i].word,
               orientation = solution[i].orientation,
               x = solution[i].x,
               y = solution[i].y,
-              next = wordfind.orientations[orientation];
+              next = wordfind2.orientations[orientation];
 
           if (!$('.' + word).hasClass('wordFound')) {
             for (var j = 0, size = word.length; j < size; j++) {
@@ -503,7 +503,7 @@ function atualizarDinheiro(newValue) {
   /**
   * Allow game to be used within the browser
   */
-  window.wordfindgame = WordFindGame();
+  window.wordfindgame2 = WordFindGame2();
 
-}(document, jQuery, wordfind));
+}(document, jQuery, wordfind2));
 
